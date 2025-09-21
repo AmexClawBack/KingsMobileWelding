@@ -2,26 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Kings Mobile Welding</title>
-  <meta name="description" content="Request a quote or send a procurement inquiry.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact | Kings Mobile Welding</title>
+
+  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta property="og:image" content="assets/img/logo-500.png">
+
+  <!-- CSS: relative (no leading slash) -->
   <link rel="stylesheet" href="assets/css/styles.css">
-<script src="assets/js/scripts.js" defer></script>
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0A2E5C">
-
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
-<link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
-<link rel="shortcut icon" href="assets/img/favicon.ico">
-
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
-
-<meta name="msapplication-config" content="browserconfig.xml">
-<meta name="msapplication-TileColor" content="#0A2E5C">
-
-<meta property="og:image" content="assets/img/logo-500.png">
 <script type="application/ld+json">{
     "url":  "https://amexclawback.github.io/KingsMobileWelding/",
     "identifier":  [
@@ -49,9 +46,10 @@
     "logo":  "assets/img/logo-500.png",
     "email":  "DillonKing@kingsmobilewelding.com"
 }</script>
-</head>
+<meta name="description" content="Contact Kings Mobile Welding — AWS D1.1 certified mobile welding for government and industry in Hampton Roads and beyond. Request a quote, procurement docs, or emergency service."></head>
 <body>
-  <header class="site-header">
+<header class="site-header">
+    
     <div class="container nav">
       <a class="brand" href="index.html"><img src="assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
       <nav class="desktop">
@@ -63,7 +61,7 @@
         <a href="contact.html">Contact</a>
         
 <a href="blog.html">Blog</a>
-  <a href="careers.html">Careers</a>
+<a href="careers.html">Careers</a>
 <a class="btn-primary" href="contact.html">Contact</a>
         
 </nav>
@@ -77,30 +75,155 @@
       <a href="contact.html">Contact</a>
       
 <a href="blog.html">Blog</a>
+<a href="careers.html">Careers</a>
 <a class="btn-primary" href="contact.html">Contact</a>
       
 
       <a href="about.html">About</a></div>
   </header>
 <main>
-  <section class="sub-hero"><div class="container"><h1>Contact</h1><p class="lead">We respond within one business day.</p></div></section>
-  <section class="section">
-    <div class="container grid-2">
-      <form class="card contact" id="contactForm" onsubmit="return handleFormSubmit(event)">
-        <h2 id="quote">Request Quote / Inquiry</h2>
-        <label>Name<input id="name" required></label>
-        <label>Email<input id="email" type="email" required></label>
-        <label>Organization<input id="org"></label>
-        <label>Service<select id="service"><option value="">Select</option><option>Structural Welding</option><option>Emergency Repair</option><option>Fabrication & Access</option><option>Maintenance / Fleet</option></select></label>
-        <label>Message<textarea id="message" rows="6"></textarea></label>
-        <button class="btn-primary" type="submit">Send</button>
-        <div id="formMsg" class="small muted" role="status" aria-live="polite"></div>
-      </form>
-      <aside class="card"><h3>Direct</h3><p>Phone: <a href="tel:7572316809">757-231-6809</a><br>Email: <a href="mailto:info@kingsmobilewelding.com">info@kingsmobilewelding.com</a></p></aside>
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="lead">Reach out for quotes, procurement documentation, or emergency/maintenance welding. We respond quickly and deliver inspection-ready results.</p>
+    </div>
+  </section>
+
+  <section class="contact-wrap">
+    <div class="container">
+      <!-- Contact info -->
+      <aside class="card" aria-labelledby="contact-info-h2">
+        <h2 id="contact-info-h2">Contact Information</h2>
+        <ul class="list">
+          <li> <a href="tel:757-231-6809">757-231-6809</a></li>
+          <li> <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></li>
+          <li> Hampton Roads, VA and beyond</li>
+        </ul>
+        <div class="contact-meta">
+          <div class="pill"><strong>UEI:</strong> ZCY4G7GBGQA3</div>
+          <div class="pill"><strong>CAGE:</strong> 11P75</div>
+        </div>
+        <div class="map-embed" aria-label="Service area map">
+          <!-- Optional: replace src with your shop/address map if you want -->
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Hampton%20Roads%20VA&output=embed"
+            allowfullscreen title="Hampton Roads, VA"></iframe>
+        </div>
+        <p class="form-help" style="margin-top:.6rem">W-9 available upon request. Capability statement available for download on the Procurement page.</p>
+      </aside>
+
+      <!-- Contact form -->
+      <section class="card" aria-labelledby="send-msg-h2">
+        <h2 id="send-msg-h2">Send a Message</h2>
+        <!--
+          For a static site, use a form handling service (Formspree/Basin/Netlify).
+          Example (Formspree): action="https://formspree.io/f/your-id"
+          Or set USE_MAILTO=true in assets/js/contact.js for mailto fallback.
+        -->
+        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" data-to="DillonKing@kingsmobilewelding.com" novalidate>
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+            </div>
+            <div>
+              <label for="org">Company / Agency</label>
+              <input id="org" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="row-1">
+            <div>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required>
+            </div>
+          </div>
+          <div class="row-1">
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your project, location, timeline, and any specs (AWS D1.1, materials, drawings)."></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="contactpref">Preferred Contact</label>
+              <select id="contactpref" name="preferred_contact">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+            <div>
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="asap">ASAP / Emergency</option>
+                <option value="1-2-weeks">1–2 weeks</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Procurement-friendly toggles -->
+          <div class="row">
+            <div>
+              <label><input type="checkbox" name="request_capability" value="yes"> Request Capability Statement</label>
+            </div>
+            <div>
+              <label><input type="checkbox" name="request_w9" value="yes"> Request W-9</label>
+            </div>
+          </div>
+
+          <!-- Honeypot (spam trap) -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+
+          <div class="actions">
+            <button class="btn" type="submit">Send Message</button>
+            <a class="btn secondary" href="tel:757-231-6809">Call Now</a>
+          </div>
+          <p class="form-help">By submitting this form you agree we may contact you regarding your request.</p>
+        </form>
+        <script src="assets/js/contact.js" defer></script>
+      </section>
     </div>
   </section>
 </main>
-        <footer class="site-footer">
+
+<!-- Organization JSON-LD for SEO -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Kings Mobile Welding",
+  "url":"https://amexclawback.github.io/KingsMobileWelding/",
+  "email":"DillonKing@kingsmobilewelding.com",
+  "telephone":"757-231-6809",
+  "areaServed":"Hampton Roads, VA and beyond",
+  "logo":"assets/img/logo-500.png",
+  "identifier":[
+    {"@type":"PropertyValue","propertyID":"UEI","value":"ZCY4G7GBGQA3"},
+    {"@type":"PropertyValue","propertyID":"CAGE","value":"11P75"}
+  ],
+  "contactPoint":{
+    "@type":"ContactPoint",
+    "contactType":"customer support",
+    "email":"DillonKing@kingsmobilewelding.com",
+    "telephone":"757-231-6809",
+    "areaServed":"US",
+    "availableLanguage":["English"]
+  }
+}
+</script>
+
+<footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <a class="brand" href="index.html">
@@ -152,26 +275,5 @@
       </div>
     </div>
   </footer>
-<script src="assets/js/menu-toggle.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
