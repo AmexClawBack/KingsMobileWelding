@@ -1,5 +1,37 @@
 ﻿<!doctype html>
 <html lang="en">
+<head><meta charset="utf-8">
+<style>
+:root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A;--kmw-ink:#0B1220;--kmw-muted:#E6ECF5}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;color:var(--kmw-ink)}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.site-header{background:var(--kmw-blue);color:var(--kmw-yellow)}
+.site-header .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+.site-header a{color:#fff;text-decoration:none;margin-left:16px}
+.site-header a:hover{color:var(--kmw-yellow)}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;color:var(--kmw-yellow);text-decoration:none}
+.brand img{display:inline-block;width:44px;height:44px;border-radius:8px}
+.btn-primary,.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.55rem .9rem;border:1px solid rgba(0,0,0,.08)}
+.btn-primary{background:var(--kmw-yellow);color:var(--kmw-blue)} .btn{background:var(--kmw-yellow);color:var(--kmw-blue)} .btn.secondary{background:#fff;color:var(--kmw-blue);border:1px solid #E5E7EB}
+.site-footer{background:var(--kmw-blue);color:#E6ECF5;padding:24px 0;margin-top:24px}
+.site-footer a{color:var(--kmw-yellow);text-decoration:none}
+.site-footer .columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.site-footer .brand{color:var(--kmw-yellow)}
+/* Hub blocks used on guides */
+.hub-hero{background:linear-gradient(135deg,#0A2E5C 0%,#0A223F 100%);color:#fff;padding:2.2rem 1rem 1.6rem}
+.hub-hero .container{max-width:1100px;margin:0 auto}
+.hub-hero h2{margin:.2rem 0 .4rem} .hub-hero p{margin:0;color:#E6ECF5}
+.hub-wrap{background:#fff;padding:1.4rem 1rem 2.4rem}
+.hub-wrap .container{max-width:1100px;margin:0 auto}
+.hub-card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.04);margin-bottom:1rem}
+.hub-card h3{margin:.15rem 0 .55rem;color:#0A2E5C}
+.hub-card p,.hub-card li{color:#334155}
+.hub-card ul,.hub-card ol{margin:.35rem 0 0;padding-left:1.1rem}
+details{border:1px solid #E5E7EB;border-radius:12px;padding:.8rem 1rem;background:#fff}
+details+details{margin-top:.6rem} summary{cursor:pointer;font-weight:700;color:#0A2E5C}
+@media (max-width:980px){.desktop{display:none}}
+</style>
+</head>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +43,14 @@
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
-  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="../assets/img/favicon.ico">
   <meta property="og:image" content="assets/img/logo-500.png">
 
   <!-- CSS: relative (no leading slash) -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 <script type="application/ld+json">{
     "url":  "https://amexclawback.github.io/KingsMobileWelding/",
     "identifier":  [
@@ -80,35 +112,35 @@
 <header class="site-header">
     
     <div class="container nav">
-      <a class="brand" href="index.html"><img src="assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+      <a class="brand" href="../index.html"><img src="../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
       <nav class="desktop">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="past-performance.html">Past Performance</a>
-        <a href="procurement.html">Procurement</a>
+        <a href="../about.html">About</a>
+        <a href="../services.html">Services</a>
+        <a href="../past-performance.html">Past Performance</a>
+        <a href="../procurement.html">Procurement</a>
         
-        <a href="contact.html">Contact</a>
+        <a href="../contact.html">Contact</a>
         
-<a href="blog.html">Blog</a>
-<a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html">Contact</a>
+<a href="../blog.html">Blog</a>
+<a href="../careers.html">Careers</a>
+<a class="btn-primary" href="../contact.html">Contact</a>
         
 </nav>
       <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="services.html">Services</a>
-      <a href="past-performance.html">Past Performance</a>
-      <a href="procurement.html">Procurement</a>
+      <a href="../services.html">Services</a>
+      <a href="../past-performance.html">Past Performance</a>
+      <a href="../procurement.html">Procurement</a>
       
-      <a href="contact.html">Contact</a>
+      <a href="../contact.html">Contact</a>
       
-<a href="blog.html">Blog</a>
-<a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html">Contact</a>
+<a href="../blog.html">Blog</a>
+<a href="../careers.html">Careers</a>
+<a class="btn-primary" href="../contact.html">Contact</a>
       
 
-      <a href="about.html">About</a></div>
+      <a href="../about.html">About</a></div>
   </header>
 <main>
   <section class="hub-hero">
@@ -181,8 +213,8 @@
 <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <img src="assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <a class="brand" href="../index.html">
+          <img src="../assets/img/logo-500.png" width="44" height="44" alt="Logo">
           <strong>Kings Mobile Welding</strong>
         </a>
         <div class="footer-contact">
@@ -196,14 +228,14 @@
       </div>
 
       <nav class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="past-performance.html">Past Performance</a>
-        <a href="procurement.html">Procurement</a>
-        <a href="blog.html">Blog</a>
-        <a href="careers.html">Careers</a>
-                <a href="areas.html">Areas We Service</a>
-<a href="contact.html">Contact</a>
+        <a href="../about.html">About</a>
+        <a href="../services.html">Services</a>
+        <a href="../past-performance.html">Past Performance</a>
+        <a href="../procurement.html">Procurement</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../careers.html">Careers</a>
+                <a href="../areas.html">Areas We Service</a>
+<a href="../contact.html">Contact</a>
       </nav>
 
       <div class="social" aria-label="Social links">
@@ -232,3 +264,4 @@
   </footer>
 </body>
 </html>
+
