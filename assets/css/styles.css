@@ -184,3 +184,18 @@ textarea{min-height:120px;resize:vertical}
   .site-header .desktop { display: flex; gap: 1rem; }
   .site-header .burger  { display: none; }
 }
+
+/* === Trusted By carousel === */
+.trusted { padding: 3rem 1rem; background: #F8FAFC; }
+.trusted .container { max-width: 1100px; margin: 0 auto; }
+.trusted h2 { font-size: 1.25rem; letter-spacing: .08em; text-transform: uppercase; color: #0A2E5C; margin: 0 0 1rem; }
+.logo-carousel { position: relative; overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+.logo-track { display: flex; gap: 2rem; align-items: center; will-change: transform; animation: slide-logos 28s linear infinite; }
+.logo-item { flex: 0 0 auto; height: 64px; display: flex; align-items: center; justify-content: center; padding: .5rem 1rem; filter: saturate(.9) contrast(1); opacity: .9; }
+.logo-item img { height: 100%; width: auto; display: block; }
+.logo-carousel:hover .logo-track { animation-play-state: paused; }
+@keyframes slide-logos { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 640px) { .logo-item { height: 48px; } }
