@@ -647,3 +647,41 @@ textarea{min-height:120px;resize:vertical}
   .svc, .svc.reverse { grid-template-columns: 1fr; }
   .svc img { height:220px; }
 }
+
+/* === Areas We Service === */
+.areas-hero {
+  background: linear-gradient(135deg, #0A2E5C 0%, #0A223F 100%);
+  color:#fff; padding: 3rem 1rem 2rem;
+}
+.areas-hero .container { max-width:1100px; margin:0 auto; }
+.areas-hero h1 { margin:0 0 .5rem; }
+.areas-hero p.lead { margin:0 0 1rem; color:#E6ECF5; max-width:80ch; }
+
+.areas-filter {
+  display:flex; align-items:center; gap:.6rem; margin-top:.5rem;
+}
+.areas-filter input {
+  width:100%; max-width:420px; padding:.6rem .7rem; border-radius:10px;
+  border:1px solid #CBD5E1; background:#fff; color:#0F172A;
+}
+.sr-only {
+  position:absolute !important;
+  width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+.areas-wrap { background:#fff; padding: 2rem 1rem 3rem; }
+.areas-wrap .container { max-width:1100px; margin:0 auto; }
+
+.areas-grid {
+  display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; margin-top:1rem;
+}
+.area-card {
+  background:#fff; border:1px solid #E5E7EB; border-radius:14px; padding:1rem;
+  box-shadow:0 1px 2px rgba(0,0,0,.04); transition:transform .15s ease, box-shadow .15s ease;
+}
+.area-card:hover { transform: translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,.08); }
+.area-card h2 { margin:0 0 .35rem; font-size:1.05rem; color:#0A2E5C; }
+.area-card p { margin:0; color:#334155; font-size:.95rem; }
+
+@media (max-width: 980px){ .areas-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 640px){ .areas-grid { grid-template-columns: 1fr; } }
