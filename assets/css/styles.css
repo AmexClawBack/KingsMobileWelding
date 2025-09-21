@@ -154,3 +154,33 @@ textarea{min-height:120px;resize:vertical}
 .mobile-menu[hidden]{display:none !important}
 @media (max-width:767px){.site-header .desktop{display:none}.site-header .burger{display:inline-flex}}
 @media (min-width:768px){.site-header .desktop{display:flex;gap:1rem}.site-header .burger{display:none}}
+/* === Mobile burger (three stacked bars) === */
+.burger {
+  position: relative;
+  width: 44px; height: 44px;
+  border: none; background: transparent; cursor: pointer;
+  display: inline-flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 5px; color: inherit;
+}
+.burger span {
+  display: block;
+  width: 26px; height: 3px; background: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.burger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* Hide mobile menu when [hidden] is present */
+.mobile-menu[hidden] { display: none !important; }
+
+/* Desktop vs mobile */
+@media (max-width: 767px){
+  .site-header .desktop { display: none; }
+  .site-header .burger  { display: inline-flex; }
+}
+@media (min-width: 768px){
+  .site-header .desktop { display: flex; gap: 1rem; }
+  .site-header .burger  { display: none; }
+}
