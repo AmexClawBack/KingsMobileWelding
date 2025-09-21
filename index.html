@@ -46,6 +46,25 @@
     "logo":  "assets/img/logo-500.png",
     "email":  "DillonKing@kingsmobilewelding.com"
 }</script>
+
+<!-- Trusted By Carousel (inline) -->
+<style>
+:root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+.trusted{padding:28px 0;background:#fff}
+.trusted .container{max-width:1100px;margin:0 auto;padding:0 16px}
+.trusted h3{margin:0 0 12px;color:#0A2E5C}
+
+.logo-track{display:flex;overflow:hidden;position:relative;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.logo-slide{display:flex;align-items:center;gap:48px;flex:0 0 auto;min-width:100%;
+  animation:kmw-scroll 25s linear infinite}
+.logo-slide img{height:48px;width:auto;display:block;filter:grayscale(1);opacity:.9;
+  transition:filter .2s,opacity .2s,transform .2s;background:transparent}
+.logo-slide img:hover{filter:none;opacity:1;transform:translateY(-2px)}
+@keyframes kmw-scroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (max-width:640px){.logo-slide{gap:28px}.logo-slide img{height:40px}}
+</style>
 </head>
 
 <body>
@@ -377,10 +396,20 @@
     <h3>Trusted By</h3>
     <div class="logo-track">
       <div class="logo-slide">
-        
+        <img src="assets/img/logos/AWRinc.png" alt="Awrinc" loading="lazy">
+          <img src="assets/img/logos/Brencosolutions.png" alt="Brencosolutions" loading="lazy">
+          <img src="assets/img/logos/KPILogo.png" alt="Kpilogo" loading="lazy">
+          <img src="assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina Logo" loading="lazy">
+          <img src="assets/img/logos/SOCOM.jpg" alt="Socom" loading="lazy">
+          <img src="assets/img/logos/THD_logo.jpg" alt="Thd Logo" loading="lazy">
       </div>
       <div class="logo-slide">
-        
+        <img src="assets/img/logos/AWRinc.png" alt="Awrinc" loading="lazy">
+          <img src="assets/img/logos/Brencosolutions.png" alt="Brencosolutions" loading="lazy">
+          <img src="assets/img/logos/KPILogo.png" alt="Kpilogo" loading="lazy">
+          <img src="assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina Logo" loading="lazy">
+          <img src="assets/img/logos/SOCOM.jpg" alt="Socom" loading="lazy">
+          <img src="assets/img/logos/THD_logo.jpg" alt="Thd Logo" loading="lazy">
       </div>
     </div>
   </div>
@@ -483,6 +512,7 @@
 </script>
 </body>
 </html>
+
 
 
 
