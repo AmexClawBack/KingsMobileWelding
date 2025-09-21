@@ -692,3 +692,46 @@ textarea{min-height:120px;resize:vertical}
   color:#0A2E5C; border-bottom:1px dashed rgba(10,46,92,.4); padding-bottom:2px;
 }
 .area-card .learn:hover { color:#0A2E5C; filter:brightness(.9); }
+
+/* === Procurement page (with NAICS/NIGP) === */
+.proc-hero { background: linear-gradient(135deg,#0A2E5C 0%,#0A223F 100%); color:#fff; padding:3rem 1rem 2rem; }
+.proc-hero .container { max-width:1100px; margin:0 auto; }
+.proc-hero h1 { margin:0 0 .5rem; }
+.proc-hero p.lead { margin:0; color:#E6ECF5; max-width:80ch; }
+
+.proc-wrap { background:#fff; padding:2rem 1rem 3rem; }
+.proc-wrap .container { max-width:1100px; margin:0 auto; display:grid; gap:1rem; }
+
+.proc-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; }
+.proc-card {
+  background:#fff; border:1px solid #E5E7EB; border-radius:16px; padding:1rem;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+.proc-card h2 { margin:.2rem 0 .6rem; color:#0A2E5C; font-size:1.2rem; }
+.proc-card p { margin:0 0 .6rem; color:#334155; }
+.proc-card ul { margin:.4rem 0 0; padding-left:1.1rem; color:#334155; }
+
+.ids { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; margin:.5rem 0 1.5rem; }
+.id-pill { background:#F8FAFC; border:1px solid #E5E7EB; border-radius:12px; padding:.7rem .9rem; color:#0F172A; }
+.id-pill strong { color:#0A2E5C; }
+
+.proc-cta { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:.6rem; }
+.proc-cta a.btn { display:inline-block; text-decoration:none; font-weight:700; border-radius:10px; padding:.55rem .9rem; border:1px solid rgba(0,0,0,.08); background:#FFD60A; color:#0A2E5C; }
+.proc-cta a.btn.secondary { background:#fff; color:#0A2E5C; border:1px solid #E5E7EB; }
+
+.codes { display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-top:1rem; }
+.codes .code-card { background:#fff; border:1px solid #E5E7EB; border-radius:14px; padding:1rem; }
+.codes h3 { margin:.1rem 0 .5rem; color:#0A2E5C; }
+.codes ul { margin:.4rem 0 0; padding-left:1.1rem; color:#334155; }
+.codes li code { background:#F1F5F9; border:1px solid #E2E8F0; border-radius:8px; padding:.05rem .4rem; font-weight:700; color:#0A2E5C; }
+
+.faq { margin-top:1.5rem; }
+.faq details { border:1px solid #E5E7EB; border-radius:12px; padding:.8rem .9rem; background:#fff; }
+.faq details + details { margin-top:.6rem; }
+.faq summary { cursor:pointer; font-weight:700; color:#0A2E5C; }
+
+@media (max-width: 980px) {
+  .proc-grid { grid-template-columns: 1fr; }
+  .ids { grid-template-columns: 1fr; }
+  .codes { grid-template-columns: 1fr; }
+}
