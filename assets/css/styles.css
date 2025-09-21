@@ -145,3 +145,12 @@ textarea{min-height:120px;resize:vertical}
   .site-nav { display: flex; }
   .menu-toggle { display: none; }
 }
+/* === Mobile burger icon: span-based (no Unicode) === */
+.burger{position:relative;width:44px;height:44px;border:0;background:transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:inherit}
+.burger span{display:block;width:26px;height:2px;background:currentColor;margin:4px 0;transition:transform 200ms ease,opacity 200ms ease}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-menu[hidden]{display:none !important}
+@media (max-width:767px){.site-header .desktop{display:none}.site-header .burger{display:inline-flex}}
+@media (min-width:768px){.site-header .desktop{display:flex;gap:1rem}.site-header .burger{display:none}}
