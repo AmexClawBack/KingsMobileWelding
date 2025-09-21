@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Kings Mobile Welding — AWS D1.1 Certified Mobile Welding</title>
+  <title>Blog | Kings Mobile Welding</title>
 
   <!-- Icons / Manifest: relative paths (no leading slash) -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -46,7 +46,7 @@
     "logo":  "assets/img/logo-500.png",
     "email":  "DillonKing@kingsmobilewelding.com"
 }</script>
-</head>
+<meta name="description" content="Kings Mobile Welding blog: project spotlights, procurement tips, safety & QA, and mobile welding best practices."></head>
 <body>
 <header class="site-header">
     
@@ -61,7 +61,7 @@
         <a href="contact.html">Contact</a>
         
 <a href="blog.html">Blog</a>
-  <a href="careers.html">Careers</a>
+<a href="careers.html">Careers</a>
 <a class="btn-primary" href="contact.html">Contact</a>
         
 </nav>
@@ -75,48 +75,127 @@
       <a href="contact.html">Contact</a>
       
 <a href="blog.html">Blog</a>
+<a href="careers.html">Careers</a>
 <a class="btn-primary" href="contact.html">Contact</a>
       
 
       <a href="about.html">About</a></div>
   </header>
 <main>
-  <section class="blog-header">
+  <section class="blog-hero">
     <div class="container">
       <h1>Blog</h1>
-      <p>Insights from the field—welding quality, safety, and procurement readiness.</p>
+      <p class="lead">Project spotlights, procurement tips, safety & QA, and mobile welding best practices across Hampton Roads and beyond.</p>
     </div>
   </section>
 
-  <section class="blog-grid">
+  <section class="blog-wrap">
     <div class="container">
-      <div class="posts" id="blogGrid"></div>
+      <div class="blog-toolbar">
+        <label for="blogSearch" class="sr-only">Search posts</label>
+        <input id="blogSearch" type="search" placeholder="Search posts by topic, tag, or keyword" />
+      </div>
+
+      <div class="blog-grid">
+        <article class="post">
+          <img src="assets/img/blog/thumb-structural.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">Aug 15, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Structural</span> <span class="tag">AWS D1.1</span> <span class="tag">QA/QC</span>
+            </div>
+            <p>Clean fit-up, consistent heat input, and tidy finish yielded an inspection-ready result on a tight schedule.</p>
+            <div class="cta"><a href="posts/structural-fitup.html">Read more</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/img/blog/thumb-procurement.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">Jul 10, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Procurement</span> <span class="tag">UEI</span> <span class="tag">CAGE</span>
+            </div>
+            <p>UEI/CAGE, COI, capability statements, and how we align scopes and QA to your SOW.</p>
+            <div class="cta"><a href="posts/procurement-guide.html">Read more</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/img/blog/thumb-marine.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">Jun 21, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Marine</span> <span class="tag">Stainless</span> <span class="tag">Aluminum</span>
+            </div>
+            <p>Dock ladders, rails, and aluminum bracketsclean welds and corrosion-minded finishing.</p>
+            <div class="cta"><a href="posts/marine-repair.html">Read more</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/img/blog/thumb-safety.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">May 09, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Safety</span> <span class="tag">QA/WPS</span> <span class="tag">Inspection</span>
+            </div>
+            <p>How we keep weld procedures consistent and pass inspections the first time.</p>
+            <div class="cta"><a href="posts/safety-qa.html">Read more</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/img/blog/thumb-fabrication.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">Apr 02, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Fabrication</span> <span class="tag">Fit-Up</span>
+            </div>
+            <p>Shop-level accuracy meets on-site practicality for stairs, platforms, and frames.</p>
+            <div class="cta"><a href="posts/fabrication-install.html">Read more</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/img/blog/thumb-maint.png" alt="System.Collections.Hashtable.title">
+          <div class="body">
+            <div class="meta">Mar 12, 2025</div>
+            <h2>System.Collections.Hashtable.title</h2>
+            <div class="tags">
+              <span class="tag">Maintenance</span> <span class="tag">Emergency</span>
+            </div>
+            <p>Rapid response repairs for facilities, utilities, and critical equipment.</p>
+            <div class="cta"><a href="posts/maintenance-emergency.html">Read more</a></div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 </main>
 
-<script>
-fetch('assets/data/blog.json', { cache: 'no-store' })
-  .then(r => r.json())
-  .then(posts => {
-    const grid = document.getElementById('blogGrid');
-    posts.forEach(p => {
-      const card = document.createElement('article');
-      card.className = 'post-card';
-      card.innerHTML = 
-        <img src="assets/img/blog/" alt="">
-        <div class="body">
-          <div class="meta"></div>
-          <h3></h3>
-          <p></p>
-        </div>;
-      grid.appendChild(card);
-    });
-  })
-  .catch(() => {});
+<!-- JSON-LD: Blog with posts as an ItemList -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Blog",
+  "name":"Kings Mobile Welding Blog",
+  "url":"https://amexclawback.github.io/KingsMobileWelding/blog.html",
+  "blogPost": {
+    "@type":"ItemList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"BlogPosting","headline":"Project Spotlight: Structural Fit-Up That Passed First Inspection","datePublished":"2025-08-15","url":"https://amexclawback.github.io/KingsMobileWelding/posts/structural-fitup.html"}},
+      {"@type":"ListItem","position":2,"item":{"@type":"BlogPosting","headline":"Procurement Guide: Working with Federal & Virginia Buyers","datePublished":"2025-07-10","url":"https://amexclawback.github.io/KingsMobileWelding/posts/procurement-guide.html"}},
+      {"@type":"ListItem","position":3,"item":{"@type":"BlogPosting","headline":"Marine Repair Notes: Stainless & Aluminum on the Waterfront","datePublished":"2025-06-21","url":"https://amexclawback.github.io/KingsMobileWelding/posts/marine-repair.html"}},
+      {"@type":"ListItem","position":4,"item":{"@type":"BlogPosting","headline":"Safety & QA: WPS/WPQR and Inspection-Ready Welds","datePublished":"2025-05-09","url":"https://amexclawback.github.io/KingsMobileWelding/posts/safety-qa.html"}},
+      {"@type":"ListItem","position":5,"item":{"@type":"BlogPosting","headline":"Fabrication: From Cut & Layout to On-Site Install","datePublished":"2025-04-02","url":"https://amexclawback.github.io/KingsMobileWelding/posts/fabrication-install.html"}},
+      {"@type":"ListItem","position":6,"item":{"@type":"BlogPosting","headline":"Maintenance & Emergency: Getting You Back Online Fast","datePublished":"2025-03-12","url":"https://amexclawback.github.io/KingsMobileWelding/posts/maintenance-emergency.html"}}
+    ]
+  }
+}
 </script>
 
-      <footer class="site-footer">
+<footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <a class="brand" href="index.html">
@@ -168,18 +247,6 @@ fetch('assets/data/blog.json', { cache: 'no-store' })
       </div>
     </div>
   </footer>
+<script src="assets/js/blog.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
