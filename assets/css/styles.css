@@ -111,3 +111,37 @@ textarea{min-height:120px;resize:vertical}
   .site-nav { display: flex; }
   .menu-toggle { display: none; }
 }
+/* === Mobile menu: span-based icon (no Unicode glyphs) === */
+.menu-toggle::before { content: none !important; }
+.menu-toggle.open::before { content: none !important; }
+
+.menu-toggle {
+  position: relative;
+  width: 44px; height: 44px;
+  border: none; background: transparent; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px; height: 2px;
+  background: currentColor;
+  margin: 4px 0;
+  transition: transform 200ms ease, opacity 200ms ease, width 200ms ease;
+}
+
+.menu-toggle { color: #0A2E5C; }          /* default */
+.hero .menu-toggle { color: #FFD60A; }    /* bright in hero (optional) */
+
+.menu-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile nav show/hide */
+.site-nav { display: none; }
+.site-nav.open { display: block; }
+
+@media (min-width: 768px) {
+  .site-nav { display: flex; }
+  .menu-toggle { display: none; }
+}
