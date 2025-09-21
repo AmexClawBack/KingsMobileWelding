@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --brand:#0A2E5C;
   --accent:#FFD60A;
   --ink:#0F172A; --muted:#64748B; --bg:#F8FAFC; --card:#fff;
@@ -194,7 +194,7 @@ textarea{min-height:120px;resize:vertical}
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 .logo-track { display: flex; gap: 2rem; align-items: center; will-change: transform; animation: slide-logos 28s linear infinite; }
-.logo-item { flex: 0 0 auto; height: 64px; display: flex; align-items: center; justify-content: center; padding: .5rem 1rem; filter: saturate(.9) contrast(1); opacity: .9; }
+.logo-item { flex: 0 0 auto; height: 64px; display: flex; align-items: center; justify-content: center; padding: .5rem 1rem; filter: saturate(.9) contrast(1); opacity:1; }
 .logo-item img { height: 100%; width: auto; display: block; }
 .logo-carousel:hover .logo-track { animation-play-state: paused; }
 @keyframes slide-logos { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -419,7 +419,7 @@ textarea{min-height:120px;resize:vertical}
   .careers-card img { height:140px; }
 }
 
-/* === Work With Us (homepage CTA) � contrast fix === */
+/* === Work With Us (homepage CTA) — contrast fix === */
 /* Replace bright yellow block with deep-blue gradient; keep yellow just for the button */
 .workwithus {
   margin: 2.25rem 0 0; padding:2rem 1rem;
@@ -988,9 +988,9 @@ textarea { min-height:140px; resize:vertical; }
 }
 .logo-slide img {
   height:48px; width:auto; display:block;
-  filter: grayscale(1); opacity:.9; transition: filter .2s ease, opacity .2s ease, transform .2s ease;
+   opacity:1; transition: filter .2s ease, opacity .2s ease, transform .2s ease;
 }
-.logo-slide img:hover { filter:none; opacity:1; transform: translateY(-2px); }
+.logo-slide img:hover {  opacity:1; transform: translateY(-2px); }
 
 @keyframes kmw-scroll { from { transform: translateX(0) } to { transform: translateX(-100%) } }
 
