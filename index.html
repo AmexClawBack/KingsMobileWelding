@@ -36,7 +36,7 @@
         
 <a href="blog.html">Blog</a>
 <a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html#quote">Request Quote</a>
+<a class="btn-primary" href="contact.html">Contact</a>
         
 </nav>
       <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -50,7 +50,7 @@
       
 <a href="blog.html">Blog</a>
 <a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html#quote">Request Quote</a>
+<a class="btn-primary" href="contact.html">Contact</a>
       
 
       <a href="about.html">About</a></div>
@@ -67,7 +67,7 @@
         <div class="actions">
           
 
-<a class="btn-primary" href="contact.html#quote">Request Quote</a>
+<a class="btn-primary" href="contact.html">Contact</a>
           <a class="btn-secondary" href="procurement.html">Procurement</a>
         </div>
       </div>
@@ -175,6 +175,41 @@
       <div id="blogCarousel"></div>
     </div>
   </section>
+  <section class="contact-cta" aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p class="lead">Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
+
+      <form id="homeContactForm" class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Agency / Company">
+        </div>
+        <div class="full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Brief scope, timeline, site access details"></textarea>
+          <div class="hint">Submitting on GitHub Pages? This form will open your email client. For direct submissions, replace the <code>action</code> with a Formspree endpoint.</div>
+        </div>
+        <div class="full contact-actions">
+          <a class="btn-secondary" href="contact.html">Open contact page</a>
+          <button class="btn-primary" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
 </main>
   <footer class="site-footer">
     <div class="container footer-top">
@@ -193,8 +228,11 @@
 <script src="assets/js/menu-toggle.js" defer></script>
   <script src="assets/js/trusted-carousel.js" defer></script>
   <script src="assets/js/blog-carousel.js" defer></script>
+  <script src="assets/js/contact-form.js" defer></script>
 </body>
 </html>
+
+
 
 
 
