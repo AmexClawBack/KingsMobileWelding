@@ -13,7 +13,7 @@
     row.style.transform = 	ranslateX(%);
     dotsWrap.querySelectorAll('.testi-dot').forEach((d,idx)=>d.classList.toggle('active', idx===i));
   }
-  function auto(){ clearInterval(timer); timer = setInterval(()=>go(i+1), 5000); } // 5s per slide
+  function auto(){ clearInterval(timer); timer = setInterval(()=>go(i+1), 5000); } // 5s/slide
 
   // dots
   if (dotsWrap && !dotsWrap.childElementCount) {
