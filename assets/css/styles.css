@@ -601,3 +601,10 @@ textarea{min-height:120px;resize:vertical}
 .site-footer .social { display:flex; gap:.9rem; align-items:center; flex:0 1 auto; }
 .site-footer .social a { color:#fff; display:inline-flex; line-height:0; }
 .site-footer .social a:hover { color:#FFD60A; }
+
+/* === Government IDs block === */
+.gov-ids { padding: 2rem 1rem; background:#fff; }
+.gov-ids .container { max-width:1100px; margin:0 auto; }
+.gov-ids h2 { margin:0 0 .75rem; color:#0A2E5C; }
+.gov-ids .id-list { list-style:none; padding:0; margin:0; display:flex; gap:1.25rem; flex-wrap:wrap; }
+.gov-ids .id-list li { background:#F8FAFC; border:1px solid #E5E7EB; border-radius:10px; padding:.6rem .8rem; color:#0F172A; }
