@@ -32,6 +32,22 @@ img{max-width:100%;display:block} a{color:var(--brand);text-decoration:none}
 .hero p {
   color: #ffffff; /* white for supporting text */
 }
+/* === Hero height adjustments === */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;   /* smaller than full screen (100vh) */
+  padding: 4rem 1rem; /* adjust spacing inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* keep text above video */
+}
+
 
 .hero{background:linear-gradient(180deg,#EFF6FF 0%,#FFFFFF 60%);padding:56px 0}
 .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
@@ -41,6 +57,7 @@ h1{font-size:clamp(28px,4.2vw,48px);line-height:1.08;margin:.3em 0 .4em}
 .actions{display:flex;gap:12px;margin-top:12px}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #EAF2F8;padding:18px}
 .download{display:block;margin:8px 0;padding:10px;border-radius:10px;border:1px dashed #D8E8F6}
+
 
 /* Sections */
 .section{padding:56px 0}
