@@ -28,6 +28,5 @@
   prev && prev.addEventListener('click', ()=>{ go(i-1); auto(); });
   next && next.addEventListener('click', ()=>{ go(i+1); auto(); });
 
-  // init
   go(0); auto();
 })();
