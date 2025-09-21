@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Capabilities Statement",
+    "filename": "KMW-Capabilities.pdf",
+    "category": "Company",
+    "updated": "2025-09-20",
+    "description": "One-page overview: NAICS 238990, AWS D1.1, service lines, and past performance highlights."
+  },
+  {
+    "title": "Certificate of Insurance (COI)",
+    "filename": "KMW-COI.pdf",
+    "category": "Compliance",
+    "updated": "2025-09-20",
+    "description": "Active general liability and coverage details for vendor onboarding."
+  },
+  {
+    "title": "W-9 (Available Upon Request)",
+    "category": "Compliance",
+    "updated": "2025-09-21",
+    "description": "W-9 is provided upon request to verified procurement contacts.",
+    "restricted": true
+  }
+]
