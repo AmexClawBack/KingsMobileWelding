@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kings Mobile Welding — AWS D1.1 Certified Mobile Welding</title>
+
+  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta property="og:image" content="assets/img/logo-500.png">
+
+  <!-- CSS: relative (no leading slash) -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+    
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+      <nav class="desktop">
+        <a href="services.html">Services</a>
+        <a href="past-performance.html">Past Performance</a>
+        <a href="procurement.html">Procurement</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn-primary" href="contact.html#quote">Request Quote</a>
+        <a href="blog.html">Blog</a>
+</nav>
+      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="services.html">Services</a>
+      <a href="past-performance.html">Past Performance</a>
+      <a href="procurement.html">Procurement</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn-primary" href="contact.html#quote">Request Quote</a>
+      <a href="blog.html">Blog</a>
+</div>
+  </header>
+<main>
+  <section class="blog-header">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Insights from the field—welding quality, safety, and procurement readiness.</p>
+    </div>
+  </section>
+
+  <section class="blog-grid">
+    <div class="container">
+      <div class="posts" id="blogGrid"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+fetch('assets/data/blog.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(posts => {
+    const grid = document.getElementById('blogGrid');
+    posts.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'post-card';
+      card.innerHTML = 
+        <img src="assets/img/blog/" alt="">
+        <div class="body">
+          <div class="meta"></div>
+          <h3></h3>
+          <p></p>
+        </div>;
+      grid.appendChild(card);
+    });
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>
+

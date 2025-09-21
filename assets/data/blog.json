@@ -1,0 +1,30 @@
+﻿[
+    {
+        "date":  "2025-08-01",
+        "title":  "Precision Structural Welding for Industrial Sites",
+        "excerpt":  "How we apply AWS D1.1 standards in the field to reduce rework and pass inspections the first time.",
+        "slug":  "first-post",
+        "image":  "post1.png"
+    },
+    {
+        "date":  "2025-07-15",
+        "title":  "Inside Our Mobile Welding Rig",
+        "excerpt":  "A quick tour of the tools and QA steps we bring on-site to keep your job moving.",
+        "slug":  "mobile-rig",
+        "image":  "post2.png"
+    },
+    {
+        "date":  "2025-07-02",
+        "title":  "Procurement-Ready: Docs \u0026 Compliance",
+        "excerpt":  "From W-9 on request to COI and SAM.gov—what buyers get immediately.",
+        "slug":  "gov-ready",
+        "image":  "post3.png"
+    },
+    {
+        "date":  "2025-06-20",
+        "title":  "Safety First: Hot Work Permits \u0026 Site Safety",
+        "excerpt":  "Our checklist to work cleanly and safely in active facilities.",
+        "slug":  "safety-yellow",
+        "image":  "post4.png"
+    }
+]
