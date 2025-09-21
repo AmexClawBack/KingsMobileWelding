@@ -87,3 +87,27 @@ textarea{min-height:120px;resize:vertical}
 .video-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 800ms ease;filter:brightness(0.55) contrast(1.05)}
 .video-bg video.active{opacity:1}
 .hero .container,.hero .hero-grid{position:relative;z-index:1}
+
+ /* === Mobile menu toggle fix === */
+.menu-toggle {
+  position: relative;
+  width: 40px; height: 40px;
+  border: none; background: transparent; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.menu-toggle::before {
+  content: '\2630'; /* ? hamburger */
+  font-size: 24px; line-height: 1;
+}
+.menu-toggle.open::before {
+  content: '\2715'; /* ? close */
+}
+.menu-toggle > * { display: none; }
+
+.site-nav { display: none; }
+.site-nav.open { display: block; }
+
+@media (min-width: 768px) {
+  .site-nav { display: flex; }
+  .menu-toggle { display: none; }
+}
