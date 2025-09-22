@@ -1135,3 +1135,15 @@ section#testimonials h2, section.home-testimonials h2, .testimonials-section h2{
   color:rgba(10,46,92,.12); font-weight:900; font-family:Georgia,serif;
 }
 /* === End KMW Contact + Testimonials Theme === */
+
+/* === Burger Styles === */
+:root{ --kmw-yellow:#FFD60A; --kmw-blue:#0A2E5C; }
+.burger{ width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:0;cursor:pointer }
+.burger:focus{ outline:2px solid rgba(255,214,10,.5); outline-offset:2px }
+.burger span{ display:block; width:26px; height:3px; background:var(--kmw-yellow); border-radius:2px; margin:3px 0 }
+@media(min-width: 900px){ #mobileMenu{ display:none !important } }
+/* Mobile menu base if missing */
+.mobile-menu{ position:absolute; top:64px; left:0; right:0; background:#0A2E5C; padding:12px; border-top:1px solid rgba(255,255,255,.12); z-index:1000 }
+.mobile-menu a{ display:block; color:#fff; padding:10px 12px; text-decoration:none }
+.mobile-menu a:hover{ background:rgba(255,214,10,.15); color:#FFD60A }
+/* === End Burger Styles === */
