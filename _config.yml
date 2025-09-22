@@ -1,11 +1,8 @@
-# _config.yml
-permalink: pretty   # turns /page.html into /page/
-# If you’re using a custom domain (kingsmobilewelding.com), leave baseurl empty:
+﻿# GitHub Pages / Jekyll config
+permalink: pretty
 baseurl: ""
-
-# If you're still serving at amexclawback.github.io/KingsMobileWelding/
-# THEN set baseurl instead to your repo name:
-# baseurl: "/KingsMobileWelding"
-
-# We aren't using Jekyll layouts; render raw HTML as-is:
 markdown: kramdown
+
+# Optional (uncomment if you later add redirects):
+# plugins:
+#   - jekyll-redirect-from
