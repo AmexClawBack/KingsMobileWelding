@@ -390,41 +390,41 @@
     <div class="kmw-contact-card">
       <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
         <div class="kmw-field">
-          <label for="name">Name</label>
-          <input id="name" name="name" required autocomplete="name" />
+          <label for="home_name">Name</label>
+          <input id="home_name" name="name" required autocomplete="name" />
         </div>
         <div class="kmw-field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required autocomplete="email" />
+          <label for="home_email">Email</label>
+          <input id="home_email" name="email" type="email" required autocomplete="email" />
         </div>
         <div class="kmw-field">
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          <label for="home_phone">Phone</label>
+          <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
         </div>
         <div class="kmw-field">
-          <label for="company">Company / Agency</label>
-          <input id="company" name="company" autocomplete="organization" />
+          <label for="home_company">Company / Agency</label>
+          <input id="home_company" name="company" autocomplete="organization" />
         </div>
         <div class="kmw-field" style="grid-column:1 / -1;">
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" />
+          <label for="home_subject">Subject</label>
+          <input id="home_subject" name="subject" />
         </div>
         <div class="kmw-field" style="grid-column:1 / -1;">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+          <label for="home_message">Message</label>
+          <textarea id="home_message" name="message" required></textarea>
         </div>
 
-        <!-- Anti-bot + redirect -->
+        <!-- Anti-bot + meta -->
         <input type="text" name="_gotcha" style="display:none">
         <input type="hidden" name="_redirect" value="thanks.html">
+        <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
 
         <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
           <button type="submit" class="kmw-submit">Send Message</button>
           <a class="btn-primary" href="contact.html" style="text-decoration:none;">Open contact page</a>
           <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
         </div>
-      
-  <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com"></form>
+      </form>
     </div>
   </div>
 </section>
@@ -529,6 +529,7 @@
 <script src="assets/js/forms-home-helper.js"></script>
 </body>
 </html>
+
 
 
 
