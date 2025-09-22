@@ -116,12 +116,87 @@
   <section id="contact" class="contact-section">
   <div class="container">
     <h2>Send a Message</h2>
-    <div class="kmw-contact-card">
-      <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+    <div class="kmw-contact-card"><div class="kmw-contact-layout" style="display:grid;gap:1rem;grid-template-columns:1.1fr .9fr;">
+<div class="form-col"><form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
         <div class="kmw-field">
           <label for="name">Name</label>
           <input id="name" name="name" required autocomplete="name" />
         </div>
+        <div class="kmw-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="kmw-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="kmw-field">
+          <label for="company">Company / Agency</label>
+          <input id="company" name="company" autocomplete="organization" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- Optional helpers -->
+        <div class="kmw-field">
+          <label>Preferred Contact</label>
+          <div>
+            <label style="margin-right:12px"><input type="radio" name="preferred_contact" value="phone"> Phone</label>
+            <label><input type="radio" name="preferred_contact" value="email"> Email</label>
+          </div>
+        </div>
+        <div class="kmw-field">
+          <label>Timeline</label>
+          <select name="timeline">
+            <option value="asap">ASAP / Emergency</option>
+            <option value="1-2-weeks">12 weeks</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+        <div class="kmw-field">
+          <label><input type="checkbox" name="request_capability" value="yes"> Request Capability Statement</label>
+        </div>
+        <div class="kmw-field">
+          <label><input type="checkbox" name="request_w9" value="yes"> Request W-9</label>
+        </div>
+
+        <!-- Anti-bot + redirect -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_redirect" value="thanks.html">
+
+        <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center;">
+          <button type="submit" class="kmw-submit">Send Message</button>
+          <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;display:inline-flex;align-items:center;">Call Now</a>
+        </div>
+      </form></div>
+<aside class="kmw-contact-aside">
+  <div class="kmw-contact-info">
+    <h3>Contact Information</h3>
+    <ul class="kmw-list">
+      <li><strong>Phone:</strong> <a href="tel:7572316809">(757) 231-6809</a></li>
+      <li><strong>Email:</strong> <a href="mailto:Dillonk2012@gmail.com">Dillonk2012@gmail.com</a></li>
+      <li><strong>Service Area:</strong> Hampton Roads, VA &amp; beyond</li>
+      <li><strong>UEI:</strong> ZCY4G7GBGQA3</li>
+      <li><strong>CAGE:</strong> 11P75</li>
+      <li><strong>Hours:</strong> MonFri 7:005:00  Emergency after-hours available</li>
+    </ul>
+    <div class="map-embed" aria-label="Map of service area">
+      <iframe
+        title="Kings Mobile Welding  Hampton Roads"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Newport+News,VA&output=embed">
+      </iframe>
+    </div>
+  </div>
+</aside>
+</div></div>
         <div class="kmw-field">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" required autocomplete="email" />
@@ -266,6 +341,7 @@
 <script src="assets/js/forms-helper.js"></script>
 </body>
 </html>
+
 
 
 
