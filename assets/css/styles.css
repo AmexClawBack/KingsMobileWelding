@@ -421,6 +421,7 @@ textarea{min-height:120px;resize:vertical}
 
 /* === Work With Us (homepage CTA) — contrast fix === */
 /* Replace bright yellow block with deep-blue gradient; keep yellow just for the button */
+
 .workwithus {
   margin: 2.25rem 0 0; padding:2rem 1rem;
   background: linear-gradient(135deg, #0A2E5C 0%, #0A223F 100%);
@@ -1229,3 +1230,45 @@ section#contact .kmw-contact-card{ background:#fff; }
   color:#0A2E5C;
 }
 /* === End KMW Inline Buttons === */
+
+/* === Work With Us Section Styling === */
+.work-with-us {
+  background-color: #FFD60A; /* safety yellow */
+  color: #0A2E5C;           /* dark blue text */
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 0 !important; /* no rounded edges */
+}
+
+.work-with-us h2,
+.work-with-us p {
+  color: #0A2E5C;           /* enforce blue text */
+}
+
+.work-with-us .btn-primary {
+  background-color: #0A2E5C; /* dark blue button */
+  color: #FFD60A;            /* safety yellow text */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;          /* square corners */
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.work-with-us .btn-primary svg path {
+  fill: #FFD60A; /* arrow = safety yellow */
+}
+
+.work-with-us .btn-primary:hover {
+  background-color: #FFD60A; /* invert on hover */
+  color: #0A2E5C;
+}
+
+.work-with-us .btn-primary:hover svg path {
+  fill: #0A2E5C; /* arrow flips to blue on hover */
+}
+/* === End Work With Us Section Styling === */
