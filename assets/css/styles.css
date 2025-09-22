@@ -1214,3 +1214,26 @@ section#contact .kmw-contact-card{ background:#fff; }
   color:#0A2E5C;
 }
 /* === End KMW Inline Buttons === */
+
+/* === About Full Truck Image === */
+img.show-full-image{
+  width:100%;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  display:block;
+}
+section[id*="about"] .hero,
+section[class*="about"] .hero,
+.about-hero,
+.about-hero .media,
+.about-photo-wrap{
+  height:auto !important;
+  min-height:unset !important;
+}
+.about-hero img,
+.about-photo-wrap img{
+  object-fit:contain !important;
+}
+/* === End About Full Truck Image === */
