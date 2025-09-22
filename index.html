@@ -212,40 +212,46 @@
   <section class="contact-cta" aria-labelledby="contact-heading">
     <div class="container">
       <h2 id="contact-heading">Contact Us</h2>
-      <p class="lead">Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
-
-      <formid="homeContactForm" class="contact-form" method="POST" action="https://formspree.io/f/mwprebdr" novalidate accept-charset="UTF-8">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required name="name">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@company.com" required name="email">
-        </div>
-        <div>
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" name="phone">
-        </div>
-        <div>
-          <label for="company">Company</label>
-          <input id="company" name="company" type="text" placeholder="Agency / Company">
-        </div>
-        <div class="full">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Brief scope, timeline, site access details" name="message"></textarea>
-          <!-- <div class="hint">Submitting on GitHub Pages? This form will open your email client. For direct submissions, replace the <code>action</code> with a Formspree endpoint.</div>
-        </div> -->
-        <div class="full contact-actions">
-          <a class="btn-secondary" href="contact.html">Open contact page</a>
-          <button class="btn-primary" type="submit">Send message</button>
-        </div>
-      
-  <input type="text" name="_gotcha" style="display:none">
-  <input type="hidden" name="_redirect" value="thanks.html">
-  <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com"></form>
+<p>Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
+<div class="kmw-contact-card">
+  <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+    <div class="kmw-field">
+      <label for="home_name">Name</label>
+      <input id="home_name" name="name" required autocomplete="name" />
     </div>
-  </section>
+    <div class="kmw-field">
+      <label for="home_email">Email</label>
+      <input id="home_email" name="email" type="email" required autocomplete="email" />
+    </div>
+    <div class="kmw-field">
+      <label for="home_phone">Phone</label>
+      <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
+    </div>
+    <div class="kmw-field">
+      <label for="home_company">Company / Agency</label>
+      <input id="home_company" name="company" autocomplete="organization" />
+    </div>
+    <div class="kmw-field" style="grid-column:1 / -1;">
+      <label for="home_subject">Subject</label>
+      <input id="home_subject" name="subject" />
+    </div>
+    <div class="kmw-field" style="grid-column:1 / -1;">
+      <label for="home_message">Message</label>
+      <textarea id="home_message" name="message" required></textarea>
+    </div>
+
+    <!-- Anti-bot + meta -->
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="hidden" name="_redirect" value="thanks.html">
+    <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
+
+    <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
+      <button type="submit" class="kmw-submit">Send Message</button>
+      <a class="btn-primary" href="contact.html" style="text-decoration:none;">Open contact page</a>
+      <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
+    </div>
+  </form>
+</div></section>
 
 
 
@@ -385,49 +391,46 @@
 <section id="contact" class="contact-section">
   <div class="container">
     <h2>Contact Us</h2>
-    <p>Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
-
-    <div class="kmw-contact-card">
-      <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
-        <div class="kmw-field">
-          <label for="home_name">Name</label>
-          <input id="home_name" name="name" required autocomplete="name" />
-        </div>
-        <div class="kmw-field">
-          <label for="home_email">Email</label>
-          <input id="home_email" name="email" type="email" required autocomplete="email" />
-        </div>
-        <div class="kmw-field">
-          <label for="home_phone">Phone</label>
-          <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
-        </div>
-        <div class="kmw-field">
-          <label for="home_company">Company / Agency</label>
-          <input id="home_company" name="company" autocomplete="organization" />
-        </div>
-        <div class="kmw-field" style="grid-column:1 / -1;">
-          <label for="home_subject">Subject</label>
-          <input id="home_subject" name="subject" />
-        </div>
-        <div class="kmw-field" style="grid-column:1 / -1;">
-          <label for="home_message">Message</label>
-          <textarea id="home_message" name="message" required></textarea>
-        </div>
-
-        <!-- Anti-bot + meta -->
-        <input type="text" name="_gotcha" style="display:none">
-        <input type="hidden" name="_redirect" value="thanks.html">
-        <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
-
-        <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
-          <button type="submit" class="kmw-submit">Send Message</button>
-          <a class="btn-primary" href="contact.html" style="text-decoration:none;">Open contact page</a>
-          <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
-        </div>
-      </form>
+<p>Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
+<div class="kmw-contact-card">
+  <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+    <div class="kmw-field">
+      <label for="home_name">Name</label>
+      <input id="home_name" name="name" required autocomplete="name" />
     </div>
-  </div>
-</section>
+    <div class="kmw-field">
+      <label for="home_email">Email</label>
+      <input id="home_email" name="email" type="email" required autocomplete="email" />
+    </div>
+    <div class="kmw-field">
+      <label for="home_phone">Phone</label>
+      <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
+    </div>
+    <div class="kmw-field">
+      <label for="home_company">Company / Agency</label>
+      <input id="home_company" name="company" autocomplete="organization" />
+    </div>
+    <div class="kmw-field" style="grid-column:1 / -1;">
+      <label for="home_subject">Subject</label>
+      <input id="home_subject" name="subject" />
+    </div>
+    <div class="kmw-field" style="grid-column:1 / -1;">
+      <label for="home_message">Message</label>
+      <textarea id="home_message" name="message" required></textarea>
+    </div>
+
+    <!-- Anti-bot + meta -->
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="hidden" name="_redirect" value="thanks.html">
+    <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
+
+    <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
+      <button type="submit" class="kmw-submit">Send Message</button>
+      <a class="btn-primary" href="contact.html" style="text-decoration:none;">Open contact page</a>
+      <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
+    </div>
+  </form>
+</div></section>
 </main>
         <footer class="site-footer">
     <div class="container footer-inner">
@@ -529,6 +532,7 @@
 <script src="assets/js/forms-home-helper.js"></script>
 </body>
 </html>
+
 
 
 
