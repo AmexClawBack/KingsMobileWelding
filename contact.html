@@ -77,6 +77,7 @@
   }]
 }
 </script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
 </head>
 <body>
 <header class="site-header">
@@ -183,18 +184,11 @@
       <li><strong>Phone:</strong> <a href="tel:7572316809">(757) 231-6809</a></li>
       <li><strong>Email:</strong> <a href="mailto:Dillonk2012@gmail.com">Dillonk2012@gmail.com</a></li>
       <li><strong>Service Area:</strong> Hampton Roads, VA &amp; beyond</li>
-      <li><strong>UEI:</strong> ZCY4G7GBGQA3</li>
-      <li><strong>CAGE:</strong> 11P75</li>
+      <li><strong>UEI:</strong> <span class="badge kmw-badge">ZCY4G7GBGQA3</span></li>
+      <li><strong>CAGE:</strong> <span class="badge kmw-badge kmw-badge--blue">11P75</span></li>
       <li><strong>Hours:</strong> Mon-Fri 07:00-17:00 <br>  Emergency after-hours available</li>
     </ul>
-    <div class="map-embed" aria-label="Map of service area">
-      <iframe
-        title="Kings Mobile Welding  Hampton Roads"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Newport+News,VA&output=embed">
-      </iframe>
-    </div>
+    <div class="map-embed" aria-label="Map of service area"><div id="radiusMap"></div></div>
   </div>
 </aside>
 </div></div>
@@ -312,8 +306,39 @@
 <script src="assets/js/site.js"></script>
 <script src="assets/js/forms.js"></script>
 <script src="assets/js/forms-helper.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script id="kmwRadiusInit">
+document.addEventListener('DOMContentLoaded', function(){
+  var el = document.getElementById('radiusMap');
+  if(!el || typeof L === 'undefined') return;
+
+  var center = [37.0871, -76.4730];            // Newport News, VA
+  var miles75 = 75;                             // miles
+  var meters  = miles75 * 1609.344;             //  120,700 m
+
+  var map = L.map('radiusMap', { scrollWheelZoom: false, attributionControl: true }).setView(center, 10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18, attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  var circle = L.circle(center, {
+    radius: meters,
+    color: '#9f1239',           // dark red outline
+    weight: 2,
+    fillColor: '#e11d48',       // rose-600 fill
+    fillOpacity: 0.18
+  }).addTo(map);
+
+  // Fit map to circle bounds with padding
+  map.fitBounds(circle.getBounds(), { padding: [20, 20] });
+
+  // Marker at center (optional)
+  L.marker(center).addTo(map).bindPopup('Newport News, VA<br/>~75 mile service radius').openPopup();
+});
+</script>
 </body>
 </html>
+
 
 
 

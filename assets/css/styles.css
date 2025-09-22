@@ -1162,3 +1162,32 @@ section#testimonials h2, section.home-testimonials h2, .testimonials-section h2{
   .kmw-contact-layout .form-col{order:1}
 }
 /* === End Contact Aside Map === */
+
+/* === KMW Contact Badges === */
+:root{ --kmw-blue:#0A2E5C; --kmw-blue-800:#0a254b; --kmw-yellow:#FFD60A; --kmw-border:#E5E7EB; --kmw-ink:#0B1220; }
+.kmw-badge, .badge{
+  display:inline-flex; align-items:center; gap:.4ch;
+  background: linear-gradient(180deg, #fffbe6, #fff3a6);
+  color:#3a2d00; border:1px solid rgba(161,120,0,.35);
+  border-radius:999px; padding:.25rem .6rem; font-weight:700; font-size:.95rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.kmw-badge--blue{
+  background: linear-gradient(180deg, #e8f0ff, #d9e6ff);
+  color:#0A2E5C; border:1px solid rgba(10,46,92,.25);
+}
+.kmw-contact-info strong{ color:#0A2E5C; }
+.kmw-contact-info li{ display:flex; gap:.4rem; align-items:baseline; }
+/* Map container (Leaflet replacement) */
+.map-embed{ position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; border:1px solid var(--kmw-border); background:#f5f7fb }
+#radiusMap{ position:absolute; inset:0; }
+.leaflet-container{ border-radius:12px; }
+/* Subtle section polish */
+section#contact.contact-section{
+  background:
+    radial-gradient(1200px 400px at -10% -10%, rgba(255,214,10,0.08), transparent 60%),
+    radial-gradient(900px 300px at 110% 10%, rgba(255,214,10,0.06), transparent 60%),
+    linear-gradient(135deg, #081e3d, #0a254b);
+}
+section#contact .kmw-contact-card{ background:#fff; }
+/* === End KMW Contact Badges === */
