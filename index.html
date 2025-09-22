@@ -213,18 +213,18 @@
       <h2 id="contact-heading">Contact Us</h2>
       <p class="lead">Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
 
-      <form id="homeContactForm" class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" novalidate>
+      <formid="homeContactForm" class="contact-form" method="POST" action="https://formspree.io/f/mwprebdr" novalidate accept-charset="UTF-8">
         <div>
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <input id="name" name="name" type="text" placeholder="Your name" required name="name">
         </div>
         <div>
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@company.com" required>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required name="email">
         </div>
         <div>
           <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" name="phone">
         </div>
         <div>
           <label for="company">Company</label>
@@ -232,14 +232,16 @@
         </div>
         <div class="full">
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Brief scope, timeline, site access details"></textarea>
+          <textarea id="message" name="message" placeholder="Brief scope, timeline, site access details" name="message"></textarea>
           <!-- <div class="hint">Submitting on GitHub Pages? This form will open your email client. For direct submissions, replace the <code>action</code> with a Formspree endpoint.</div>
         </div> -->
         <div class="full contact-actions">
           <a class="btn-secondary" href="contact.html">Open contact page</a>
           <button class="btn-primary" type="submit">Send message</button>
         </div>
-      </form>
+      
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_redirect" value="thanks.html"></form>
     </div>
   </section>
 
@@ -476,6 +478,7 @@
 <script src="assets/js/site.js"></script>
 </body>
 </html>
+
 
 
 

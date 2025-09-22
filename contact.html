@@ -151,21 +151,21 @@
           Example (Formspree): action="https://formspree.io/f/your-id"
           Or set USE_MAILTO=true in assets/js/contact.js for mailto fallback.
         -->
-        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" data-to="DillonKing@kingsmobilewelding.com" novalidate>
+        <formid="contactForm" action="https://formspree.io/f/mwprebdr" method="POST" data-to="DillonKing@kingsmobilewelding.com" novalidate accept-charset="UTF-8">
           <div class="row">
             <div>
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
+              <input id="name" name="name" type="text" autocomplete="name" required name="name">
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
+              <input id="email" name="email" type="email" autocomplete="email" required name="email">
             </div>
           </div>
           <div class="row">
             <div>
               <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" name="phone">
             </div>
             <div>
               <label for="org">Company / Agency</label>
@@ -175,13 +175,13 @@
           <div class="row-1">
             <div>
               <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" required>
+              <input id="subject" name="subject" type="text" required name="subject">
             </div>
           </div>
           <div class="row-1">
             <div>
               <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="Tell us about your project, location, timeline, and any specs (AWS D1.1, materials, drawings)."></textarea>
+              <textarea id="message" name="message" required placeholder="Tell us about your project, location, timeline, and any specs (AWS D1.1, materials, drawings)." name="message"></textarea>
             </div>
           </div>
 
@@ -221,7 +221,9 @@
             <a class="btn secondary" href="tel:757-231-6809">Call Now</a>
           </div>
           <p class="form-help">By submitting this form you agree we may contact you regarding your request.</p>
-        </form>
+        
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_redirect" value="thanks.html"></form>
         <script src="assets/js/contact.js" defer></script>
       </section>
     </div>
@@ -309,5 +311,6 @@
 <script src="assets/js/site.js"></script>
 </body>
 </html>
+
 
 
