@@ -1,6 +1,4 @@
-﻿<!doctype html>
-<html lang="en">
-<head>
+﻿<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,6 +44,15 @@
     "email":  "DillonKing@kingsmobilewelding.com"
 }</script>
 <meta name="description" content="Past performance highlights: industrial plant welding, HVAC contractor support, marine fabrication & repair, and stair repairs for industrial facilities. AWS D1.1 certified, mobile, inspection-ready.">  <link rel="stylesheet" href="/assets/css/styles.css">
+<style>
+/* Make the buttons clickable above any overlays */
+a.request-similar{position:relative;z-index:999;pointer-events:auto}
+/* Common overlays: ensure they don't swallow clicks */
+.hero-video,.video-overlay,.image-overlay,.bg-overlay{pointer-events:none}
+/* Just in case the card has a positioned overlay */
+.case,.card,.project {position:relative}
+</style>
+</head>="/assets/css/styles.css">
 </head>
 <body>
 <header class="site-header">
@@ -248,8 +255,29 @@
   </footer>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
+<script>
+(function(){
+  function go(){
+    window.location.assign('/contact');
+  }
+  document.querySelectorAll('a.request-similar').forEach(function(a){
+    // Capture phase so we run before other handlers
+    a.addEventListener('click', function(e){
+      // Don't cancel default; just guarantee navigation even if other code blocks it
+      e.stopImmediatePropagation();
+      // If something prevented default elsewhere, force navigation anyway
+      setTimeout(function(){
+        if (location.pathname.indexOf('/contact') === -1) go();
+      }, 0);
+    }, true);
+    // Also ensure pointer events in case a parent disabled them
+    a.style.pointerEvents = 'auto';
+  });
+})();
+</script>
 </body>
 </html>
+
 
 
 
