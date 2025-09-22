@@ -999,3 +999,139 @@ textarea { min-height:140px; resize:vertical; }
   .logo-slide img { height:40px; }
 }
 /* === End Trusted By Logo Carousel === */
+
+/* === KMW Contact + Testimonials Theme (inline-safe, idempotent) === */
+:root{
+  --kmw-blue:#0A2E5C;
+  --kmw-blue-900:#081e3d;
+  --kmw-blue-800:#0a254b;
+  --kmw-yellow:#FFD60A;
+  --kmw-ink:#0B1220;
+  --kmw-muted:#E6ECF5;
+  --kmw-card:#ffffff;
+  --kmw-border:#E5E7EB;
+}
+
+/* ---------------- Contact band ---------------- */
+section#contact, section#contact-us, section.home-contact,
+section[id*="contact"][class*="section"], .contact-section {
+  position: relative;
+  padding: 2.25rem 0;
+  background:
+    radial-gradient(1200px 400px at -10% -10%, rgba(255,214,10,0.10), transparent 60%),
+    radial-gradient(900px 300px at 110% 10%, rgba(255,214,10,0.08), transparent 60%),
+    linear-gradient(135deg, var(--kmw-blue-900), var(--kmw-blue-800));
+  color: #fff;
+  overflow: hidden;
+}
+
+section#contact .container, section#contact-us .container, section.home-contact .container,
+.contact-section .container { max-width:1100px; margin:0 auto; }
+
+section#contact h2, section#contact-us h2, section.home-contact h2,
+.contact-section h2 { color:#fff; margin:0 0 .75rem; }
+
+.kmw-contact-card{
+  background: var(--kmw-card);
+  color: var(--kmw-ink);
+  border:1px solid var(--kmw-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  padding: 1.25rem;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.kmw-contact-grid{
+  display:grid; gap:1rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 840px){ .kmw-contact-grid{ grid-template-columns: 1fr; } }
+
+.kmw-field{
+  display:flex; flex-direction:column; gap:.4rem;
+}
+.kmw-field label{ font-weight:600; color:#0a254b; }
+.kmw-field input, .kmw-field select, .kmw-field textarea{
+  border:1px solid var(--kmw-border);
+  border-radius:10px; padding:.7rem .85rem; font:inherit; color:var(--kmw-ink);
+  background:#fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.kmw-field textarea{ min-height:140px; resize:vertical; }
+
+.kmw-field input:focus, .kmw-field select:focus, .kmw-field textarea:focus{
+  outline:none;
+  border-color: var(--kmw-yellow);
+  box-shadow: 0 0 0 3px rgba(255,214,10,.35);
+}
+
+.kmw-submit{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  margin-top:.25rem;
+  background: var(--kmw-yellow); color: var(--kmw-blue);
+  font-weight:800; border-radius:12px; padding:.7rem 1rem; border:1px solid rgba(0,0,0,.08);
+  text-decoration:none; cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+}
+.kmw-submit:hover{ transform: translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,.15); }
+.kmw-submit:active{ transform: translateY(0); box-shadow:none; }
+
+/* Subtext / badges in contact area */
+.kmw-contact-meta{
+  display:flex; flex-wrap:wrap; gap:.6rem 1rem; align-items:center; margin-top:.75rem;
+  color:#eaf0f7;
+}
+.kmw-contact-meta b { color:#fff; }
+
+/* ---------------- Testimonials band ---------------- */
+section#testimonials, section.home-testimonials, .testimonials-section,
+section[id*="clients"][id*="say"], section[id*="what"][id*="say"] {
+  position: relative;
+  padding: 2.25rem 0 2.4rem;
+  background:
+    radial-gradient(1200px 500px at 120% -10%, rgba(255,214,10,0.09), transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+}
+
+section#testimonials .container, section.home-testimonials .container,
+.testimonials-section .container{ max-width:1100px; margin:0 auto; }
+
+section#testimonials h2, section.home-testimonials h2, .testimonials-section h2{
+  color: var(--kmw-blue);
+  margin: 0 0 .4rem;
+}
+
+.kmw-testimonials{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 980px){ .kmw-testimonials{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px){ .kmw-testimonials{ grid-template-columns: 1fr; } }
+
+.kmw-quote{
+  position:relative;
+  background:#fff; border:1px solid var(--kmw-border); border-radius:16px;
+  box-shadow:0 8px 18px rgba(0,0,0,.07);
+  padding:1rem 1rem 1rem 1.1rem;
+}
+.kmw-quote::before{
+  content:"";
+  position:absolute; inset:0 0 auto 0; height:6px;
+  background: linear-gradient(90deg, var(--kmw-yellow), #ffe34e);
+  border-radius:16px 16px 0 0;
+}
+.kmw-quote p{ color:#334155; margin:.5rem 0 .8rem; }
+.kmw-quote .who{ display:flex; align-items:center; gap:.6rem; }
+.kmw-quote .who img{
+  width:40px; height:40px; border-radius:50%; object-fit:cover; border:1px solid var(--kmw-border);
+}
+.kmw-quote .who .meta{ color:#475569; font-size:.95rem; }
+.kmw-quote .who .meta b{ color:var(--kmw-blue); }
+
+/* Subtle quote mark */
+.kmw-quote .mark{
+  position:absolute; right:12px; bottom:10px; font-size:40px; line-height:1;
+  color:rgba(10,46,92,.12); font-weight:900; font-family:Georgia,serif;
+}
+/* === End KMW Contact + Testimonials Theme === */
