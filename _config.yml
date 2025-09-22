@@ -1,8 +1,5 @@
-﻿# GitHub Pages / Jekyll config
+﻿title: Kings Mobile Welding
+markdown: kramdown
 permalink: pretty
 baseurl: ""
-markdown: kramdown
-
-# Optional (uncomment if you later add redirects):
-# plugins:
-#   - jekyll-redirect-from
+# GitHub Pages builds Jekyll automatically; no plugin blocks here to keep it compatible.

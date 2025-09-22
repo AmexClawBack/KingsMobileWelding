@@ -1,0 +1,29 @@
+﻿backend:
+  name: github
+  repo: AmexClawBack/KingsMobileWelding
+  branch: main
+  # OAuth App (required): set these after you create a GitHub OAuth app and deploy an OAuth proxy
+  base_url: https://YOUR-OAUTH-PROXY.example.com
+  auth_endpoint: /api/auth
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - label: ""Blog""
+    name: ""blog""
+    folder: ""_posts""
+    create: true
+    slug: ""{{year}}-{{month}}-{{day}}-{{slug}}""
+    extension: ""md""
+    format: ""frontmatter""
+    fields:
+      - {label: ""Title"", name: ""title"", widget: ""string""}
+      - {label: ""Publish Date"", name: ""date"", widget: ""datetime""}
+      - {label: ""Description"", name: ""description"", widget: ""text"", required: false}
+      - {label: ""Cover Image"", name: ""cover"", widget: ""image"", required: false}
+      - {label: ""Tags"", name: ""tags"", widget: ""list"", required: false}
+      - {label: ""Body"", name: ""body"", widget: ""markdown""}
