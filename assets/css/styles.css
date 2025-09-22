@@ -303,15 +303,15 @@ textarea{min-height:120px;resize:vertical}
 }
 
 /* === Careers (page + homepage CTA) === */
+
 .careers-hero {
-  background: linear-gradient(135deg, #0A2E5C 0%, #0A2E5C 65%, #FFD60A 65%, #FFD60A 100%);
-  color:#0A2E5C;
+  background: #0A2E5C;
+  color:#FFD60A;
   padding: 3.25rem 1rem 2.5rem;
 }
 .careers-hero .container { max-width:1100px; margin:0 auto; }
-.careers-hero h1 { margin:0 0 .5rem; color:#fff; }
-.careers-hero p.lead { margin:0; color: #E6ECF5; max-width: 75ch; }
-
+.careers-hero h1 { margin:0 0 .5rem; color:#FFD60A; }
+.careers-hero p.lead { margin:0; color: #FFD60A; max-width: 75ch; }
 .careers-section { padding: 2.5rem 1rem 3rem; background:#fff; }
 .careers-section .container { max-width:1100px; margin:0 auto; }
 
@@ -349,15 +349,15 @@ textarea{min-height:120px;resize:vertical}
 
 .workwithus {
   margin: 2.25rem 0 0; padding:2rem 1rem;
-  background: linear-gradient(135deg, #0A2E5C 0%, #0A2E5C 60%, #FFD60A 60%, #FFD60A 100%);
-  color:#fff; border-radius:16px;
+  background:  #FFD60A;
+  color:#0A2E5C;
 }
 .workwithus .inner { max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
 .workwithus h2 { margin:0; flex:1 1 360px; }
-.workwithus p { margin:0; flex:1 1 360px; color:#E6ECF5; }
+.workwithus p { margin:0; flex:1 1 360px; color:#0A2E5C; }
 .workwithus a.btn {
   text-decoration:none; font-weight:700; border-radius:12px; padding:.7rem 1rem;
-  background:#FFD60A; color:#0A2E5C; border:1px solid rgba(0,0,0,.1);
+  background:#0A2E5C; color:#FFD60A; border:1px solid rgba(0,0,0,.1);
 }
 .workwithus a.btn:hover { filter: brightness(.95); }
 
@@ -371,7 +371,7 @@ textarea{min-height:120px;resize:vertical}
 }
 
 /* === Careers (page + shared styles) === */
-.careers-hero {
+/* .careers-hero {
   background: linear-gradient(135deg, #0A2E5C 0%, #0A2E5C 65%, #FFD60A 65%, #FFD60A 100%);
   color:#0A2E5C;
   padding: 3.25rem 1rem 2.5rem;
@@ -392,7 +392,7 @@ textarea{min-height:120px;resize:vertical}
 .careers-card img { width:100%; height:160px; object-fit:cover; display:block; }
 .careers-card .body { padding:.9rem 1rem 1rem; }
 .careers-card h3 { margin:.15rem 0 .35rem; font-size:1.05rem; color:#0A2E5C; }
-.careers-card p { margin:0 0 .6rem; color:#334155; }
+.careers-card p { margin:0 0 .6rem; color:#334155; } */
 
 .roles {
   margin-top: 1.25rem;
@@ -419,22 +419,7 @@ textarea{min-height:120px;resize:vertical}
   .careers-card img { height:140px; }
 }
 
-/* === Work With Us (homepage CTA) — contrast fix === */
-/* Replace bright yellow block with deep-blue gradient; keep yellow just for the button */
 
-.workwithus {
-  margin: 2.25rem 0 0; padding:2rem 1rem;
-  background: linear-gradient(135deg, #0A2E5C 0%, #0A223F 100%);
-  color:#fff; border-radius:16px;
-}
-.workwithus .inner { max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
-.workwithus h2 { margin:0; flex:1 1 360px; }
-.workwithus p { margin:0; flex:1 1 360px; color:#E6ECF5; }
-.workwithus a.btn {
-  text-decoration:none; font-weight:700; border-radius:12px; padding:.7rem 1rem;
-  background:#FFD60A; color:#0A2E5C; border:1px solid rgba(0,0,0,.1);
-}
-.workwithus a.btn:hover { filter: brightness(.95); }
 
 /* === About (page) === */
 .about-hero {
@@ -1231,44 +1216,4 @@ section#contact .kmw-contact-card{ background:#fff; }
 }
 /* === End KMW Inline Buttons === */
 
-/* === Work With Us Section Styling === */
-.work-with-us {
-  background-color: #FFD60A; /* safety yellow */
-  color: #0A2E5C;           /* dark blue text */
-  text-align: center;
-  padding: 3rem 1rem;
-  border-radius: 0 !important; /* no rounded edges */
-}
 
-.work-with-us h2,
-.work-with-us p {
-  color: #0A2E5C;           /* enforce blue text */
-}
-
-.work-with-us .btn-primary {
-  background-color: #0A2E5C; /* dark blue button */
-  color: #FFD60A;            /* safety yellow text */
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0;          /* square corners */
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s;
-}
-
-.work-with-us .btn-primary svg path {
-  fill: #FFD60A; /* arrow = safety yellow */
-}
-
-.work-with-us .btn-primary:hover {
-  background-color: #FFD60A; /* invert on hover */
-  color: #0A2E5C;
-}
-
-.work-with-us .btn-primary:hover svg path {
-  fill: #0A2E5C; /* arrow flips to blue on hover */
-}
-/* === End Work With Us Section Styling === */
