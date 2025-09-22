@@ -380,6 +380,52 @@
     </div>
   </div>
 </section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
+
+    <div class="kmw-contact-card">
+      <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+        <div class="kmw-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required autocomplete="name" />
+        </div>
+        <div class="kmw-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="kmw-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="kmw-field">
+          <label for="company">Company / Agency</label>
+          <input id="company" name="company" autocomplete="organization" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- Anti-bot + redirect -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_redirect" value="thanks.html">
+
+        <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
+          <button type="submit" class="kmw-submit">Send Message</button>
+          <a class="btn-primary" href="contact.html" style="text-decoration:none;">Open contact page</a>
+          <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
         <footer class="site-footer">
     <div class="container footer-inner">
@@ -481,6 +527,7 @@
 <script src="assets/js/forms-home-helper.js"></script>
 </body>
 </html>
+
 
 
 
