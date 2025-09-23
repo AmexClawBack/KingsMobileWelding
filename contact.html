@@ -78,6 +78,50 @@
 </script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/assets/css/styles.css">
+<style>
+@media (max-width: 640px) {
+  .row, .columns, .grid, .container, .content, main, .wrapper { display: block !important; }
+  [class*="col-"], .sidebar, .right, .left, .column { float: none !important; width: 100% !important; max-width: 100% !important; }
+  .card, .contact, .contact-info, .contact-info * { min-width: 0; box-sizing: border-box; overflow-wrap: anywhere; }
+  img, iframe { max-width: 100%; height: auto; }
+}
+</style>
+<style>
+/* Mobile-only fixes for contact layout */
+@media (max-width: 700px) {
+  /* Force the two-column grid to a single column on phones */
+  .kmw-contact-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Ensure each column spans full width */
+  .form-col,
+  .kmw-contact-aside,
+  .kmw-contact-info {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Extra safety: prevent long content from causing horizontal scroll */
+  .kmw-contact-card,
+  .kmw-contact-info,
+  .kmw-contact-info * {
+    box-sizing: border-box;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Make the map responsive */
+  .map-embed { overflow: hidden; }
+  #radiusMap { width: 100% !important; min-height: 240px; height: 240px; }
+  
+  /* Images/iframes shrink to fit */
+  img, iframe { max-width: 100%; height: auto; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -336,6 +380,9 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 </body>
 </html>
+
+
+
 
 
 

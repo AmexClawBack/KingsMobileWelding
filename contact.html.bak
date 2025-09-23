@@ -78,6 +78,14 @@
 </script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/assets/css/styles.css">
+<style>
+@media (max-width: 640px) {
+  .row, .columns, .grid, .container, .content, main, .wrapper { display: block !important; }
+  [class*="col-"], .sidebar, .right, .left, .column { float: none !important; width: 100% !important; max-width: 100% !important; }
+  .card, .contact, .contact-info, .contact-info * { min-width: 0; box-sizing: border-box; overflow-wrap: anywhere; }
+  img, iframe { max-width: 100%; height: auto; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -92,7 +100,6 @@
         
         <a href="/contact">Contact</a>
         
-<a href="/blog/">Blog</a>
 <a href="/careers">Careers</a>
 <a class="btn-primary" href="/contact">Contact</a>
         
@@ -106,7 +113,6 @@
       
       <a href="/contact">Contact</a>
       
-<a href="/blog">Blog</a>
 <a href="/careers">Careers</a>
 <a href="/about">About</a>
 <a class="btn-primary" href="/contact">Contact</a>
@@ -274,7 +280,6 @@
         <a href="/services">Services</a>
         <a href="/past-performance">Past Performance</a>
         <a href="/procurement">Procurement</a>
-        <a href="/blog">Blog</a>
         <a href="/careers">Careers</a>
                 <a href="/areas">Areas We Service</a>
 <a href="/contact">Contact</a>
@@ -339,6 +344,9 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 </body>
 </html>
+
+
+
 
 
 

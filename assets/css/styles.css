@@ -1231,3 +1231,29 @@ section#contact .kmw-contact-card{ background:#fff; }
 .pagination { display:flex; justify-content:space-between; margin-top:1rem; }
 .pagination .btn { border:1px dashed #0A2E5C; padding:.5rem .75rem; border-radius:8px; color:#0A2E5C; text-decoration:none; }
 .pagination .btn:hover { background:#0A2E5C; color:#FFD60A; }
+
+/* Contact Layout */
+.kmw-contact-layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+/* Mobile: stack to one column */
+@media (max-width: 700px) {
+  .kmw-contact-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .form-col,
+  .kmw-contact-aside {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  /* Make sure aside sits under form cleanly */
+  .kmw-contact-aside {
+    order: 2;
+  }
+  .form-col {
+    order: 1;
+  }
+}
