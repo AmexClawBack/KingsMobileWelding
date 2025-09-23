@@ -8,13 +8,20 @@
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
+publish_mode: simple
+
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "blog"
+  - label: "Blog"
+    name: "blog"
+    folder: "_posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
