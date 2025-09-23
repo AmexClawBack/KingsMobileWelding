@@ -3,13 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tell Decap we will initialize it manually -->
+    <script>window.CMS_MANUAL_INIT = true;</script>
+
+    <!-- Load Decap CMS from unpkg, with a jsDelivr fallback -->
     <script>
-  window.addEventListener('DOMContentLoaded', function () {
-    CMS.init({
-      config: {
-        load_config_file: false,            // bypass /admin/config.yml
+      (function loadDecap() {
+        var primary = document.createElement('script');
+        primary.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+        primary.async = false; // ensure order
+        primary.onload = function () { window.__DECAP_LOADED__ = true; };
+        primary.onerror = function () {
+          var fallback = document.createElement('script');
+          fallback.src = "https://cdn.jsdelivr.net/npm/decap-cms@^3.0.0/dist/decap-cms.js";
+          fallback.async = false;
+          fallback.onload = function () { window.__DECAP_LOADED__ = true; };
+          document.head.appendChild(fallback);
+        };
+        document.head.appendChild(primary);
+      })();
+    </script>
+
+    <script>
+      // Inline config so we bypass YAML parsing issues
+      const decapConfig = {
+        load_config_file: false,
         backend: {
           name: 'github',
           repo: 'AmexClawBack/KingsMobileWelding',
@@ -39,21 +60,23 @@
             ]
           }
         ]
-      }
-    });
-  });
-</script>
+      };
 
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        // Optional: preview CSS for the right-hand pane
-        // CMS.registerPreviewStyle('/assets/css/main.css');
-        CMS.init();
-      });
+      // Start Decap only after:
+      // 1) DOM is ready, and
+      // 2) the decap-cms.js script has loaded and window.CMS exists.
+      function startCMS() {
+        if (window.__DECAP_LOADED__ && window.CMS) {
+          // Optional: load your site CSS into the preview pane
+          // CMS.registerPreviewStyle('/assets/css/main.css');
+          CMS.init({ config: decapConfig });
+        } else {
+          setTimeout(startCMS, 50);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', startCMS);
     </script>
   </head>
   <body></body>
 </html>
-
-
