@@ -1,0 +1,478 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Areas We Service</title>
+
+  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <meta property="og:image" content="assets/img/logo-500.png">
+
+  <!-- CSS: relative (no leading slash) -->
+  <script type="application/ld+json">{
+    "url":  "https://amexclawback.github.io/KingsMobileWelding/",
+    "identifier":  [
+                       {
+                           "value":  "ZCY4G7GBGQA3",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "UEI"
+                       },
+                       {
+                           "value":  "11P75",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "CAGE"
+                       }
+                   ],
+    "@type":  "Organization",
+    "sameAs":  [
+                   "https://www.facebook.com/yourpage",
+                   "https://www.linkedin.com/in/yourprofile",
+                   "https://www.instagram.com/yourprofile"
+               ],
+    "telephone":  "757-231-6809",
+    "@context":  "https://schema.org",
+    "name":  "Kings Mobile Welding",
+    "areaServed":  "Hampton Roads, VA and beyond",
+    "logo":  "assets/img/logo-500.png",
+    "email":  "DillonKing@kingsmobilewelding.com"
+}</script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+    
+    <div class="container nav">
+      <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+      <nav class="desktop">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/past-performance">Past Performance</a>
+        <a href="/procurement">Procurement</a>
+        
+        <a href="/contact">Contact</a>
+        
+<a href="/blog/">Blog</a>
+<a href="/careers">Careers</a>
+<a class="btn-primary" href="/contact">Contact</a>
+        
+</nav>
+      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      
+      <a href="/contact">Contact</a>
+      
+<a href="/blog">Blog</a>
+<a href="/careers">Careers</a>
+<a class="btn-primary" href="/contact">Contact</a>
+      
+
+      <a href="/about">About</a></div>
+  </header>
+<main>
+  <section class="areas-hero">
+    <div class="container">
+      <h1>Areas We Service</h1>
+      <p class="lead">We provide AWS D1.1 certified mobile welding, fabrication, and emergency repairs across Hampton Roads and within roughly a 75-mile radius of Newport News, VA. If you don’t see your town listed, we likely still cover it—just ask.</p>
+      <div class="areas-filter">
+        <label for="areasSearch" class="sr-only">Search cities</label>
+        <input id="areasSearch" type="search" placeholder="Search city (e.g., Norfolk, Smithfield, Richmond)" />
+      </div>
+    </div>
+  </section>
+
+  <section class="areas-wrap">
+    <div class="container">
+      <div class="areas-grid">
+      <article class="area-card" id="newport-news">
+        <h2><a href="/areas/newport-news-va" style="text-decoration:none;color:#0A2E5C">Newport News, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Newport News, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/newport-news-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="hampton">
+        <h2><a href="/areas/hampton-va" style="text-decoration:none;color:#0A2E5C">Hampton, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Hampton, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/hampton-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="norfolk">
+        <h2><a href="/areas/norfolk-va" style="text-decoration:none;color:#0A2E5C">Norfolk, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Norfolk, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/norfolk-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="virginia-beach">
+        <h2><a href="/areas/virginia-beach-va" style="text-decoration:none;color:#0A2E5C">Virginia Beach, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Virginia Beach, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/virginia-beach-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="chesapeake">
+        <h2><a href="/areas/chesapeake-va" style="text-decoration:none;color:#0A2E5C">Chesapeake, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Chesapeake, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/chesapeake-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="portsmouth">
+        <h2><a href="/areas/portsmouth-va" style="text-decoration:none;color:#0A2E5C">Portsmouth, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Portsmouth, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/portsmouth-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="suffolk">
+        <h2><a href="/areas/suffolk-va" style="text-decoration:none;color:#0A2E5C">Suffolk, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Suffolk, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/suffolk-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="williamsburg">
+        <h2><a href="/areas/williamsburg-va" style="text-decoration:none;color:#0A2E5C">Williamsburg, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Williamsburg, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/williamsburg-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="poquoson">
+        <h2><a href="/areas/poquoson-va" style="text-decoration:none;color:#0A2E5C">Poquoson, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Poquoson, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/poquoson-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="yorktown">
+        <h2><a href="/areas/yorktown-va" style="text-decoration:none;color:#0A2E5C">Yorktown, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Yorktown, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/yorktown-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="seaford">
+        <h2><a href="/areas/seaford-va" style="text-decoration:none;color:#0A2E5C">Seaford, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Seaford, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/seaford-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="tabb">
+        <h2><a href="/areas/tabb-va" style="text-decoration:none;color:#0A2E5C">Tabb, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Tabb, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/tabb-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="grafton">
+        <h2><a href="/areas/grafton-va" style="text-decoration:none;color:#0A2E5C">Grafton, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Grafton, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/grafton-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="toano">
+        <h2><a href="/areas/toano-va" style="text-decoration:none;color:#0A2E5C">Toano, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Toano, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/toano-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="norge">
+        <h2><a href="/areas/norge-va" style="text-decoration:none;color:#0A2E5C">Norge, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Norge, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/norge-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="lightfoot">
+        <h2><a href="/areas/lightfoot-va" style="text-decoration:none;color:#0A2E5C">Lightfoot, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Lightfoot, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/lightfoot-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="smithfield">
+        <h2><a href="/areas/smithfield-va" style="text-decoration:none;color:#0A2E5C">Smithfield, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Smithfield, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/smithfield-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="carrollton">
+        <h2><a href="/areas/carrollton-va" style="text-decoration:none;color:#0A2E5C">Carrollton, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Carrollton, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/carrollton-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="windsor">
+        <h2><a href="/areas/windsor-va" style="text-decoration:none;color:#0A2E5C">Windsor, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Windsor, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/windsor-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="rushmere">
+        <h2><a href="/areas/rushmere-va" style="text-decoration:none;color:#0A2E5C">Rushmere, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Rushmere, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/rushmere-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="franklin">
+        <h2><a href="/areas/franklin-va" style="text-decoration:none;color:#0A2E5C">Franklin, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Franklin, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/franklin-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="courtland">
+        <h2><a href="/areas/courtland-va" style="text-decoration:none;color:#0A2E5C">Courtland, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Courtland, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/courtland-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="boykins">
+        <h2><a href="/areas/boykins-va" style="text-decoration:none;color:#0A2E5C">Boykins, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Boykins, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/boykins-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="newsoms">
+        <h2><a href="/areas/newsoms-va" style="text-decoration:none;color:#0A2E5C">Newsoms, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Newsoms, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/newsoms-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="surry">
+        <h2><a href="/areas/surry-va" style="text-decoration:none;color:#0A2E5C">Surry, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Surry, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/surry-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="dendron">
+        <h2><a href="/areas/dendron-va" style="text-decoration:none;color:#0A2E5C">Dendron, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Dendron, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/dendron-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="claremont">
+        <h2><a href="/areas/claremont-va" style="text-decoration:none;color:#0A2E5C">Claremont, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Claremont, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/claremont-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="waverly">
+        <h2><a href="/areas/waverly-va" style="text-decoration:none;color:#0A2E5C">Waverly, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Waverly, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/waverly-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="wakefield">
+        <h2><a href="/areas/wakefield-va" style="text-decoration:none;color:#0A2E5C">Wakefield, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Wakefield, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/wakefield-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="gloucester">
+        <h2><a href="/areas/gloucester-va" style="text-decoration:none;color:#0A2E5C">Gloucester, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Gloucester, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/gloucester-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="gloucester-point">
+        <h2><a href="/areas/gloucester-point-va" style="text-decoration:none;color:#0A2E5C">Gloucester Point, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Gloucester Point, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/gloucester-point-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="hayes">
+        <h2><a href="/areas/hayes-va" style="text-decoration:none;color:#0A2E5C">Hayes, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Hayes, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/hayes-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="bena">
+        <h2><a href="/areas/bena-va" style="text-decoration:none;color:#0A2E5C">Bena, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Bena, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/bena-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="ordinary">
+        <h2><a href="/areas/ordinary-va" style="text-decoration:none;color:#0A2E5C">Ordinary, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Ordinary, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/ordinary-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="mathews">
+        <h2><a href="/areas/mathews-va" style="text-decoration:none;color:#0A2E5C">Mathews, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Mathews, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/mathews-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="hudgins">
+        <h2><a href="/areas/hudgins-va" style="text-decoration:none;color:#0A2E5C">Hudgins, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Hudgins, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/hudgins-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="cobbs-creek">
+        <h2><a href="/areas/cobbs-creek-va" style="text-decoration:none;color:#0A2E5C">Cobbs Creek, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Cobbs Creek, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/cobbs-creek-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="port-haywood">
+        <h2><a href="/areas/port-haywood-va" style="text-decoration:none;color:#0A2E5C">Port Haywood, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Port Haywood, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/port-haywood-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="gwynn">
+        <h2><a href="/areas/gwynn-va" style="text-decoration:none;color:#0A2E5C">Gwynn, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Gwynn, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/gwynn-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="saluda">
+        <h2><a href="/areas/saluda-va" style="text-decoration:none;color:#0A2E5C">Saluda, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Saluda, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/saluda-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="urbanna">
+        <h2><a href="/areas/urbanna-va" style="text-decoration:none;color:#0A2E5C">Urbanna, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Urbanna, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/urbanna-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="deltaville">
+        <h2><a href="/areas/deltaville-va" style="text-decoration:none;color:#0A2E5C">Deltaville, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Deltaville, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/deltaville-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="hartfield">
+        <h2><a href="/areas/hartfield-va" style="text-decoration:none;color:#0A2E5C">Hartfield, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Hartfield, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/hartfield-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="topping">
+        <h2><a href="/areas/topping-va" style="text-decoration:none;color:#0A2E5C">Topping, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Topping, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/topping-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="kilmarnock">
+        <h2><a href="/areas/kilmarnock-va" style="text-decoration:none;color:#0A2E5C">Kilmarnock, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Kilmarnock, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/kilmarnock-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="white-stone">
+        <h2><a href="/areas/white-stone-va" style="text-decoration:none;color:#0A2E5C">White Stone, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in White Stone, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/white-stone-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="irvington">
+        <h2><a href="/areas/irvington-va" style="text-decoration:none;color:#0A2E5C">Irvington, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Irvington, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/irvington-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="petersburg">
+        <h2><a href="/areas/petersburg-va" style="text-decoration:none;color:#0A2E5C">Petersburg, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Petersburg, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/petersburg-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="hopewell">
+        <h2><a href="/areas/hopewell-va" style="text-decoration:none;color:#0A2E5C">Hopewell, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Hopewell, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/hopewell-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="colonial-heights">
+        <h2><a href="/areas/colonial-heights-va" style="text-decoration:none;color:#0A2E5C">Colonial Heights, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Colonial Heights, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/colonial-heights-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="chester">
+        <h2><a href="/areas/chester-va" style="text-decoration:none;color:#0A2E5C">Chester, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Chester, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/chester-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="richmond">
+        <h2><a href="/areas/richmond-va" style="text-decoration:none;color:#0A2E5C">Richmond, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Richmond, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/richmond-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="cape-charles">
+        <h2><a href="/areas/cape-charles-va" style="text-decoration:none;color:#0A2E5C">Cape Charles, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Cape Charles, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/cape-charles-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="cheriton">
+        <h2><a href="/areas/cheriton-va" style="text-decoration:none;color:#0A2E5C">Cheriton, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Cheriton, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/cheriton-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="eastville">
+        <h2><a href="/areas/eastville-va" style="text-decoration:none;color:#0A2E5C">Eastville, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Eastville, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/eastville-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="exmore">
+        <h2><a href="/areas/exmore-va" style="text-decoration:none;color:#0A2E5C">Exmore, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Exmore, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/exmore-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="nassawadox">
+        <h2><a href="/areas/nassawadox-va" style="text-decoration:none;color:#0A2E5C">Nassawadox, VA</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Nassawadox, VA. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/nassawadox-va">Learn more </a></p>
+</article>
+      <article class="area-card" id="moyock">
+        <h2><a href="/areas/moyock-nc" style="text-decoration:none;color:#0A2E5C">Moyock, NC</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Moyock, NC. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/moyock-nc">Learn more </a></p>
+</article>
+      <article class="area-card" id="south-mills">
+        <h2><a href="/areas/south-mills-nc" style="text-decoration:none;color:#0A2E5C">South Mills, NC</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in South Mills, NC. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/south-mills-nc">Learn more </a></p>
+</article>
+      <article class="area-card" id="elizabeth-city">
+        <h2><a href="/areas/elizabeth-city-nc" style="text-decoration:none;color:#0A2E5C">Elizabeth City, NC</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Elizabeth City, NC. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/elizabeth-city-nc">Learn more </a></p>
+</article>
+      <article class="area-card" id="camden">
+        <h2><a href="/areas/camden-nc" style="text-decoration:none;color:#0A2E5C">Camden, NC</a></h2>
+        <p>Mobile welding, fabrication, and on-site repair in Camden, NC. AWS D1.1 certified, fully insured, and procurement-ready for government & industry. Structural steel, stainless & aluminum, pipe & pressure, emergency repair, and inspection-ready QA/QC.</p>
+        <p><a class="learn" href="/areas/camden-nc">Learn more </a></p>
+</article>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/assets/js/areas-filter.js" defer></script>
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
+          <strong>Kings Mobile Welding</strong>
+        </a>
+        <div class="footer-contact">
+          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
+          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+          <p>📍 Hampton Roads, VA and beyond</p>
+        
+          <p>🆔 UEI: ZCY4G7GBGQA3</p>
+          <p>🏷️ CAGE: 11P75</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/past-performance">Past Performance</a>
+        <a href="/procurement">Procurement</a>
+        <a href="/blog">Blog</a>
+        <a href="/careers">Careers</a>
+                <a href="/areas">Areas We Service</a>
+<a href="/contact">Contact</a>
+      </nav>
+
+      <div class="social" aria-label="Social links">
+  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+    </svg>
+  </a>
+  <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+    </svg>
+  </a>
+</div>
+    </div>
+  </footer>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
