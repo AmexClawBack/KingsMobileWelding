@@ -6,69 +6,8 @@
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Manual init so we control timing -->
-    <script>window.CMS_MANUAL_INIT = true;</script>
-
-    <!-- Load Decap once, pinned to 3.8.3, with a fallback -->
-    <script>
-      (function () {
-        var s = document.createElement('script');
-        s.src = "https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js";
-        s.async = false;
-        s.onload = function () { window.__DECAP_READY__ = true; };
-        s.onerror = function () {
-          var f = document.createElement('script');
-          f.src = "https://cdn.jsdelivr.net/npm/decap-cms@3.8.3/dist/decap-cms.js";
-          f.async = false;
-          f.onload = function () { window.__DECAP_READY__ = true; };
-          document.head.appendChild(f);
-        };
-        document.head.appendChild(s);
-      })();
-    </script>
-
-    <script>
-      // Inline config; switch back to YAML later if you prefer
-      const cfg = {
-        load_config_file: false,
-        backend: {
-          name: 'github',
-          repo: 'AmexClawBack/KingsMobileWelding',
-          branch: 'main',
-          base_url: 'https://netlify-cms-github-oauth-provider-cdue.onrender.com',
-          auth_endpoint: '/auth'
-        },
-        media_folder: 'assets/uploads',
-        public_folder: '/assets/uploads',
-        publish_mode: 'simple',
-        collections: [{
-          label: 'Blog',
-          name: 'blog',
-          folder: '_posts',
-          create: true,
-          slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-          extension: 'md',
-          format: 'frontmatter',
-          fields: [
-            { label: 'Title', name: 'title', widget: 'string' },
-            { label: 'Publish Date', name: 'date', widget: 'datetime' },
-            { label: 'Description', name: 'description', widget: 'text', required: false },
-            { label: 'Cover Image', name: 'cover', widget: 'image', required: false },
-            { label: 'Tags', name: 'tags', widget: 'list', required: false },
-            { label: 'Body', name: 'body', widget: 'markdown' }
-          ]
-        }]
-      };
-
-      function startCMS() {
-        if (window.__DECAP_READY__ && window.CMS) {
-          CMS.init({ config: cfg });
-        } else {
-          setTimeout(startCMS, 50);
-        }
-      }
-      document.addEventListener('DOMContentLoaded', startCMS);
-    </script>
+    <!-- IMPORTANT: load Decap ONCE, pinned to a single version -->
+    <script src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
   </head>
   <body></body>
 </html>
