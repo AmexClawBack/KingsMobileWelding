@@ -5,9 +5,20 @@
     <title>Content Manager</title>
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 1) Set MANUAL_INIT before Decap loads -->
+    <script src="/admin/preinit.js"></script>
+
+    <!-- 2) Load Decap exactly once (use your local copy if you saved it) -->
+    <script src="/admin/decap-cms.js"></script>
+    <!-- If you don't have a local copy yet, temporarily use CDN:
+         <script src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
+    -->
+
+    <!-- 3) Initialize after Decap has defined window.CMS -->
+    <script src="/admin/init.js" defer></script>
   </head>
   <body>
     <div id="nc-root"></div>
-    <script src="/admin/decap-cms.js?v=1"></script>
   </body>
 </html>
