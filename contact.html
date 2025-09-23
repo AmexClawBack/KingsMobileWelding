@@ -7,7 +7,183 @@
   <title>Contact | Kings Mobile Welding</title>
 
   <!-- Icons / Manifest: relative paths (no leading slash) -->
-  <li class="kmw-inline"><span><strong>Email:</strong> Dillonk2012@gmail.com</span></li>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <meta property="og:image" content="assets/img/logo-500.png">
+
+  <!-- CSS: relative (no leading slash) -->
+  <script type="application/ld+json">{
+    "url":  "https://amexclawback.github.io/KingsMobileWelding/",
+    "identifier":  [
+                       {
+                           "value":  "ZCY4G7GBGQA3",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "UEI"
+                       },
+                       {
+                           "value":  "11P75",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "CAGE"
+                       }
+                   ],
+    "@type":  "Organization",
+    "sameAs":  [
+                   "https://www.facebook.com/yourpage",
+                   "https://www.linkedin.com/in/yourprofile",
+                   "https://www.instagram.com/yourprofile"
+               ],
+    "telephone":  "757-231-6809",
+    "@context":  "https://schema.org",
+    "name":  "Kings Mobile Welding",
+    "areaServed":  "Hampton Roads, VA and beyond",
+    "logo":  "assets/img/logo-500.png",
+    "email":  "DillonKing@kingsmobilewelding.com"
+}</script>
+<meta name="description" content="Contact Kings Mobile Welding — AWS D1.1 certified mobile welding for government and industry in Hampton Roads and beyond. Request a quote, procurement docs, or emergency service.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Kings Mobile Welding",
+  "url": "https://amexclawback.github.io/KingsMobileWelding/",
+  "email": "DillonKing@kingsmobilewelding.com",
+  "telephone": "757-231-6809",
+  "areaServed": "Hampton Roads, VA and beyond",
+  "logo": "assets/img/logo-500.png",
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "UEI",  "value": "ZCY4G7GBGQA3"  },
+    { "@type": "PropertyValue", "propertyID": "CAGE", "value": "11P75" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hampton Roads",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "DillonKing@kingsmobilewelding.com",
+    "telephone": "757-231-6809",
+    "areaServed": "US",
+    "availableLanguage": [ "English" ]
+  }]
+}
+</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+    
+    <div class="container nav">
+      <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+      <nav class="desktop">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/past-performance">Past Performance</a>
+        <a href="/procurement">Procurement</a>
+        
+        <a href="/contact">Contact</a>
+        
+<a href="/blog/">Blog</a>
+<a href="/careers">Careers</a>
+<a class="btn-primary" href="/contact">Contact</a>
+        
+</nav>
+      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      
+      <a href="/contact">Contact</a>
+      
+<a href="/blog">Blog</a>
+<a href="/careers">Careers</a>
+<a href="/about">About</a>
+<a class="btn-primary" href="/contact">Contact</a>
+      </div>
+
+      
+  </header>
+<main>
+  <section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Send a Message</h2>
+    <div class="kmw-contact-card"><div class="kmw-contact-layout" style="display:grid;gap:1rem;grid-template-columns:1.1fr .9fr;">
+<div class="form-col"><form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+        <div class="kmw-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required autocomplete="name" />
+        </div>
+        <div class="kmw-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="kmw-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="kmw-field">
+          <label for="company">Company / Agency</label>
+          <input id="company" name="company" autocomplete="organization" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" />
+        </div>
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- Optional helpers -->
+        <!-- <div class="kmw-field">
+          <label>Preferred Contact</label>
+          <div>
+            <label style="margin-right:12px"><input type="radio" name="preferred_contact" value="phone"> Phone</label>
+            <label><input type="radio" name="preferred_contact" value="email"> Email</label>
+          </div>
+        </div> -->
+        <div class="kmw-field">
+          <label>Timeline</label>
+          <select name="timeline">
+            <option value="asap">ASAP / Emergency</option>
+            <option value="1-2-weeks">1-2 weeks</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+        <!-- <div class="kmw-field">
+          <label><input type="checkbox" name="request_capability" value="yes"> Request Capability Statement</label>
+        </div>
+        <div class="kmw-field">
+          <label><input type="checkbox" name="request_w9" value="yes"> Request W-9</label>
+        </div> -->
+
+        <!-- Anti-bot + redirect -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_redirect" value="thanks.html">
+
+        <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center;">
+          <button type="submit" class="kmw-submit">Send Message</button>
+          <a class="btn-primary" href="/tel:7572316809" style="text-decoration:none;display:inline-flex;align-items:center;">Call Now</a>
+        </div>
+      
+  <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com"></form></div>
+<aside class="kmw-contact-aside">
+  <div class="kmw-contact-info">
+    <h3>Contact Information</h3>
+    <ul class="kmw-list">
+      <li class="kmw-inline"><span><strong>Phone:</strong> (757) 231-6809</span></li>
+      <li class="kmw-inline"><span><strong>Email:</strong> Dillonk2012@gmail.com</span></li>
       <li><strong>Service Area:</strong> Hampton Roads, VA &amp; beyond</li>
       <li><strong>UEI:</strong> <span class="badge kmw-badge">ZCY4G7GBGQA3</span></li>
       <li><strong>CAGE:</strong> <span class="badge kmw-badge kmw-badge--blue">11P75</span></li>
@@ -98,6 +274,7 @@
         <a href="/services">Services</a>
         <a href="/past-performance">Past Performance</a>
         <a href="/procurement">Procurement</a>
+        <a href="/blog">Blog</a>
         <a href="/careers">Careers</a>
                 <a href="/areas">Areas We Service</a>
 <a href="/contact">Contact</a>
@@ -162,7 +339,6 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 </body>
 </html>
-
 
 
 
