@@ -10,7 +10,7 @@ public_folder: "/assets/uploads" # how files are referenced on pages
 
 publish_mode: simple  # (use 'editorial_workflow' if you prefer review/PRs)
 
-publish_mode: simple
+
 
 collections:
   - label: "Blog"
