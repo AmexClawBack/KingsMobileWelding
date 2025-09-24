@@ -1,0 +1,81 @@
+﻿<!-- BLOG FEED TEST -->
+<section id="kmw-blog-wrap" style="max-width:1100px;margin:2rem auto;padding:0 1rem;">
+  <header style="margin-bottom:1.25rem;">
+    <h1 style="margin:0;font-size:2rem;line-height:1.2;">Latest Blog Posts</h1>
+    <p style="margin:.25rem 0 0;opacity:.8">Pulled from <code>amexclawback.github.io</code> via RSS</p>
+  </header>
+
+  <div id="kmw-feed-status" style="font-size:.95rem;opacity:.8;">Loading…</div>
+  <div id="kmw-posts" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-top:1rem;"></div>
+</section>
+
+<script>
+(async function(){
+  const FEED_URL = '/assets/feed.xml';
+  const statusEl = document.getElementById("kmw-feed-status") || (function(){
+    const el = document.createElement("div");
+    el.id = "kmw-feed-status";
+    el.style.fontSize = ".95rem"; el.style.opacity = ".8"; el.textContent = "Loading…";
+    document.body.appendChild(el); return el;
+  })();
+  const postsEl  = document.getElementById("kmw-posts") || (function(){
+    const el = document.createElement("div");
+    el.id = "kmw-posts"; el.style.marginTop = "1rem";
+    document.body.appendChild(el); return el;
+  })();
+
+  function sanitize(str=''){ return str.replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim(); }
+  function cardHTML({title, link, date, desc}) {
+    const d = date ? new Date(date) : null;
+    const dateStr = (d && !isNaN(d)) ? d.toLocaleDateString() : '';
+    return `
+      <article class="kmw-card" style="border:1px solid #e5e7eb;border-radius:14px;padding:16px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);display:flex;flex-direction:column;gap:.5rem;">
+        <h3 style="margin:0;font-size:1.05rem;line-height:1.35"><a href="${link}" style="text-decoration:none;color:#0f172a;">${title}</a></h3>
+        ${dateStr ? `<small style="opacity:.7">${dateStr}</small>` : ``}
+        ${desc ? `<p style="margin:.25rem 0 0;opacity:.9">${desc}</p>` : ``}
+        <div style="margin-top:auto"><a href="${link}" style="display:inline-block;margin-top:.5rem;text-decoration:none;padding:.5rem .75rem;border-radius:10px;border:1px solid #0ea5e9;">Read more </a></div>
+      </article>`;
+  }
+
+  try {
+    const res  = await fetch(FEED_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const xml  = await res.text();
+    const doc  = new DOMParser().parseFromString(xml, 'application/xml');
+    if (doc.querySelector('parsererror')) throw new Error('RSS parse error');
+
+    let items = Array.from(doc.querySelectorAll('channel > item'));
+    if (items.length === 0) items = Array.from(doc.querySelectorAll('entry')); // Atom fallback
+
+    const posts = items.slice(0, 12).map(it => {
+      const title = it.querySelector('title')?.textContent?.trim() || 'Untitled';
+      const atomLink = it.querySelector('link[href]')?.getAttribute('href');
+      let rawLink = it.querySelector('link')?.textContent?.trim() || atomLink || '#';
+      // Force links to your site under /blog
+      if (rawLink && rawLink.indexOf('https://amexclawback.github.io') === 0) {
+        rawLink = rawLink.replace('https://amexclawback.github.io', 'https://www.kingsmobilewelding.com/blog');
+      }
+      // --- Force links to your site under /blog ---
+      if (rawLink && rawLink.indexOf('https://www\.kingsmobilewelding\.com/blog') === 0) {
+        rawLink = rawLink.replace('https://www\.kingsmobilewelding\.com/blog', 'https://www.kingsmobilewelding.com/blog');
+      }
+      const date  = it.querySelector('pubDate')?.textContent || it.querySelector('updated')?.textContent || '';
+      const desc  = sanitize(it.querySelector('description')?.textContent || it.querySelector('summary')?.textContent || '').slice(0, 180) + '';
+
+      if (rawLink && rawLink.startsWith("https://www.kingsmobilewelding.com/blog")) {
+        rawLink = rawLink.replace("https://www.kingsmobilewelding.com/blog", "https://www.kingsmobilewelding.com/blog");
+      }
+      return { title, link: rawLink, date, desc };
+    });
+
+    if (posts.length === 0) { statusEl.textContent = 'No posts found yet.'; return; }
+    statusEl.textContent = '';
+    postsEl.innerHTML = posts.map(cardHTML).join('');
+  } catch (err) {
+    console.error(err);
+    statusEl.innerHTML = `<div style="padding:.75rem 1rem;border:1px solid #fecaca;background:#fff1f2;border-radius:12px;"><strong>Couldnt load the feed.</strong></div>`;
+  }
+})();
+</script>
+
+

@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+</head>
+<body>
+<script>
+(function(){
+  var p = location.pathname.replace(/\/{2,}/g,"/");
+
+  // Match /posts/<slug>/ or /blog/posts/<slug>/
+  var m = p.match(/^\/(?:blog\/)?posts\/([^\/]+)\/?$/);
+  if (m && m[1]) {
+    var target = "/blog/posts/?slug=" + encodeURIComponent(m[1]);
+    if (location.search) target += location.search.replace(/^\?/, "&");
+    if (location.hash)   target += location.hash;
+    location.replace(target);
+    return;
+  }
+  document.write('<p>Not found. Try <a href="/blog.html">the blog</a>.</p>');
+})();
+</script>
+</body>
+</html>
