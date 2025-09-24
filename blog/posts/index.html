@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Post • Kings Mobile Welding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; }
+    .wrap { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    .crumbs { font-size: .9rem; opacity: .8; margin-bottom: .75rem; }
+    .post-title { margin: 0 0 .25rem; font-size: 2rem; line-height: 1.2; }
+    .post-date { opacity: .7; margin-bottom: 1.25rem; display:block; }
+    .post-body img { max-width: 100%; height: auto; }
+    .notice { padding: .75rem 1rem; border:1px solid #e5e7eb; background:#f9fafb; border-radius: .75rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumbs"><a href="/blog.html">← Back to Blog</a></div>
+    <h1 id="post-title" class="post-title">Loading…</h1>
+    <small id="post-date" class="post-date"></small>
+    <div id="post-body" class="post-body notice">Fetching post…</div>
+  </div>
+
+<script>
+(function(){
+  const FEED_URL  = "/assets/feed.xml";       // local copy for CORS-free local testing
+  const ASSET_BASE = "https://www.kingsmobilewelding.com/blog";           // convert root-relative assets inside post body
+
+  function getSlug(){
+    const qp = new URLSearchParams(location.search);
+    if (qp.get("slug")) return decodeURIComponent(qp.get("slug"));
+    // accept /blog/posts/<slug>/ (this page's pretty path)
+    const parts = location.pathname.split("/").filter(Boolean);
+    // ... ["blog","posts","<slug>"]
+    if (parts[0] === "blog" && parts[1] === "posts" && parts[2]) return parts[2];
+    return null;
+  }
+
+  function sanitizeHtml(html){
+    return html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
+  }
+
+  function absolutify(html){
+    // Turn src="/x" or href="/y" into ASSET_BASE-based URLs so images/CSS work
+    return html.replace(/(src|href)=["']\/([^"']+)["']/gi, (m,attr,path) => `${attr}="${ASSET_BASE}/${path}"`);
+  }
+
+  function fmtDate(dstr){
+    const d = new Date(dstr);
+    return isNaN(d) ? "" : d.toLocaleDateString();
+  }
+
+  async function load(){
+    const slug = getSlug();
+    const titleEl = document.getElementById("post-title");
+    const dateEl  = document.getElementById("post-date");
+    const bodyEl  = document.getElementById("post-body");
+
+    if (!slug) {
+      titleEl.textContent = "Post not specified";
+      bodyEl.innerHTML = '<div class="notice">Open as <code>/blog/posts/&lt;slug&gt;/</code> or <code>?slug=slug</code>.</div>';
+      return;
+    }
+
+    try {
+      const res = await fetch(FEED_URL);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const xml = await res.text();
+      const doc = new DOMParser().parseFromString(xml, "application/xml");
+      if (doc.querySelector("parsererror")) throw new Error("Feed parse error");
+
+      let items = Array.from(doc.querySelectorAll("channel > item"));
+      if (items.length === 0) items = Array.from(doc.querySelectorAll("entry")); // Atom fallback
+
+      function linkOf(it){
+        const atom = it.querySelector("link[href]")?.getAttribute("href");
+        return it.querySelector("link")?.textContent?.trim() || atom || "";
+      }
+      function slugOf(link){
+        try { return (new URL(link, location.origin)).pathname.split("/").filter(Boolean).pop() || ""; }
+        catch(e){ return ""; }
+      }
+
+      const match = items.find(it => slugOf(linkOf(it)) === slug);
+      if (!match) {
+        titleEl.textContent = "Post not found";
+        bodyEl.innerHTML = '<div class="notice">Could not find a post for slug <code>'+slug+'</code>.</div>';
+        return;
+      }
+
+      const title = match.querySelector("title")?.textContent?.trim() || "Untitled";
+      const date  = match.querySelector("pubDate")?.textContent || match.querySelector("updated")?.textContent || "";
+
+      const contentNode = match.getElementsByTagName("content:encoded")[0];
+      const descNode    = match.querySelector("description") || match.querySelector("summary");
+      let html = contentNode ? contentNode.textContent : (descNode ? descNode.textContent : "");
+
+      html = sanitizeHtml(html);
+      html = absolutify(html);
+
+      titleEl.textContent = title;
+      dateEl.textContent  = fmtDate(date);
+      bodyEl.classList.remove("notice");
+      bodyEl.innerHTML = html || "<p>(No content in feed)</p>";
+    } catch (e) {
+      console.error(e);
+      titleEl.textContent = "Error loading post";
+      bodyEl.innerHTML = '<div class="notice">Couldn’t load <code>/assets/feed.xml</code>. Make sure it exists and the site is served.</div>';
+    }
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
