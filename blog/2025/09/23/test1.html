@@ -87,26 +87,57 @@
   <main>
     <section class="blog-hero">
   <div class="container">
-    <p class="lead" style="margin:0 0 .75rem;">
-      <a href="/blog/" style="color:#E6ECF5;text-decoration:none;">← Back to Blog</a>
-    </p>
-    <h1 class="post-title">test1</h1>
+    <nav class="kmw-breadcrumbs" aria-label="Breadcrumb">
+      <a href="/blog/">Blog</a> › <span aria-current="page">test1</span>
+    </nav>
+    <h1 class="post-title" itemprop="headline">test1</h1>
     
-      <p class="post-meta">September 23, 2025</p>
+      <p class="post-meta">
+        <time itemprop="datePublished" datetime="2025-09-23T19:48:00-04:00">September 23, 2025</time>
+      </p>
+    
+
+    
+      <div class="kmw-tags" aria-label="Tags">
+        
+          <span class="kmw-tag" itemprop="keywords">f</span>
+        
+      </div>
     
   </div>
 </section>
 
-<section class="blog-wrap">
+<section class="blog-wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="mainEntityOfPage" content="https://www.kingsmobilewelding.com/blog/2025/09/23/test1.html">
+  
   <div class="container">
     
 
-    <article class="kmw-post-body">
+    <article class="kmw-post-body" itemprop="articleBody">
       <p>f</p>
 
     </article>
   </div>
 </section>
+
+<!-- JSON-LD for the Article -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline": "test1",
+  "datePublished":"2025-09-23T19:48:00-04:00",
+  
+  "mainEntityOfPage":"https://www.kingsmobilewelding.com/blog/2025/09/23/test1.html",
+  "author": { "@type":"Organization", "name":"Kings Mobile Welding" },
+  "publisher": {
+    "@type":"Organization",
+    "name":"Kings Mobile Welding",
+    "logo": { "@type":"ImageObject", "url":"https://www.kingsmobilewelding.com/blog/assets/img/logo-500.png" }
+  },
+  "description": "f\n"
+}
+</script>
 
   </main>
 
