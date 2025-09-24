@@ -4,7 +4,7 @@
   <id>https://www.kingsmobilewelding.com/blog/</id>
   <title>tessdsdsdt</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-24T09:05:34-04:00</updated>
+  <updated>2025-09-24T09:10:36-04:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>https://www.kingsmobilewelding.com/blog/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>test8</title>
-    <link href="https://www.kingsmobilewelding.com/blog/posts/test8-1/" rel="alternate" type="text/html" title="test8" />
+    <link href="https://www.kingsmobilewelding.com/blog/test%20me/2025/09/24/test8-1.html" rel="alternate" type="text/html" title="test8" />
     <published>2025-09-24T04:41:00-04:00</published>
   
     <updated>2025-09-24T04:41:00-04:00</updated>
   
-    <id>https://www.kingsmobilewelding.com/blog/posts/test8-1/</id>
-    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/posts/test8-1/" />
+    <id>https://www.kingsmobilewelding.com/blog/test%20me/2025/09/24/test8-1.html</id>
+    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/test%20me/2025/09/24/test8-1.html" />
     <author>
       <name>your_full_name</name>
     </author>
@@ -45,13 +45,13 @@
   
   <entry>
     <title>test8</title>
-    <link href="https://www.kingsmobilewelding.com/blog/posts/test8/" rel="alternate" type="text/html" title="test8" />
+    <link href="https://www.kingsmobilewelding.com/blog/xcxccxccxc/2025/09/24/test8.html" rel="alternate" type="text/html" title="test8" />
     <published>2025-09-24T04:03:00-04:00</published>
   
     <updated>2025-09-24T04:03:00-04:00</updated>
   
-    <id>https://www.kingsmobilewelding.com/blog/posts/test8/</id>
-    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/posts/test8/" />
+    <id>https://www.kingsmobilewelding.com/blog/xcxccxccxc/2025/09/24/test8.html</id>
+    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/xcxccxccxc/2025/09/24/test8.html" />
     <author>
       <name>your_full_name</name>
     </author>
@@ -69,13 +69,13 @@
   
   <entry>
     <title>test7</title>
-    <link href="https://www.kingsmobilewelding.com/blog/posts/test7/" rel="alternate" type="text/html" title="test7" />
+    <link href="https://www.kingsmobilewelding.com/blog/sd/2025/09/24/test7.html" rel="alternate" type="text/html" title="test7" />
     <published>2025-09-24T03:59:00-04:00</published>
   
     <updated>2025-09-24T03:59:00-04:00</updated>
   
-    <id>https://www.kingsmobilewelding.com/blog/posts/test7/</id>
-    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/posts/test7/" />
+    <id>https://www.kingsmobilewelding.com/blog/sd/2025/09/24/test7.html</id>
+    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/sd/2025/09/24/test7.html" />
     <author>
       <name>your_full_name</name>
     </author>
@@ -93,13 +93,13 @@
   
   <entry>
     <title>sdaasd</title>
-    <link href="https://www.kingsmobilewelding.com/blog/posts/sdaasd/" rel="alternate" type="text/html" title="sdaasd" />
+    <link href="https://www.kingsmobilewelding.com/blog/dsasadsda/2025/09/23/sdaasd.html" rel="alternate" type="text/html" title="sdaasd" />
     <published>2025-09-23T20:49:00-04:00</published>
   
     <updated>2025-09-23T20:49:00-04:00</updated>
   
-    <id>https://www.kingsmobilewelding.com/blog/posts/sdaasd/</id>
-    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/posts/sdaasd/" />
+    <id>https://www.kingsmobilewelding.com/blog/dsasadsda/2025/09/23/sdaasd.html</id>
+    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/dsasadsda/2025/09/23/sdaasd.html" />
     <author>
       <name>your_full_name</name>
     </author>
@@ -117,13 +117,13 @@
   
   <entry>
     <title>test 6</title>
-    <link href="https://www.kingsmobilewelding.com/blog/posts/test-6/" rel="alternate" type="text/html" title="test 6" />
+    <link href="https://www.kingsmobilewelding.com/blog/updaterd%20evberythign/2025/09/23/test-6.html" rel="alternate" type="text/html" title="test 6" />
     <published>2025-09-23T20:30:00-04:00</published>
   
     <updated>2025-09-23T20:30:00-04:00</updated>
   
-    <id>https://www.kingsmobilewelding.com/blog/posts/test-6/</id>
-    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/posts/test-6/" />
+    <id>https://www.kingsmobilewelding.com/blog/updaterd%20evberythign/2025/09/23/test-6.html</id>
+    <content type="text/html" src="https://www.kingsmobilewelding.com/blog/updaterd%20evberythign/2025/09/23/test-6.html" />
     <author>
       <name>your_full_name</name>
     </author>
