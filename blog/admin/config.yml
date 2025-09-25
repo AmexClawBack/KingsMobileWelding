@@ -1,4 +1,4 @@
-﻿backend:
+backend:
   name: github
   repo: AmexClawBack/AmexClawBack.github.io
   branch: main
@@ -30,6 +30,20 @@ collections:
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Categories", name: "categories", widget: "list", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
+
+      # ✅ Added: Featured Image (matches Chirpy's image.path & image.alt)
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        required: false
+        fields:
+          - label: "Path"
+            name: "path"
+            widget: "image"
+            media_folder: "assets/uploads"
+            public_folder: "/assets/uploads"
+          - { label: "Alt text", name: "alt", widget: "string", required: false }
+
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Published", name: "published", widget: "boolean", required: false, default: true }
 
@@ -45,3 +59,4 @@ collections:
           - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
