@@ -82,6 +82,20 @@
     "email":  "Dillonk2012@gmail.com"
 }</script>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- idx-clean -->
+  <script>
+    (function () {
+      try {
+        var p = location.pathname || "";
+        if (/\/index\.html$/i.test(p)) {
+          var clean = p.replace(/index\.html$/i, "");
+          if (location.search) clean += location.search;
+          if (location.hash) clean += location.hash;
+          location.replace(clean);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -276,6 +290,7 @@
 <script src="/assets/js/forms.js"></script>
 </body>
 </html>
+
 
 
 
