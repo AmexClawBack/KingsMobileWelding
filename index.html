@@ -115,8 +115,7 @@
         <a href="/contact">Contact</a>
         
 <a href="/careers">Careers</a>
-<!-- <a href="/blog.html">Blog</a> -->
-<a href="/blog/">Blog</a>
+
 
 <a class="btn-primary" href="/contact">Contact</a>
         
@@ -141,14 +140,31 @@
   </header>
 <main>
   <section class="hero">
-    <div id="heroVideos" class="video-bg" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <script src="/assets/js/video-rotator.js" defer></script>
-      <div>
-        <span class="kicker">ON-SITE WELDING & FABRICATION</span>
-        <h1>AWS D1.1 Certified Mobile Welding for Government & Industrial</h1>
-        <p class="lead">Structural welding, emergency repairs, and custom fabrication for procurement officers, primes, and facility managers across Hampton Roads and the East Coast.</p>
-        <div class="actions">
+  <div id="heroVideos" class="video-bg" aria-hidden="true">
+    <video
+      class="active"        <!-- keeps existing .active opacity rule -->
+      playsinline
+      muted
+      autoplay
+      loop
+      preload="auto"
+      aria-hidden="true"
+    >
+      <source src="/assets/video/Hero-video-loop-compressed.mp4" type="video/mp4" />
+      <!-- Optional: add a WebM for better compression if you have it
+      <source src="/assets/video/Hero-video-loop-compressed.webm" type="video/webm" />
+      -->
+    </video>
+  </div>
+
+  <div class="container hero-grid">
+    <!-- removed: <script src="/assets/js/video-rotator.js" defer></script> -->
+    <div>
+      <span class="kicker">ON-SITE WELDING & FABRICATION</span>
+      <h1>AWS D1.1 Certified Mobile Welding for Government & Industrial</h1>
+      <p class="lead">Structural welding, emergency repairs, and custom fabrication for procurement officers, primes, and facility managers across Hampton Roads and the East Coast.</p>
+      <div class="actions">
+
           
 
 <a class="btn-primary" href="/contact">Contact</a>
@@ -547,6 +563,24 @@
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
 <script src="/assets/js/forms-home-helper.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var v = document.querySelector('#heroVideos video');
+  if(v){
+    v.muted = true;
+    v.setAttribute('muted','');
+    v.setAttribute('playsinline','');
+    v.setAttribute('autoplay','');
+    v.setAttribute('loop','');
+    var tryPlay = function(){ v.play().catch(function(){}); };
+    if(v.readyState >= 2) tryPlay();
+    else v.addEventListener('canplay', tryPlay, { once: true });
+    ['pointerdown','touchstart','scroll','keydown'].forEach(function(ev){
+      window.addEventListener(ev, tryPlay, { once: true, passive: true });
+    });
+  }
+});
+</script>
 </body>
 </html>
 
