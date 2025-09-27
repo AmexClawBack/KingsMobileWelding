@@ -1,0 +1,297 @@
+﻿// Optional: If you don't wire a form endpoint (Formspree, Basin, Netlify), this
+// fallback converts submission to a mailto: link. Set USE_MAILTO=true to enable.
+const USE_MAILTO = false;
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('#contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    const trap = form.querySelector('input[name=""website""]'); // honeypot
+    if (trap && trap.value.trim() !== '') {
+      e.preventDefault();
+      return; // silently drop bots
+    }
+
+    if (USE_MAILTO) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const body = [...data.entries()].map(([k,v]) => ${k}: ).join('%0D%0A');
+      window.location.href = mailto:?subject=Website%20Contact&body=<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Procurement | Federal, Virginia State & City Buyers | Kings Mobile Welding</title>
+
+  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta property="og:image" content="assets/img/logo-500.png">
+
+  <!-- CSS: relative (no leading slash) -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{
+    "url":  "https://amexclawback.github.io/KingsMobileWelding/",
+    "identifier":  [
+                       {
+                           "value":  "ZCY4G7GBGQA3",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "UEI"
+                       },
+                       {
+                           "value":  "11P75",
+                           "@type":  "PropertyValue",
+                           "propertyID":  "CAGE"
+                       }
+                   ],
+    "@type":  "Organization",
+    "sameAs":  [
+                   "https://www.facebook.com/yourpage",
+                   "https://www.linkedin.com/in/yourprofile",
+                   "https://www.instagram.com/yourprofile"
+               ],
+    "telephone":  "757-231-6809",
+    "@context":  "https://schema.org",
+    "name":  "Kings Mobile Welding",
+    "areaServed":  "Hampton Roads, VA and beyond",
+    "logo":  "assets/img/logo-500.png",
+    "email":  "DillonKing@kingsmobilewelding.com"
+}</script>
+<meta name="description" content="AWS D1.1 certified, fully insured mobile welding for Federal, Virginia state, and city & county buyers. UEI & CAGE, COI, capability statement, NAICS & NIGP codes, W-9 on request."></head>
+<body>
+<header class="site-header">
+    
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+      <nav class="desktop">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="past-performance.html">Past Performance</a>
+        <a href="procurement.html">Procurement</a>
+        
+        <a href="contact.html">Contact</a>
+        
+<a href="blog.html">Blog</a>
+<a href="careers.html">Careers</a>
+<a class="btn-primary" href="contact.html">Contact</a>
+        
+</nav>
+      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="services.html">Services</a>
+      <a href="past-performance.html">Past Performance</a>
+      <a href="procurement.html">Procurement</a>
+      
+      <a href="contact.html">Contact</a>
+      
+<a href="blog.html">Blog</a>
+<a href="careers.html">Careers</a>
+<a class="btn-primary" href="contact.html">Contact</a>
+      
+
+      <a href="about.html">About</a></div>
+  </header>
+
+<main>
+  <section class="proc-hero">
+    <div class="container">
+      <h1>Procurement</h1>
+      <p class="lead">AWS D1.1 certified, fully insured mobile welding for <strong>Federal</strong>, <strong>Virginia state</strong>, and <strong>city & county</strong> buyers. Procurement-ready documentation: UEI &amp; CAGE, COI, capability statement, NAICS &amp; NIGP codes, and W-9 on request.</p>
+      <div class="ids">
+        <div class="id-pill"><strong>UEI:</strong> ZCY4G7GBGQA3</div>
+        <div class="id-pill"><strong>CAGE:</strong> 11P75</div>
+        <div class="id-pill"><strong>Service Area:</strong> Hampton Roads, VA and beyond</div>
+      </div>
+      <div class="proc-cta">
+        <a class="btn" href="contact.html">Contact Procurement</a>
+        <a class="btn secondary" href="assets/docs/capability-statement.pdf">Capability Statement (PDF)</a>
+      </div>
+      <p style="color:#E6ECF5; margin-top:.5rem;">W-9 available upon request.</p>
+    </div>
+  </section>
+
+  <section class="proc-wrap">
+    <div class="container">
+
+      <div class="proc-grid">
+        <article class="proc-card" aria-labelledby="federal-h2">
+          <h2 id="federal-h2">Federal Procurement</h2>
+          <p>We support Federal buyers and primes with inspection-ready welding and documentation aligned to your SOW. Our mobile rigs provide on-site structural, stainless/aluminum, and pipe &amp; pressure welding with clean fit-up and QA/QC.</p>
+          <ul>
+            <li>Scope-aligned weld procedures (AWS D1.1) and visual inspection readiness</li>
+            <li>On-site fabrication, structural fit-up, platforms, stairs, rails</li>
+            <li>Pipe &amp; pressure welding (purge as required), brackets, mounts, assemblies</li>
+            <li>Emergency/outage repairs to restore service quickly</li>
+          </ul>
+          <p class="meta" style="color:#64748B">Keywords: federal welding contractor, mobile welding, AWS D1.1, on-site structural, inspection-ready QA/QC</p>
+        </article>
+
+        <article class="proc-card" aria-labelledby="va-h2">
+          <h2 id="va-h2">Virginia State Procurement</h2>
+          <p>For Commonwealth agencies, universities, and state facilities, we deliver safe, timely, procurement-ready services. Clear communication on scope, site access, and timelines to minimize disruptionand pass inspection on the first visit.</p>
+          <ul>
+            <li>Structural steel, stainless, and aluminum welding &amp; fabrication</li>
+            <li>Facility upgrades: stairs, catwalks, safety rails, dock work</li>
+            <li>Maintenance &amp; emergency repair for utilities and equipment</li>
+            <li>Documentation: COI, capability statement, UEI/CAGE, W-9 on request</li>
+          </ul>
+          <p class="meta" style="color:#64748B">Keywords: Virginia welding vendor, state procurement, facility welding, mobile fabrication, safety railings</p>
+        </article>
+
+        <article class="proc-card" aria-labelledby="city-h2">
+          <h2 id="city-h2">City &amp; County Buyers</h2>
+          <p>We partner with municipalities across Hampton Roads on public works, facilities, and waterfront assets. Our on-site approach keeps projects moving with minimal downtime and clean, documented results.</p>
+          <ul>
+            <li>Bridges, parks, waterfront/dock repairs, gates, guardrails</li>
+            <li>Building access &amp; safety upgrades: stairs, ramps, platforms</li>
+            <li>Rapid response maintenance and emergency fixes</li>
+            <li>Transparent estimates, clear closeout, and inspection coordination</li>
+          </ul>
+          <p class="meta" style="color:#64748B">Keywords: municipal welding services, city welding contractor, dock &amp; infrastructure repair, mobile welding</p>
+        </article>
+      </div>
+
+      <article class="proc-card" aria-labelledby="codes-h2">
+        <h2 id="codes-h2">NAICS &amp; NIGP Codes</h2>
+        <div class="codes">
+          <div class="code-card">
+            <h3>NAICS (Primary &amp; Related)</h3>
+            <ul>
+          <li><code>238120</code>  Structural Steel and Precast Concrete Contractors</li>
+          <li><code>238190</code>  Other Foundation, Structure, and Building Exterior Contractors</li>
+          <li><code>238390</code>  Other Building Finishing Contractors</li>
+          <li><code>332312</code>  Fabricated Structural Metal Manufacturing</li>
+          <li><code>332999</code>  All Other Miscellaneous Fabricated Metal Product Manufacturing</li>
+            </ul>
+          </div>
+          <div class="code-card">
+            <h3>NIGP (Commodity Codes)</h3>
+            <ul>
+          <li><code>914-56</code>  Welding</li>
+          <li><code>909-24</code>  Building Construction, Commercial & Institutional</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="proc-card" aria-labelledby="compliance-h2">
+        <h2 id="compliance-h2">Compliance &amp; Documentation</h2>
+        <p>We maintain a procurement-ready package and align our work with your specification and QA/QC requirements.</p>
+        <ul>
+          <li>AWS D1.1 certified, fully insured; WPS/WPQR adherence</li>
+          <li>COI and capability statement provided; <em>W-9 on request</em></li>
+          <li>UEI: ZCY4G7GBGQA3 • CAGE: 11P75</li>
+          <li>Safety protocols and site-specific JSAs as required</li>
+        </ul>
+        <div class="proc-cta">
+          <a class="btn" href="contact.html">Request Documentation</a>
+          <a class="btn secondary" href="areas.html">Areas We Service</a>
+        </div>
+      </article>
+
+      <section class="faq" aria-labelledby="faq-h2">
+        <h2 id="faq-h2" style="color:#0A2E5C; margin:1.25rem 0 .6rem;">Procurement FAQ</h2>
+
+        <details>
+          <summary>Do you provide a W-9?</summary>
+          <p>Yesour W-9 is provided <strong>upon request</strong>. Contact us and well send it with any other required forms.</p>
+        </details>
+
+        <details>
+          <summary>Are you insured and certified?</summary>
+          <p>Yes. We are fully insured and <strong>AWS D1.1 certified</strong>. We follow WPS/WPQR and prepare inspection-ready welds.</p>
+        </details>
+
+        <details>
+          <summary>Can you work on short notice for emergency repairs?</summary>
+          <p>Yes. We provide rapid response for outage and emergency repairs with clean, documented closeout.</p>
+        </details>
+
+        <details>
+          <summary>What documentation can you provide to procurement?</summary>
+          <p>UEI &amp; CAGE, COI, capability statement, SOW alignment, NAICS/NIGP references, and W-9 on request. We can also support site-specific safety/JSA documents.</p>
+        </details>
+      </section>
+    </div>
+  </section>
+</main>
+
+<!-- FAQ JSON-LD for SEO -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do you provide a W-9?","acceptedAnswer":{"@type":"Answer","text":"Yesour W-9 is provided upon request. Contact us and well send it along with any other forms needed."}},
+    {"@type":"Question","name":"Are you insured and certified?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are fully insured and AWS D1.1 certified. We follow WPS/WPQR and prepare inspection-ready welds."}},
+    {"@type":"Question","name":"Can you work on short notice for emergency repairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide rapid response for outage and emergency repairs with clean, documented closeout."}},
+    {"@type":"Question","name":"What documentation can you provide to procurement?","acceptedAnswer":{"@type":"Answer","text":"UEI & CAGE, COI, capability statement, SOW alignment, NAICS/NIGP references, and W-9 on request."}}
+  ]
+}
+</script>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo-500.png" width="44" height="44" alt="Logo">
+          <strong>Kings Mobile Welding</strong>
+        </a>
+        <div class="footer-contact">
+          <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+          <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+          <p>📍 Hampton Roads, VA and beyond</p>
+        
+          <p>🆔 UEI: ZCY4G7GBGQA3</p>
+          <p>🏷️ CAGE: 11P75</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="past-performance.html">Past Performance</a>
+        <a href="procurement.html">Procurement</a>
+        <a href="blog.html">Blog</a>
+        <a href="careers.html">Careers</a>
+                <a href="areas.html">Areas We Service</a>
+<a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="social" aria-label="Social links">
+        <a href="https://www.facebook.com/yourpage" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/yourprofile" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+          </svg>
+        </a>
+        <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>;
+    }
+  });
+});

@@ -71,33 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="container nav">
       <a class="brand" href="index.html"><img src="assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
       <nav class="desktop">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="past-performance.html">Past Performance</a>
-        <a href="procurement.html">Procurement</a>
-        
-        <a href="contact.html">Contact</a>
-        
-<a href="blog.html">Blog</a>
-<a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html">Contact</a>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="past-performance.html">Past Performance</a><a href="procurement.html">Procurement</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a class="btn-primary" href="contact.html">Contact</a>
         
 </nav>
       <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="services.html">Services</a>
-      <a href="past-performance.html">Past Performance</a>
-      <a href="procurement.html">Procurement</a>
-      
-      <a href="contact.html">Contact</a>
-      
-<a href="blog.html">Blog</a>
-<a href="careers.html">Careers</a>
-<a class="btn-primary" href="contact.html">Contact</a>
-      
-
-      <a href="about.html">About</a></div>
+      <a href="services.html">Services</a><a href="past-performance.html">Past Performance</a><a href="procurement.html">Procurement</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a class="btn-primary" href="contact.html">Contact</a><a href="about.html">About</a></div>
   </header>
 
 <main>
@@ -295,3 +275,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
