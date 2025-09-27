@@ -310,8 +310,8 @@ textarea{min-height:120px;resize:vertical}
   padding: 3.25rem 1rem 2.5rem;
 }
 .careers-hero .container { max-width:1100px; margin:0 auto; }
-.careers-hero h1 { margin:0 0 .5rem; color:#FFD60A; }
-.careers-hero p.lead { margin:0; color: #FFD60A; max-width: 75ch; }
+.careers-hero h1 { margin:0 0 .5rem; color:white; }
+.careers-hero p.lead { margin:0; color: white; max-width: 75ch; }
 .careers-section { padding: 2.5rem 1rem 3rem; background:#fff; }
 .careers-section .container { max-width:1100px; margin:0 auto; }
 
