@@ -1,0 +1,9 @@
+﻿title: "Kings Mobile Welding Blog"
+description: "Updates, project highlights, and welding know-how from the field."
+baseurl: "/blog"
+url: "https://www.kingsmobilewelding.com"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
