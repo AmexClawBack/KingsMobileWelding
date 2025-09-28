@@ -1,6 +1,8 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html lang="en">
 <head>
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-40G6PQSXY3"></script>
 <script>
@@ -461,6 +463,66 @@
     </div>
   </div>
 </section>
+<section class="home-recent-posts">
+  <div class="container">
+    <h2>Recent Blog Posts</h2>
+    <ul id="recent-posts" class="post-list"></ul>
+    <div class="more-btn-wrap">
+      <a class="btn" href="/blog/">Read all posts</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  const target = document.getElementById('recent-posts');
+  if (!target) return;
+
+  fetch('/blog/')
+    .then(r => r.text())
+    .then(html => {
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      // Select the first 3 articles from your blog index structure
+      const articles = Array.from(doc.querySelectorAll('.blog-grid article.post')).slice(0, 3);
+
+      articles.forEach(a => {
+        const linkEl = a.querySelector('a[href]');
+        const href = linkEl ? linkEl.getAttribute('href') : '#';
+
+        const imgEl = a.querySelector('img[itemprop="image"]');
+        const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+        const imgAlt = imgEl ? (imgEl.getAttribute('alt') || '') : '';
+
+        const titleEl = a.querySelector('h2 a, h2[itemprop="headline"] a');
+        const title = titleEl ? titleEl.textContent.trim() : 'Untitled';
+
+        const dateEl = a.querySelector('[itemprop="datePublished"]');
+        const dateText = dateEl ? dateEl.textContent.trim() : '';
+
+        const descEl = a.querySelector('[itemprop="description"]');
+        const desc = descEl ? descEl.textContent.trim() : '';
+
+        const li = document.createElement('li');
+        li.className = 'post-item';
+        li.innerHTML = `
+          <article class="post-card">
+            <a class="thumb" href="${href}" aria-label="Read ${title}">
+              ${imgSrc ? `<img src="${imgSrc}" alt="${imgAlt || title}" loading="lazy">` : ``}
+            </a>
+            <div class="info">
+              <h3 class="title"><a href="${href}">${title}</a></h3>
+              ${dateText ? `<p class="meta">${dateText}</p>` : ``}
+              ${desc ? `<p class="excerpt">${desc}</p>` : ``}
+              <p class="cta"><a class="btn" href="${href}">Read more →</a></p>
+            </div>
+          </article>
+        `;
+        target.appendChild(li);
+      });
+    })
+    .catch(console.error);
+})();
+</script>
 
 </main>
         <footer class="site-footer">
