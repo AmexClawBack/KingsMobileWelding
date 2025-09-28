@@ -423,31 +423,41 @@
 </section>
 
 
-<section class="section"><div class="container"><section id="consulting-training-promo" class="section">
+<section id="consulting-training-promo" class="section">
   <div class="container">
     <h2 class="h3">Consulting &amp; Training</h2>
     <div class="grid grid-2 service-grid">
-      <article class="card">
+
+      <!-- Consulting -->
+      <article class="card" itemscope itemtype="https://schema.org/Service">
         <header class="card-header">
-          <h3>Welding Consulting</h3>
+          <h3 itemprop="name">Welding Consulting</h3>
           <p>WPS/WPQR development, QA/QC, process tuning, and fabrication planning for shops and facilities.</p>
+          <!-- Body-level meta description for this service -->
+          <meta itemprop="description" content="Welding consulting for shops &amp; facilities—WPS/WPQR development, QA/QC, process optimization, distortion control, and fabrication planning to reduce rework and cost.">
         </header>
         <footer class="card-footer">
-          <a class="btn btn--primary" href="/services/consulting/">Learn more</a>
+          <a class="btn btn--primary" itemprop="url" href="/services/consulting/">Learn more</a>
         </footer>
       </article>
-      <article class="card">
+
+      <!-- Training -->
+      <article class="card" itemscope itemtype="https://schema.org/Service">
         <header class="card-header">
-          <h3>Workforce Training</h3>
+          <h3 itemprop="name">Workforce Training</h3>
           <p>On-site welder upskilling: TIG/MIG/Stick, stainless/aluminum best practices, blueprint reading &amp; safety.</p>
+          <!-- Body-level meta description for this service -->
+          <meta itemprop="description" content="On-site welder training that boosts throughput—hands-on modules in TIG/MIG/Stick, stainless &amp; aluminum, fabrication fundamentals (building, squaring, leveling), and blueprint reading.">
         </header>
         <footer class="card-footer">
-          <a class="btn btn--primary" href="/services/training/">Learn more</a>
+          <a class="btn btn--primary" itemprop="url" href="/services/training/">Learn more</a>
         </footer>
       </article>
+
     </div>
   </div>
 </section>
+
 </main>
         <footer class="site-footer">
     <div class="container footer-inner">

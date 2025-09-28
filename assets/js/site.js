@@ -21,3 +21,10 @@
     });
   });
 });
+;/* KMW_TRAILING_SLASH_SERVICES */
+(function(){
+  try{
+    var p = (location && location.pathname) || '';
+    if (p === '/services') { location.replace('/services/'); }
+  }catch(e){}
+})();
