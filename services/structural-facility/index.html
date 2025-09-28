@@ -125,112 +125,181 @@
 </div>
       
   </header>
+  <style>
+  /* Add vertical spacing between cards */
+  .kmw-card-list {
+    display: grid;          /* keeps your current 1-column layout */
+    grid-template-columns: 1fr;
+    gap: 1.25rem;           /* ← space between bubbles (20px) */
+  }
+
+  /* Optional: light padding so the yellow button isn’t tight to the edge */
+  .kmw-card {
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    background: #f8fbff;    /* subtle */
+  }
+
+  /* Tidy text spacing inside */
+  .kmw-card h3 { margin: 0 0 .25rem; }
+  .kmw-card p  { margin: 0 0 .75rem; }
+</style>
+
 <main><section class="section">
-  <div class="container">
-    <h1>Structural &amp; Facility Welding</h1>
-    <p class="lead">Clean, inspection-ready installs and repairs for structural steel and facility maintenance. Click a service to view details or request a quote.</p>
+ <!-- Structural Steel Welding & Field Fabrication (AWS D1.1) -->
+<div class="kmw-card-list">
 
-    <h2>Structural Steel Welding &amp; Field Fabrication (AWS D1.1)</h2><div class="kmw-card-list">
-      <a class="kmw-card" href="/services/structural/supplier-error-repairs/">
-        <h3>Supplier Error Repairs</h3>
-        <p>Field rework &amp; fit corrections that keep the schedule moving.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/stairs-welding/">
-        <h3>Steel Stairs</h3>
-        <p>Fabrication, install &amp; welding for code-compliant egress.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/handrails-welding/">
-        <h3>Handrails &amp; Guardrails</h3>
-        <p>Shop/field fabricated rails with clean, durable welds.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/platforms-mezzanines/">
-        <h3>Platforms &amp; Mezzanines</h3>
-        <p>Framing, grating, and details installed to plan.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/bar-joist-welding/">
-        <h3>Bar Joist Welding (OWSJ)</h3>
-        <p>Modifications and ties per the engineer of record.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/rtu-curb-fabrication-welding/">
-        <h3>RTU Curbs &amp; Dunnage</h3>
-        <p>Roof frames, supports, and tie-ins that stay dry and true.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/steel-beams-welding/">
-        <h3>Steel Beams</h3>
-        <p>Set, level, and weld with inspection access in mind.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/steel-columns-welding/">
-        <h3>Steel Columns</h3>
-        <p>Setting, plumb/level, base reinforcement &amp; repairs.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/embeds-welding/">
-        <h3>Concrete Embeds &amp; Plates</h3>
-        <p>Anchors, plates, and angles laid out and installed cleanly.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/architectural-steel/">
-        <h3>Architectural Steel</h3>
-        <p>Canopies, frames, and feature steel with neat finishes.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/aws-d11-certified/">
-        <h3>AWS D1.1 Certified Welding</h3>
-        <p>Certified processes and documentation when required.</p>
-      </a>
-      <a class="kmw-card" href="/services/structural/reinforcement-demolition/">
-        <h3>Reinforcement &amp; Selective Demo</h3>
-        <p>Retrofits, doublers, and controlled removal/sequencing.</p>
-      </a>
-    </div>
+  <article class="kmw-card">
+    <h3>Supplier Error Repairs</h3>
+    <p>Field rework &amp; fit corrections that keep the schedule moving.</p>
+    <p><a class="btn btn--primary" href="/services/structural/supplier-error-repairs/">Learn more</a></p>
+  </article>
 
-    <h2>Facility &amp; Property Welding</h2><div class="kmw-card-list">
-      <a class="kmw-card" href="/services/facility/handrails-guardrails/">
-        <h3>Handrail &amp; Guardrail Fabrication &amp; Repair</h3>
-        <p>Safe, code-aware rails for interiors, docks, and exteriors.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/stairs/">
-        <h3>Steel Stair Fabrication &amp; Repair</h3>
-        <p>Treads, stringers, landings, and handrails restored or new.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/mezzanines-catwalks/">
-        <h3>Mezzanine &amp; Catwalk Fabrication &amp; Repair</h3>
-        <p>Platform framing, decking, and guard systems.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/dumpster-gates/">
-        <h3>Dumpster Gates &amp; Enclosures</h3>
-        <p>Rugged frames, hinges, and latches that last.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/dock-repairs/">
-        <h3>Dock Levelers &amp; Thresholds</h3>
-        <p>Repair plates, angles, and welds for busy loading areas.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/bollards-safety-rails/">
-        <h3>Bollards, Safety Rails &amp; Barriers</h3>
-        <p>Impact protection and visual guidance for equipment/traffic.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/machine-guards/">
-        <h3>Machine Guards &amp; Equipment Safety</h3>
-        <p>OSHA 1910-aware shields, screens, and covers.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/grating-trench-covers/">
-        <h3>Grating, Trench Covers &amp; Floor Plate</h3>
-        <p>Fit, fasten, and finish to survive facility traffic.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/roof-access/">
-        <h3>Roof Access Ladders &amp; Railings</h3>
-        <p>Secure access with proper stand-offs and landings.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/pipe-supports/">
-        <h3>Pipe Supports, Hangers &amp; Racks</h3>
-        <p>Neat, adjustable supports that don’t fight maintenance.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/emergency-repairs/">
-        <h3>24/7 Emergency Facility Welding</h3>
-        <p>Rapid-response mobile welding for breakdowns and safety issues.</p>
-      </a>
-      <a class="kmw-card" href="/services/facility/preventive-maintenance/">
-        <h3>Preventive Maintenance Welding Programs</h3>
-        <p>Recurring inspections and fixes to prevent downtime.</p>
-      </a>
-    </div>
+  <article class="kmw-card">
+    <h3>Steel Stairs</h3>
+    <p>Fabrication, install &amp; welding for code-compliant egress.</p>
+    <p><a class="btn btn--primary" href="/services/structural/stairs-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Handrails &amp; Guardrails</h3>
+    <p>Shop/field fabricated rails with clean, durable welds.</p>
+    <p><a class="btn btn--primary" href="/services/structural/handrails-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Platforms &amp; Mezzanines</h3>
+    <p>Framing, grating, and details installed to plan.</p>
+    <p><a class="btn btn--primary" href="/services/structural/platforms-mezzanines/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Bar Joist Welding (OWSJ)</h3>
+    <p>Modifications and ties per the engineer of record.</p>
+    <p><a class="btn btn--primary" href="/services/structural/bar-joist-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>RTU Curbs &amp; Dunnage</h3>
+    <p>Roof frames, supports, and tie-ins that stay dry and true.</p>
+    <p><a class="btn btn--primary" href="/services/structural/rtu-curb-fabrication-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Steel Beams</h3>
+    <p>Set, level, and weld with inspection access in mind.</p>
+    <p><a class="btn btn--primary" href="/services/structural/steel-beams-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Steel Columns</h3>
+    <p>Setting, plumb/level, base reinforcement &amp; repairs.</p>
+    <p><a class="btn btn--primary" href="/services/structural/steel-columns-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Concrete Embeds &amp; Plates</h3>
+    <p>Anchors, plates, and angles laid out and installed cleanly.</p>
+    <p><a class="btn btn--primary" href="/services/structural/embeds-welding/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Architectural Steel</h3>
+    <p>Canopies, frames, and feature steel with neat finishes.</p>
+    <p><a class="btn btn--primary" href="/services/structural/architectural-steel/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>AWS D1.1 Certified Welding</h3>
+    <p>Certified processes and documentation when required.</p>
+    <p><a class="btn btn--primary" href="/services/structural/aws-d11-certified/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Reinforcement &amp; Selective Demo</h3>
+    <p>Retrofits, doublers, and controlled removal/sequencing.</p>
+    <p><a class="btn btn--primary" href="/services/structural/reinforcement-demolition/">Learn more</a></p>
+  </article>
+
+</div>
+
+    <!-- Facility & Property Welding -->
+<div class="kmw-card-list">
+
+  <article class="kmw-card">
+    <h3>Handrail &amp; Guardrail Fabrication &amp; Repair</h3>
+    <p>Safe, code-aware rails for interiors, docks, and exteriors.</p>
+    <p><a class="btn btn--primary" href="/services/facility/handrails-guardrails/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Steel Stair Fabrication &amp; Repair</h3>
+    <p>Treads, stringers, landings, and handrails restored or new.</p>
+    <p><a class="btn btn--primary" href="/services/facility/stairs/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Mezzanine &amp; Catwalk Fabrication &amp; Repair</h3>
+    <p>Platform framing, decking, and guard systems.</p>
+    <p><a class="btn btn--primary" href="/services/facility/mezzanines-catwalks/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Dumpster Gates &amp; Enclosures</h3>
+    <p>Rugged frames, hinges, and latches that last.</p>
+    <p><a class="btn btn--primary" href="/services/facility/dumpster-gates/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Dock Levelers &amp; Thresholds</h3>
+    <p>Repair plates, angles, and welds for busy loading areas.</p>
+    <p><a class="btn btn--primary" href="/services/facility/dock-repairs/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Bollards, Safety Rails &amp; Barriers</h3>
+    <p>Impact protection and visual guidance for equipment/traffic.</p>
+    <p><a class="btn btn--primary" href="/services/facility/bollards-safety-rails/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Machine Guards &amp; Equipment Safety</h3>
+    <p>OSHA 1910-aware shields, screens, and covers.</p>
+    <p><a class="btn btn--primary" href="/services/facility/machine-guards/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Grating, Trench Covers &amp; Floor Plate</h3>
+    <p>Fit, fasten, and finish to survive facility traffic.</p>
+    <p><a class="btn btn--primary" href="/services/facility/grating-trench-covers/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Roof Access Ladders &amp; Railings</h3>
+    <p>Secure access with proper stand-offs and landings.</p>
+    <p><a class="btn btn--primary" href="/services/facility/roof-access/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Pipe Supports, Hangers &amp; Racks</h3>
+    <p>Neat, adjustable supports that don’t fight maintenance.</p>
+    <p><a class="btn btn--primary" href="/services/facility/pipe-supports/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>24/7 Emergency Facility Welding</h3>
+    <p>Rapid-response mobile welding for breakdowns and safety issues.</p>
+    <p><a class="btn btn--primary" href="/services/facility/emergency-repairs/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Preventive Maintenance Welding Programs</h3>
+    <p>Recurring inspections and fixes to prevent downtime.</p>
+    <p><a class="btn btn--primary" href="/services/facility/preventive-maintenance/">Learn more</a></p>
+  </article>
+
+</div>
+
 
     <p class="actions">
       <a class="btn btn--primary" href="/contact/" target="_self"

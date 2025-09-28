@@ -125,6 +125,36 @@
 </div>
       
   </header>
+  <style>
+  /* Reuse same style spacing as other service pages */
+  .kmw-card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;              /* space between service bubbles */
+    margin-top: 1.5rem;
+  }
+
+  .kmw-card {
+    background: #f8fbff;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .kmw-card h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.125rem;
+    color: #0A2E5C;
+  }
+
+  .kmw-card p {
+    margin: 0 0 0.75rem;
+  }
+
+  .kmw-card .btn {
+    margin-top: 0.25rem;
+  }
+</style>
+
 <main><section class="section">
   <div class="container">
     <h1>Stainless &amp; Aluminum Welding (TIG/MIG)</h1>
@@ -132,13 +162,38 @@
 
     <p>We deliver <strong>TIG and MIG</strong> on stainless and aluminum for <strong>sanitary process, architectural metal, marine/trailer repairs, and custom fabrications</strong>. Fit-up, distortion control, and finishing are handled with care so the end product looks right and performs in service.</p>
 
-    <div class="grid grid-2 service-grid">
-      <article class="card"><header class="card-header"><h3><a href="/services/stainless-aluminum/stainless-architectural-tig/">Stainless TIG Welding</a></h3><p>Clean GTAW joints for food/architectural stainless.</p></header></article>
-      <article class="card"><header class="card-header"><h3><a href="/services/stainless-aluminum/precision-sheet-brackets/">Aluminum TIG/MIG Fabrication</a></h3><p>Frames, enclosures, brackets, and repairs.</p></header></article>
-      <article class="card"><header class="card-header"><h3><a href="/services/stainless-aluminum/aluminum-marine-trailer-repairs/">Marine/Trailer Aluminum Repair</a></h3><p>Hull, ladder, rack, and trailer fixes.</p></header></article>
-      <article class="card"><header class="card-header"><h3><a href="/services/stainless-aluminum/stainless-architectural-tig/">Stainless Architectural Metal</a></h3><p>Handrails, guards, and feature pieces.</p></header></article>
-      <article class="card"><header class="card-header"><h3><a href="/services/stainless-aluminum/precision-sheet-brackets/">Stainless Sheet &amp; Plate Fabrication</a></h3><p>Panels, brackets, guards, covers, and hoods.</p></header></article>
-    </div>
+    <div class="kmw-card-list">
+  <article class="kmw-card">
+    <h3>Stainless TIG Welding</h3>
+    <p>Clean GTAW joints for food/architectural stainless.</p>
+    <p><a class="btn btn--primary" href="/services/stainless-aluminum/stainless-architectural-tig/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Aluminum TIG/MIG Fabrication</h3>
+    <p>Frames, enclosures, brackets, and repairs.</p>
+    <p><a class="btn btn--primary" href="/services/stainless-aluminum/precision-sheet-brackets/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Marine/Trailer Aluminum Repair</h3>
+    <p>Hull, ladder, rack, and trailer fixes.</p>
+    <p><a class="btn btn--primary" href="/services/stainless-aluminum/aluminum-marine-trailer-repairs/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Stainless Architectural Metal</h3>
+    <p>Handrails, guards, and feature pieces.</p>
+    <p><a class="btn btn--primary" href="/services/stainless-aluminum/stainless-architectural-tig/">Learn more</a></p>
+  </article>
+
+  <article class="kmw-card">
+    <h3>Stainless Sheet &amp; Plate Fabrication</h3>
+    <p>Panels, brackets, guards, covers, and hoods.</p>
+    <p><a class="btn btn--primary" href="/services/stainless-aluminum/precision-sheet-brackets/">Learn more</a></p>
+  </article>
+</div>
+
 
     <h3>Why Kings Mobile Welding</h3>
     <ul class="list">
