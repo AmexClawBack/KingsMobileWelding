@@ -123,22 +123,16 @@
   </header>
 <main>
   <section class="hero">
-  <div id="heroVideos" class="video-bg" aria-hidden="true">
-    <video
-      class="active"        <!-- keeps existing .active opacity rule -->
-      playsinline
-      muted
-      autoplay
-      loop
-      preload="auto"
-      aria-hidden="true"
-    >
-      <source src="/assets/video/Hero-video-loop-compressed.mp4" type="video/mp4" />
-      <!-- Optional: add a WebM for better compression if you have it
-      <source src="/assets/video/Hero-video-loop-compressed.webm" type="video/webm" />
-      -->
-    </video>
-  </div>
+ <div class="hero-slideshow" aria-hidden="true">
+  <img
+    src="/assets/img/hero/slide1.jpg"
+    alt=""
+    class="hero-slide hero-slide--active"
+  />
+  
+  
+</div>
+
 
   <div class="container hero-grid">
     <!-- removed: <script src="/assets/js/video-rotator.js" defer></script> -->
