@@ -818,6 +818,14 @@ textarea { min-height:140px; resize:vertical; }
   color: #334155;
   font-weight: 500;
 }
+.pp-wrap .pp-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain !important;   /* shows full photo */
+  background: #0A223F;              /* optional */
+  display: block;
+}
+
 
 
 .pp-card.reverse { flex-direction:column; }
