@@ -813,11 +813,6 @@ textarea { min-height:140px; resize:vertical; }
   display:flex;
   flex-direction:column;
 }
-.pp-card em {
-  font-style: normal;
-  color: #334155;
-  font-weight: 500;
-}
 
 
 .pp-card.reverse { flex-direction:column; }
