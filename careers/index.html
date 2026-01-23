@@ -134,8 +134,74 @@
         </article>
       </div>
 
-      <div class="roles"><p>No current openings at this time. Please check back later.</p></div>
+      <div class="roles">
+  <h2>Submit Your Resume</h2>
+  <p class="lead" style="max-width:60ch;">
+    No current openings at this time, but we’re always looking for solid welders and fabricators.
+    Send your resume and we’ll keep it on file for future consideration.
+  </p>
+
+  <form
+    action="https://formspree.io/f/mwprebdr"
+    method="POST"
+    accept-charset="UTF-8"
+    class="kmw-contact-grid"
+    novalidate
+  >
+    <div class="kmw-field">
+      <label for="c_name">Name</label>
+      <input id="c_name" name="name" required autocomplete="name" />
     </div>
+
+    <div class="kmw-field">
+      <label for="c_email">Email</label>
+      <input id="c_email" name="email" type="email" required autocomplete="email" />
+    </div>
+
+    <div class="kmw-field">
+      <label for="c_phone">Phone</label>
+      <input id="c_phone" name="phone" type="tel" autocomplete="tel" />
+    </div>
+
+    <div class="kmw-field">
+      <label for="c_trade">Trade / Role</label>
+      <input id="c_trade" name="role" placeholder="Welder, Fabricator, Helper, etc." />
+    </div>
+
+    <div class="kmw-field" style="grid-column:1 / -1;">
+      <label for="c_message">Message</label>
+      <textarea id="c_message" name="message" placeholder="Tell us what you do, certs, travel ability, etc." required></textarea>
+    </div>
+
+    <!-- Uploadcare file uploader -->
+    <div class="kmw-field" style="grid-column:1 / -1;">
+
+      <!-- 1) this input becomes the Uploadcare widget -->
+      <input
+        type="hidden"
+        role="uploadcare-uploader"
+        name="resume"
+        data-public-key="YOUR_UPLOADCARE_PUBLIC_KEY"
+        data-multiple="false"
+        data-clearable="true"
+        data-images-only="false"
+        data-system-dialog="true"
+      />
+
+      <small style="opacity:.8;display:block;margin-top:.35rem;">
+        Uploads securely and sends a link with your submission.
+      </small>
+    </div>
+
+    <!-- Optional: helps route the email -->
+    <input type="hidden" name="_subject" value="New Resume Submission — Careers" />
+
+    <button class="btn-primary" type="submit">Submit Resume</button>
+  </form>
+</div>
+
+<!-- Uploadcare script (put near end of body if you prefer) -->
+
   </section>
 </main>
 <script src="/assets/js/careers.js" defer></script>

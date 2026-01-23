@@ -25,8 +25,260 @@ img{max-width:100%;display:block} a{color:var(--brand);text-decoration:none}
 .mobile-menu a:hover{background:#F2F6FB}
 
 /* Hero */
+/* Slightly lighter overlay (less bright than before) */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+
+  background:
+    linear-gradient(180deg,
+      rgba(255,255,255,.38) 0%,
+      rgba(248,250,252,.48) 55%,
+      rgba(248,250,252,.62) 100%
+    );
+}
+/* ✅ COPY/PASTE: HERO PANEL CSS
+   Put this in your main stylesheet OR inside a <style> tag after styles.css
+*/
+:root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+
+.hero-panel{
+  border:1px solid #E5E7EB;
+  border-radius:18px;
+  background:
+    radial-gradient(700px 280px at 85% 0%, rgba(255,214,10,.16), transparent 55%),
+    radial-gradient(700px 260px at 10% 20%, rgba(10,46,92,.10), transparent 60%),
+    #fff;
+  box-shadow:0 18px 40px rgba(2,6,23,.10), 0 1px 2px rgba(2,6,23,.06);
+  padding:1.15rem 1.15rem 1rem;
+  backdrop-filter:saturate(120%) blur(2px);
+}
+
+.hp-top{margin-bottom:.75rem}
+.hp-kicker{
+  display:inline-flex;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:.72rem;
+  color:var(--kmw-blue);
+  background:rgba(255,214,10,.18);
+  border:1px solid rgba(255,214,10,.45);
+  padding:.35rem .55rem;
+  border-radius:999px;
+}
+.hp-title{
+  margin:.6rem 0 .35rem;
+  color:var(--kmw-blue);
+  font-size:1.15rem;
+  line-height:1.25;
+}
+.hp-sub{margin:0;color:#475569;line-height:1.5}
+
+.hp-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin:.85rem 0 .8rem;
+}
+.hp-badge{
+  display:inline-flex;
+  align-items:center;
+  font-weight:850;
+  font-size:.88rem;
+  color:#0F172A;
+  background:#fff;
+  border:1px solid #E5E7EB;
+  border-radius:999px;
+  padding:.4rem .65rem;
+  box-shadow:0 1px 0 rgba(2,6,23,.03);
+}
+
+.hp-check{
+  margin:.2rem 0 .95rem;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:.55rem;
+  color:#334155;
+}
+.hp-check li{
+  display:flex;
+  gap:.55rem;
+  align-items:flex-start;
+}
+.hp-check li:before{
+  content:"";
+  margin-top:.55rem;
+  width:8px;height:8px;border-radius:999px;
+  background:var(--kmw-yellow);
+  box-shadow:0 0 0 3px rgba(255,214,10,.22);
+  flex:0 0 auto;
+}
+.hp-check strong{color:#0F172A}
+
+.hp-actions{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin:0 0 .9rem;
+}
+
+.hp-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin:0 0 .9rem;
+}
+.hp-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.45rem .7rem;
+  border-radius:999px;
+  border:1px solid #E5E7EB;
+  background:#fff;
+  color:var(--kmw-blue);
+  font-weight:850;
+  text-decoration:none;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.hp-pill:hover{
+  background:#F8FAFC;
+  transform:translateY(-1px);
+  box-shadow:0 10px 18px rgba(2,6,23,.08);
+}
+
+.hp-bottom{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:.75rem;
+  border-top:1px solid #F1F5F9;
+  padding-top:.85rem;
+  margin-top:.25rem;
+}
+.hp-contact{display:grid;gap:.15rem}
+.hp-contact-label{
+  font-size:.78rem;
+  color:#64748B;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.hp-contact-value{
+  color:#0F172A;
+  font-weight:900;
+  text-decoration:none;
+}
+.hp-contact-value:hover{color:var(--kmw-blue);text-decoration:underline}
+
+@media (max-width:980px){
+  .hp-bottom{grid-template-columns:1fr}
+}
+/* ================================
+   Compact Premium Hero Panel
+================================ */
+
+.hero-panel-compact{
+  border:1px solid #E5E7EB;
+  border-radius:16px;
+  background:#fff;
+  padding:1rem 1rem .9rem;
+  box-shadow:0 12px 28px rgba(2,6,23,.08);
+  display:grid;
+  gap:.75rem;
+  max-width:420px; /* keeps it tight */
+}
+
+/* Header */
+.hpc-tag{
+  display:inline-block;
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#0A2E5C;
+  background:rgba(255,214,10,.18);
+  border:1px solid rgba(255,214,10,.45);
+  padding:.3rem .55rem;
+  border-radius:999px;
+}
+.hpc-head h2{
+  margin:.45rem 0 .2rem;
+  font-size:1.05rem;
+  color:#0A2E5C;
+}
+.hpc-head p{
+  margin:0;
+  font-size:.92rem;
+  color:#64748B;
+  line-height:1.45;
+}
+
+/* Metrics row instead of bullets */
+.hpc-metrics{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:.45rem .8rem;
+  margin-top:.2rem;
+}
+.hpc-metrics div{
+  font-size:.85rem;
+  color:#334155;
+}
+.hpc-metrics strong{
+  display:block;
+  font-weight:900;
+  color:#0F172A;
+}
+
+/* Buttons */
+.hpc-actions{
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+  margin-top:.2rem;
+}
+
+/* Slim link row */
+.hpc-links{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-top:.1rem;
+}
+.hpc-sub{
+  margin:0 !important;
+  font-size:.92rem;
+  line-height:1.45;
+  color:#1E3A5F !important; /* premium steel blue */
+  font-weight:600;
+}
+
+
+.hpc-links a{
+  font-size:.82rem;
+  font-weight:800;
+  color:#0A2E5C;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+}
+.hpc-links a:hover{
+  border-color:#0A2E5C;
+}
+
+/* Mobile optimization */
+@media (max-width:900px){
+  .hero-panel-compact{
+    max-width:100%;
+  }
+}
+
 .hero h1 {
-  color: #FFD60A; /* bright safety yellow */
+  color: rgba(255, 214, 10, 0.973) /* bright safety yellow */
 }
 
 .hero p {
@@ -1448,4 +1700,144 @@ main .service-grid .card .card-body .pill-list {
 .hero .container, .hero-grid {
   position: relative;
   z-index: 2;
+}
+.text-dark{
+  color:#334155 ;  /* same as your other paragraphs */
+}
+.svc-hero .lead strong{
+  color:#0A2E5C;
+}
+.lead-dark{
+  color:#0F172A !important;
+}
+/* =========================
+   HOME BLOG SECTION FIX
+   ========================= */
+
+.kmw-blog .post-list,
+.home-recent-posts .post-list{
+  list-style:none;
+  padding:0;
+  margin:14px 0 0;
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:16px;
+}
+
+@media (max-width: 980px){
+  .kmw-blog .post-list,
+  .home-recent-posts .post-list{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px){
+  .kmw-blog .post-list,
+  .home-recent-posts .post-list{
+    grid-template-columns:1fr;
+  }
+}
+
+.kmw-blog .post-item,
+.home-recent-posts .post-item{
+  margin:0;
+}
+
+.kmw-blog .post-card,
+.home-recent-posts .post-card{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  border:1px solid #E5E7EB;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+
+.kmw-blog .post-card .thumb,
+.home-recent-posts .post-card .thumb{
+  display:block;
+  width:100%;
+  /* consistent thumbnail area (prevents huge VDOT banner) */
+  aspect-ratio: 16 / 9;
+  background:#F8FAFC;
+  overflow:hidden;
+}
+
+.kmw-blog .post-card .thumb img,
+.home-recent-posts .post-card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;      /* crop nicely */
+  object-position:center;/* center crop */
+  display:block;
+}
+
+.kmw-blog .post-card .info,
+.home-recent-posts .post-card .info{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+  min-width:0;
+}
+
+.kmw-blog .post-card .title,
+.home-recent-posts .post-card .title{
+  margin:0;
+  font-weight:900;
+  color:#0A2E5C;
+  line-height:1.25;
+}
+
+.kmw-blog .post-card .title a,
+.home-recent-posts .post-card .title a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.kmw-blog .post-card .meta,
+.home-recent-posts .post-card .meta{
+  margin:0;
+  color:#64748B;
+  font-size:.92rem;
+}
+
+.kmw-blog .post-card .excerpt,
+.home-recent-posts .post-card .excerpt{
+  margin:0;
+  color:#475569;
+  line-height:1.55;
+  display:-webkit-box;
+  -webkit-line-clamp: 3;    /* keeps heights consistent */
+  -webkit-box-orient: vertical;
+  overflow:hidden;
+}
+
+.kmw-blog .post-card .cta,
+.home-recent-posts .post-card .cta{
+  margin-top:auto; /* pushes button to bottom */
+}
+.more-btn-wrap{
+  margin-top: 24px; /* adjust spacing here */
+}
+/* ✅ Fix stretched images in industry cards */
+.ind-media{
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;          /* match your card rounding */
+  aspect-ratio: 16 / 9;         /* pick 16/9 or 4/3 */
+}
+
+/* if your layout already sets a height on .ind-media, keep it.
+   If it doesn't, aspect-ratio will create a consistent box. */
+
+.ind-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            /* ✅ prevents stretching */
+  object-position: center;      /* ✅ keeps subject centered */
+  display: block;
 }
