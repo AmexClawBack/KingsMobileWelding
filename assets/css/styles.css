@@ -1841,3 +1841,9 @@ main .service-grid .card .card-body .pill-list {
   object-position: center;      /* ✅ keeps subject centered */
   display: block;
 }
+/* Hide the hero side panel on mobile only */
+@media (max-width: 900px) {
+  .hero-panel-compact {
+    display: none !important;
+  }
+}
