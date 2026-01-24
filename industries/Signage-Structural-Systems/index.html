@@ -168,12 +168,25 @@
 
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/safety.html">Safety & Compliance</a>
+      <a href="/safety-compliance/">Safety & Compliance</a>
       <a class="btn-primary" href="/contact/">Contact</a>
     </nav>
+ <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-    <button class="burger" id="openMobile"><span></span><span></span><span></span></button>
-  </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="/about">About</a>
+              <a href="/industries">Industries</a>
+
+        <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a class="btn-primary" href="/contact/">Contact</a>
+    </div>
+  
 </header>
 
 <main>
@@ -205,19 +218,19 @@
           <span class="badge">Mobile Welding</span>
         </div>
         <div class="cta-row">
-          <a href="/structural-steel-welding" class="btn-solid">Structural Steel Welding</a>
-          <a href="/mobile-welding-services" class="btn-outline">Mobile Welding Services</a>
+          <a href="/services/structural-steel-welding/" class="btn-solid">Structural Steel Welding</a>
+          <a href="/services/mobile-welding-services/" class="btn-outline">Mobile Welding Services</a>
         </div>
       </div>
 
       <div class="sign-card">
         <h2>Why Sign Companies Work With Us</h2>
         <ul>
-          <li>✔ Certified AWS D1.1 structural welders</li>
-          <li>✔ Tier-2 subcontractor for sign companies and GCs</li>
-          <li>✔ On-site welding for active installations</li>
-          <li>✔ Structural steel repairs and retrofits</li>
-          <li>✔ Inspection-ready welds and documentation</li>
+          <li> Certified AWS D1.1 structural welders</li>
+          <li> Tier-2 subcontractor for sign companies and GCs</li>
+          <li> On-site welding for active installations</li>
+          <li> Structural steel repairs and retrofits</li>
+          <li> Inspection-ready welds and documentation</li>
         </ul>
       </div>
     </div>
@@ -236,37 +249,37 @@
       <div class="sign-item">
         <strong>Billboard Structure Welding</strong>
         <p>Welding steel billboard frames, monopoles, lattice towers, and support structures.</p>
-        <a href="/industrial-welding">Industrial Welding →</a>
+        <a href="/services/industrial-welding/">Industrial Welding →</a>
       </div>
 
       <div class="sign-item">
         <strong>Pylon & Monument Sign Welding</strong>
         <p>Structural welding for freestanding commercial signs and monument sign bases.</p>
-        <a href="/commercial-welding">Commercial Welding →</a>
+        <a href="/services/commercial-welding/">Commercial Welding →</a>
       </div>
 
       <div class="sign-item">
         <strong>Structural Steel Sign Frames</strong>
         <p>Fabrication and field welding of steel sign frames and mounting systems.</p>
-        <a href="/structural-steel-welding">Structural Steel Welding →</a>
+        <a href="/services/structural-steel-welding/">Structural Steel Welding →</a>
       </div>
 
       <div class="sign-item">
         <strong>Field Welding for Sign Installations</strong>
         <p>On-site welding support for active sign installations and retrofits.</p>
-        <a href="/mobile-welding-services">Mobile Welding Services →</a>
+        <a href="/services/mobile-welding-services/">Mobile Welding Services →</a>
       </div>
 
       <div class="sign-item">
         <strong>Emergency Sign Repairs</strong>
         <p>Rapid-response welding repairs for damaged or failed sign structures.</p>
-        <a href="/emergency-welding">Emergency Welding →</a>
+        <a href="/services/emergency-welding/">Emergency Welding →</a>
       </div>
 
       <div class="sign-item">
         <strong>Welding Subcontractor Support</strong>
         <p>Tier-2 subcontractor services for sign companies and general contractors.</p>
-        <a href="/welding-subcontractor">Welding Subcontractor →</a>
+        <a href="/services/welding-subcontractor/">Welding Subcontractor →</a>
       </div>
     </div>
   </div>
@@ -310,7 +323,7 @@
     </div>
 
     <div class="cta-row">
-      <a href="/contact/" class="btn-solid">Request a Quote</a>
+      <a href="/contact/" class="btn-solid" onclick="event.stopPropagation();">Request a Quote</a>
       <a href="/areas" class="btn-outline">Areas We Service</a>
     </div>
   </div>

@@ -161,40 +161,27 @@
 
     <nav class="desktop">
       <a href="/about">About</a>
-
-      <div class="nav-item has-dropdown">
-        <a href="/services">Services <span class="chev">▾</span></a>
-        <div class="dropdown">
-          <a href="/mobile-welding-services">Mobile Welding Services</a>
-          <a href="/structural-steel-welding">Structural Steel Welding</a>
-          <a href="/industrial-welding">Industrial Welding</a>
-          <a href="/commercial-welding">Commercial Welding</a>
-          <a href="/emergency-welding">Emergency Welding</a>
-          <a href="/welding-subcontractor">Welding Subcontractor Services</a>
-          <a href="/government-and-dot-welding">Government & DOT Welding</a>
-        </div>
-      </div>
-
-      <div class="nav-item has-dropdown">
-        <a href="/industries">Industries <span class="chev">▾</span></a>
-        <div class="dropdown">
-          <a href="/industries/dot-contractors">DOT & Infrastructure</a>
-          <a href="/industries/solar-installers">Solar & Utility</a>
-          <a href="/industries/sign-companies">Sign & Structural Systems</a>
-          <a href="/industries/waste-companies">Waste & Equipment</a>
-          <a href="/industries/commercial-industrial">Commercial & Industrial</a>
-          <a href="/industries/construction-companies">Construction & GCs</a>
-        </div>
-      </div>
-
+<a href="/industries">Industries</a>
+        <a href="/services">Services </a>
+      
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/safety.html">Safety & Compliance</a>
+      <a href="/safety-compliance/">Safety & Compliance</a>
       <a class="btn-primary" href="/contact/">Contact</a>
     </nav>
 
     <button class="burger" id="openMobile"><span></span><span></span><span></span></button>
   </div>
+  <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="/about">About</a>
+              <a href="/industries">Industries</a>
+
+        <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a class="btn-primary" href="/contact/">Contact</a>
+    </div>
 </header>
 
 <main>
@@ -226,19 +213,19 @@
           <span class="badge">Mobile Welding</span>
         </div>
         <div class="cta-row">
-          <a href="/structural-steel-welding" class="btn-solid">Structural Steel Welding</a>
-          <a href="/mobile-welding-services" class="btn-outline">Mobile Welding Services</a>
+          <a href="/services/structural-steel-welding/" class="btn-solid">Structural Steel Welding</a>
+          <a href="/services/mobile-welding-services/" class="btn-outline">Mobile Welding Services</a>
         </div>
       </div>
 
       <div class="ci-card">
         <h2>Why Contractors & Facilities Choose Us</h2>
         <ul>
-          <li>✔ Tier-2 subcontractor for commercial and industrial projects</li>
-          <li>✔ AWS D1.1-certified structural welders</li>
-          <li>✔ On-site field welding for active facilities</li>
-          <li>✔ Inspection-ready documentation and QA/QC</li>
-          <li>✔ Rapid mobilization and emergency repairs</li>
+          <li> Tier-2 subcontractor for commercial and industrial projects</li>
+          <li> AWS D1.1-certified structural welders</li>
+          <li> On-site field welding for active facilities</li>
+          <li> Inspection-ready documentation and QA/QC</li>
+          <li> Rapid mobilization and emergency repairs</li>
         </ul>
       </div>
     </div>
@@ -257,37 +244,37 @@
       <div class="ci-item">
         <strong>Commercial Structural Steel Welding</strong>
         <p>Field welding for beams, columns, stairs, platforms, and miscellaneous metals.</p>
-        <a href="/commercial-welding">Commercial Welding →</a>
+        <a href="/services/commercial-welding/">Commercial Welding →</a>
       </div>
 
       <div class="ci-item">
         <strong>Industrial Facility Welding</strong>
         <p>On-site welding for factories, warehouses, plants, and industrial infrastructure.</p>
-        <a href="/industrial-welding">Industrial Welding →</a>
+        <a href="/services/industrial-welding/">Industrial Welding →</a>
       </div>
 
       <div class="ci-item">
         <strong>Field Welding Subcontractor</strong>
         <p>Tier-2 welding support for general contractors and industrial project teams.</p>
-        <a href="/welding-subcontractor">Welding Subcontractor →</a>
+        <a href="/services/welding-subcontractor/">Welding Subcontractor →</a>
       </div>
 
       <div class="ci-item">
         <strong>Metal Fabrication & Fit-Up</strong>
         <p>Fabrication and installation of steel components and structural assemblies.</p>
-        <a href="/structural-steel-welding">Structural Steel Welding →</a>
+        <a href="/services/structural-steel-welding/">Structural Steel Welding →</a>
       </div>
 
       <div class="ci-item">
         <strong>Emergency Commercial & Industrial Repairs</strong>
         <p>Rapid-response welding for structural damage, equipment failures, and facility repairs.</p>
-        <a href="/emergency-welding">Emergency Welding →</a>
+        <a href="/services/emergency-welding/">Emergency Welding →</a>
       </div>
 
       <div class="ci-item">
         <strong>Mobile Welding for Contractors</strong>
         <p>On-site welding support for commercial construction and industrial operations.</p>
-        <a href="/mobile-welding-services">Mobile Welding Services →</a>
+        <a href="/services/mobile-welding-services/">Mobile Welding Services →</a>
       </div>
     </div>
   </div>
@@ -331,7 +318,7 @@
     </div>
 
     <div class="cta-row">
-      <a href="/contact/" class="btn-solid">Request a Quote</a>
+      <a href="/contact/" class="btn-solid" onclick="event.stopPropagation();">Request a Quote</a>
       <a href="/areas" class="btn-outline">Areas We Service</a>
     </div>
   </div>
