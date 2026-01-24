@@ -19,7 +19,8 @@
 
   <!-- CSS: relative (no leading slash) -->
   <link rel="stylesheet" href="/../assets/css/styles.css">
-<script type="application/ld+json">{
+
+  <script type="application/ld+json">{
     "address":  {
                     "postalCode":  "23601",
                     "addressRegion":  "VA",
@@ -37,13 +38,13 @@
     "name":  "Kings Mobile Welding",
     "areaServed":  [
                        "Hampton Roads, VA",
-                       "Newport News, VA",
+                       "Virginia Beach, VA",
                        "Virginia"
                    ],
-    "description":  "AWS D1.1-certified mobile welding \u0026 fabrication serving Hampton Roads, VA \u0026 beyond — structural steel, repairs, handrails, stairs, aluminum \u0026 stainless.",
+    "description":  "AWS D1.1-certified mobile welding & fabrication serving Hampton Roads, VA & beyond — structural steel, repairs, handrails, stairs, aluminum & stainless.",
     "telephone":  "(757) 231-6809",
     "@context":  "https://schema.org",
-    "priceRange":  "}",
+    "priceRange":  "Contact for quote",
     "knowsAbout":  [
                        "Mobile welding",
                        "Structural steel welding",
@@ -72,124 +73,241 @@
                                       }
                                   ],
     "email":  "Dillonk2012@gmail.com"
-}</script>
-<meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Virginia Beach, VA. Structural steel, stainless & aluminum, pipe & pressure, and inspection-ready QA/QC.">
+  }</script>
+
+  <meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Virginia Beach, VA. Structural steel, stainless & aluminum, coastal corrosion repairs, and inspection-ready QA/QC.">
+</head>
+
 <body>
 <header class="site-header">
-    
-    <div class="container nav">
-      <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
-      <nav class="desktop">
-        <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
-        
-</nav>
-      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a></div>
-  </header>
-<main>
-  <section class="areas-hero">
-    <div class="container">
-      <h1>Mobile Welding in Virginia Beach, VA</h1>
-      <p class="lead">On-site welding & fabrication for government and industry in Virginia Beach, VA  fast, inspection-ready, and aligned to spec.</p>
-    </div>
-  </section>
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+    <nav class="desktop">
+      <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
+    </nav>
+    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a>
+  </div>
+</header>
 
-  <section class="areas-wrap">
+<main>
+  <!-- Page-only styling to make this layout feel unique (non-repeatable) -->
+  <style>
+    .vb-hero { padding: 3.25rem 0 1.25rem; }
+    .vb-hero .vb-wrap { display:grid; gap:1rem; grid-template-columns: 1.25fr .75fr; align-items:stretch; }
+    .vb-hero h1 { margin:0; letter-spacing:-.02em; }
+    .vb-hero .lead { margin:.5rem 0 0; max-width: 62ch; }
+    .vb-panel {
+      border-radius: 18px;
+      border: 1px solid rgba(2, 6, 23, .08);
+      background: linear-gradient(180deg, rgba(10,46,92,.06), rgba(255,214,10,.08));
+      padding: 1rem;
+    }
+    .vb-badges { display:flex; flex-wrap:wrap; gap:.5rem; margin:.75rem 0 0; }
+    .vb-badge{
+      display:inline-flex; align-items:center; gap:.45rem;
+      padding:.38rem .55rem; border-radius:999px;
+      background:#fff; border:1px solid rgba(2, 6, 23, .08);
+      font-weight:700; font-size:.9rem; color:#0A2E5C;
+    }
+    .vb-ctaRow{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.85rem; }
+    .vb-cardGrid{
+      display:grid; gap:1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 1.25rem;
+    }
+    .vb-card{
+      border-radius: 18px;
+      border: 1px solid rgba(2, 6, 23, .08);
+      background:#fff;
+      padding: 1rem;
+    }
+    .vb-card h2{ font-size:1.05rem; margin:.1rem 0 .4rem; color:#0A2E5C; }
+    .vb-card p{ margin:.25rem 0 0; color:#334155; }
+    .vb-list{ margin:.5rem 0 0; padding-left: 1.1rem; color:#334155; }
+    .vb-kicker{ font-weight:800; color:#0A2E5C; opacity:.85; font-size:.85rem; text-transform:uppercase; letter-spacing:.06em; }
+    .vb-note{
+      margin-top: 1rem;
+      color:#64748B;
+      font-size:.95rem;
+    }
+    .vb-callout{
+      margin-top: 1rem;
+      border-radius: 18px;
+      border: 1px dashed rgba(10,46,92,.25);
+      padding: 1rem;
+      background: rgba(10,46,92,.03);
+      display:grid; gap:.6rem;
+      grid-template-columns: 1fr auto;
+      align-items:center;
+    }
+
+    .nf-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      text-decoration:none;
+      font-weight:800;
+      border-radius: 12px;
+      padding: .62rem .95rem;
+      border: 1px solid rgba(2, 6, 23, .10);
+    }
+    .nf-btn.primary{ background:#FFD60A; color:#0A2E5C; }
+    .nf-btn.secondary{ background:#fff; color:#0A2E5C; }
+
+    @media (max-width: 900px){
+      .vb-hero .vb-wrap{ grid-template-columns: 1fr; }
+      .vb-cardGrid{ grid-template-columns: 1fr; }
+      .vb-callout{ grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <section class="vb-hero">
     <div class="container">
-      <article class="area-card" style="border-radius:16px">
-        <h2>Services We Offer in Virginia Beach</h2>
-        <p>We bring the shop to your site with fully equipped mobile rigs. Certified welders deliver clean fit-up, strong welds and tidy finishes that pass inspection the first time.</p>
-        <ul>
-          <li><strong>Structural & Facility Welding:</strong> beams, columns, embeds, stairs, rails, platforms (AWS D1.1)</li>
-          <li><strong>Stainless & Aluminum:</strong> TIG/MIG for architectural and corrosion-resistant components</li>
-          <li><strong>Pipe & Pressure:</strong> carbon/stainless pipe, purge where required, coordination for pressure tests</li>
-          <li><strong>Fabrication & Fit-Up:</strong> cut, layout, fixtures, tack & final welds; on-site installation</li>
-          <li><strong>Repair, Retrofit & Rework:</strong> cracks, failed joints, brackets, wear surfaces, corrosion</li>
-          <li><strong>Inspection-Ready QA/QC:</strong> WPS/WPQR adherence, COI, capability statement, UEI/CAGE</li>
-        </ul>
-        <p class="meta" style="margin-top:.6rem;color:#64748B">
-          Serving Virginia Beach, VA and neighboring communities across Hampton Roads.
-        </p>
-        <p class="cta" style="margin-top:.75rem">
-          <a class="btn" href="/contact/" style="display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.55rem .9rem;background:#FFD60A;color:#0A2E5C;border:1px solid rgba(0,0,0,.08);">Contact us</a>
-        </p>
-      </article>
-    </div>
-  </section>
-</main>
-<footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/">
-          <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
-          <strong>Kings Mobile Welding</strong>
-        </a>
-        <div class="footer-contact">
-          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, VA and beyond</p>
-        
-          <p>🆔 UEI: ZCY4G7GBGQA3</p>
-          <p>🏷️ CAGE: 11P75</p>
+      <div class="vb-wrap">
+        <div>
+          <div class="vb-kicker">Mobile Welding • Fabrication • Repairs</div>
+          <h1>Mobile Welding in Virginia Beach, VA</h1>
+          <p class="lead">
+            On-site, inspection-ready welding for commercial properties, coastal facilities, and contractors across Virginia Beach.
+            Fast mobilization, clean fit-up, and work that’s ready for the next trade.
+          </p>
+
+          <div class="vb-badges" aria-label="Highlights">
+            <span class="vb-badge">AWS D1.1 Certified</span>
+            <span class="vb-badge">Fully Insured</span>
+            <span class="vb-badge">Field Fabrication</span>
+            <span class="vb-badge">Emergency Repairs</span>
+          </div>
+
+          <div class="vb-ctaRow">
+            <a class="nf-btn primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+            <a class="nf-btn secondary" href="tel:7572316809" onclick="event.stopPropagation();">Call 757-231-6809</a>
+          </div>
+
+          <p class="vb-note">
+            Serving Virginia Beach and nearby areas in Hampton Roads—if you’re outside city limits, reach out and we’ll confirm travel.
+          </p>
+        </div>
+
+        <aside class="vb-panel" aria-label="Virginia Beach focus panel">
+          <div class="vb-kicker">Coastal-ready work</div>
+          <p style="margin:.4rem 0 0;color:#334155;">
+            Virginia Beach projects often involve salt air, fasteners, and corrosion-prone assemblies.
+            We handle structural steel, stainless, and aluminum work with practical prep and clean finishing for long-term service.
+          </p>
+          <ul class="vb-list">
+            <li>Handrails, stairs, platforms & access ladders</li>
+            <li>Commercial gate & fence repairs</li>
+            <li>Brackets, embeds, posts & structural repairs</li>
+            <li>Aluminum & stainless repairs where corrosion matters</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="vb-cardGrid" aria-label="Service blocks">
+        <div class="vb-card">
+          <h2>Commercial & Facility Welding</h2>
+          <p>Maintenance and upgrades for shopping centers, warehouses, marinas, and multi-site properties.</p>
+          <ul class="vb-list">
+            <li>Stairs/rails, bollards, posts, and door frames</li>
+            <li>Steel repairs, rework, and reinforcement</li>
+            <li>Cutting, removal, and on-site fabrication</li>
+          </ul>
+        </div>
+
+        <div class="vb-card">
+          <h2>Contractor Support</h2>
+          <p>On-call field welding for schedule-driven jobs where inspection, documentation, and coordination matter.</p>
+          <ul class="vb-list">
+            <li>Beams, columns, embeds, and miscellaneous metals</li>
+            <li>Fit-up, tacks, weld-out, and punch list closeout</li>
+            <li>Fast mobilization for change orders</li>
+          </ul>
+        </div>
+
+        <div class="vb-card">
+          <h2>Inspection-Ready QA/QC</h2>
+          <p>We show up prepared—so your job keeps moving.</p>
+          <ul class="vb-list">
+            <li>WPS/WPQR-aligned welding practices</li>
+            <li>COI available on request</li>
+            <li>Procurement-ready profile (UEI/CAGE)</li>
+          </ul>
         </div>
       </div>
 
-      <nav class="footer-nav">
-        <a href="/../about">About</a>
-        <a href="/../services">Services</a>
-        <a href="/../past-performance">Past Performance</a>
-        <a href="/../procurement">Procurement</a>
-        <a href="/../blog">Blog</a>
-        <a href="/../careers">Careers</a>
-                <a href="/../areas">Areas We Service</a>
-<a href="/../contact">Contact</a>
-      </nav>
-
-      <div class="social" aria-label="Social links">
-  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-    </svg>
-  </a>
-  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-    </svg>
-  </a>
-  <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-    </svg>
-  </a>
-</div>
+      <div class="vb-callout" aria-label="Callout">
+        <div>
+          <div class="vb-kicker">Need help fast?</div>
+          <p style="margin:.35rem 0 0;color:#334155;">
+            Send photos, location, and a quick description—then we’ll confirm scope, mobilization, and next steps.
+          </p>
+        </div>
+        <div>
+          <a class="nf-btn primary" href="/contact/" onclick="event.stopPropagation();">Contact Kings Mobile Welding</a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
+      <div class="footer-contact">
+        <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, VA and beyond</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="/../about">About</a>
+      <a href="/../services">Services</a>
+      <a href="/../past-performance">Past Performance</a>
+      <a href="/../procurement">Procurement</a>
+      <a href="/../blog">Blog</a>
+      <a href="/../careers">Careers</a>
+      <a href="/../areas">Areas We Service</a>
+      <a href="/../contact">Contact</a>
+    </nav>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+        </svg>
+      </a>
+      <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

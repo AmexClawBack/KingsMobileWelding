@@ -1847,3 +1847,19 @@ main .service-grid .card .card-body .pill-list {
     display: none !important;
   }
 }
+/* Featured Work - prevent image cropping on mobile */
+.kmw-proof-card img{
+  width: 100%;
+  height: auto;          /* key: let the image keep its aspect ratio */
+  display: block;
+  object-fit: contain;   /* safety if a height is applied elsewhere */
+}
+
+/* If you currently have a fixed height on the image, override it on mobile */
+@media (max-width: 768px){
+  .kmw-proof-card img{
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+}

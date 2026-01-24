@@ -19,11 +19,12 @@
 
   <!-- CSS: relative (no leading slash) -->
   <link rel="stylesheet" href="/../assets/css/styles.css">
-<script type="application/ld+json">{
+
+  <script type="application/ld+json">{
     "address":  {
-                    "postalCode":  "23601",
+                    "postalCode":  "23434",
                     "addressRegion":  "VA",
-                    "addressLocality":  "Newport News",
+                    "addressLocality":  "Suffolk",
                     "@type":  "PostalAddress",
                     "addressCountry":  "US"
                 },
@@ -37,13 +38,13 @@
     "name":  "Kings Mobile Welding",
     "areaServed":  [
                        "Hampton Roads, VA",
-                       "Newport News, VA",
+                       "Suffolk, VA",
                        "Virginia"
                    ],
-    "description":  "AWS D1.1-certified mobile welding \u0026 fabrication serving Hampton Roads, VA \u0026 beyond — structural steel, repairs, handrails, stairs, aluminum \u0026 stainless.",
+    "description":  "AWS D1.1-certified mobile welding & fabrication serving Suffolk, VA and Hampton Roads — structural steel, repairs, handrails, stairs, aluminum & stainless.",
     "telephone":  "(757) 231-6809",
     "@context":  "https://schema.org",
-    "priceRange":  "}",
+    "priceRange":  "Contact for quote",
     "knowsAbout":  [
                        "Mobile welding",
                        "Structural steel welding",
@@ -72,124 +73,298 @@
                                       }
                                   ],
     "email":  "Dillonk2012@gmail.com"
-}</script>
-<meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Suffolk, VA. Structural steel, stainless & aluminum, pipe & pressure, and inspection-ready QA/QC.">
+  }</script>
+
+  <meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Suffolk, VA. Structural steel, industrial repairs, stainless & aluminum, and inspection-ready QA/QC.">
+</head>
+
 <body>
 <header class="site-header">
-    
-    <div class="container nav">
-      <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
-      <nav class="desktop">
-        <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
-        
-</nav>
-      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a></div>
-  </header>
-<main>
-  <section class="areas-hero">
-    <div class="container">
-      <h1>Mobile Welding in Suffolk, VA</h1>
-      <p class="lead">On-site welding & fabrication for government and industry in Suffolk, VA  fast, inspection-ready, and aligned to spec.</p>
-    </div>
-  </section>
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+    <nav class="desktop">
+      <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
+    </nav>
+    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a>
+  </div>
+</header>
 
-  <section class="areas-wrap">
+<main>
+  <!-- Suffolk-only styling (unique layout + vibe) -->
+  <style>
+    .sfk-shell{ padding: 3.1rem 0 3rem; }
+    .sfk-hero{
+      border-radius: 26px;
+      border: 1px solid rgba(2,6,23,.08);
+      background:
+        linear-gradient(135deg, rgba(10,46,92,.06), rgba(255,214,10,.10)),
+        radial-gradient(900px 380px at 85% 0%, rgba(255,214,10,.18), transparent 55%),
+        #fff;
+      overflow:hidden;
+      position:relative;
+    }
+    .sfk-hero::after{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(460px 260px at 15% 20%, rgba(10,46,92,.20), transparent 60%),
+        radial-gradient(420px 240px at 90% 70%, rgba(255,214,10,.22), transparent 58%);
+      pointer-events:none;
+      opacity:.55;
+    }
+    .sfk-inner{ position:relative; z-index:1; padding: 1.25rem; }
+    .sfk-top{ display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+    .sfk-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      font-weight:900;
+      font-size:.85rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#0A2E5C;
+      background: rgba(255,255,255,.75);
+      border:1px solid rgba(2,6,23,.10);
+      border-radius: 999px;
+      padding:.45rem .7rem;
+    }
+    .sfk-title{ margin:.65rem 0 0; letter-spacing:-.02em; }
+    .sfk-lead{ margin:.7rem 0 0; max-width: 70ch; color:#334155; }
+    .sfk-actions{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top: 1.05rem; }
+    .nf-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      text-decoration:none;
+      font-weight:900;
+      border-radius: 12px;
+      padding: .62rem .95rem;
+      border: 1px solid rgba(2, 6, 23, .10);
+      cursor:pointer;
+      background:#fff;
+      color:#0A2E5C;
+    }
+    .nf-btn.primary{ background:#FFD60A; color:#0A2E5C; }
+
+    .sfk-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.5rem;
+      justify-content:flex-end;
+      margin-top:.1rem;
+    }
+    .sfk-badge{
+      border-radius: 14px;
+      border:1px solid rgba(2,6,23,.08);
+      background: rgba(255,255,255,.72);
+      padding:.65rem .75rem;
+      min-width: 160px;
+    }
+    .sfk-badge strong{ display:block; color:#0A2E5C; }
+    .sfk-badge span{ display:block; color:#64748B; font-weight:800; margin-top:.1rem; }
+
+    .sfk-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.1rem;
+    }
+    .sfk-card{
+      border-radius: 22px;
+      border:1px solid rgba(2,6,23,.08);
+      background:#fff;
+      padding: 1.05rem 1.05rem 1.1rem;
+    }
+    .sfk-card h2{ margin:.1rem 0 .4rem; color:#0A2E5C; font-size:1.08rem; }
+    .sfk-card p{ margin:.25rem 0 0; color:#334155; }
+    .sfk-list{ margin:.55rem 0 0; padding-left:1.1rem; color:#334155; }
+    .sfk-list li{ margin:.25rem 0; }
+
+    .sfk-strip{
+      margin-top: 1rem;
+      border-radius: 22px;
+      border: 1px dashed rgba(10,46,92,.22);
+      background: rgba(10,46,92,.03);
+      padding: 1rem;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:.85rem;
+    }
+    .sfk-strip p{ margin:0; color:#334155; }
+
+    .sfk-mini{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .sfk-mini .sfk-card{ padding: .95rem 1.05rem; }
+
+    @media (max-width: 980px){
+      .sfk-grid{ grid-template-columns: 1fr; }
+      .sfk-mini{ grid-template-columns: 1fr; }
+      .sfk-badges{ justify-content:flex-start; }
+    }
+  </style>
+
+  <section class="sfk-shell">
     <div class="container">
-      <article class="area-card" style="border-radius:16px">
-        <h2>Services We Offer in Suffolk</h2>
-        <p>We bring the shop to your site with fully equipped mobile rigs. Certified welders deliver clean fit-up, strong welds and tidy finishes that pass inspection the first time.</p>
-        <ul>
-          <li><strong>Structural & Facility Welding:</strong> beams, columns, embeds, stairs, rails, platforms (AWS D1.1)</li>
-          <li><strong>Stainless & Aluminum:</strong> TIG/MIG for architectural and corrosion-resistant components</li>
-          <li><strong>Pipe & Pressure:</strong> carbon/stainless pipe, purge where required, coordination for pressure tests</li>
-          <li><strong>Fabrication & Fit-Up:</strong> cut, layout, fixtures, tack & final welds; on-site installation</li>
-          <li><strong>Repair, Retrofit & Rework:</strong> cracks, failed joints, brackets, wear surfaces, corrosion</li>
-          <li><strong>Inspection-Ready QA/QC:</strong> WPS/WPQR adherence, COI, capability statement, UEI/CAGE</li>
-        </ul>
-        <p class="meta" style="margin-top:.6rem;color:#64748B">
-          Serving Suffolk, VA and neighboring communities across Hampton Roads.
-        </p>
-        <p class="cta" style="margin-top:.75rem">
-          <a class="btn" href="/contact/" style="display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.55rem .9rem;background:#FFD60A;color:#0A2E5C;border:1px solid rgba(0,0,0,.08);">Contact us</a>
-        </p>
-      </article>
+      <div class="sfk-hero">
+        <div class="sfk-inner">
+          <div class="sfk-top">
+            <div>
+              <div class="sfk-tag">Mobile Welding • Suffolk, Virginia</div>
+              <h1 class="sfk-title">Mobile Welding in Suffolk, VA</h1>
+              <p class="sfk-lead">
+                On-site welding for contractors, facilities, and industrial sites across Suffolk—from Downtown and Harbor View
+                out toward the corridor near Route 58. Fast mobilization, clean work, and inspection-ready results.
+              </p>
+
+              <div class="sfk-actions">
+                <a class="nf-btn primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+                <a class="nf-btn" href="tel:7572316809" onclick="event.stopPropagation();">Call 757-231-6809</a>
+                <a class="nf-btn" href="/../procurement" onclick="event.stopPropagation();">Procurement Info</a>
+              </div>
+            </div>
+
+            <div class="sfk-badges" aria-label="Highlights">
+              <div class="sfk-badge">
+                <strong>AWS D1.1</strong>
+                <span>Structural Welding</span>
+              </div>
+              <div class="sfk-badge">
+                <strong>Field Ready</strong>
+                <span>Insured + Documented</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sfk-grid" aria-label="Service focus">
+            <article class="sfk-card">
+              <h2>Structural & Misc. Steel</h2>
+              <p>Beams, columns, embeds, angles, plates, stairs, rails, and steel repairs performed on-site.</p>
+              <ul class="sfk-list">
+                <li>Field fit-up + weld-out</li>
+                <li>Reinforcement + rework</li>
+                <li>Punch-list welding support</li>
+              </ul>
+            </article>
+
+            <article class="sfk-card">
+              <h2>Industrial Repairs</h2>
+              <p>Repairs and modifications for equipment supports, brackets, frames, and wear points.</p>
+              <ul class="sfk-list">
+                <li>Cracked joints + failed connections</li>
+                <li>Cut/remove/replace steel</li>
+                <li>On-site fabrication and install</li>
+              </ul>
+            </article>
+
+            <article class="sfk-card">
+              <h2>Stainless & Aluminum</h2>
+              <p>When corrosion resistance matters—clean prep and controlled welding where required.</p>
+              <ul class="sfk-list">
+                <li>Handrails and architectural metal</li>
+                <li>Repairs and component replacement</li>
+                <li>Fit/finish focused work</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="sfk-strip" aria-label="Suffolk CTA strip">
+            <p><strong style="color:#0A2E5C;">Need a mobile welder in Suffolk?</strong> Send photos + address and we’ll confirm scope and mobilization.</p>
+            <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+              <a class="nf-btn primary" href="/contact/" onclick="event.stopPropagation();">Contact Us</a>
+              <a class="nf-btn" href="tel:7572316809" onclick="event.stopPropagation();">Call Now</a>
+            </div>
+          </div>
+
+          <div class="sfk-mini" aria-label="What to expect">
+            <article class="sfk-card">
+              <h2>What contractors like</h2>
+              <ul class="sfk-list">
+                <li>Clear communication and arrival windows</li>
+                <li>Jobsite-safe setup and clean work area</li>
+                <li>Work that’s ready for inspection and turnover</li>
+              </ul>
+            </article>
+
+            <article class="sfk-card">
+              <h2>Inspection-ready support</h2>
+              <ul class="sfk-list">
+                <li>WPS/WPQR-aligned practices</li>
+                <li>COI available upon request</li>
+                <li>UEI/CAGE on file for procurement</li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
 </main>
+
 <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/">
-          <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
-          <strong>Kings Mobile Welding</strong>
-        </a>
-        <div class="footer-contact">
-          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, VA and beyond</p>
-        
-          <p>🆔 UEI: ZCY4G7GBGQA3</p>
-          <p>🏷️ CAGE: 11P75</p>
-        </div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
+      <div class="footer-contact">
+        <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, VA and beyond</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
       </div>
-
-      <nav class="footer-nav">
-        <a href="/../about">About</a>
-        <a href="/../services">Services</a>
-        <a href="/../past-performance">Past Performance</a>
-        <a href="/../procurement">Procurement</a>
-        <a href="/../blog">Blog</a>
-        <a href="/../careers">Careers</a>
-                <a href="/../areas">Areas We Service</a>
-<a href="/../contact">Contact</a>
-      </nav>
-
-      <div class="social" aria-label="Social links">
-  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-    </svg>
-  </a>
-  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-    </svg>
-  </a>
-  <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-    </svg>
-  </a>
-</div>
     </div>
-  </footer>
+
+    <nav class="footer-nav">
+      <a href="/../about">About</a>
+      <a href="/../services">Services</a>
+      <a href="/../past-performance">Past Performance</a>
+      <a href="/../procurement">Procurement</a>
+      <a href="/../blog">Blog</a>
+      <a href="/../careers">Careers</a>
+      <a href="/../areas">Areas We Service</a>
+      <a href="/../contact">Contact</a>
+    </nav>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+        </svg>
+      </a>
+      <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
