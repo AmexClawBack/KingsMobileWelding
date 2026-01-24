@@ -13,10 +13,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Past Performance | Kings Mobile Welding</title>
-  <meta name="description" content="Past performance highlights: industrial plant welding, HVAC contractor support, marine fabrication & repair, and specialty on-site welding projects across Hampton Roads, VA. AWS D1.1 certified, mobile, inspection-ready.">
+  <title>Past Performance | Mobile Welding & Structural Steel Projects | Kings Mobile Welding</title>
+  <meta name="description" content="Past performance for Kings Mobile Welding: AWS D1.1 structural steel welding, mobile welding repairs, industrial plant support, solar pile splice welding, marine fabrication, heavy equipment repair, and contractor support across Hampton Roads, VA." />
 
-  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -55,14 +55,16 @@
     "priceRange": "}",
     "knowsAbout": [
       "Mobile welding",
+      "Mobile welder near me",
       "Structural steel welding",
+      "AWS D1.1 welding",
+      "Field welding",
       "Steel repair",
-      "Handrails",
-      "Metal stairs",
-      "Torch cutting",
-      "Aluminum welding",
-      "Stainless steel welding",
-      "Fabrication"
+      "Industrial welding",
+      "Commercial welding",
+      "Marine welding",
+      "Heavy equipment repair",
+      "On-site fabrication"
     ],
     "image": "https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
     "founder": "Dillon King",
@@ -85,37 +87,189 @@
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
+  <!-- ✅ Modern Past Performance styling (scoped) -->
   <style>
+    :root{
+      --kmw-blue:#0A2E5C;
+      --kmw-yellow:#FFD60A;
+      --slate-900:#0F172A;
+      --slate-700:#334155;
+      --slate-600:#475569;
+      --slate-500:#64748B;
+      --slate-200:#E2E8F0;
+      --slate-100:#F1F5F9;
+      --slate-50:#F8FAFC;
+    }
+
     /* Make the buttons clickable above any overlays */
     a.request-similar { position: relative; z-index: 999; pointer-events: auto; }
-    /* Common overlays: ensure they don't swallow clicks */
     .hero-video, .video-overlay, .image-overlay, .bg-overlay { pointer-events: none; }
-    /* Just in case the card has a positioned overlay */
-    .case, .card, .project { position: relative; }
 
-    /* === Past Performance layout fixes === */
-    .pp-wrap {
-      padding: 3rem 0;
+    /* Hero */
+    .ppx-hero{
+      padding:56px 0 26px;
+      background:linear-gradient(180deg,#FFFFFF 0%, var(--slate-50) 100%);
+      border-bottom:1px solid var(--slate-200);
+    }
+    .ppx-hero .container{max-width:1160px;margin:0 auto;padding:0 16px}
+    .ppx-kicker{
+      display:inline-flex;align-items:center;gap:10px;
+      font-weight:900;letter-spacing:.08em;
+      font-size:.78rem;color:var(--kmw-blue);
+      text-transform:uppercase;
+    }
+    .ppx-hero h1{margin:.55rem 0 .55rem;color:var(--slate-900);font-weight:950;line-height:1.06}
+    .ppx-hero .lead{margin:0;color:var(--slate-600);max-width:92ch;line-height:1.65}
+    .ppx-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:16px;align-items:center}
+    .ppx-pill{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(255,214,10,.20);
+      border:1px solid rgba(255,214,10,.45);
+      padding:8px 10px;border-radius:999px;
+      font-weight:900;color:var(--slate-900);
+      font-size:.92rem
     }
 
-    .pp-wrap .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
+    /* Quick filters (no JS required) */
+    .ppx-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .ppx-chip{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid var(--slate-200);
+      background:#fff;
+      padding:8px 10px;
+      border-radius:999px;
+      color:var(--slate-700);
+      font-weight:800;
+      font-size:.9rem;
     }
 
-    .pp-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 2rem;
-      align-items: stretch;
+    /* Wrapper */
+    .ppx-wrap{padding:28px 0 60px;background:#fff}
+    .ppx-wrap .container{max-width:1160px;margin:0 auto;padding:0 16px}
+
+    /* Grid */
+    .ppx-grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:16px;
+      margin-top:18px;
     }
 
-    .pp-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      display: block;
+    /* Card */
+    .ppx-card{
+      grid-column:span 12;
+      border:1px solid var(--slate-200);
+      border-radius:20px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1.05fr 1fr;
+      min-height: 320px;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      position:relative;
+    }
+    .ppx-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 34px rgba(2,6,23,.10);
+      border-color:#D7DEE8;
+    }
+    .ppx-card.reverse{grid-template-columns: 1fr 1.05fr;}
+    .ppx-media{
+      position:relative;
+      min-height:320px;
+      background:#0B223E;
+      overflow:hidden;
+    }
+    .ppx-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transform:scale(1.02);
+    }
+    .ppx-badge{
+      position:absolute;left:14px;top:14px;
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(10,46,92,.92);
+      color:#fff;border:1px solid rgba(255,255,255,.15);
+      padding:7px 10px;border-radius:999px;
+      font-weight:900;font-size:.82rem;
+      backdrop-filter:blur(4px);
+    }
+
+    .ppx-body{
+      padding:18px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .ppx-body h2{
+      margin:0;color:var(--slate-900);
+      font-weight:950;font-size:1.15rem;
+      line-height:1.2;
+    }
+    .ppx-body p{margin:0;color:var(--slate-600);line-height:1.65}
+    .ppx-body em{font-style:normal;color:var(--slate-600)}
+    .ppx-list{
+      margin:4px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:8px;
+    }
+    .ppx-list li{
+      display:flex;gap:10px;align-items:flex-start;
+      color:var(--slate-700);
+      line-height:1.45;
+      background:var(--slate-50);
+      border:1px solid var(--slate-200);
+      border-radius:14px;
+      padding:9px 10px;
+    }
+    .ppx-list li::before{
+      content:"";
+      width:10px;height:10px;border-radius:999px;margin-top:6px;
+      background:var(--kmw-yellow);
+      flex:0 0 auto;
+      box-shadow:0 0 0 3px rgba(255,214,10,.22);
+    }
+
+    .ppx-meta{
+      margin-top:auto;
+      padding-top:10px;
+      border-top:1px solid var(--slate-200);
+      color:var(--slate-500);
+      font-size:.95rem;
+      line-height:1.5;
+    }
+    .ppx-cta{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+      margin-top:10px;
+    }
+    .ppx-cta a{ text-decoration:none; }
+
+    /* CTA band */
+    .ppx-band{
+      margin-top:18px;
+      border:1px solid var(--slate-200);
+      border-radius:20px;
+      background:linear-gradient(180deg,#FFFFFF 0%, var(--slate-50) 100%);
+      padding:16px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .ppx-band strong{color:var(--slate-900)}
+    .ppx-band p{margin:6px 0 0;color:var(--slate-600);line-height:1.55;max-width:78ch}
+    .ppx-band .btns{display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .ppx-card, .ppx-card.reverse{grid-template-columns:1fr}
+      .ppx-media{min-height:220px}
     }
   </style>
 </head>
@@ -133,7 +287,7 @@
       <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/safety.html">Safety & Compliance</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
       <a class="btn-primary" href="/contact/">Contact</a>
     </nav>
     <button class="burger" id="openMobile" aria-expanded="false" aria-label="Toggle menu">
@@ -147,287 +301,394 @@
     <a href="/services">Services</a>
     <a href="/past-performance">Past Performance</a>
     <a href="/procurement">Procurement</a>
-    <a href="/safety.html">Safety & Compliance</a>
-    
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
     <a class="btn-primary" href="/contact/">Contact</a>
   </div>
 </header>
 
 <main>
-  <section class="pp-hero">
+  <!-- ✅ Modern hero -->
+  <section class="ppx-hero">
     <div class="container">
+      <div class="ppx-kicker">AWS D1.1 • Mobile Welding • Field Fabrication • Inspection-Ready</div>
       <h1>Past Performance</h1>
       <p class="lead">
-        Representative work across industrial, commercial, and marine environments.
-        AWS D1.1 certified, mobile, and inspection-ready.
+        Representative <strong>mobile welding</strong> and <strong>structural steel welding</strong> work across Hampton Roads, VA and surrounding regions—
+        including <strong>industrial welding</strong>, <strong>commercial contractor support</strong>, <strong>marine fabrication</strong>, <strong>solar pile splice welding</strong>,
+        and <strong>heavy equipment repair</strong>. If you’re searching for a <strong>mobile welder near me</strong> who shows up ready and builds to spec, you’re in the right place.
       </p>
+
+      <div class="ppx-actions">
+        <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+        <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">View Services</a>
+        <span class="ppx-pill">Commercial • Industrial • Marine • Heavy Civil</span>
+      </div>
+
+      <div class="ppx-chips" aria-label="SEO highlights">
+        <span class="ppx-chip">Mobile Welding Hampton Roads VA</span>
+        <span class="ppx-chip">AWS D1.1 Structural Welding</span>
+        <span class="ppx-chip">Emergency Repairs</span>
+        <span class="ppx-chip">On-Site Fabrication</span>
+        <span class="ppx-chip">Contractor / GC Support</span>
+      </div>
     </div>
   </section>
 
-  <section class="pp-wrap">
+  <section class="ppx-wrap">
     <div class="container">
-      <div class="pp-grid">
 
-  
+      <div class="ppx-grid">
 
-        <!-- ODU Tennis Court Sign Structure (Commercial GC) -->
-        <article class="pp-card reverse">
-          <img src="/assets/img/past/slide1.jpg" alt="Structural welding for a large sign at Old Dominion University tennis courts">
-          <div class="pp-body">
+        <!-- ODU Tennis Court Sign Structure -->
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/slide1.jpg" alt="Structural welding for a large sign at Old Dominion University tennis courts" loading="lazy">
+            <div class="ppx-badge">Structural Steel • AWS D1.1</div>
+          </div>
+          <div class="ppx-body">
             <h2>University Grounds — ODU Tennis Court Sign Structure</h2>
             <p><em>A commercial general contractor hired us to provide AWS D1.1 structural welding for a large custom sign at Old Dominion University’s tennis courts. The sign required heavy-duty steel supports, field fit-up, and on-site fabrication to align with existing foundations and site constraints. We completed certified welds, bracing, and connections on a tight schedule so the contractor could keep the project on track and inspection-ready.</em></p>
-            <ul>
+            <ul class="ppx-list">
               <li>AWS D1.1 structural welding for sign frames and supports</li>
               <li>On-site custom fabrication and field adjustments</li>
               <li>Coordination with GC and inspectors at an active campus</li>
             </ul>
-            <p class="pp-meta">Keywords: structural welding, AWS D1.1, sign structure, Old Dominion University, commercial contractor</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/structural-steel-welding/" onclick="event.stopPropagation();">Structural Steel</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> structural welding, AWS D1.1, mobile welding, commercial contractor, field fabrication, Hampton Roads VA</div>
           </div>
-        </article> 
-             <!-- Fixed ladder install for Dollar Tree-->
-        <article class="pp-card">
-  <img src="/assets/img/past/Ladder.jpg" alt="Fixed roof access ladder installation on commercial building in Virginia Beach">
-  <div class="pp-body">
-    <h2>Commercial Facility — Fixed Roof Access Ladder Installation & Modification</h2>
-    <p><em>
-      A commercial facility in Virginia Beach required a fixed roof access ladder to be safely installed and brought into full code compliance. We coordinated the hoisting of the ladder to the roofline, set and secured it in place, and performed multiple on-site modifications to address building conditions and inspection requirements. This included extending the ladder height, cutting through exterior foam insulation, modifying ladder legs, and installing additional safety features to ensure long-term durability and safe roof access.
-    </em></p>
-    <ul>
-      <li>Hoisting and installation of fixed roof access ladder on multi-story commercial building</li>
-      <li>Ladder modifications including increased height and adjusted mounting legs</li>
-      <li>Installation of grab rails and non-slip safety tape for OSHA compliance</li>
-      <li>Cutting and fitting through exterior foam insulation to achieve proper wall attachment</li>
-    </ul>
-    <p class="pp-meta">Keywords: fixed ladder installation, roof access ladder, commercial ladder welding, OSHA compliant access, Virginia Beach welding</p>
-    <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
-  </div>
-</article>
-<!-- Billboard Structure -->
-  <article class="pp-card reverse">
-    <div class="pp-body">
-          <img src="/assets/img/past/billboard.JPG" alt="Billboard structure welding and reinforcement near highway">
+        </article>
 
-      <h2>Billboard Structure — Highway Sign Steel Reinforcement (AWS D1.1)</h2>
-      <p><em>
-        Kings Mobile Welding supported a highway-adjacent billboard installation by performing structural welding and reinforcement on the sign support frame.
-        This work required an AWS D1.1 certified welder to ensure the welded connections met structural expectations for long-term service under wind loading and vibration.
-        We coordinated with the crew on lift planning and access, verified fit-up, and delivered clean, code-compliant welds to maintain alignment and integrity of the structure
-        so it could safely carry the sign panel assembly.
-      </em></p>
-      <ul>
-        <li>AWS D1.1 structural welding for critical load-bearing connections</li>
-        <li>Coordination with crane/aerial lift operations and site safety requirements</li>
-        <li>Reinforcement, repairs, and field modifications to keep installs on schedule</li>
-      </ul>
-      <p class="pp-meta">Keywords: billboard welding, highway structural welding, AWS D1.1, steel reinforcement, mobile welder</p>
-      <p class="pp-cta"><a href="/contact/">Request similar work</a></p>
-    </div>
-  </article>
+        <!-- Fixed ladder install -->
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/Ladder.jpg" alt="Fixed roof access ladder installation on commercial building in Virginia Beach" loading="lazy">
+            <div class="ppx-badge">Safety Access • Code Compliance</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Commercial Facility — Fixed Roof Access Ladder Installation &amp; Modification</h2>
+            <p><em>A commercial facility in Virginia Beach required a fixed roof access ladder to be safely installed and brought into full code compliance. We coordinated hoisting, set and secured the ladder, and performed multiple on-site modifications to address building conditions and inspection requirements.</em></p>
+            <ul class="ppx-list">
+              <li>Hoisting and installation on a multi-story commercial building</li>
+              <li>Ladder modifications: height extension and adjusted mounting legs</li>
+              <li>Grab rails and non-slip safety tape for compliance</li>
+              <li>Cutting/fitting through exterior foam insulation for proper attachment</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">All Services</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> fixed ladder installation, roof access ladder, OSHA compliant access, commercial welding Virginia Beach, mobile welder</div>
+          </div>
+        </article>
 
-  <!-- Solar Farm -->
-  <article class="pp-card">
-    <img src="/assets/img/past/pileweld.JPG" alt="Solar farm pile splice welding (galvanized W6x9 pile)">
-    <div class="pp-body">
-      <h2>Solar Farm — Galvanized Pile Splice Welding (W6×9)</h2>
-      <p><em>
-        We were mobilized to a utility-scale solar site to splice two sections of a W6×9 steel pile with a galvanized coating (ASTM A123).
-        The scope required a partial penetration groove weld using E70-class filler metal, completed with clean fit-up and controlled technique to achieve
-        a verified minimum of 1/8&quot; penetration by visual inspection. We arrived inspection-ready with required documentation (insurance and welding certifications)
-        and completed the work safely and efficiently to support the installation schedule.
-      </em></p>
-      <ul>
-        <li>Field splice welding on driven piles and structural members</li>
-        <li>Galvanized steel handling and prep for consistent weld quality</li>
-        <li>Inspection-ready welds meeting project acceptance requirements</li>
-      </ul>
-      <p class="pp-meta">Keywords: solar farm welding, pile splice, galvanized steel, field welding, E70, groove weld</p>
-      <p class="pp-cta"><a href="/contact/">Request similar work</a></p>
-    </div>
-  </article>
+        <!-- Billboard Structure -->
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/billboard.JPG" alt="Billboard structure welding and reinforcement near highway" loading="lazy">
+            <div class="ppx-badge">Highway • Reinforcement</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Billboard Structure — Highway Sign Steel Reinforcement (AWS D1.1)</h2>
+            <p><em>Kings Mobile Welding supported a highway-adjacent billboard installation by performing structural welding and reinforcement on the sign support frame. We coordinated with the crew on lift planning and access, verified fit-up, and delivered clean, code-compliant welds for long-term service under wind loading and vibration.</em></p>
+            <ul class="ppx-list">
+              <li>AWS D1.1 structural welding for load-bearing connections</li>
+              <li>Coordination with crane/aerial lift operations and site safety</li>
+              <li>Field modifications to keep installation schedules moving</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/welding-subcontractor/" onclick="event.stopPropagation();">Subcontractor Support</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> billboard welding, highway structural welding, AWS D1.1, steel reinforcement, mobile welding contractor</div>
+          </div>
+        </article>
 
-  
-      <!-- CNU Dump Trailer Leaf Vacuum Mod -->
-        <article class="pp-card">
-          <img src="/assets/img/past/dumptrailer_mod.jpg" alt="Dump trailer modification for Christopher Newport University grounds crew">
-          <div class="pp-body">
+        <!-- Solar Farm -->
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/pileweld.JPG" alt="Solar farm pile splice welding (galvanized W6x9 pile)" loading="lazy">
+            <div class="ppx-badge">Solar • Pile Splice</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Solar Farm — Galvanized Pile Splice Welding (W6×9)</h2>
+            <p><em>We mobilized to a utility-scale solar site to splice two sections of a W6×9 steel pile with a galvanized coating (ASTM A123). The scope required a partial penetration groove weld using E70-class filler metal, completed with controlled technique to achieve a verified minimum of 1/8&quot; penetration by visual inspection.</em></p>
+            <ul class="ppx-list">
+              <li>Field splice welding on driven piles and structural members</li>
+              <li>Galvanized steel handling and prep for consistent weld quality</li>
+              <li>Inspection-ready welds meeting project acceptance requirements</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/government-and-dot-welding/" onclick="event.stopPropagation();">DOT / Gov</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> solar farm welding, pile splice, galvanized steel welding, field welding, E70 groove weld, mobile welder</div>
+          </div>
+        </article>
+
+        <!-- CNU Dump Trailer Leaf Vacuum Mod -->
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/dumptrailer_mod.jpg" alt="Dump trailer modification for Christopher Newport University grounds crew" loading="lazy">
+            <div class="ppx-badge">Custom Fabrication</div>
+          </div>
+          <div class="ppx-body">
             <h2>University Grounds — Dump Trailer Leaf Vacuum Modification</h2>
-            <p><em>Christopher Newport University’s grounds maintenance team needed a way to safely mount a large leaf vacuum to an existing dump trailer. We designed and installed a reinforced steel framework and mounting system that tied into the trailer’s structure without compromising capacity or balance. By combining proper load paths, gussets, and weld procedures, we delivered a durable, serviceable solution that stands up to daily campus use.</em></p>
-            <ul>
+            <p><em>Christopher Newport University’s grounds maintenance team needed a safe way to mount a large leaf vacuum to an existing dump trailer. We designed and installed a reinforced steel framework and mounting system tied into the trailer’s structure without compromising capacity or balance.</em></p>
+            <ul class="ppx-list">
               <li>Custom steel framing and brackets for leaf vacuum mounting</li>
-              <li>Reinforced dump trailer structure for long-term durability</li>
+              <li>Reinforced trailer structure for long-term durability</li>
               <li>On-site fit-up to match existing equipment and workflow</li>
             </ul>
-            <p class="pp-meta">Keywords: dump trailer modification, university grounds welding, leaf vacuum mount, mobile fabrication</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">All Services</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> dump trailer modification, mobile fabrication, university welding, equipment mounts, Hampton Roads VA mobile welding</div>
           </div>
         </article>
 
-        <article class="pp-card reverse">
-  <img src="/assets/img/past/dumpbed.jpg" alt="Mobile welding and steel floor replacement on a landscaping dump truck in Yorktown Virginia">
-  <div class="pp-body">
-    <h2>Commercial Fleet — Landscaping Dump Truck Structural Retrofit</h2>
-    <p><em>A landscaping company in Yorktown, Virginia hired us to provide mobile welding and structural repair on a working dump truck. The truck bed originally used plexiglass-style flooring and wall panels that had deteriorated under heavy use. We removed the existing materials and installed heavy-duty steel sheeting for the floor and side walls. The project also required removing a severely rusted structural tube and replacing it with new steel tubing, fully tied into the original frame to restore strength, load capacity, and long-term durability. All work was completed on-site to minimize downtime for the client’s fleet.</em></p>
-    <ul>
-      <li>Removal of deteriorated plastic flooring and wall panels</li>
-      <li>Installation of steel sheet flooring and reinforced side walls</li>
-      <li>Structural tubing replacement tied into the original frame</li>
-      <li>Mobile welding and fabrication for commercial fleet equipment</li>
-    </ul>
-    <p class="pp-meta">Keywords: mobile welder near me, dump truck repair, fleet welding, steel fabrication, Yorktown Virginia</p>
-    <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
-  </div>
-</article>
+        <!-- Landscaping Dump Truck Structural Retrofit -->
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/dumpbed.jpg" alt="Mobile welding and steel floor replacement on a landscaping dump truck in Yorktown Virginia" loading="lazy">
+            <div class="ppx-badge">Fleet Repair • Mobile Welder</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Commercial Fleet — Landscaping Dump Truck Structural Retrofit</h2>
+            <p><em>A landscaping company in Yorktown, Virginia hired us for on-site welding and structural repair on a working dump truck. We removed deteriorated plastic flooring/walls and installed heavy-duty steel sheeting. The scope also included replacing severely rusted structural tubing to restore strength and load capacity—minimizing downtime for the client’s fleet.</em></p>
+            <ul class="ppx-list">
+              <li>Removal of deteriorated plastic flooring and wall panels</li>
+              <li>Steel sheet floor and reinforced side wall installation</li>
+              <li>Structural tubing replacement tied into the original frame</li>
+              <li>Mobile welding and fabrication to reduce fleet downtime</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/emergency-welding/" onclick="event.stopPropagation();">Emergency Welding</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> mobile welder near me, dump truck repair, fleet welding, steel fabrication, Yorktown Virginia, mobile welding service</div>
+          </div>
+        </article>
 
-
-        <!-- Franklin transfer resheet-->
-        <article class="pp-card">
-  <img src="/assets/img/past/Chute.jpg" alt="Transfer station chute resheeting with 1/4 inch steel in Franklin Virginia">
-  <div class="pp-body">
-    <h2>Municipal Transfer Station — Heavy-Duty Transfer Chute Resheet</h2>
-    <p><em>
-      A municipal transfer station in Franklin, Virginia required urgent repairs to a heavily damaged transfer chute caused by repeated contact from heavy equipment. To minimize downtime, we mobilized over the weekend and cut, bent, and installed new 1/4&quot; steel sheeting directly over the existing chute surface. This approach restored structural integrity, extended service life, and allowed the facility to resume normal operations first thing Monday morning.
-    </em></p>
-    <ul>
-      <li>Cutting and forming 1/4&quot; steel plate to match existing transfer chute geometry</li>
-      <li>Installation of new wear sheeting over damaged chute surfaces</li>
-      <li>On-site welding and fit-up designed for heavy equipment impact and abrasion</li>
-      <li>Weekend emergency work to eliminate operational downtime</li>
-    </ul>
-    <p class="pp-meta">Keywords: transfer station welding, chute resheeting, waste facility repairs, heavy equipment damage repair, Franklin Virginia welding</p>
-    <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
-  </div>
-</article>
+        <!-- Transfer Station Chute Resheet -->
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/Chute.jpg" alt="Transfer station chute resheeting with 1/4 inch steel in Franklin Virginia" loading="lazy">
+            <div class="ppx-badge">Industrial Repair</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Municipal Transfer Station — Heavy-Duty Transfer Chute Resheet</h2>
+            <p><em>A municipal transfer station in Franklin, Virginia required urgent repairs to a damaged transfer chute. We mobilized over the weekend, cut/formed new 1/4&quot; steel, and installed wear sheeting over the existing surface to restore integrity and allow operations to resume Monday.</em></p>
+            <ul class="ppx-list">
+              <li>Cutting and forming 1/4&quot; steel plate to match chute geometry</li>
+              <li>Installation of new wear sheeting over damaged surfaces</li>
+              <li>Field fit-up for abrasion and impact service</li>
+              <li>Weekend emergency work to eliminate operational downtime</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/emergency-welding/" onclick="event.stopPropagation();">Emergency Support</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> transfer station welding, chute resheeting, waste facility repairs, heavy equipment impact repair, Franklin VA welding</div>
+          </div>
+        </article>
 
         <!-- Asphalt Milling Drum Repair -->
-        <article class="pp-card">
-          <img src="/assets/img/past/asphalt_crusher.jpg" alt="Asphalt milling machine drum repair and reinforcement">
-          <div class="pp-body">
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/asphalt_crusher.jpg" alt="Asphalt milling machine drum repair and reinforcement" loading="lazy">
+            <div class="ppx-badge">Heavy Equipment</div>
+          </div>
+          <div class="ppx-body">
             <h2>Heavy Equipment — Asphalt Milling Drum Repair</h2>
-            <p><em>We were called in to repair and reinforce a worn milling drum on an asphalt milling machine. The drum carries rows of carbide cutting teeth and experiences constant impact and abrasion. Our work included weld repairs, reinforcement at critical wear areas, and preparation for new teeth so the machine could return to service quickly. By using proper procedures and consumables, we extended the life of the drum and reduced unplanned downtime for the paving contractor.</em></p>
-            <ul>
-              <li>Weld repair and reinforcement of milling drum shell</li>
-              <li>Preparation for new carbide cutting teeth installation</li>
+            <p><em>We repaired and reinforced a worn milling drum on an asphalt milling machine. The drum experiences constant impact and abrasion, so our work focused on critical wear areas and getting the machine back in service fast for the paving contractor.</em></p>
+            <ul class="ppx-list">
+              <li>Weld repair and reinforcement at wear locations</li>
+              <li>Preparation for carbide cutting teeth installation</li>
               <li>Field-ready solution to reduce downtime on paving projects</li>
             </ul>
-            <p class="pp-meta">Keywords: asphalt milling machine, drum repair, carbide teeth, heavy equipment welding</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">Mobile Welding</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> heavy equipment welding, asphalt milling machine repair, drum repair, mobile welding contractor, paving contractor support</div>
           </div>
         </article>
-        
 
         <!-- Bow Pulpit Foot Reinforcement -->
-        <article class="pp-card reverse">
-          <img src="/assets/img/past/bowpulpitfeetreinforcement.jpg" alt="Bow pulpit mounting reinforcement on a boat">
-          <div class="pp-body">
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/bowpulpitfeetreinforcement.jpg" alt="Bow pulpit mounting reinforcement on a boat" loading="lazy">
+            <div class="ppx-badge">Marine • Stainless</div>
+          </div>
+          <div class="ppx-body">
             <h2>Marine — Bow Pulpit Foot Reinforcement</h2>
-            <p><em>A boat owner contacted us to address cracking and movement where the bow pulpit feet mounted to the deck. We removed failed hardware, reinforced the mounting area, and welded new stainless steel plates and supports to spread the load. The result was a stronger, safer attachment point that better handled wave loads and anchor use while maintaining a clean, marine-grade appearance.</em></p>
-            <ul>
+            <p><em>We addressed cracking and movement where bow pulpit feet mounted to the deck. We reinforced the mounting area and welded stainless plates/supports to spread load for a stronger, safer attachment while maintaining a clean marine-grade appearance.</em></p>
+            <ul class="ppx-list">
               <li>Reinforcement of bow pulpit mounting points</li>
               <li>Stainless steel plate and support fabrication</li>
               <li>Marine-grade welding focused on strength and corrosion resistance</li>
             </ul>
-            <p class="pp-meta">Keywords: bow pulpit reinforcement, marine welding, stainless steel, boat repair</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">Welding Services</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> marine welding, stainless steel boat repair, bow pulpit reinforcement, dockside welding, Hampton Roads marine fabrication</div>
           </div>
         </article>
 
         <!-- Hay Cutter Weld Build-Up -->
-        <article class="pp-card">
-          <img src="/assets/img/past/weldbuildup.jpg" alt="Weld build-up on hay cutter blades and wear surfaces">
-          <div class="pp-body">
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/weldbuildup.jpg" alt="Weld build-up on hay cutter blades and wear surfaces" loading="lazy">
+            <div class="ppx-badge">Agricultural Repair</div>
+          </div>
+          <div class="ppx-body">
             <h2>Agricultural — Hay Cutter Weld Build-Up</h2>
-            <p><em>For a local farm, we performed weld build-up on a hay cutter so worn areas could be rebuilt instead of replaced. By restoring key wear surfaces and edges, the owner was able to install new components and get more life out of the existing machine. Our mobile service allowed the repair to be completed quickly so the equipment could return to the field during a critical window in the season.</em></p>
-            <ul>
-              <li>Weld build-up on worn hay cutter components</li>
-              <li>Preparation of surfaces for rebuild and new parts</li>
-              <li>On-site repair to keep farm equipment in service</li>
+            <p><em>We performed weld build-up on a hay cutter so worn areas could be rebuilt instead of replaced. Mobile service allowed the repair to be completed quickly so equipment could return to the field during a critical window.</em></p>
+            <ul class="ppx-list">
+              <li>Weld build-up on worn components</li>
+              <li>Surface preparation for rebuild and new parts</li>
+              <li>On-site repair to keep equipment in service</li>
             </ul>
-            <p class="pp-meta">Keywords: farm equipment repair, hay cutter weld build-up, agricultural welding, mobile service</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">Mobile Welding</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> farm equipment repair, weld build-up, agricultural welding, mobile welder, on-site welding service</div>
           </div>
         </article>
 
         <!-- Industrial Plant -->
-        <article class="pp-card">
-          <img src="/assets/img/past/cargill.JPG" alt="Industrial plant mobile welding and fabrication">
-          <div class="pp-body">
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/cargill.JPG" alt="Industrial plant mobile welding and fabrication" loading="lazy">
+            <div class="ppx-badge">Industrial Plant</div>
+          </div>
+          <div class="ppx-body">
             <h2>Industrial Plant — Structural &amp; Process Support</h2>
-            <p><em>We were contracted to support a major industrial facility with the modification of safety railings on a bag palletizer system. This work was essential to allow the plant to upgrade and modernize their equipment. Using carbon steel stick welding with high-tensile strength electrodes, we ensured durable, code-compliant results that met the client’s production and safety standards. Our expertise in structural welding and process support minimized downtime and provided a reliable solution tailored to the plant’s operational needs.</em></p>
-            <ul>
+            <p><em>We supported a major industrial facility by modifying safety railings on a bag palletizer system to enable equipment upgrades. Using carbon steel stick welding with high-tensile electrodes, we delivered durable results aligned to production and safety requirements.</em></p>
+            <ul class="ppx-list">
               <li>Structural steel fit-up and certified welds (AWS D1.1)</li>
               <li>Equipment supports, platforms, rails, and safety upgrades</li>
               <li>Coordination with plant safety and inspection teams</li>
             </ul>
-            <p class="pp-meta">Keywords: industrial welding, plant maintenance, structural steel, mobile fabrication</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/welding-subcontractor/" onclick="event.stopPropagation();">Contractor Support</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> industrial welding, plant maintenance welding, structural steel welding, safety railing modification, mobile fabrication</div>
           </div>
         </article>
 
         <!-- HVAC Contractor -->
-        <article class="pp-card reverse">
-          <img src="/assets/img/past/ACsupport.JPG" alt="HVAC contractor welding supports and stands">
-          <div class="pp-body">
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/ACsupport.JPG" alt="HVAC contractor welding supports and stands" loading="lazy">
+            <div class="ppx-badge">HVAC • Rooftop Work</div>
+          </div>
+          <div class="ppx-body">
             <h2>HVAC Contractor — Brackets, Stands &amp; Retrofits</h2>
-            <p><em>Our team partnered with an HVAC contractor to design and fabricate freestanding steel support stands for multiple air conditioning units and condensers. The existing equipment was mounted to a building scheduled for demolition, requiring a safe and stable alternative. We built custom welded steel frames to carry the load independently, ensuring proper airflow, accessibility, and long-term durability. By delivering precision fabrication and on-site installation, we helped the contractor keep critical HVAC systems operational throughout the transition.</em></p>
-            <ul>
+            <p><em>We partnered with an HVAC contractor to design and fabricate freestanding steel support stands for air conditioning units. The original mounting building was scheduled for demolition, requiring a stable alternative. We built custom welded frames and installed them on-site so systems stayed operational.</em></p>
+            <ul class="ppx-list">
               <li>Custom frames/brackets for air handlers and condensers</li>
-              <li>Roof-safe procedures and corrosion-resistant finishes</li>
+              <li>Roof-safe procedures and durable finishes</li>
               <li>Rapid response to keep installs on schedule</li>
             </ul>
-            <p class="pp-meta">Keywords: HVAC welding, rooftop stands, custom brackets, fast turnaround</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">Mobile Fabrication</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> HVAC welding, rooftop equipment stands, custom brackets, field fabrication, contractor welding support</div>
           </div>
         </article>
 
         <!-- Marine Dock & Vessel Repairs -->
-        <article class="pp-card">
-          <img src="/assets/img/past/solarmount.JPG" alt="Marine welding for docks and vessels">
-          <div class="pp-body">
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/solarmount.JPG" alt="Marine welding for docks and vessels" loading="lazy">
+            <div class="ppx-badge">Marine Fabrication</div>
+          </div>
+          <div class="ppx-body">
             <h2>Marine — Dock &amp; Vessel Repairs</h2>
-            <p><em>For a private marine client, we provided custom stainless steel fabrication and pipe modification to integrate with the davit system on their vessel. The scope involved cutting, aligning, and welding stainless steel pipes to create a secure attachment point for a new solar arch support. By leveraging our expertise in marine welding and stainless steel fabrication, we delivered a corrosion-resistant, precision-fit solution that blended seamlessly with the boat’s structure. The project ensured long-lasting durability in a harsh marine environment while enabling the owner to expand their vessel’s solar power capabilities.</em></p>
-            <ul>
-              <li>Dock and pier structural repairs, safety rails, ladders</li>
+            <p><em>We provided custom stainless fabrication and pipe modification to integrate with a davit system—cutting, aligning, and welding stainless pipes to create an attachment point for a solar arch support. The result was corrosion-resistant and precision-fit for harsh marine conditions.</em></p>
+            <ul class="ppx-list">
+              <li>Dock and pier repairs, safety rails, ladders</li>
               <li>Stainless/aluminum welding for marine environments</li>
               <li>Clean finish and corrosion mitigation practices</li>
             </ul>
-            <p class="pp-meta">Keywords: marine welding, dock repair, stainless aluminum, waterfront</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services" onclick="event.stopPropagation();">Stainless &amp; Aluminum</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> marine welding, dock repair, stainless aluminum welding, waterfront fabrication, Hampton Roads VA</div>
           </div>
         </article>
-<!-- Personnel Stock Lift (PSL) Hinge Repair -->
-<article class="pp-card">
-  <img src="/assets/img/past/PSL.png" alt="Personnel stock lift hinge repair in a warehouse">
-  <div class="pp-body">
-    <h2>Warehouse — Personnel Stock Lift (PSL) Hinge Repair</h2>
-    <p><em>A warehouse client contacted us after the hinge on their personnel stock lift (PSL) failed during normal operation. The broken hinge created a safety hazard and took the lift out of service. We responded on-site, removed the damaged components, fabricated new hinge plates and pins, and welded everything back in place with proper alignment and clearance. After reassembly, we verified smooth operation so the lift could be safely returned to daily use.</em></p>
-    <ul>
-      <li>Removal of damaged PSL hinge components and inspection of surrounding structure</li>
-      <li>Fabrication of new hinge plates/pins with upgraded material thickness</li>
-      <li>Precision welding, alignment, and functional checks before returning to service</li>
-    </ul>
-    <p class="pp-meta">Keywords: personnel stock lift repair, PSL hinge welding, warehouse maintenance, mobile welding</p>
-    <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
-  </div>
-</article>
 
-        <!-- Stair Repairs for Industrial Contractor -->
-        <article class="pp-card reverse">
-          <img src="/assets/img/past/treadrepair.JPG" alt="Industrial stair repair and access solutions">
-          <div class="pp-body">
+        <!-- PSL Hinge Repair -->
+        <article class="ppx-card">
+          <div class="ppx-media">
+            <img src="/assets/img/past/PSL.png" alt="Personnel stock lift hinge repair in a warehouse" loading="lazy">
+            <div class="ppx-badge">Warehouse Maintenance</div>
+          </div>
+          <div class="ppx-body">
+            <h2>Warehouse — Personnel Stock Lift (PSL) Hinge Repair</h2>
+            <p><em>A warehouse client contacted us after a hinge failed on their personnel stock lift (PSL). We removed damaged components, fabricated upgraded hinge plates and pins, welded with proper alignment and clearance, then verified smooth operation so equipment could return to service.</em></p>
+            <ul class="ppx-list">
+              <li>Removal of damaged hinge components and inspection of structure</li>
+              <li>Fabrication of new hinge plates/pins with upgraded thickness</li>
+              <li>Precision welding, alignment, and functional verification</li>
+            </ul>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/emergency-welding/" onclick="event.stopPropagation();">Fast Response</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> warehouse maintenance welding, hinge repair, equipment repair welding, mobile welding service, onsite welder</div>
+          </div>
+        </article>
+
+        <!-- Stair Repairs -->
+        <article class="ppx-card reverse">
+          <div class="ppx-media">
+            <img src="/assets/img/past/treadrepair.JPG" alt="Industrial stair repair and access solutions" loading="lazy">
+            <div class="ppx-badge">Stairs • Rails • Access</div>
+          </div>
+          <div class="ppx-body">
             <h2>Industrial Contractor — Stair Repairs &amp; Access</h2>
-            <p><em>We were engaged by a general contractor to perform an urgent repair on a damaged stair at a commercial building. The existing step had rotted out, creating a safety hazard and requiring immediate attention. Our team mobilized quickly, performing on-site demolition of the failed stair component, then fabricating and installing a new steel replacement. Using proven welding and fabrication techniques, we delivered a safe, durable solution under a tight deadline, ensuring the contractor’s project stayed on schedule and the facility remained code-compliant.</em></p>
-            <ul>
+            <p><em>We mobilized for an urgent stair repair at a commercial building. After removing the failed component, we fabricated and installed a steel replacement on-site under a tight deadline—restoring safe access and keeping the contractor schedule intact.</em></p>
+            <ul class="ppx-list">
               <li>Stairs, treads, handrails, platforms and catwalks</li>
-              <li>Field fit-up, clean welds, and inspection-ready finish</li>
+              <li>Field fit-up, clean welds, inspection-ready finish</li>
               <li>Safety and access improvements with minimal downtime</li>
             </ul>
-            <p class="pp-meta">Keywords: stair repair, access fabrication, safety rails, industrial maintenance</p>
-            <p class="pp-cta"><a class="btn-primary request-similar" href="/contact/">Request Similar Work</a></p>
+            <div class="ppx-cta">
+              <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request Similar Work</a>
+              <a class="btn-secondary" href="/services/structural-steel-welding/" onclick="event.stopPropagation();">Structural Welding</a>
+            </div>
+            <div class="ppx-meta"><strong>SEO:</strong> stair repair welding, handrail fabrication, access platform welding, industrial maintenance, mobile welding contractor</div>
           </div>
         </article>
 
       </div>
+
+      <!-- ✅ Bottom CTA band -->
+      <div class="ppx-band">
+        <div>
+          <strong>Need a mobile welding contractor for your next project?</strong>
+          <p>
+            If you need <strong>AWS D1.1 structural welding</strong>, <strong>field fit-up</strong>, <strong>emergency repairs</strong>, or <strong>inspection-ready workmanship</strong>,
+            send your scope + location and we’ll respond quickly.
+          </p>
+        </div>
+        <div class="btns">
+          <a class="btn-primary request-similar" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="btn-secondary" href="/tel:7572316809" onclick="event.stopPropagation();">Call 757-231-6809</a>
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
@@ -460,14 +721,16 @@
   "priceRange": "}",
   "knowsAbout": [
     "Mobile welding",
+    "Mobile welder near me",
     "Structural steel welding",
+    "AWS D1.1 welding",
+    "Field welding",
     "Steel repair",
-    "Handrails",
-    "Metal stairs",
-    "Torch cutting",
-    "Aluminum welding",
-    "Stainless steel welding",
-    "Fabrication"
+    "Industrial welding",
+    "Commercial welding",
+    "Marine welding",
+    "Heavy equipment repair",
+    "On-site fabrication"
   ],
   "image": "https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
   "founder": "Dillon King",
@@ -506,7 +769,6 @@
 
     <nav class="footer-nav">
       <a href="/about">About</a>
-     
       <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
@@ -542,22 +804,19 @@
 
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
+
 <script>
   (function(){
     function go(){
       window.location.assign('/contact');
     }
     document.querySelectorAll('a.request-similar').forEach(function(a){
-      // Capture phase so we run before other handlers
       a.addEventListener('click', function(e){
-        // Don't cancel default; just guarantee navigation even if other code blocks it
         e.stopImmediatePropagation();
-        // If something prevented default elsewhere, force navigation anyway
         setTimeout(function(){
           if (location.pathname.indexOf('/contact') === -1) go();
         }, 0);
       }, true);
-      // Also ensure pointer events in case a parent disabled them
       a.style.pointerEvents = 'auto';
     });
   })();

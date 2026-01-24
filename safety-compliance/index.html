@@ -16,7 +16,7 @@
   <title>Safety & Compliance | Kings Mobile Welding</title>
   <meta name="description" content="Kings Mobile Welding is safety-focused and jobsite-ready—insured, AWS D1.1 certified, SWaM certified, and prepared to meet contractor and facility safety requirements across Hampton Roads, VA." />
 
-  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -27,7 +27,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
   <meta property="og:image" content="assets/img/logo-500.png">
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD (kept) -->
   <script type="application/ld+json">{
     "address":  {
       "postalCode":  "23601",
@@ -86,6 +86,197 @@
   }</script>
 
   <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- ✅ Sleek modern page styles (scoped to this page) -->
+  <style>
+    :root{
+      --kmw-blue:#0A2E5C;
+      --kmw-yellow:#FFD60A;
+      --slate-900:#0F172A;
+      --slate-700:#334155;
+      --slate-600:#475569;
+      --slate-500:#64748B;
+      --slate-200:#E2E8F0;
+      --slate-100:#F1F5F9;
+      --slate-50:#F8FAFC;
+    }
+
+    /* Hero */
+    .sc-hero{
+      padding:54px 0 26px;
+      background:linear-gradient(180deg,#FFFFFF 0%, var(--slate-50) 100%);
+      border-bottom:1px solid var(--slate-200);
+    }
+    .sc-hero .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .sc-kicker{
+      display:inline-flex;align-items:center;gap:10px;
+      font-weight:900;letter-spacing:.08em;
+      font-size:.78rem;color:var(--kmw-blue);
+      text-transform:uppercase;
+    }
+    .sc-hero h1{margin:.55rem 0 .6rem;color:var(--slate-900);font-weight:950;line-height:1.06}
+    .sc-hero .lead{margin:0;color:var(--slate-600);max-width:85ch;line-height:1.65}
+    .sc-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:16px}
+    .sc-pill{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(255,214,10,.22);
+      border:1px solid rgba(255,214,10,.45);
+      padding:8px 10px;border-radius:999px;
+      font-weight:900;color:var(--slate-900);
+      font-size:.92rem
+    }
+
+    /* Layout */
+    .sc-wrap{padding:30px 0 60px;background:#fff}
+    .sc-wrap .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    .sc-grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:16px;
+      margin-top:16px;
+    }
+
+    /* Feature cards */
+    .sc-card{
+      grid-column:span 4;
+      border:1px solid var(--slate-200);
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .sc-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(2,6,23,.10);
+      border-color:#D7DEE8;
+    }
+    .sc-media{
+      position:relative;
+      height:170px;
+      background:#0B223E;
+      overflow:hidden;
+    }
+    .sc-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      opacity:.95;
+      transform:scale(1.02);
+    }
+    .sc-badge{
+      position:absolute;left:14px;top:14px;
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(10,46,92,.92);
+      color:#fff;border:1px solid rgba(255,255,255,.15);
+      padding:7px 10px;border-radius:999px;
+      font-weight:900;font-size:.82rem;
+      backdrop-filter:blur(4px);
+    }
+    .sc-body{padding:16px 16px 18px}
+    .sc-body h2{margin:0;color:var(--slate-900);font-weight:950;font-size:1.1rem}
+    .sc-body p{margin:8px 0 0;color:var(--slate-600);line-height:1.6}
+
+    /* Sections */
+    .sc-sections{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:16px;
+      margin-top:16px;
+    }
+    .sc-panel{
+      grid-column:span 8;
+      border:1px solid var(--slate-200);
+      border-radius:18px;
+      background:var(--slate-50);
+      padding:16px;
+    }
+    .sc-panel h3{margin:0;color:var(--slate-900);font-weight:950}
+    .sc-panel p{margin:.4rem 0 0;color:var(--slate-600);line-height:1.6}
+    .sc-list{
+      margin:12px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:10px;
+    }
+    .sc-list li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      color:var(--slate-700);
+      line-height:1.45;
+      background:#fff;
+      border:1px solid var(--slate-200);
+      border-radius:14px;
+      padding:10px 12px;
+    }
+    .sc-list li::before{
+      content:"";
+      width:10px;height:10px;border-radius:999px;margin-top:6px;
+      background:var(--kmw-yellow);
+      flex:0 0 auto;
+      box-shadow:0 0 0 3px rgba(255,214,10,.22);
+    }
+
+    .sc-side{
+      grid-column:span 4;
+      border:1px solid var(--slate-200);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+    .sc-side h3{margin:0;color:var(--slate-900);font-weight:950}
+    .sc-side .muted{color:var(--slate-500);line-height:1.55;margin:.45rem 0 0}
+    .sc-kv{
+      display:grid;
+      gap:10px;
+      margin-top:12px;
+    }
+    .sc-kv .row{
+      border:1px solid var(--slate-200);
+      border-radius:14px;
+      padding:10px 12px;
+      background:var(--slate-50);
+    }
+    .sc-kv .row strong{display:block;color:var(--slate-900)}
+    .sc-kv .row span{display:block;color:var(--slate-600);margin-top:2px}
+
+    /* CTA band */
+    .sc-cta{
+      margin-top:18px;
+      border:1px solid var(--slate-200);
+      border-radius:18px;
+      background:linear-gradient(180deg,#FFFFFF 0%, var(--slate-50) 100%);
+      padding:16px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .sc-cta strong{color:var(--slate-900)}
+    .sc-cta p{margin:6px 0 0;color:var(--slate-600);line-height:1.55;max-width:70ch}
+
+    .sc-cta .btns{display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Small print */
+    .sc-note{
+      margin-top:14px;
+      color:var(--slate-500);
+      font-size:.95rem;
+      line-height:1.55;
+    }
+
+    @media (max-width:980px){
+      .sc-card{grid-column:span 12}
+      .sc-media{height:190px}
+      .sc-panel{grid-column:span 12}
+      .sc-side{grid-column:span 12}
+    }
+  </style>
 </head>
 
 <body>
@@ -98,7 +289,7 @@
         <a href="/services">Services</a>
         <a href="/past-performance">Past Performance</a>
         <a href="/procurement">Procurement</a>
-        <a href="/safety">Safety & Compliance</a>
+        <a href="/safety">Safety &amp; Compliance</a>
         <a class="btn-primary" href="/contact/">Contact</a>
       </nav>
       <button class="burger" id="openMobile" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -106,116 +297,193 @@
 
     <div id="mobileMenu" class="mobile-menu" hidden>
       <button class="close-burger" id="closeMobile" aria-label="Close menu"><span></span><span></span></button>
- <a href="/about/">About</a>
-  <a href="/industries/">Industries</a>
+      <a href="/about/">About</a>
+      <a href="/industries/">Industries</a>
       <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/safety-compliance">Safety & Compliance</a>
-      
+      <a href="/safety-compliance">Safety &amp; Compliance</a>
       <a class="btn-primary" href="/contact/">Contact</a>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="careers-hero">
+    <!-- ✅ Modern Hero -->
+    <section class="sc-hero">
       <div class="container">
-        <h1>Safety & Compliance</h1>
+        <div class="sc-kicker">Safety-first • Documentation-ready • Built for active jobsites</div>
+        <h1>Safety &amp; Compliance</h1>
         <p class="lead">
-          Kings Mobile Welding is built for active jobsites. We operate with a safety-first mindset, maintain required documentation,
-          and coordinate with site leadership so work is completed safely, efficiently, and to spec.
+          Kings Mobile Welding is built for commercial, industrial, and infrastructure environments where safety and paperwork matter.
+          We coordinate with site leadership, follow permit procedures, and deliver inspection-ready work that keeps your schedule moving.
         </p>
-        <p class="lead" style="margin-top:.75rem;">
-          <strong>Insured • AWS D1.1 Certified • SWaM Certified • Jobsite-Ready</strong>
-        </p>
+
+        <div class="sc-actions">
+          <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="btn-secondary" href="/procurement" onclick="event.stopPropagation();">Procurement</a>
+          <span class="sc-pill">Insured • AWS D1.1 Certified • SWaM Certified</span>
+        </div>
       </div>
     </section>
 
-    <!-- CORE CARDS -->
-    <section class="careers-section">
+    <section class="sc-wrap">
       <div class="container">
-        <div class="careers-grid">
 
-          <article class="careers-card">
-            <img src="/assets/img/careers/safetyhelmets.jpg" alt="Jobsite safety planning and PPE">
-            <div class="body">
-              <h3>Jobsite Safety First</h3>
+        <!-- ✅ Top feature cards (same images you already use) -->
+        <div class="sc-grid">
+
+          <article class="sc-card">
+            <div class="sc-media">
+              <img src="/assets/img/careers/safetyhelmets.jpg" alt="Jobsite safety planning and PPE" loading="lazy">
+              <div class="sc-badge">Jobsite Safety</div>
+            </div>
+            <div class="sc-body">
+              <h2>Jobsite Safety First</h2>
               <p>
-                We follow site-specific safety requirements and coordinate daily with superintendents, safety managers, and foremen.
-                Our approach emphasizes hazard awareness, safe setup, clean work areas, and clear communication.
+                We work clean, controlled, and coordinated—daily check-ins, safe setup, and clear communication with superintendents, foremen, and safety managers.
               </p>
             </div>
           </article>
 
-          <article class="careers-card">
-            <img src="/assets/img/careers/fieldwelding.jpg" alt="Mobile field welding on active construction site">
-            <div class="body">
-              <h3>Hot Work Controls</h3>
+          <article class="sc-card">
+            <div class="sc-media">
+              <img src="/assets/img/careers/fieldwelding.jpg" alt="Mobile field welding on active construction site" loading="lazy">
+              <div class="sc-badge">Hot Work</div>
+            </div>
+            <div class="sc-body">
+              <h2>Hot Work Controls</h2>
               <p>
-                We support hot work permit workflows, maintain fire watch practices when required, protect surrounding areas,
-                and manage sparks/slag exposure with barriers and housekeeping—especially in occupied or sensitive environments.
+                Permit workflows, spark/slag containment, fire watch practices when required, and protection for occupied or sensitive environments.
               </p>
             </div>
           </article>
 
-          <article class="careers-card">
-            <img src="/assets/img/careers/documentation.jpg" alt="Fabrication and quality control">
-            <div class="body">
-              <h3>Quality & Documentation</h3>
+          <article class="sc-card">
+            <div class="sc-media">
+              <img src="/assets/img/careers/documentation.jpg" alt="Documentation and quality control" loading="lazy">
+              <div class="sc-badge">Documentation</div>
+            </div>
+            <div class="sc-body">
+              <h2>Quality &amp; Compliance</h2>
               <p>
-                Inspection-ready workmanship matters. We provide documentation commonly requested on commercial, industrial,
-                and municipal sites and can align with your QC process and project requirements.
+                Inspection-ready workmanship with the documentation contractors typically request for onboarding and closeout.
               </p>
             </div>
           </article>
 
         </div>
 
-        <!-- CONTENT BLOCKS -->
-        <div class="roles" style="text-align:left; max-width: 980px; margin: 2.25rem auto 0;">
-          <h2 style="margin-bottom:.5rem;">Typical Documentation We Can Provide</h2>
-          <p style="margin-top:0;">
-            Document needs vary by owner, GC, and site. When requested, we can provide commonly required items such as:
-          </p>
-          <ul>
-            <li>Certificate of Insurance (COI) and proof of coverage</li>
-            <li>AWS D1.1 certification documentation (as applicable)</li>
-            <li>SWaM certification documentation</li>
-            <li>W-9 and company identification details for onboarding</li>
-            <li>Job Hazard Analysis (JHA) / Activity Hazard Analysis (AHA) when required by site</li>
-            <li>Toolbox talk participation and daily coordination with site safety</li>
-            <li>Equipment list and SDS access for any consumables brought onsite</li>
-          </ul>
+        <!-- ✅ Main content (what contractors look for) -->
+        <div class="sc-sections">
 
-          <h2 style="margin:1.75rem 0 .5rem;">Capabilities That Support Safe Execution</h2>
-          <ul>
-            <li>Mobile, self-contained welding rigs with professional-grade equipment</li>
-            <li>Safe work area setup: barricades, signage, spark containment, and housekeeping</li>
-            <li>Fall protection coordination where applicable (site rules and anchor planning)</li>
-            <li>Lift/aerial work coordination with trained site personnel and established access plans</li>
-            <li>Confined/limited access work coordinated per site requirements (no surprises)</li>
-          </ul>
+          <article class="sc-panel">
+            <h3>Common Safety &amp; Compliance Items We Support</h3>
+            <p>
+              Every site is different. Before mobilizing, we confirm your requirements so you’re not chasing paperwork or rework mid-stream.
+              When requested, we can support:
+            </p>
 
-          <h2 style="margin:1.75rem 0 .5rem;">How We Fit Into Your Site</h2>
-          <p style="margin-top:0;">
-            We’re used to working under GC and facility safety programs. Before mobilization, we confirm scope, access,
-            schedule constraints, and documentation needs so your team isn’t chasing paperwork or rework.
-          </p>
+            <ul class="sc-list">
+              <li><strong>COI / Insurance verification</strong> (general liability and any job-specific requirements you provide)</li>
+              <li><strong>Qualifications &amp; certifications</strong> (AWS D1.1 certification documentation as applicable to scope)</li>
+              <li><strong>Onboarding documents</strong> (W-9, vendor setup info, company identifiers)</li>
+              <li><strong>JHA / AHA participation</strong> aligned to the controlling contractor/facility process</li>
+              <li><strong>Toolbox talks &amp; daily coordination</strong> with site safety expectations</li>
+              <li><strong>SDS access</strong> for consumables brought to site and housekeeping controls</li>
+              <li><strong>Closeout alignment</strong> (photos, punch-list corrections, and documentation handoff as required)</li>
+            </ul>
+          </article>
 
-          <div style="margin-top:1.5rem; padding:1rem 1.1rem; border:1px solid rgba(0,0,0,.08); border-radius:14px;">
-            <h3 style="margin:.1rem 0 .25rem;">Need a safety packet for onboarding?</h3>
-            <p style="margin:.25rem 0 0;">
-              Tell us what your site requires and we’ll send the documentation you need.
-              <strong><a href="/contact/">Contact us</a></strong> or call <strong><a href="/tel:7572316809">757-231-6809</a></strong>.
+          <aside class="sc-side" aria-label="Safety quick facts">
+            <h3>Jobsite-Ready Snapshot</h3>
+            <p class="muted">
+              A quick checklist contractors often ask about during prequal and mobilization.
+            </p>
+
+            <div class="sc-kv">
+              <div class="row">
+                <strong>Safety coordination</strong>
+                <span>Daily check-in, permit compliance, clean setup &amp; teardown</span>
+              </div>
+              <div class="row">
+                <strong>Hot work readiness</strong>
+                <span>Permit workflow support, fire watch practices when required</span>
+              </div>
+              <div class="row">
+                <strong>Work quality</strong>
+                <span>Inspection-ready welds aligned to spec and site QC</span>
+              </div>
+              <div class="row">
+                <strong>Contact</strong>
+                <span><a href="/tel:7572316809">757-231-6809</a> • <a href="/contact/">Request a quote</a></span>
+              </div>
+            </div>
+          </aside>
+
+          <article class="sc-panel">
+            <h3>Safe Execution on Active Jobsites</h3>
+            <p>
+              Our workflow is designed to reduce risk and keep your crews moving:
+            </p>
+
+            <ul class="sc-list">
+              <li><strong>Pre-task planning:</strong> confirm access, staging, hazards, and sequencing before we strike an arc</li>
+              <li><strong>Area control:</strong> barricades, signage, spark containment, and disciplined housekeeping</li>
+              <li><strong>Fall protection coordination:</strong> follow site rules and coordinate anchorage/access planning</li>
+              <li><strong>Lift/aerial coordination:</strong> work within established access plans and site procedures</li>
+              <li><strong>Occupied / sensitive environments:</strong> protect finishes, isolate sparks, and minimize disruption</li>
+              <li><strong>Clear communication:</strong> we stay aligned with foremen/supers so the schedule doesn’t drift</li>
+            </ul>
+          </article>
+
+          <aside class="sc-side" aria-label="Service area and credentials">
+            <h3>Credentials &amp; Coverage</h3>
+            <p class="muted">
+              Based in Newport News and serving Hampton Roads and surrounding regions. For municipal, industrial, and GC work, we bring the documentation mindset as well as the welding.
+            </p>
+
+            <div class="sc-kv">
+              <div class="row">
+                <strong>AWS D1.1 Certified</strong>
+                <span>Structural welding capability aligned to common GC requirements</span>
+              </div>
+              <div class="row">
+                <strong>Fully Insured</strong>
+                <span>COI provided upon request for onboarding</span>
+              </div>
+              <div class="row">
+                <strong>SWaM Certified</strong>
+                <span>Small business readiness for public-sector projects</span>
+              </div>
+              <div class="row">
+                <strong>Service Area</strong>
+                <span>Hampton Roads • Eastern Virginia • Mid-Atlantic</span>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- ✅ CTA band -->
+        <div class="sc-cta">
+          <div>
+            <strong>Need a safety packet for onboarding?</strong>
+            <p>
+              Send your site requirements and we’ll return the documentation you need for mobilization.
+              If it’s a schedule-critical scope, include location + timeline and we’ll respond quickly.
             </p>
           </div>
-
-          <p style="margin-top:1.25rem; font-size:.95rem; opacity:.9;">
-            <strong>Note:</strong> Site requirements vary. Kings Mobile Welding will comply with project-specific safety rules,
-            access restrictions, and permit procedures provided by the controlling contractor/facility.
-          </p>
+          <div class="btns">
+            <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+            <a class="btn-secondary" href="/tel:7572316809" onclick="event.stopPropagation();">Call 757-231-6809</a>
+          </div>
         </div>
+
+        <p class="sc-note">
+          <strong>Note:</strong> Site requirements vary by controlling contractor/facility. Kings Mobile Welding will comply with project-specific safety rules,
+          access restrictions, and permit procedures provided by site leadership.
+        </p>
+
       </div>
     </section>
   </main>
@@ -241,7 +509,7 @@
         <a href="/services">Services</a>
         <a href="/past-performance">Past Performance</a>
         <a href="/procurement">Procurement</a>
-        <a href="/safety">Safety & Compliance</a>
+        <a href="/safety">Safety &amp; Compliance</a>
         <a href="/areas">Areas We Service</a>
         <a href="/contact/">Contact</a>
       </nav>

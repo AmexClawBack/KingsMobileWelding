@@ -13,10 +13,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About Us</title>
-  <meta name="description" content="Learn who we are at Kings Mobile Welding—Virginia’s on-site welding & fabrication partner for structural steel, repairs, and emergency service across Hampton Roads." />
+  <title>About Dillon King | Kings Mobile Welding</title>
+  <meta name="description" content="Meet Dillon King, owner of Kings Mobile Welding—AWS D1.1 certified, fully insured mobile welding & fabrication serving Hampton Roads, VA. Structural steel, industrial repair, emergency mobilization, and inspection-ready results.">
+  <meta name="keywords" content="about kings mobile welding, dillon king welder, mobile welding hampton roads va, aws d1.1 certified welder, structural steel welding subcontractor" />
 
-  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -25,108 +26,246 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500.png">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
 
-  <!-- CSS: relative (no leading slash) -->
-  <script type="application/ld+json">{
-    "address":  {
-                    "postalCode":  "23601",
-                    "addressRegion":  "VA",
-                    "addressLocality":  "Newport News",
-                    "@type":  "PostalAddress",
-                    "addressCountry":  "US"
-                },
-    "url":  "https://www.kingsmobilewelding.com",
-    "foundingDate":  "2017",
-    "@type":  "LocalBusiness",
-    "sameAs":  [
-                   "https://www.kingsmobilewelding.com",
-                   "https://linktr.ee/kingsmobilewelding"
-               ],
-    "name":  "Kings Mobile Welding",
-    "areaServed":  [
-                       "Hampton Roads, VA",
-                       "Newport News, VA",
-                       "Virginia"
-                   ],
-    "description":  "AWS D1.1-certified mobile welding \u0026 fabrication serving Hampton Roads, VA \u0026 beyond — structural steel, repairs, handrails, stairs, aluminum \u0026 stainless.",
-    "telephone":  "(757) 231-6809",
-    "@context":  "https://schema.org",
-    "priceRange":  "}",
-    "knowsAbout":  [
-                       "Mobile welding",
-                       "Structural steel welding",
-                       "Steel repair",
-                       "Handrails",
-                       "Metal stairs",
-                       "Torch cutting",
-                       "Aluminum welding",
-                       "Stainless steel welding",
-                       "Fabrication"
-                   ],
-    "image":  "https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
-    "founder":  "Dillon King",
-    "openingHoursSpecification":  [
-                                      {
-                                          "opens":  "07:00",
-                                          "closes":  "17:00",
-                                          "@type":  "OpeningHoursSpecification",
-                                          "dayOfWeek":  [
-                                                            "Monday",
-                                                            "Tuesday",
-                                                            "Wednesday",
-                                                            "Thursday",
-                                                            "Friday"
-                                                        ]
-                                      }
-                                  ],
-    "email":  "Dillonk2012@gmail.com"
-}</script>
-
+  <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- ✅ FIXED DROPDOWNS: click-to-open (stays open) + hover still works -->
+  <!-- LocalBusiness + Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kings Mobile Welding",
+    "url":"https://www.kingsmobilewelding.com",
+    "image":"https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
+    "telephone":"+1-757-231-6809",
+    "email":"DillonKing@kingsmobilewelding.com",
+    "foundingDate":"2017",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Newport News",
+      "addressRegion":"VA",
+      "postalCode":"23601",
+      "addressCountry":"US"
+    },
+    "areaServed":[
+      "Hampton Roads, VA",
+      "Newport News, VA",
+      "Williamsburg, VA",
+      "Virginia"
+    ],
+    "sameAs":[
+      "https://www.kingsmobilewelding.com",
+      "https://linktr.ee/kingsmobilewelding",
+      "https://www.linkedin.com/company/kings-mobile-welding"
+    ],
+    "description":"AWS D1.1-certified mobile welding & fabrication serving Hampton Roads, VA and beyond — structural steel, field repairs, stainless & aluminum, and inspection-ready jobsite support.",
+    "knowsAbout":[
+      "Mobile welding",
+      "Structural steel welding",
+      "Field welding",
+      "Steel repair",
+      "Torch cutting",
+      "Stainless steel welding",
+      "Aluminum welding",
+      "Fabrication"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Dillon King",
+    "jobTitle":"Owner / Mobile Welder & Fabricator",
+    "worksFor":{
+      "@type":"Organization",
+      "name":"Kings Mobile Welding"
+    },
+    "url":"https://www.kingsmobilewelding.com/about",
+    "sameAs":[
+      "https://www.linkedin.com/company/kings-mobile-welding"
+    ]
+  }
+  </script>
+
+  <!-- Page-specific styles (sleek + unique) -->
   <style>
-    nav.desktop{display:flex;gap:14px;align-items:center}
-    nav.desktop .nav-item{position:relative;display:inline-flex;align-items:center}
-
-    nav.desktop .nav-item > a{display:inline-flex;align-items:center;gap:6px}
-    nav.desktop .nav-item > a .chev{font-size:.9em;opacity:.8}
-
-    /* Give a little safe area under the trigger so it doesn't collapse */
-    nav.desktop .nav-item{padding-bottom:14px;}
-
-    nav.desktop .dropdown{
-      position:absolute;
-      left:0;
-      top:100%;
-      margin-top:8px;
-      min-width:290px;
-      background:#fff;
-      border:1px solid #E5E7EB;
-      border-radius:14px;
-      box-shadow:0 10px 24px rgba(0,0,0,.10);
-      padding:10px;
-      display:none;
-      z-index:9999;
+    :root{
+      --kmw-blue:#0A2E5C;
+      --kmw-yellow:#FFD60A;
+      --ink:#0F172A;
+      --muted:#475569;
+      --line:#E5E7EB;
+      --card:#FFFFFF;
+      --bg:#F8FAFC;
     }
 
-    nav.desktop .dropdown a{
+    /* ===== About page hero ===== */
+    .about2-hero{
+      padding:56px 0 26px;
+      background:
+        radial-gradient(900px 280px at 20% 0%, rgba(255,214,10,.22) 0%, rgba(255,214,10,0) 60%),
+        radial-gradient(900px 260px at 90% 10%, rgba(10,46,92,.16) 0%, rgba(10,46,92,0) 55%),
+        linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      border-bottom:1px solid var(--line);
+    }
+    .about2-hero .container{max-width:1100px;margin:0 auto;padding:0 16px;}
+    .about2-kicker{
+      display:inline-flex;align-items:center;gap:10px;
+      font-weight:900;letter-spacing:.08em;font-size:.78rem;color:var(--kmw-blue);
+      text-transform:uppercase;
+    }
+    .about2-title{
+      margin:.55rem 0 .6rem;
+      font-weight:950;letter-spacing:-.02em;
+      color:var(--ink);line-height:1.08;
+      font-size:clamp(2rem, 2.6vw, 3.0rem);
+      max-width:22ch;
+    }
+    .about2-lead{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:90ch;
+      font-size:1.05rem;
+    }
+    .about2-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:18px;align-items:center}
+    .about2-actions .btn-primary,
+    .about2-actions .btn-secondary{white-space:nowrap}
+
+    .about2-badges{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:16px
+    }
+    .about2-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      font-weight:900;color:var(--ink);font-size:.92rem;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+    }
+    .about2-badge .dot{
+      width:10px;height:10px;border-radius:999px;background:var(--kmw-yellow);
+      box-shadow:0 0 0 3px rgba(255,214,10,.18);
+    }
+
+    /* ===== Main section ===== */
+    .about2-wrap{padding:30px 0 60px;background:#fff}
+    .about2-wrap .container{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+    .about2-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:16px;
+      align-items:start;
+      margin-top:16px;
+    }
+
+    .about2-card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+    }
+    .about2-card .pad{padding:16px 16px 18px}
+    .about2-card h2{
+      margin:0 0 .55rem;
+      color:var(--ink);
+      font-weight:950;
+      letter-spacing:-.01em;
+      font-size:1.22rem;
+    }
+    .about2-card p{margin:.6rem 0 0;color:var(--muted);line-height:1.6}
+    .about2-card p strong{color:var(--ink)}
+
+    /* Image blocks */
+    .about2-photo{
+      position:relative;
+      height:240px;
+      background:#0B223E;
+      overflow:hidden;
+    }
+    .about2-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
       display:block;
-      padding:10px 10px;
-      border-radius:10px;
-      text-decoration:none;
-      color:inherit;
-      white-space:nowrap;
+      transform:scale(1.01);
     }
-    nav.desktop .dropdown a:hover{background:#F8FAFC}
+    .about2-photo{
+  position:relative;
+  height:240px;
+  overflow:hidden;
+  background:#0B223E;
+}
 
-    /* Hover/focus works */
-    nav.desktop .nav-item:hover .dropdown,
-    nav.desktop .nav-item:focus-within .dropdown{display:block}
+.about2-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;   /* shows whole image */
+  display:block;
+}
+    .about2-tag{
+      position:absolute;
+      left:14px;top:14px;
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(10,46,92,.92);
+      color:#fff;border:1px solid rgba(255,255,255,.15);
+      padding:7px 10px;border-radius:999px;
+      font-weight:900;font-size:.82rem;
+      backdrop-filter: blur(4px);
+    }
 
-    /* ✅ Lock open when JS adds .is-open */
-    nav.desktop .nav-item.is-open .dropdown{display:block}
+    /* Sidebar stats */
+    .about2-side{
+      display:grid;
+      gap:16px;
+    }
+    .about2-stat{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:var(--bg);
+    }
+    .about2-stat strong{display:block;color:var(--ink);font-weight:950;font-size:1.02rem}
+    .about2-stat span{display:block;color:var(--muted);margin-top:4px;line-height:1.45}
+
+    .about2-list{
+      list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px
+    }
+    .about2-list li{
+      display:flex;gap:10px;align-items:flex-start;color:var(--ink)
+    }
+    .about2-list li::before{
+      content:"";
+      width:10px;height:10px;border-radius:999px;margin-top:6px;
+      background:var(--kmw-yellow);
+      box-shadow:0 0 0 3px rgba(255,214,10,.18);
+      flex:0 0 auto;
+    }
+    .about2-list small{color:var(--muted);display:block;margin-top:3px;line-height:1.45}
+
+    /* CTA band */
+    .about2-cta{
+      margin-top:18px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:linear-gradient(180deg,#FFFFFF 0%, #F8FAFC 100%);
+      padding:16px;
+      display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+    }
+    .about2-cta .left{max-width:70ch}
+    .about2-cta .left strong{color:var(--ink);font-weight:950}
+    .about2-cta .left div{color:var(--muted);margin-top:4px;line-height:1.5}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .about2-grid{grid-template-columns:1fr}
+      .about2-photo{height:220px}
+    }
   </style>
 </head>
 
@@ -137,13 +276,11 @@
 
     <nav class="desktop" aria-label="Primary">
       <a href="/about">About</a>
-
       <a href="/industries">Industries</a>
-    <a href="/services">Services</a>
-    
+      <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/safety.html">Safety &amp; Compliance</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
       <a class="btn-primary" href="/contact/">Contact</a>
     </nav>
 
@@ -152,58 +289,178 @@
 
   <div id="mobileMenu" class="mobile-menu" hidden>
     <a href="/about">About</a>
-
     <a href="/services">Services</a>
     <a href="/industries">Industries</a>
-
     <a href="/past-performance">Past Performance</a>
     <a href="/procurement">Procurement</a>
-    <a href="/safety.html">Safety &amp; Compliance</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
     <a class="btn-primary" href="/contact/">Contact</a>
   </div>
 </header>
 
 <main>
-  <section class="about-hero">
+  <!-- Hero -->
+  <section class="about2-hero">
     <div class="container">
-      <h1>About Us</h1>
-      <p class="lead">AWS D1.1 certified, fully insured mobile welding based in Hampton Roads. We bring the shop to your site—structural steel, heavy equipment, docks, and custom metal work—with inspection-ready results.</p>
+      <div class="about2-kicker">ON-SITE WELDING • FABRICATION • FIELD SUPPORT</div>
+      <h1 class="about2-title">Built for the jobsite. Known for inspection-ready results.</h1>
+      <p class="about2-lead">
+        Kings Mobile Welding is an <strong>AWS D1.1 certified</strong>, fully insured mobile welding and fabrication company based in Hampton Roads, Virginia.
+        We support general contractors, facility teams, and industrial projects with dependable field welding, clean fit-up, and documentation-ready closeout.
+      </p>
+
+      <div class="about2-actions">
+        <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+        <a class="btn-secondary" href="/services">Explore Services</a>
+        <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+      </div>
+
+      <div class="about2-badges" aria-label="Highlights">
+        <span class="about2-badge"><span class="dot"></span>AWS D1.1 Certified</span>
+        <span class="about2-badge"><span class="dot"></span>Fully Insured</span>
+        <span class="about2-badge"><span class="dot"></span>Rapid Mobilization</span>
+        <span class="about2-badge"><span class="dot"></span>Inspection-Ready Closeout</span>
+      </div>
     </div>
   </section>
 
-  <section class="about-main">
+  <!-- Content -->
+  <section class="about2-wrap">
     <div class="container">
-      <div class="about-grid">
-        <article class="about-card">
-          <img class="about-photo" src="/assets/img/about/about_truck.JPG" alt="Mobile welding rig and fabrication tools">
-          <div class="body">
-            <h2>Who We Are</h2>
-            <p>We’re a family-owned welding and fabrication company serving Newport News and the greater Hampton Roads region. Our mission is simple: deliver dependable on-site welding that keeps projects moving and passes inspection the first time.</p>
-            <div class="about-badges">
-              <span class="badge">AWS D1.1 Certified</span>
-              <span class="badge">Fully Insured</span>
-              <span class="badge">On-Site / Mobile</span>
-              <span class="badge">Gov &amp; Industrial</span>
+
+      <div class="about2-grid">
+        <!-- Left column: story + photos -->
+        <div style="display:grid;gap:16px;">
+          <!-- Owner card -->
+          <article class="about2-card" aria-label="Owner profile">
+            <div class="about2-photo">
+              <!-- ✅ Replace this image path with your owner photo -->
+              <img src="/assets/img/Dillon-King.jpg" alt="Dillon King, Owner of Kings Mobile Welding" loading="lazy">
+              <span class="about2-tag">Owner • Dillon King</span>
+            </div>
+            <div class="pad">
+              <h2>Meet the Owner</h2>
+              <p>
+                I’m <strong>Dillon King</strong>, owner-operator of Kings Mobile Welding. I bring <strong>9 years of hands-on welding experience</strong> and
+                <strong>over a decade in the construction industry</strong> to every project—so you get work that’s practical, buildable, and aligned to how jobsites actually run.
+              </p>
+              <p>
+                My background includes field and shop work across <strong>oil &amp; gas</strong>, <strong>manufacturing</strong>, <strong>industrial facilities</strong>, and
+                <strong>heavy structural</strong> scopes. I’ve welded and supported projects in <strong>Texas, Oklahoma, Missouri, Montana,</strong> and <strong>Virginia</strong>.
+              </p>
+              <ul class="about2-list">
+                <li>
+                  <div>
+                    <strong>Jobsite-first mindset</strong>
+                    <small>Clear communication, tight fit-up, and clean closeout—so crews can keep moving.</small>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Built for inspection</strong>
+                    <small>We aim for welds that pass the first time and documentation that makes your life easier.</small>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Professional, accountable execution</strong>
+                    <small>Show up ready, work safely, and stay aligned with your schedule and standards.</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Rig card -->
+          <article class="about2-card" aria-label="Welding rig">
+            <div class="about2-photo">
+              <!-- ✅ Replace this image path with your rig photo -->
+              <img src="/assets/img//commercial-welding.jpg" alt="Kings Mobile Welding rig equipped for on-site welding and fabrication" loading="lazy">
+              <span class="about2-tag">Mobile Rig • Field Fabrication Ready</span>
+            </div>
+            <div class="pad">
+              <h2>Our Mobile Welding Rig</h2>
+              <p>
+                Our rig is set up to function like a shop on wheels—ready for on-site cutting, fit-up, welding, and modifications when timelines are tight
+                and the job can’t wait for offsite fabrication.
+              </p>
+              <ul class="about2-list">
+                <li>
+                  <div>
+                    <strong>Field welding &amp; structural support</strong>
+                    <small>Connection welding, reinforcement, repairs, retrofits, and install support.</small>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Fast problem solving</strong>
+                    <small>We can stabilize issues, adapt to field conditions, and keep work progressing.</small>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Clean, professional finishes</strong>
+                    <small>Work performed with jobsite etiquette, safety focus, and punch-list awareness.</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CTA band -->
+          <div class="about2-cta" aria-label="Call to action">
+            <div class="left">
+              <strong>Have a project coming up?</strong>
+              <div>Send drawings, photos, location, and timeline. We’ll respond with practical questions and a clear plan to execute.</div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Contact</a>
+              <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+              <a class="btn-secondary" href="/procurement">Procurement</a>
             </div>
           </div>
-        </article>
+        </div>
 
-        <aside class="about-meta">
-          <div class="meta-item"><strong>Capabilities:</strong> Structural &amp; facility welding, heavy equipment &amp; dock repair, stainless &amp; aluminum (TIG/MIG), fabrication &amp; fit-up.</div>
-          <div class="meta-item"><strong>Service Area:</strong> Newport News, Hampton, Williamsburg, and across Hampton Roads.</div>
-          <div class="meta-item"><strong>Approach:</strong> Clear scope, safe setup, precise fit-up, documented QA/QC, and punch-list closeout.</div>
-          <div class="meta-item"><strong>For Procurement:</strong> W-9 on request, COI, capability statement, and SAM/Gov readiness.</div>
-          <div class="meta-item"><strong>Contact:</strong> 757-231-6809 • DillonKing@kingsmobilewelding.com</div>
+        <!-- Right column: credibility blocks -->
+        <aside class="about2-side" aria-label="Company facts">
+          <div class="about2-stat">
+            <strong>What we’re known for</strong>
+            <span>Dependable mobilization, clean fit-up, strong welds, and inspection-ready closeout on schedule-critical work.</span>
+          </div>
+
+          <div class="about2-stat">
+            <strong>Core services</strong>
+            <span>Structural steel welding, field repairs, fabrication &amp; fit-up, emergency welding support, and industrial maintenance scopes.</span>
+          </div>
+
+          <div class="about2-stat">
+            <strong>Who we work with</strong>
+            <span>General contractors, steel subs, facility managers, and public-sector project teams across Hampton Roads and the Mid-Atlantic.</span>
+          </div>
+
+          <div class="about2-stat">
+            <strong>Service area</strong>
+            <span>Hampton Roads, VA • Newport News • Williamsburg • Norfolk • Virginia Beach • Suffolk • Chesapeake • and surrounding regions.</span>
+          </div>
+
+          <div class="about2-card" aria-label="Quick links">
+            <div class="pad">
+              <h2>Quick Links</h2>
+              <p style="margin-top:.35rem">Pick a path based on what you need right now.</p>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;">
+                <a class="btn-secondary" href="/services/structural-steel-welding/">Structural Steel</a>
+                <a class="btn-secondary" href="/services/emergency-welding/">Emergency</a>
+                <a class="btn-secondary" href="/services/government-and-dot-welding/">Government / DOT</a>
+                <a class="btn-secondary" href="/past-performance">Past Performance</a>
+              </div>
+              <p style="margin-top:12px;color:#64748B;">
+                Prefer to talk it through? Call <a href="tel:7572316809" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;">757-231-6809</a>.
+              </p>
+            </div>
+          </div>
         </aside>
       </div>
 
-      <article class="about-card" style="margin-top:1rem;">
-        <div class="body">
-          <h2>What We Do</h2>
-          <p>Every project is unique. We tailor our process to your requirements—whether that’s rapid emergency repair on equipment, structural steel fit-up on a schedule-critical job, or clean stainless work for architectural and food-grade applications.</p>
-          <p><a href="/services">See our services →</a></p>
-        </div>
-      </article>
     </div>
   </section>
 </main>
@@ -227,6 +484,7 @@
     <nav class="footer-nav">
       <a href="/about">About</a>
       <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
       <a href="/careers">Careers</a>
@@ -247,7 +505,7 @@
       </a>
       <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
         </svg>
       </a>
       <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
@@ -262,68 +520,5 @@
 <script src="/assets/js/menu-toggle.js" defer></script>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
-
-<!-- ✅ Click-to-open dropdown logic (fixes “disappears when clicking”) -->
-<script>
-(function(){
-  const items = document.querySelectorAll('nav.desktop .nav-item.has-dropdown');
-  if(!items.length) return;
-
-  function closeAll(except){
-    items.forEach(it=>{
-      if(except && it === except) return;
-      it.classList.remove('is-open');
-      const a = it.querySelector(':scope > a');
-      if(a) a.setAttribute('aria-expanded','false');
-    });
-  }
-
-  items.forEach(it=>{
-    const trigger = it.querySelector(':scope > a');
-    if(!trigger) return;
-
-    trigger.setAttribute('aria-haspopup','true');
-    trigger.setAttribute('aria-expanded','false');
-
-    // First click opens & stays open. Second click navigates to the parent page.
-    trigger.addEventListener('click', (e)=>{
-      const isOpen = it.classList.contains('is-open');
-      if(!isOpen){
-        e.preventDefault();
-        closeAll(it);
-        it.classList.add('is-open');
-        trigger.setAttribute('aria-expanded','true');
-      } else {
-        closeAll();
-      }
-    });
-
-    // Clicking a dropdown link closes menu after click
-    const dropdown = it.querySelector(':scope > .dropdown');
-    if(dropdown){
-      dropdown.addEventListener('click', (e)=>{
-        const link = e.target.closest('a');
-        if(link) closeAll();
-      });
-    }
-
-    it.addEventListener('keydown', (e)=>{
-      if(e.key === 'Escape'){
-        closeAll();
-        trigger.focus();
-      }
-    });
-  });
-
-  // Click outside closes all
-  document.addEventListener('click', (e)=>{
-    if(!e.target.closest('nav.desktop .nav-item.has-dropdown')) closeAll();
-  });
-
-  // Optional: close on scroll
-  window.addEventListener('scroll', ()=>closeAll(), {passive:true});
-})();
-</script>
-
 </body>
 </html>
