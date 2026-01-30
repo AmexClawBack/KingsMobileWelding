@@ -1,195 +1,352 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Mobile Welding in Toano, VA | Kings Mobile Welding</title>
+  <meta name="description" content="AWS D1.1 certified mobile welding in Toano, VA. Structural steel, on-site fabrication, and emergency repairs—inspection-ready results for contractors and facilities." />
+  <meta name="keywords" content="mobile welding Toano VA, mobile welder near me Toano, structural steel welding Toano, emergency welding Toano VA, field welding Toano, on site welding Toano VA" />
 
-  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <meta property="og:image" content="/assets/img/logo-500.png">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/../assets/img/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/../assets/img/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/../assets/img/favicon-180.png">
-  <link rel="shortcut icon" href="/../assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500.png">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
-  <!-- CSS: relative (no leading slash) -->
-  <link rel="stylesheet" href="/../assets/css/styles.css">
-<script type="application/ld+json">{
-    "address":  {
-                    "postalCode":  "23601",
-                    "addressRegion":  "VA",
-                    "addressLocality":  "Newport News",
-                    "@type":  "PostalAddress",
-                    "addressCountry":  "US"
-                },
-    "url":  "https://www.kingsmobilewelding.com",
-    "foundingDate":  "2017",
-    "@type":  "LocalBusiness",
-    "sameAs":  [
-                   "https://www.kingsmobilewelding.com",
-                   "https://linktr.ee/kingsmobilewelding"
-               ],
-    "name":  "Kings Mobile Welding",
-    "areaServed":  [
-                       "Hampton Roads, VA",
-                       "Newport News, VA",
-                       "Virginia"
-                   ],
-    "description":  "AWS D1.1-certified mobile welding \u0026 fabrication serving Hampton Roads, VA \u0026 beyond — structural steel, repairs, handrails, stairs, aluminum \u0026 stainless.",
-    "telephone":  "(757) 231-6809",
-    "@context":  "https://schema.org",
-    "priceRange":  "}",
-    "knowsAbout":  [
-                       "Mobile welding",
-                       "Structural steel welding",
-                       "Steel repair",
-                       "Handrails",
-                       "Metal stairs",
-                       "Torch cutting",
-                       "Aluminum welding",
-                       "Stainless steel welding",
-                       "Fabrication"
-                   ],
-    "image":  "https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
-    "founder":  "Dillon King",
-    "openingHoursSpecification":  [
-                                      {
-                                          "opens":  "07:00",
-                                          "closes":  "17:00",
-                                          "@type":  "OpeningHoursSpecification",
-                                          "dayOfWeek":  [
-                                                            "Monday",
-                                                            "Tuesday",
-                                                            "Wednesday",
-                                                            "Thursday",
-                                                            "Friday"
-                                                        ]
-                                      }
-                                  ],
-    "email":  "Dillonk2012@gmail.com"
-}</script>
-<meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Toano, VA. Structural steel, stainless & aluminum, pipe & pressure, and inspection-ready QA/QC.">
+  <!-- LocalBusiness JSON-LD (business address stays Newport News; service area includes Toano) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kings Mobile Welding",
+    "url":"https://www.kingsmobilewelding.com",
+    "image":"https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
+    "telephone":"(757) 231-6809",
+    "email":"DillonKing@kingsmobilewelding.com",
+    "foundingDate":"2017",
+    "founder":"Dillon King",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Newport News",
+      "addressRegion":"VA",
+      "postalCode":"23601",
+      "addressCountry":"US"
+    },
+    "areaServed":[
+      "Toano, VA",
+      "23168",
+      "James City County, VA",
+      "Hampton Roads, VA",
+      "Eastern Virginia",
+      "Mid-Atlantic"
+    ],
+    "sameAs":[
+      "https://www.kingsmobilewelding.com",
+      "https://linktr.ee/kingsmobilewelding"
+    ],
+    "knowsAbout":[
+      "Mobile welding",
+      "Structural steel welding",
+      "Field welding",
+      "On-site fabrication",
+      "Emergency welding repairs",
+      "Torch cutting",
+      "Aluminum welding",
+      "Stainless steel welding"
+    ],
+    "openingHoursSpecification":[
+      {
+        "@type":"OpeningHoursSpecification",
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens":"07:00",
+        "closes":"17:00"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Page-only styles -->
+  <style>
+    :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+
+    .area-hero{
+      padding:64px 0 34px;
+      background:
+        radial-gradient(1200px 480px at 15% -10%, rgba(255,214,10,.22), transparent 55%),
+        radial-gradient(900px 420px at 92% 10%, rgba(10,46,92,.18), transparent 55%),
+        linear-gradient(180deg,#FFFFFF 0%, #F8FAFC 100%);
+      border-bottom:1px solid #E5E7EB;
+    }
+    .area-hero .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .area-kicker{
+      display:inline-flex;gap:10px;align-items:center;
+      font-weight:900;letter-spacing:.08em;font-size:.78rem;
+      color:var(--kmw-blue);
+    }
+    .area-hero h1{margin:.6rem 0 .6rem;color:#0F172A;font-weight:950;line-height:1.06}
+    .area-hero .lead{margin:0;color:#475569;max-width:82ch;line-height:1.65}
+    .area-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .area-actions a{display:inline-flex;align-items:center;gap:8px}
+
+    .area-wrap{padding:34px 0 58px;background:#fff}
+    .area-wrap .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    .area-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:16px;
+      align-items:start;
+    }
+    @media (max-width:980px){.area-grid{grid-template-columns:1fr}}
+
+    .panel{
+      border:1px solid #E5E7EB;border-radius:18px;background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+    }
+    .panel-head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid #F1F5F9;
+      background:linear-gradient(180deg,#fff,#FBFDFF);
+    }
+    .panel-head h2{margin:0;color:var(--kmw-blue);font-weight:950}
+    .panel-head p{margin:8px 0 0;color:#475569;line-height:1.6}
+
+    .svc-body{padding:16px}
+    .svc-list{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+    .svc-list li{display:flex;gap:10px;align-items:flex-start;color:#334155;line-height:1.45}
+    .svc-list li:before{
+      content:"";width:10px;height:10px;border-radius:999px;margin-top:6px;
+      background:var(--kmw-yellow);
+      box-shadow:0 0 0 3px rgba(255,214,10,.22);
+      flex:0 0 auto;
+    }
+
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:999px;
+      border:1px solid #E5E7EB;background:#fff;color:#0F172A;
+      text-decoration:none;font-weight:900;font-size:.92rem;
+    }
+    .chip:hover{background:#F8FAFC}
+
+    .map-wrap{padding:14px}
+    .map-wrap iframe{width:100%;height:330px;border:0;border-radius:16px}
+    .locals{padding:0 16px 16px;color:#475569;line-height:1.6}
+    .locals strong{color:#0F172A}
+
+    .cta-band{
+      margin-top:16px;
+      border:1px solid rgba(2,6,23,.08);
+      border-radius:20px;
+      padding:16px;
+      background:linear-gradient(135deg, rgba(10,46,92,.08), rgba(255,214,10,.12));
+      display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+    }
+    .cta-band h3{margin:0;color:var(--kmw-blue);font-weight:950}
+    .cta-band p{margin:6px 0 0;color:#475569;max-width:70ch;line-height:1.6}
+    .cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+    .small-note{margin-top:10px;color:#64748B;font-size:.95rem}
+  </style>
+</head>
+
 <body>
-<header class="site-header">
-    
+  <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
-      <nav class="desktop">
-        <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
-        
-</nav>
-      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a></div>
-  </header>
-<main>
-  <section class="areas-hero">
-    <div class="container">
-      <h1>Mobile Welding in Toano, VA</h1>
-      <p class="lead">On-site welding & fabrication for government and industry in Toano, VA  fast, inspection-ready, and aligned to spec.</p>
-    </div>
-  </section>
+      <a class="brand" href="/">
+        <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
 
-  <section class="areas-wrap">
-    <div class="container">
-      <article class="area-card" style="border-radius:16px">
-        <h2>Services We Offer in Toano</h2>
-        <p>We bring the shop to your site with fully equipped mobile rigs. Certified welders deliver clean fit-up, strong welds and tidy finishes that pass inspection the first time.</p>
-        <ul>
-          <li><strong>Structural & Facility Welding:</strong> beams, columns, embeds, stairs, rails, platforms (AWS D1.1)</li>
-          <li><strong>Stainless & Aluminum:</strong> TIG/MIG for architectural and corrosion-resistant components</li>
-          <li><strong>Pipe & Pressure:</strong> carbon/stainless pipe, purge where required, coordination for pressure tests</li>
-          <li><strong>Fabrication & Fit-Up:</strong> cut, layout, fixtures, tack & final welds; on-site installation</li>
-          <li><strong>Repair, Retrofit & Rework:</strong> cracks, failed joints, brackets, wear surfaces, corrosion</li>
-          <li><strong>Inspection-Ready QA/QC:</strong> WPS/WPQR adherence, COI, capability statement, UEI/CAGE</li>
-        </ul>
-        <p class="meta" style="margin-top:.6rem;color:#64748B">
-          Serving Toano, VA and neighboring communities across Hampton Roads.
-        </p>
-        <p class="cta" style="margin-top:.75rem">
-          <a class="btn" href="/contact/" style="display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.55rem .9rem;background:#FFD60A;color:#0A2E5C;border:1px solid rgba(0,0,0,.08);">Contact us</a>
-        </p>
-      </article>
+      <nav class="desktop" aria-label="Primary">
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/industries">Industries</a>
+        <a href="/past-performance">Past Performance</a>
+        <a href="/procurement">Procurement</a>
+        <a href="/safety-compliance/">Safety &amp; Compliance</a>
+        <a class="btn-primary" href="/contact/">Contact</a>
+      </nav>
+
+      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
-</main>
-<footer class="site-footer">
+
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a class="btn-primary" href="/contact/">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="area-hero">
+      <div class="container">
+        <div class="area-kicker">MOBILE WELDING • AWS D1.1 • STRUCTURAL STEEL • FIELD FABRICATION</div>
+        <h1>Mobile Welding in Toano, VA</h1>
+        <p class="lead">
+          Kings Mobile Welding provides <strong>AWS D1.1 certified field welding</strong>, on-site fabrication, and emergency repairs for
+          contractors and facilities in <strong>Toano</strong> and the greater James City County area.
+          If you’re searching for a <strong>mobile welder near me</strong> in Toano—call for availability.
+        </p>
+
+        <div class="area-actions">
+          <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="btn-secondary" href="tel:7572316809">Call (757) 231-6809</a>
+          <a class="btn-secondary" href="/services">View Services</a>
+        </div>
+
+        <div class="chips" aria-label="Popular Toano services">
+          <a class="chip" href="/services/structural-steel-welding/">Structural Steel</a>
+          <a class="chip" href="/services/mobile-welding-services/">Mobile Welding</a>
+          <a class="chip" href="/services/emergency-welding/">Emergency Repairs</a>
+          <a class="chip" href="/industries/Solar-Utility/">Solar &amp; Utility</a>
+        </div>
+
+        <div class="small-note">
+          Primary Toano ZIP code: <strong>23168</strong>.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="area-wrap">
+      <div class="container">
+        <div class="area-grid">
+
+          <!-- LEFT -->
+          <section class="panel" aria-label="Toano welding services">
+            <div class="panel-head">
+              <h2>Inspection-Ready Welding Support for Toano Job Sites</h2>
+              <p>
+                Toano sits close to active construction corridors and utility work—so we’re built for schedule-driven field support.
+                Expect clean prep, strong fit-up, and weld quality aligned to spec for commercial, industrial, and infrastructure scopes.
+              </p>
+            </div>
+
+            <div class="svc-body">
+              <ul class="svc-list">
+                <li><strong>Structural &amp; misc metals (AWS D1.1):</strong> platforms, stairs, railings, frames, brackets, and supports</li>
+                <li><strong>Field fabrication &amp; fit-up:</strong> cut, layout, tack, weld, install, and jobsite modifications</li>
+                <li><strong>Repair / retrofit / rework:</strong> cracked members, failed welds, reinforcement, and corrective welding</li>
+                <li><strong>Industrial &amp; facility maintenance:</strong> equipment supports, guards, access ladders, and steel repairs</li>
+                <li><strong>Documentation-ready:</strong> COI, certs, scope alignment, and closeout support for contractors</li>
+              </ul>
+
+              <div class="cta-band" aria-label="Toano CTA">
+                <div>
+                  <h3>Need a welder on-site in Toano?</h3>
+                  <p>Send your scope, schedule, and location—we’ll respond quickly with next steps.</p>
+                </div>
+                <div class="cta-actions">
+                  <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Contact</a>
+                  <a class="btn-secondary" href="tel:7572316809">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- RIGHT -->
+          <aside class="panel" aria-label="Toano service coverage">
+            <div class="panel-head">
+              <h2>Toano Service Coverage</h2>
+              <p>
+                Serving Toano and surrounding areas in James City County. If it’s in the 23168 area, we can typically mobilize with clear scope details.
+              </p>
+            </div>
+
+            <div class="map-wrap">
+              <iframe
+                title="Toano, VA service area map"
+                src="https://www.google.com/maps?q=Toano,+VA&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="locals">
+              <p><strong>Local focus:</strong> jobsite welding support, structural repairs, facility maintenance, and field modifications.</p>
+              <p><strong>Fast contact:</strong> <a href="tel:7572316809">(757) 231-6809</a></p>
+              <p><strong>Also serving:</strong> Williamsburg, Norge/Lightfoot, New Kent, Yorktown, Newport News, and the greater Hampton Roads region.</p>
+              <p style="margin-top:10px;"><a class="btn-secondary" href="/areas">View all service areas</a></p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <a class="brand" href="/">
-          <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
+          <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
           <strong>Kings Mobile Welding</strong>
         </a>
         <div class="footer-contact">
-          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, VA and beyond</p>
-        
+          <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+          <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+          <p>📍 Hampton Roads, Eastern Virginia, and the Mid-Atlantic region</p>
           <p>🆔 UEI: ZCY4G7GBGQA3</p>
           <p>🏷️ CAGE: 11P75</p>
         </div>
       </div>
 
       <nav class="footer-nav">
-        <a href="/../about">About</a>
-        <a href="/../services">Services</a>
-        <a href="/../past-performance">Past Performance</a>
-        <a href="/../procurement">Procurement</a>
-        <a href="/../blog">Blog</a>
-        <a href="/../careers">Careers</a>
-                <a href="/../areas">Areas We Service</a>
-<a href="/../contact">Contact</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/industries">Industries</a>
+        <a href="/past-performance">Past Performance</a>
+        <a href="/procurement">Procurement</a>
+        <a href="/safety-compliance/">Safety &amp; Compliance</a>
+        <a href="/areas">Areas We Service</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
       </nav>
 
       <div class="social" aria-label="Social links">
-  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-    </svg>
-  </a>
-  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-    </svg>
-  </a>
-  <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-    </svg>
-  </a>
-</div>
+        <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+          </svg>
+        </a>
+        <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
-<script src="/assets/js/site.js"></script>
-<script src="/assets/js/forms.js"></script>
+
+  <script src="/assets/js/menu-toggle.js" defer></script>
+  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
