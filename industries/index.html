@@ -14,8 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Industries | Kings Mobile Welding</title>
-  <meta name="description" content="Industries we support with AWS D1.1–certified mobile welding & field fabrication—DOT contractors, solar installers, sign companies, waste & recycling, general contractors, and retail build-outs across Hampton Roads, Eastern Virginia, and the Mid-Atlantic." />
-  <meta name="keywords" content="welding subcontractor, mobile welding, DOT contractor welding, solar farm welding, sign structure welding, waste container repair, retail build out welding, Hampton Roads welding" />
+  <meta name="description" content="Industries we support with AWS D1.1–certified mobile welding & field fabrication—DOT contractors, heavy transport & railcar securement, solar installers, sign companies, waste & recycling, general contractors, and retail build-outs across Hampton Roads, Eastern Virginia, and the Mid-Atlantic." />
+  <meta name="keywords" content="welding subcontractor, mobile welding, DOT contractor welding, railcar securement welding, heavy transport welding, solar farm welding, sign structure welding, waste container repair, retail build out welding, Hampton Roads welding" />
 
   <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
@@ -52,23 +52,55 @@
     nav.desktop .nav-item:focus-within .dropdown{display:block}
     nav.desktop .nav-item.is-open .dropdown{display:block}
 
-    /* ✅ Industries Page Styles (sleek, not dense) */
+    /* ✅ Industries Page Styles (FIXED: prevents image column from bleeding/overlapping) */
     :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+
     .ind-hero{padding:3.5rem 0 2rem;background:linear-gradient(180deg,#fff, #F8FAFC)}
     .ind-hero h1{margin:0 0 .5rem;color:var(--kmw-blue)}
     .ind-hero .lead{max-width:860px}
+
     .ind-wrap{padding:1.5rem 0 3rem}
     .ind-grid{display:grid;gap:1.25rem}
+
     .ind-card{
-      display:grid;grid-template-columns: 1.1fr 1.2fr;
-      gap:1.25rem;align-items:stretch;
-      border:1px solid #E5E7EB;border-radius:18px;background:#fff;
+      display:grid;
+      grid-template-columns: 1.1fr 1.2fr; /* media | text */
+      gap:1.25rem;
+      align-items:stretch;
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
       box-shadow:0 1px 2px rgba(0,0,0,.04);
       overflow:hidden;
+
+      /* ✅ critical: prevents grid children from overflowing into each other */
+      min-width:0;
     }
+    /* Use this class ONLY when you want text | media */
     .ind-card.reverse{grid-template-columns:1.2fr 1.1fr}
-    .ind-media{min-height:240px;background:#0b1f33;position:relative}
-    .ind-media img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* ✅ critical: grid children must be allowed to shrink */
+    .ind-media, .ind-body{min-width:0}
+
+    /* ✅ FIX: media is clipped + has a predictable size */
+    .ind-media{
+      background:#0b1f33;
+      position:relative;
+      overflow:hidden;          /* ✅ clips image */
+      height:260px;             /* ✅ prevents giant media blocks */
+    }
+    /* ✅ on desktop, let media fill the card height cleanly */
+    @media (min-width: 901px){
+      .ind-media{height:100%}   /* ✅ matches the text column height */
+    }
+
+    .ind-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
     .ind-media .tag{
       position:absolute;left:14px;top:14px;
       background:rgba(10,46,92,.92);color:#fff;
@@ -76,10 +108,13 @@
       font-weight:700;font-size:.85rem;
       border:1px solid rgba(255,255,255,.15);
       backdrop-filter: blur(6px);
+      z-index:2;
     }
+
     .ind-body{padding:1.15rem 1.15rem 1.25rem}
     .ind-body h2{margin:.1rem 0 .35rem;color:var(--kmw-blue);font-size:1.35rem}
     .ind-body p{margin:.35rem 0 .75rem;color:#334155;line-height:1.6}
+
     .ind-list{margin:0;padding:0;list-style:none;display:grid;gap:.45rem}
     .ind-list li{
       display:flex;gap:.5rem;align-items:flex-start;
@@ -89,7 +124,9 @@
       content:"";margin-top:.55rem;flex:0 0 8px;height:8px;border-radius:999px;background:var(--kmw-yellow);
       box-shadow:0 0 0 3px rgba(255,214,10,.25);
     }
+
     .ind-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+
     .btn-ghost{
       display:inline-flex;align-items:center;gap:.5rem;
       padding:.6rem .9rem;border-radius:12px;
@@ -97,6 +134,7 @@
       text-decoration:none;font-weight:700;
     }
     .btn-ghost:hover{background:#F8FAFC}
+
     .btn-solid{
       display:inline-flex;align-items:center;gap:.5rem;
       padding:.6rem .9rem;border-radius:12px;
@@ -105,9 +143,11 @@
       text-decoration:none;font-weight:800;
     }
     .btn-solid:hover{filter:brightness(.95)}
+
     .ind-mini{margin-top:1.25rem;border:1px solid #E5E7EB;border-radius:18px;background:#fff;padding:1.25rem}
     .ind-mini h3{margin:0 0 .35rem;color:var(--kmw-blue)}
     .ind-mini .cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem}
+
     .pill{
       display:inline-flex;align-items:center;gap:.45rem;
       padding:.45rem .7rem;border-radius:999px;
@@ -115,9 +155,10 @@
       margin:.25rem .35rem .25rem 0;text-decoration:none;
     }
     .pill:hover{background:#F8FAFC}
+
     @media (max-width: 900px){
       .ind-card,.ind-card.reverse{grid-template-columns:1fr}
-      .ind-media{min-height:220px}
+      .ind-media{height:220px}
       .ind-mini .cols{grid-template-columns:1fr}
     }
   </style>
@@ -130,8 +171,8 @@
 
     <nav class="desktop" aria-label="Primary">
       <a href="/about">About</a>
- <a href="/industries">Industries</a>
-  <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
+      <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
       <a href="/safety-compliance/">Safety &amp; Compliance</a>
@@ -143,10 +184,8 @@
 
   <div id="mobileMenu" class="mobile-menu" hidden>
     <a href="/about">About</a>
-
     <a href="/services">Services</a>
-        <a href="/industries">Industries</a>
-
+    <a href="/industries">Industries</a>
     <a href="/past-performance">Past Performance</a>
     <a href="/procurement">Procurement</a>
     <a href="/safety-compliance/">Safety &amp; Compliance</a>
@@ -158,7 +197,11 @@
   <section class="ind-hero">
     <div class="container">
       <h1>Industries We Support</h1>
-      <p class="lead">Kings Mobile Welding supports contractors and project teams that need a responsive, inspection-ready field welding partner. From heavy civil schedules to fast retail build-outs, we bring AWS D1.1-certified capability to your jobsite across <strong>Hampton Roads</strong>, <strong>Eastern Virginia</strong>, and the <strong>Mid-Atlantic</strong>.</p>
+      <p class="lead">
+        Kings Mobile Welding supports contractors and project teams that need a responsive, inspection-ready field welding partner.
+        From heavy civil schedules to terminal load-outs, we bring AWS D1.1-certified capability to your jobsite across
+        <strong>Hampton Roads</strong>, <strong>Eastern Virginia</strong>, and the <strong>Mid-Atlantic</strong>.
+      </p>
 
       <div class="ind-actions">
         <a class="btn-solid" href="/contact/">Request a Quote</a>
@@ -172,7 +215,33 @@
     <div class="container">
       <div class="ind-grid">
 
-        <!-- DOT -->
+         <!-- ✅ RAILCAR (TEXT LEFT, IMAGE RIGHT) — placed directly under DOT -->
+        <article class="ind-card reverse" id="railcar">
+          <div class="ind-body">
+            <h2>Heavy Transport &amp; Railcar Securement</h2>
+            <p>
+              Field-driven <strong>railcar securement welding</strong> support for heavy transport and load-out projects—transformer moves,
+              equipment shipments, and time-critical rigging sequences at terminals, ports, and rail yards.
+              We coordinate with lift leadership to keep the move on schedule and inspection-ready.
+            </p>
+            <ul class="ind-list">
+              <li>Railcar securement welding, restraints, stops, and structural tabs</li>
+      <li>Terminal, port, and rail yard load-out support</li>
+      <li>On-site modifications and time-critical corrections</li>
+            </ul>
+            <div class="ind-actions">
+              <a class="btn-solid" href="/industries/heavy-transport-railcar-securement/">Railcar industry page →</a>
+              <a class="btn-ghost" href="/services/railcar-securement-welding/">Railcar securement welding →</a>
+            </div>
+          </div>
+          <div class="ind-media">
+            <span class="tag">Railcar &amp; Heavy Transport</span>
+            <!-- ✅ swap this image path to whatever you actually have -->
+            <img src="/assets/img/industries/railcar-securement..jpg" alt="Railcar securement welding support for heavy transport and load-out projects" loading="lazy">
+          </div>
+        </article>
+
+        <!-- DOT (IMAGE LEFT, TEXT RIGHT) -->
         <article class="ind-card" id="dot">
           <div class="ind-media">
             <span class="tag">DOT &amp; Infrastructure</span>
@@ -180,7 +249,10 @@
           </div>
           <div class="ind-body">
             <h2>DOT Contractors &amp; Heavy Civil</h2>
-            <p>Schedule-driven field welding and repair support for transportation and infrastructure work—mobilizing fast, coordinating with site leadership, and delivering welds that meet inspection requirements.</p>
+            <p>
+              Schedule-driven field welding and repair support for transportation and infrastructure work—mobilizing fast, coordinating with site leadership,
+              and delivering welds that meet inspection requirements.
+            </p>
             <ul class="ind-list">
               <li>Bridge and structural steel field repairs, fit-up support</li>
               <li>Handrails, stairs, platforms, embeds, and site steel</li>
@@ -193,11 +265,16 @@
           </div>
         </article>
 
+       
+
         <!-- Solar -->
         <article class="ind-card reverse" id="solar">
           <div class="ind-body">
             <h2>Solar Installers &amp; Utility Contractors</h2>
-            <p>Field welding and fabrication support for solar and utility work where speed, consistency, and jobsite safety matter. We help teams keep installs moving with clean prep, reliable fit-up, and documented QA/QC.</p>
+            <p>
+              Field welding and fabrication support for solar and utility work where speed, consistency, and jobsite safety matter.
+              We help teams keep installs moving with clean prep, reliable fit-up, and documented QA/QC.
+            </p>
             <ul class="ind-list">
               <li>Racking repairs, equipment brackets, site steel modifications</li>
               <li>Gate/guard repairs, platforms, access ladders, and safety rail</li>
@@ -222,7 +299,10 @@
           </div>
           <div class="ind-body">
             <h2>Sign Companies &amp; Structural Support Work</h2>
-            <p>Support for sign installation teams that need certified welding for structural connections, retrofits, and repairs. We focus on fit-up, quality, and on-site coordination to keep installs safe and on schedule.</p>
+            <p>
+              Support for sign installation teams that need certified welding for structural connections, retrofits, and repairs.
+              We focus on fit-up, quality, and on-site coordination to keep installs safe and on schedule.
+            </p>
             <ul class="ind-list">
               <li>Structural connections, braces, base plate repairs</li>
               <li>On-site modifications and reinforcement as required</li>
@@ -239,7 +319,10 @@
         <article class="ind-card reverse" id="waste">
           <div class="ind-body">
             <h2>Waste, Recycling &amp; Equipment Fleets</h2>
-            <p>Repair and reinforcement work that keeps containers, dumpsters, and fleet equipment in service. We prioritize clean repairs, proper reinforcement, and durable welds designed for hard daily use.</p>
+            <p>
+              Repair and reinforcement work that keeps containers, dumpsters, and fleet equipment in service.
+              We prioritize clean repairs, proper reinforcement, and durable welds designed for hard daily use.
+            </p>
             <ul class="ind-list">
               <li>Roll-off cans, dumpsters, hoppers, hinges, and doors</li>
               <li>Floor overlays, side wall repairs, caster/runner work</li>
@@ -264,7 +347,10 @@
           </div>
           <div class="ind-body">
             <h2>Construction Companies &amp; General Contractors</h2>
-            <p>A Tier-2 field welding partner for fast mobilization, clean fit-up, and on-site coordination. We support commercial and industrial sites with structural steel, stairs/rail, platforms, and repair work.</p>
+            <p>
+              A Tier-2 field welding partner for fast mobilization, clean fit-up, and on-site coordination.
+              We support commercial and industrial sites with structural steel, stairs/rail, platforms, and repair work.
+            </p>
             <ul class="ind-list">
               <li>Field welding, misc metals, stairs/handrails, platforms</li>
               <li>Coordination with superintendents and inspectors</li>
@@ -281,7 +367,10 @@
         <article class="ind-card reverse" id="retail">
           <div class="ind-body">
             <h2>Retail Build-Out Companies</h2>
-            <p>Speed and precision matter in retail timelines. We support build-outs with dependable on-site welding for steel, frames, guards, stairs/handrails, and quick repairs that prevent schedule slip.</p>
+            <p>
+              Speed and precision matter in retail timelines. We support build-outs with dependable on-site welding for steel, frames, guards,
+              stairs/handrails, and quick repairs that prevent schedule slip.
+            </p>
             <ul class="ind-list">
               <li>Storefront/site steel, bollards, guards, and supports</li>
               <li>Service/repair work for fixtures and back-of-house steel</li>
@@ -300,7 +389,7 @@
 
       </div>
 
-      <!-- Quick Links (optional, sleek, not dense) -->
+      <!-- Quick Links -->
       <section class="ind-mini" aria-labelledby="quicklinks">
         <h3 id="quicklinks">Quick Links</h3>
         <p style="margin:.25rem 0 .8rem;color:#334155;max-width:900px;">
@@ -311,6 +400,7 @@
             <div style="font-weight:800;color:#0A2E5C;margin-bottom:.35rem;">Services</div>
             <a class="pill" href="/services/mobile-welding-services/">Mobile Welding</a>
             <a class="pill" href="/services/structural-steel-welding/">Structural Steel</a>
+            <a class="pill" href="/services/railcar-securement-welding/">Railcar Securement</a>
             <a class="pill" href="/services/emergency-welding/">Emergency</a>
             <a class="pill" href="/services/welding-subcontractor/">Subcontractor</a>
             <a class="pill" href="/services/government-and-dot-welding/">Gov/DOT</a>
