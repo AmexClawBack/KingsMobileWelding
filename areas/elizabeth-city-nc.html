@@ -5,191 +5,489 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Mobile Welding in Elizabeth City, NC | Kings Mobile Welding</title>
+  <meta name="description" content="AWS D1.1 certified mobile welding serving Elizabeth City, NC. Structural steel, bridge welding support, railcar securement welding, emergency repairs, and subcontractor field welding—inspection-ready and documentation-ready." />
 
-  <!-- Icons / Manifest: relative paths (no leading slash) -->
+  <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/../assets/img/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/../assets/img/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/../assets/img/favicon-180.png">
-  <link rel="shortcut icon" href="/../assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
 
-  <!-- CSS: relative (no leading slash) -->
-  <link rel="stylesheet" href="/../assets/css/styles.css">
-<script type="application/ld+json">{
-    "address":  {
-                    "postalCode":  "23601",
-                    "addressRegion":  "VA",
-                    "addressLocality":  "Newport News",
-                    "@type":  "PostalAddress",
-                    "addressCountry":  "US"
-                },
-    "url":  "https://www.kingsmobilewelding.com",
-    "foundingDate":  "2017",
-    "@type":  "LocalBusiness",
-    "sameAs":  [
-                   "https://www.kingsmobilewelding.com",
-                   "https://linktr.ee/kingsmobilewelding"
-               ],
-    "name":  "Kings Mobile Welding",
-    "areaServed":  [
-                       "Hampton Roads, VA",
-                       "Newport News, VA",
-                       "Virginia"
-                   ],
-    "description":  "AWS D1.1-certified mobile welding \u0026 fabrication serving Hampton Roads, VA \u0026 beyond — structural steel, repairs, handrails, stairs, aluminum \u0026 stainless.",
-    "telephone":  "(757) 231-6809",
-    "@context":  "https://schema.org",
-    "priceRange":  "}",
-    "knowsAbout":  [
-                       "Mobile welding",
-                       "Structural steel welding",
-                       "Steel repair",
-                       "Handrails",
-                       "Metal stairs",
-                       "Torch cutting",
-                       "Aluminum welding",
-                       "Stainless steel welding",
-                       "Fabrication"
-                   ],
-    "image":  "https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
-    "founder":  "Dillon King",
-    "openingHoursSpecification":  [
-                                      {
-                                          "opens":  "07:00",
-                                          "closes":  "17:00",
-                                          "@type":  "OpeningHoursSpecification",
-                                          "dayOfWeek":  [
-                                                            "Monday",
-                                                            "Tuesday",
-                                                            "Wednesday",
-                                                            "Thursday",
-                                                            "Friday"
-                                                        ]
-                                      }
-                                  ],
-    "email":  "Dillonk2012@gmail.com"
-}</script>
-<meta name="description" content="AWS D1.1 certified mobile welding, fabrication, and emergency repairs in Elizabeth City, NC. Structural steel, stainless & aluminum, pipe & pressure, and inspection-ready QA/QC.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- LocalBusiness JSON-LD (Elizabeth City page) -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kings Mobile Welding",
+    "url":"https://www.kingsmobilewelding.com",
+    "foundingDate":"2017",
+    "telephone":"(757) 231-6809",
+    "priceRange":"$$",
+    "image":"https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
+    "founder":"Dillon King",
+    "email":"DillonKing@kingsmobilewelding.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Elizabeth City",
+      "addressRegion":"NC",
+      "postalCode":"27909",
+      "addressCountry":"US"
+    },
+    "areaServed":[
+      "Elizabeth City, NC",
+      "Pasquotank County, NC",
+      "Northeastern North Carolina",
+      "Outer Banks (as needed)",
+      "Hampton Roads, VA"
+    ],
+    "knowsAbout":[
+      "Mobile welding",
+      "Structural steel welding",
+      "Field welding",
+      "Welding subcontractor services",
+      "Bridge welding support",
+      "Railcar securement welding",
+      "Emergency welding",
+      "Industrial welding",
+      "Commercial welding",
+      "Government and DOT welding",
+      "Torch cutting",
+      "Aluminum welding",
+      "Stainless steel welding",
+      "Fabrication"
+    ],
+    "openingHoursSpecification":[{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens":"07:00",
+      "closes":"17:00"
+    }],
+    "sameAs":[
+      "https://www.kingsmobilewelding.com",
+      "https://linktr.ee/kingsmobilewelding"
+    ]
+  }</script>
+
+  <!-- Page-specific modern styling (matches your Newport News layout) -->
+  <style>
+    :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+
+    /* Hero */
+    .city-hero{
+      padding:56px 0 22px;
+      background:linear-gradient(180deg,#FFFFFF 0%, #F8FAFC 100%);
+      border-bottom:1px solid #E5E7EB;
+    }
+    .city-hero .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .city-kicker{
+      display:inline-flex;gap:10px;align-items:center;
+      font-weight:900;color:var(--kmw-blue);
+      letter-spacing:.08em;font-size:.78rem
+    }
+    .city-hero h1{margin:.55rem 0 .55rem;color:#0F172A;font-weight:950;line-height:1.06}
+    .city-hero .lead{margin:0;color:#475569;max-width:92ch;line-height:1.65}
+    .city-meta{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+      margin-top:14px
+    }
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(255,214,10,.20);
+      border:1px solid rgba(255,214,10,.45);
+      padding:7px 10px;border-radius:999px;
+      font-weight:900;color:#0F172A;font-size:.92rem
+    }
+    .pill.gray{
+      background:#fff;border:1px solid #E5E7EB;color:#334155
+    }
+    .city-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+    /* Layout blocks */
+    .city-wrap{padding:34px 0 60px;background:#fff}
+    .city-wrap .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    .grid12{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:16px;
+      margin-top:18px;
+    }
+
+    .panel{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+    }
+    .panel.pad{padding:16px}
+    .panel h2{margin:0;color:#0F172A;font-weight:950;font-size:1.18rem}
+    .panel p{margin:10px 0 0;color:#475569;line-height:1.65}
+
+    /* Capability tiles */
+    .caps{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+    .cap{
+      border:1px solid #E5E7EB;
+      border-radius:16px;
+      padding:12px;
+      background:#fff;
+    }
+    .cap strong{display:block;color:#0F172A;font-weight:950}
+    .cap span{display:block;margin-top:6px;color:#475569;line-height:1.55}
+
+    /* Scopes list */
+    .scope-list{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+    .scope-list li{
+      display:flex;gap:10px;align-items:flex-start;
+      color:#334155;line-height:1.5
+    }
+    .scope-list li::before{
+      content:"";
+      width:10px;height:10px;border-radius:999px;margin-top:7px;
+      background:var(--kmw-yellow);
+      flex:0 0 auto;
+      box-shadow:0 0 0 3px rgba(255,214,10,.22);
+    }
+
+    /* Photo block */
+    .photo{
+      position:relative;
+      background:#0B223E;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid #E5E7EB;
+      aspect-ratio: 16 / 10;
+    }
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      opacity:.96;
+      transform:scale(1.01);
+    }
+    .photo-badge{
+      position:absolute;left:14px;top:14px;
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(10,46,92,.92);
+      color:#fff;border:1px solid rgba(255,255,255,.15);
+      padding:7px 10px;border-radius:999px;
+      font-weight:900;font-size:.82rem;
+      backdrop-filter:blur(4px);
+    }
+
+    /* CTA band */
+    .cta-band{
+      margin-top:18px;
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#F8FAFC;
+      padding:16px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    /* Map */
+    .map-embed{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .map-embed iframe{
+      width:100%;
+      height:340px;
+      border:0;
+      display:block;
+    }
+    .map-caption{
+      padding:12px 14px;
+      border-top:1px solid #E5E7EB;
+      color:#475569;
+      line-height:1.55;
+      font-size:.98rem;
+    }
+
+    /* Columns */
+    .col-7{grid-column:span 7}
+    .col-5{grid-column:span 5}
+    .col-12{grid-column:span 12}
+
+    @media (max-width:980px){
+      .col-7,.col-5,.col-12{grid-column:span 12}
+      .caps{grid-template-columns:1fr}
+      .map-embed iframe{height:300px}
+    }
+  </style>
+</head>
+
 <body>
 <header class="site-header">
-    
-    <div class="container nav">
-      <a class="brand" href="/"><img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
-      <nav class="desktop">
-        <a href="/../about">About</a><a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a>
-        
-</nav>
-      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu" aria-label="Toggle menu" aria-expanded="false" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="/../services">Services</a><a href="/../past-performance">Past Performance</a><a href="/../procurement">Procurement</a><a href="/../contact">Contact</a><a href="/../blog">Blog</a><a href="/../careers">Careers</a><a class="btn-primary" href="/../contact">Contact</a><a href="/../about">About</a></div>
-  </header>
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+
+    <nav class="desktop" aria-label="Primary">
+      <a href="/about">About</a>
+      <a href="/industries">Industries</a>
+      <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a class="btn-primary" href="/contact/">Contact</a>
+    </nav>
+
+    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/about">About</a>
+    <a href="/industries">Industries</a>
+    <a href="/services">Services</a>
+    <a href="/past-performance">Past Performance</a>
+    <a href="/procurement">Procurement</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
+    <a class="btn-primary" href="/contact/">Contact</a>
+  </div>
+</header>
+
 <main>
-  <section class="areas-hero">
+  <!-- Unique city hero -->
+  <section class="city-hero">
     <div class="container">
+      <div class="city-kicker">ELIZABETH CITY • NORTHEASTERN NC / FAST RESPONSE</div>
       <h1>Mobile Welding in Elizabeth City, NC</h1>
-      <p class="lead">On-site welding & fabrication for government and industry in Elizabeth City, NC  fast, inspection-ready, and aligned to spec.</p>
+      <p class="lead">
+        When projects move fast across Northeastern North Carolina, you need field welding that shows up prepared and closes out clean.
+        Kings Mobile Welding provides AWS D1.1 certified mobile welding for structural steel, bridge support work, and transport/port-adjacent needs—built for inspections, schedules, and real jobsite conditions.
+      </p>
+
+      <div class="city-meta">
+        <span class="pill">AWS D1.1 Certified</span>
+        <span class="pill gray">Insured • Jobsite-Ready</span>
+        <span class="pill gray">Documentation-Ready</span>
+      </div>
+
+      <div class="city-actions">
+        <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+        <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+        <a class="btn-secondary" href="/services/welding-subcontractor/">Subcontractor Support</a>
+      </div>
     </div>
   </section>
 
-  <section class="areas-wrap">
+  <section class="city-wrap">
     <div class="container">
-      <article class="area-card" style="border-radius:16px">
-        <h2>Services We Offer in Elizabeth City</h2>
-        <p>We bring the shop to your site with fully equipped mobile rigs. Certified welders deliver clean fit-up, strong welds and tidy finishes that pass inspection the first time.</p>
-        <ul>
-          <li><strong>Structural & Facility Welding:</strong> beams, columns, embeds, stairs, rails, platforms (AWS D1.1)</li>
-          <li><strong>Stainless & Aluminum:</strong> TIG/MIG for architectural and corrosion-resistant components</li>
-          <li><strong>Pipe & Pressure:</strong> carbon/stainless pipe, purge where required, coordination for pressure tests</li>
-          <li><strong>Fabrication & Fit-Up:</strong> cut, layout, fixtures, tack & final welds; on-site installation</li>
-          <li><strong>Repair, Retrofit & Rework:</strong> cracks, failed joints, brackets, wear surfaces, corrosion</li>
-          <li><strong>Inspection-Ready QA/QC:</strong> WPS/WPQR adherence, COI, capability statement, UEI/CAGE</li>
-        </ul>
-        <p class="meta" style="margin-top:.6rem;color:#64748B">
-          Serving Elizabeth City, NC and neighboring communities across Hampton Roads.
-        </p>
-        <p class="cta" style="margin-top:.75rem">
-          <a class="btn" href="/contact/" style="display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:.55rem .9rem;background:#FFD60A;color:#0A2E5C;border:1px solid rgba(0,0,0,.08);">Contact us</a>
-        </p>
-      </article>
-    </div>
-  </section>
-</main>
-<footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/">
-          <img src="/../assets/img/logo-500.png" width="44" height="44" alt="Logo">
-          <strong>Kings Mobile Welding</strong>
-        </a>
-        <div class="footer-contact">
-          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, VA and beyond</p>
-        
-          <p>🆔 UEI: ZCY4G7GBGQA3</p>
-          <p>🏷️ CAGE: 11P75</p>
+
+      <div class="grid12">
+
+        <!-- Left -->
+        <section class="panel pad col-7" aria-label="Elizabeth City welding capabilities">
+          <h2>What We Deliver in Elizabeth City</h2>
+          <p>
+            Elizabeth City is a strategic point for work moving through Northeastern NC—close to waterways, logistics corridors, and active construction.
+            We’re built for <strong>field execution</strong>: coordinate with your superintendent/foreman, weld to spec, and leave your site ready for inspection and turnover.
+          </p>
+
+          <div class="caps" role="list">
+            <div class="cap" role="listitem">
+              <strong>Structural Steel & Field Mods</strong>
+              <span>Connections, reinforcement, embeds, retrofit plates, misfit corrections, and “make it fit” jobsite fixes.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong>Bridge Welding Support</strong>
+              <span>Steel repairs, reinforcement, attachments, and field welding support aligned with DOT-style documentation and expectations.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong>Railcar Securement Welding</strong>
+              <span>Jobsite welding support for heavy transport, securement points, brackets, and field fixes tied to railcar/transport operations.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong>Industrial / Facility Maintenance</strong>
+              <span>Platforms, guards, brackets, handrails, equipment supports, maintenance welding, and reliability-driven upgrades.</span>
+            </div>
+          </div>
+
+          <p style="margin-top:14px;color:#475569">
+            Explore our full <a href="/services" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Services</a>,
+            see who we support on <a href="/industries" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Industries</a>,
+            or jump directly to our specialized pages:
+            <a href="/services/railcar-securement-welding/" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Railcar Securement Welding</a>,
+            <a href="/industries/heavy-transport-railcar-securement/" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Heavy Transport & Railcar</a>,
+            and <a href="/services/bridge-welding-remediation/" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Bridge Welding & Remediation</a>.
+          </p>
+        </section>
+
+        <!-- Right -->
+        <aside class="col-5" aria-label="Elizabeth City field welding photo and checklist">
+          <div class="photo">
+            <!-- Swap this image when you have an Elizabeth City / NC job photo -->
+            <img src="/assets/img/industries/ConstructionWorkersTalkingBuildingFrame.jpg" alt="Mobile welding rig supporting structural steel and field welding near Elizabeth City, North Carolina" loading="lazy">
+            <div class="photo-badge">On-site • Elizabeth City, NC</div>
+          </div>
+
+          <div class="panel pad" style="margin-top:16px">
+            <h2>Fast Quote Checklist</h2>
+            <p>Send these 5 items and we can usually quote quickly:</p>
+            <ul class="scope-list">
+              <li>Job address + site contact</li>
+              <li>Scope (photos help) + schedule window</li>
+              <li>Material type + thickness</li>
+              <li>Any specs/inspection requirements</li>
+              <li>Access constraints (hours, lifts, clearance)</li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Map (Elizabeth City) -->
+        <section class="col-12" aria-label="Map of Elizabeth City service area">
+          <div class="map-embed">
+            <iframe
+              title="Map of Elizabeth City, North Carolina"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Elizabeth%20City%2C%20NC&z=12&output=embed">
+            </iframe>
+            <div class="map-caption">
+              Serving Elizabeth City and Northeastern NC with mobile welding support. We regularly mobilize across the region and into Hampton Roads when schedules demand it.
+              For coverage details, see <a href="/areas" style="font-weight:900;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Areas We Service</a>.
+            </div>
+          </div>
+        </section>
+
+        <!-- Common scopes -->
+        <section class="panel pad col-12" aria-label="Common Elizabeth City welding scopes">
+          <h2>Common Scopes We Handle in Elizabeth City</h2>
+          <p>
+            In and around Elizabeth City, we’re often called for work that blends construction pace with logistics realities—tight access, short windows, and “fix it now” priorities:
+          </p>
+          <ul class="scope-list">
+            <li><strong>Structural corrections:</strong> shifted plates, misaligned holes, install fixes, and last-minute steel modifications.</li>
+            <li><strong>Reinforcement & repair:</strong> stiffeners, brackets, crack repair, strengthening, and impact/fatigue remediation work.</li>
+            <li><strong>Bridge support welding:</strong> field welding support tied to repair/rehab scopes and inspection-driven requirements.</li>
+            <li><strong>Transport/securement work:</strong> railcar securement welding support, brackets, anchors, and field fixes to keep loads moving.</li>
+            <li><strong>Safety & access items:</strong> handrails, ladders, stairs, guards, and compliance-driven repairs for facilities and sites.</li>
+          </ul>
+        </section>
+
+        <!-- Services + industries callouts (SEO + internal links) -->
+        <section class="panel pad col-12" aria-label="Services and industries for Elizabeth City">
+          <h2>Services & Industries We Support</h2>
+          <p>
+            If you’re a GC, steel erector, facility team, or transport operator, we plug in as your jobsite-ready welding resource.
+            Here are the most relevant pathways for Elizabeth City clients:
+          </p>
+          <div class="caps" role="list" aria-label="Service and industry links">
+            <div class="cap" role="listitem">
+              <strong><a href="/services" style="color:var(--kmw-blue);text-decoration:none">Mobile Welding Services</a></strong>
+              <span>Structural steel, field fabrication, emergency repairs, torch cutting, and jobsite welding support.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong><a href="/services/bridge-welding-remediation/" style="color:var(--kmw-blue);text-decoration:none">Bridge Welding & Remediation</a></strong>
+              <span>Field welding support for bridge/repair scopes—built around documentation, compliance, and inspection readiness.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong><a href="/services/railcar-securement-welding/" style="color:var(--kmw-blue);text-decoration:none">Railcar Securement Welding</a></strong>
+              <span>On-site securement-related welding support for heavy transport, ports, and crane/rigging operations.</span>
+            </div>
+            <div class="cap" role="listitem">
+              <strong><a href="/industries/heavy-transport-railcar-securement/" style="color:var(--kmw-blue);text-decoration:none">Heavy Transport & Railcar</a></strong>
+              <span>Field support for specialized moves—where securement, timing, and safety coordination matter.</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- CTA band -->
+      <div class="cta-band">
+        <div style="max-width:72ch;">
+          <strong style="color:#0F172A;">Need jobsite-ready welding in Elizabeth City?</strong>
+          <div style="color:#475569;margin-top:4px;line-height:1.55;">
+            AWS D1.1 certified mobile welding for structural steel, bridge support, and railcar securement-related work—clean execution, clear communication, and inspection-ready results.
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
         </div>
       </div>
 
-      <nav class="footer-nav">
-        <a href="/../about">About</a>
-        <a href="/../services">Services</a>
-        <a href="/../past-performance">Past Performance</a>
-        <a href="/../procurement">Procurement</a>
-        <a href="/../blog">Blog</a>
-        <a href="/../careers">Careers</a>
-                <a href="/../areas">Areas We Service</a>
-<a href="/../contact">Contact</a>
-      </nav>
-
-      <div class="social" aria-label="Social links">
-  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-    </svg>
-  </a>
-  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-    </svg>
-  </a>
-  <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-    </svg>
-  </a>
-</div>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
+      <div class="footer-contact">
+        <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, VA and beyond</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/blog">Blog</a>
+      <a href="/careers">Careers</a>
+      <a href="/areas">Areas We Service</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37.77-.71 1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+        </svg>
+      </a>
+      <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/menu-toggle.js" defer></script>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
