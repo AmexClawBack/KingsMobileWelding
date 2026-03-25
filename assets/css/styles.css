@@ -1876,3 +1876,56 @@ main .service-grid .card .card-body .pill-list {
   object-fit:contain;   /* shows whole image */
   display:block;
 }
+.kmw-associations {
+  margin-top: 60px;
+}
+
+.assoc-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.assoc-head h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.assoc-head p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.assoc-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.assoc-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  max-width: 400px;
+  width: 100%;
+}
+
+.assoc-logo {
+  width: 350px;
+  height: auto;
+}
+
+.assoc-body h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.assoc-body p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
