@@ -1929,3 +1929,14 @@ main .service-grid .card .card-body .pill-list {
   font-size: 0.9rem;
   color: #555;
 }
+
+.assoc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px; /* KEY FIX */
+}
+.mn-widget-member-logo {
+  max-height: 80px;
+  width: auto;
+}

@@ -608,7 +608,8 @@
 
   <div class="assoc-grid">
 
-    <!-- AWS Badge -->
+    <!-- AWS Badge --><a href="https://www.aws.org/" target="_blank" rel="noopener noreferrer">
+
     <article class="assoc-card">
       <img class="assoc-logo" src="/assets/img/associations/aws-logo.jpg" alt="American Welding Society (AWS) logo">
       <div class="assoc-body">
@@ -616,6 +617,8 @@
         <p>Member of the American Welding Society, supporting certified welding practices and industry standards.</p>
       </div>
     </article>
+</a>
+<a href="https://directory.sbsd.virginia.gov/#/directory"
 
     <article class="assoc-card">
   <img class="assoc-logo" src="/assets/img/associations/swam-logo.jpg" alt="Virginia SWaM Certified logo">
@@ -624,7 +627,11 @@
     <p>Certified SWaM subcontractor supporting prime contractors with participation requirements on VDOT and state-funded infrastructure projects.</p>
   </div>
 </article>
+</a>
 
+
+
+<a href="https://www.vdot.virginia.gov/doing-business/business-opportunities/highway-contractors/"
 <article class="assoc-card">
   <img class="assoc-logo" src="/assets/img/associations/vdot-logo.png" alt="Virginia Department of Transportation (VDOT) logo">
   <div class="assoc-body">
@@ -632,17 +639,84 @@
     <p>Prequalified with the Virginia Department of Transportation at the Subcontractor Only (SCO) level.</p>
   </div>
 </article>
+</a>
+ <article class="assoc-card">
 
-    <!-- FUTURE: Virginia Peninsula Chamber -->
-    <!--
-    <article class="assoc-card">
-      <img class="assoc-logo" src="/assets/img/associations/vpcc-logo.png" alt="Virginia Peninsula Chamber of Commerce logo">
-      <div class="assoc-body">
-        <h4>Virginia Peninsula Chamber</h4>
-        <p>Active member supporting local business growth and regional development.</p>
-      </div>
-    </article>
-    -->
+  <a href="https://business.virginiapeninsulachamber.com/list/member/kings-mobile-welding-llc-30224"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="assoc-link">
+
+    <div class="assoc-logo">
+
+      <!-- Your uploaded logo (ALWAYS visible) -->
+      <img
+        src="/assets/img/associations/logo-horizontal-(CROPPED).png"
+        alt="Virginia Peninsula Chamber logo"
+        class="vpcc-static-logo"
+      >
+
+      <!-- Chamber widget (hidden if empty / no logo) -->
+      <div id="mni-membership-639102016590336171" class="vpcc-widget"></div>
+
+    </div>
+
+    <div class="assoc-body">
+      <h4>Virginia Peninsula Chamber</h4>
+      <p>Active member supporting local business growth and regional development.</p>
+    </div>
+
+  </a>
+
+</article>
+
+<script src="https://vpcc.chambermaster.com/Content/Script/Member.js"></script>
+
+<script>
+window.addEventListener("load", function () {
+  if (window.MNI && MNI.Widgets && MNI.Widgets.Member) {
+    new MNI.Widgets.Member("mni-membership-639102016590336171", {
+      member: 30224
+    }).create();
+  }
+});
+</script>
+
+<style>
+.assoc-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.assoc-logo {
+  position: relative;
+  min-width: 120px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Your logo (main visible one) */
+.vpcc-static-logo {
+  max-height: 70px;
+  width: auto;
+  display: block;
+}
+
+/* Widget (hidden unless it actually outputs something useful) */
+.vpcc-widget {
+  display: none;
+}
+
+.assoc-link:hover {
+  opacity: 0.9;
+}
+</style>
 
     <!-- FUTURE: VTCA -->
     <!--
