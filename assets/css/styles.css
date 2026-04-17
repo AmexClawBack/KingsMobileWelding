@@ -1940,3 +1940,11 @@ main .service-grid .card .card-body .pill-list {
   max-height: 80px;
   width: auto;
 }
+
+.ind-card.reverse .ind-media {
+  order: 2;
+}
+
+.ind-card.reverse .ind-body {
+  order: 1;
+}
