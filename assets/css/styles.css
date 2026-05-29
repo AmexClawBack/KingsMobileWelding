@@ -2033,4 +2033,8 @@ body {
 .contact-section .kmw-contact-card {
   margin-bottom: 32px !important;
 }
-
+@media (max-width: 760px) {
+  .kmw-hero-new {
+    padding-top: 18px;
+  }
+}
