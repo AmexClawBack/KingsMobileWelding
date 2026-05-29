@@ -2113,3 +2113,109 @@ body {
     max-width: 100px !important;
   }
 }
+
+/* === Wide navbar logo fix === */
+.site-header .brand {
+  display: flex !important;
+  align-items: left !important;
+  justify-content: flex-start !important;
+  flex-shrink: 0 !important;
+  max-width: none !important;
+}
+
+.site-header .brand-logo {
+  width: 260px !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.site-header .brand strong {
+  display: none !important;
+}
+
+/* === Final mobile navbar positioning fix === */
+@media (max-width: 760px) {
+  .site-header {
+    padding: 0 !important;
+  }
+
+  .site-header .container.nav,
+  .site-header .nav {
+    position: relative !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 90px !important;
+    padding: 0 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .site-header .brand {
+    position: absolute !important;
+    left: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  .site-header .brand-logo,
+  .site-header .brand img {
+    width: 215px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: 76px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .site-header .brand strong {
+    display: none !important;
+  }
+
+  .site-header .burger {
+    position: absolute !important;
+    right: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+  }
+}
+/* === Global navbar lighter background for logo contrast === */
+.site-header {
+  background: #F8FAFC !important;
+  border-bottom: 1px solid #D9E2EC !important;
+}
+
+.site-header nav a {
+  color: #0A2E5C !important;
+}
+
+.site-header .brand strong {
+  color: #0A2E5C !important;
+}
+
+.site-header .burger {
+  color: #0A2E5C !important;
+}
+
+.site-header .btn-primary {
+  background: #FFD60A !important;
+  color: #0A2E5C !important;
+  border-color: #FFD60A !important;
+}
+.site-header .brand-logo,
+.site-header .brand img {
+  width: 290px !important;
+  height: auto !important;
+  max-height: 78px !important;
+  object-fit: contain !important;
+}
