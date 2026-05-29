@@ -2061,3 +2061,55 @@ body {
     margin-top: 1 !important;
   }
 }
+/* === Fix Trusted By logo carousel spacing === */
+.kmw-trusted-mini .logo-track {
+  display: flex !important;
+  overflow: hidden !important;
+  position: relative;
+  width: 100%;
+  padding: 4px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.kmw-trusted-mini .logo-slide {
+  display: flex !important;
+  align-items: center !important;
+  gap: 42px !important;
+  flex: 0 0 auto !important;
+  min-width: max-content !important;
+  width: max-content !important;
+  animation: kmw-trusted-scroll 28s linear infinite !important;
+  padding-right: 42px;
+}
+
+.kmw-trusted-mini .logo-slide img {
+  height: 44px !important;
+  width: auto !important;
+  max-width: 120px !important;
+  object-fit: contain !important;
+  flex: 0 0 auto !important;
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+@keyframes kmw-trusted-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .kmw-trusted-mini .logo-slide {
+    gap: 28px !important;
+    padding-right: 28px;
+  }
+
+  .kmw-trusted-mini .logo-slide img {
+    height: 38px !important;
+    max-width: 100px !important;
+  }
+}
