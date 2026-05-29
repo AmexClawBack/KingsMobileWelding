@@ -2035,6 +2035,6 @@ body {
 }
 @media (max-width: 760px) {
   .kmw-hero-new {
-    padding-top: 1rem;
+    padding-top: 10px;
   }
 }
