@@ -1,0 +1,660 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>South Carolina Bridge Welding Contractor | AWS D1.5 Welders &amp; Pile Splicing | Kings Mobile Welding</title>
+  <meta name="description" content="AWS D1.5 bridge welding and pile splice welding support in South Carolina. Kings Mobile Welding serves bridge contractors, deep foundation contractors, geotechnical contractors, and concrete contractors with inspection-ready field welding." />
+
+  <!-- Icons / Manifest -->
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0A2E5C">
+  <meta name="msapplication-config" content="browserconfig.xml">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Page-specific: South Carolina bridge + deep foundation area page -->
+
+  <style>
+    :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A;--slate:#0F172A;--muted:#475569}
+
+    .sc-hero{
+      padding:64px 0 26px;
+      background:
+        radial-gradient(1100px 420px at 18% 5%, rgba(255,214,10,.20), transparent 55%),
+        radial-gradient(900px 380px at 82% 8%, rgba(10,46,92,.13), transparent 55%),
+        linear-gradient(180deg,#FFFFFF 0%, #F7FAFF 100%);
+      border-bottom:1px solid #E5E7EB;
+    }
+    .sc-hero .container{max-width:1120px;margin:0 auto;padding:0 16px}
+
+    .sc-kicker{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+      font-weight:950;color:var(--kmw-blue);letter-spacing:.08em;
+      font-size:.78rem;text-transform:uppercase
+    }
+    .sc-kicker .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(10,46,92,.18);
+      background:#fff;color:#1E293B;font-weight:900;letter-spacing:0
+    }
+    .sc-hero h1{
+      margin:.65rem 0 .55rem;color:var(--slate);
+      font-weight:980;line-height:1.06
+    }
+    .sc-lead{
+      margin:0;color:var(--muted);max-width:98ch;line-height:1.7;
+      font-size:1.05rem
+    }
+    .sc-actions{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+      margin-top:16px
+    }
+
+    .trust-row{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;margin-top:18px
+    }
+    .trust{
+      border:1px solid #E5E7EB;border-radius:16px;
+      background:#fff;padding:12px;
+      box-shadow:0 1px 2px rgba(0,0,0,.04)
+    }
+    .trust b{display:block;color:var(--slate);font-weight:950}
+    .trust span{display:block;margin-top:6px;color:var(--muted);line-height:1.55;font-size:.95rem}
+
+    .sc-wrap{padding:34px 0 64px;background:#fff}
+    .sc-wrap .container{max-width:1120px;margin:0 auto;padding:0 16px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:16px;
+      align-items:start;
+      margin-top:18px;
+    }
+
+    .panel{
+      border:1px solid #E5E7EB;border-radius:18px;background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+    }
+    .panel.pad{padding:16px}
+    .panel h2{margin:0;color:var(--slate);font-weight:980;font-size:1.18rem}
+    .panel h3{margin:14px 0 0;color:var(--slate);font-weight:960;font-size:1.02rem}
+    .panel p{margin:10px 0 0;color:var(--muted);line-height:1.7}
+
+    .scope{
+      margin:12px 0 0;padding:0;list-style:none;display:grid;gap:10px
+    }
+    .scope li{
+      display:grid;
+      grid-template-columns:14px 1fr;
+      gap:10px;
+      align-items:flex-start;
+      color:#334155;line-height:1.55
+    }
+    .scope li::before{
+      content:"✓";
+      width:14px;height:14px;margin-top:2px;
+      color:var(--kmw-blue);font-weight:950;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+    .card{
+      border:1px solid #E5E7EB;border-radius:16px;
+      padding:12px;background:#fff
+    }
+    .card strong{display:block;color:var(--slate);font-weight:980}
+    .card span{display:block;margin-top:6px;color:var(--muted);line-height:1.6}
+
+    .map{
+      border:1px solid #E5E7EB;border-radius:18px;overflow:hidden;background:#fff;
+    }
+    .map iframe{width:100%;height:360px;border:0;display:block}
+    .map-bar{
+      padding:12px 14px;border-top:1px solid #E5E7EB;background:#F8FAFC;
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between
+    }
+    .map-bar .meta{
+      color:#334155;font-weight:900
+    }
+    .map-bar .meta small{
+      display:block;color:var(--muted);font-weight:700;margin-top:2px
+    }
+
+    .cta{
+      margin-top:18px;
+      border:1px solid #E5E7EB;border-radius:18px;
+      background:
+        linear-gradient(180deg,#F8FAFC 0%, #FFFFFF 100%);
+      padding:16px;
+      display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap
+    }
+    .cta strong{color:var(--slate);font-weight:980}
+    .cta .sub{color:var(--muted);margin-top:4px;line-height:1.55;max-width:80ch}
+
+    .service-band{
+      margin-top:16px;
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#F8FAFC;
+      padding:16px;
+    }
+    .service-band h2{margin:0;color:var(--slate);font-weight:980;font-size:1.18rem}
+    .service-band p{margin:10px 0 0;color:var(--muted);line-height:1.7}
+
+    .cert-band{
+      margin-top:16px;
+      border:1px solid rgba(10,46,92,.18);
+      border-left:5px solid var(--kmw-blue);
+      border-radius:18px;
+      background:linear-gradient(180deg,#FFFFFF 0%, #F8FAFC 100%);
+      padding:16px;
+    }
+    .cert-band h2{margin:0;color:var(--slate);font-weight:980;font-size:1.18rem}
+    .cert-band p{margin:10px 0 0;color:var(--muted);line-height:1.7}
+
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr}
+      .trust-row{grid-template-columns:1fr 1fr}
+      .cards{grid-template-columns:1fr}
+      .map iframe{height:320px}
+    }
+    @media (max-width:560px){
+      .trust-row{grid-template-columns:1fr}
+    }
+  </style>
+
+  <!-- LocalBusiness JSON-LD: South Carolina bridge + deep foundation focus -->
+
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kings Mobile Welding",
+    "url":"https://www.kingsmobilewelding.com",
+    "foundingDate":"2017",
+    "telephone":"(757) 231-6809",
+    "priceRange":"$$",
+    "image":"https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
+    "founder":"Dillon King",
+    "email":"DillonKing@kingsmobilewelding.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Newport News",
+      "addressRegion":"VA",
+      "postalCode":"23601",
+      "addressCountry":"US"
+    },
+    "areaServed":[
+      "South Carolina",
+      "Charleston, SC",
+      "Columbia, SC",
+      "Greenville, SC",
+      "Spartanburg, SC",
+      "Myrtle Beach, SC",
+      "Florence, SC",
+      "Beaufort, SC",
+      "Lowcountry South Carolina",
+      "Coastal South Carolina"
+    ],
+    "knowsAbout":[
+      "AWS D1.5 bridge welding",
+      "AWS certified bridge welders",
+      "Bridge welding contractor South Carolina",
+      "Pile splice welding South Carolina",
+      "H-pile splice welding",
+      "Pipe pile splice welding",
+      "Permanent shaft casing welding",
+      "Deep foundation welding",
+      "Geotechnical contractor welding support",
+      "Bridge expansion joint welding",
+      "SCDOT infrastructure welding support",
+      "Marine infrastructure welding",
+      "Inspection-ready field welding",
+      "Night work for traffic control windows"
+    ],
+    "openingHoursSpecification":[{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens":"07:00",
+      "closes":"17:00"
+    }],
+    "sameAs":[
+      "https://www.kingsmobilewelding.com",
+      "https://linktr.ee/kingsmobilewelding"
+    ]
+  }</script>
+
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
+
+
+<nav class="desktop" aria-label="Primary">
+  <a href="/about">About</a>
+  <a href="/industries">Industries</a>
+  <a href="/services">Services</a>
+  <a href="/past-performance">Past Performance</a>
+  <a href="/procurement">Procurement</a>
+  <a href="/safety-compliance/">Safety &amp; Compliance</a>
+  <a class="btn-primary" href="/contact/">Contact</a>
+</nav>
+
+<button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+
+
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/about">About</a>
+    <a href="/industries">Industries</a>
+    <a href="/services">Services</a>
+    <a href="/past-performance">Past Performance</a>
+    <a href="/procurement">Procurement</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
+    <a class="btn-primary" href="/contact/">Contact</a>
+  </div>
+</header>
+
+<main>
+  <!-- South Carolina hero -->
+  <section class="sc-hero">
+    <div class="container">
+      <div class="sc-kicker">
+        SOUTH CAROLINA BRIDGE WELDING • SCDOT-STYLE INFRASTRUCTURE SUPPORT
+        <span class="chip">AWS D1.5 Welders</span>
+        <span class="chip">Pile Splicing</span>
+        <span class="chip">Deep Foundations</span>
+      </div>
+
+
+  <h1>South Carolina Bridge Welding Contractor — AWS D1.5 Welders &amp; Pile Splicing Support</h1>
+
+  <p class="sc-lead">
+    Kings Mobile Welding provides <strong>AWS certified bridge welders</strong> and <strong>AWS D1.5 welders</strong> for bridge contractors, geotechnical contractors, deep foundation contractors, marine contractors, and concrete contractors working on bridge and infrastructure projects throughout <strong>South Carolina</strong>.
+    We support inspection-driven field welding scopes including <strong>pile splice welding</strong>, <strong>H-pile splices</strong>, <strong>pipe pile splices</strong>, <strong>permanent shaft casing welding</strong>, <strong>bridge expansion joint welding</strong>, structural bridge repairs, and DOT-style infrastructure welding.
+  </p>
+
+  <p class="sc-lead" style="margin-top:10px;">
+    Whether your South Carolina project is a bridge rehabilitation job, coastal infrastructure repair, long-term pile splicing package, deep foundation support project, or emergency bridge welding scope, our team can mobilize with field-ready welding equipment, documentation support, and a workflow built around access, inspection, traffic windows, and production schedule.
+  </p>
+
+  <div class="sc-actions">
+    <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+    <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+    <a class="btn-secondary" href="/pile-splice-welding-contractor/">Pile Splice Welding</a>
+    <a class="btn-secondary" href="/services/bridge-welding-remediation/">Bridge Welding Services</a>
+  </div>
+
+  <div class="trust-row" aria-label="South Carolina bridge welding trust highlights">
+    <div class="trust">
+      <b>AWS D1.5 Bridge Welding</b>
+      <span>Bridge-code welding support for repair, rehab, and infrastructure scopes.</span>
+    </div>
+    <div class="trust">
+      <b>Deep Foundation Support</b>
+      <span>H-pile, pipe pile, and permanent shaft casing splice welding.</span>
+    </div>
+    <div class="trust">
+      <b>South Carolina Mobilization</b>
+      <span>Available for short-term repairs and long-term production welding packages.</span>
+    </div>
+    <div class="trust">
+      <b>Inspection-Ready Work</b>
+      <span>Coordination with QC, QA, inspectors, engineers, and superintendents.</span>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  <section class="sc-wrap">
+    <div class="container">
+
+
+  <div class="grid">
+    <!-- Left column: South Carolina bridge + deep foundation work -->
+    <section class="panel pad" aria-label="South Carolina bridge welding and deep foundation services">
+      <h2>South Carolina Bridge Welding &amp; Deep Foundation Field Welding Services</h2>
+      <p>
+        South Carolina bridge and infrastructure projects often require field welders who can work around traffic control, active jobsites, coastal conditions, limited access, DOT inspection requirements, heavy civil sequencing, and long production schedules.
+        Kings Mobile Welding supports contractors that need <strong>AWS D1.5 bridge welding</strong>, <strong>pile splice welding</strong>, and field welding support for deep foundation, bridge repair, concrete bridge rehabilitation, marine infrastructure, and heavy civil scopes.
+      </p>
+
+      <div class="cards" role="list">
+        <div class="card" role="listitem">
+          <strong>AWS D1.5 Bridge Welding</strong>
+          <span>Bridge-code welding support for contractors working on bridge repair, rehabilitation, new construction, and inspection-driven steel scopes.</span>
+        </div>
+
+        <div class="card" role="listitem">
+          <strong>Pile Splice Welding</strong>
+          <span>H-pile splices, pipe pile splices, permanent shaft casing splices, foundation steel, and related field fit-up for deep foundation and bridge projects.</span>
+        </div>
+
+        <div class="card" role="listitem">
+          <strong>Bridge Expansion Joint Welding</strong>
+          <span>Welding support for steel edge rails, armor angles, embedded plates, elastomeric expansion dam systems, and bridge joint repair or replacement.</span>
+        </div>
+
+        <div class="card" role="listitem">
+          <strong>Structural Bridge Repairs</strong>
+          <span>Reinforcement plates, stiffeners, brackets, gussets, diaphragms, connection repairs, and corrective welding to engineered details.</span>
+        </div>
+      </div>
+
+      <h3>Common South Carolina bridge and foundation scopes we support</h3>
+      <ul class="scope">
+        <li><span><strong>AWS D1.5 bridge welding:</strong> field welding support for South Carolina bridge repair, rehabilitation, and infrastructure work.</span></li>
+        <li><span><strong>H-pile splice welding:</strong> field welding support for driven pile foundations, bridge substructures, temporary works, and heavy civil foundation projects.</span></li>
+        <li><span><strong>Pipe pile splice welding:</strong> splice welding for pipe piles and foundation elements where field fit-up, access, and inspection coordination matter.</span></li>
+        <li><span><strong>Permanent shaft casing welding:</strong> welding support for drilled shaft casing splices and deep foundation projects requiring reliable production welding.</span></li>
+        <li><span><strong>Bridge repair welding:</strong> structural repairs, reinforcement, attachment welding, corrective welding, and field modifications for bridge rehabilitation work.</span></li>
+        <li><span><strong>Expansion joint welding:</strong> edge rail, armor angle, embedded steel, and elastomeric expansion dam welding support.</span></li>
+        <li><span><strong>Coastal and marine infrastructure:</strong> field welding support for waterfront, port, bridge, and heavy civil projects where access and corrosion exposure matter.</span></li>
+        <li><span><strong>Traffic-window work:</strong> night work and off-peak welding support when projects are tied to lane closures, shutdowns, or restricted access windows.</span></li>
+        <li><span><strong>Inspection-ready closeout:</strong> coordination with site leadership, QC, QA, inspectors, and engineers to help reduce rework and keep the project moving.</span></li>
+      </ul>
+
+      <p style="margin-top:14px">
+        For related capability, review:
+        <a href="/pile-splice-welding-contractor/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Pile Splice Welding Contractor</a>,
+        <a href="/services/bridge-welding-remediation/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Bridge Welding &amp; Remediation</a>,
+        and
+        <a href="/services/government-and-dot-welding/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Government &amp; DOT Welding</a>.
+        If you have drawings, splice details, or project photos, send them through our
+        <a href="/contact/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">contact form</a>
+        or call <a href="tel:7572316809" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">757-231-6809</a>.
+      </p>
+
+      <div class="cta">
+        <div>
+          <strong>Need AWS D1.5 bridge welding or pile splicing support in South Carolina?</strong>
+          <div class="sub">Send drawings, splice details, location, access conditions, inspection requirements, and schedule. We can review the scope and confirm availability.</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right column: map + quote checklist + nearby markets -->
+    <aside aria-label="South Carolina service area map and quote checklist">
+      <div class="map panel" aria-label="Map of South Carolina">
+        <iframe
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map of South Carolina"
+          src="https://www.google.com/maps?q=South%20Carolina&z=7&output=embed">
+        </iframe>
+        <div class="map-bar">
+          <div class="meta">
+            South Carolina — Bridge &amp; Deep Foundation Welding
+            <small>Call <a href="tel:7572316809">757-231-6809</a> • <a href="/contact/" onclick="event.stopPropagation();">Request service</a></small>
+          </div>
+          <div>
+            <a class="btn-secondary" href="/contact/" onclick="event.stopPropagation();">Send Plans</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel pad" style="margin-top:16px">
+        <h2>Fast Quote Checklist for South Carolina Projects</h2>
+        <p>Send these items and we can review your welding scope quickly:</p>
+        <ul class="scope">
+          <li><span>Project location and site contact</span></li>
+          <li><span>Drawings, splice details, repair details, or plan sheets</span></li>
+          <li><span>Photos of existing conditions if it is repair work</span></li>
+          <li><span>Pile type, size, thickness, and joint detail</span></li>
+          <li><span>AWS D1.5 notes, inspection requirements, DOT specifications, or project welding requirements</span></li>
+          <li><span>Access conditions, lifts, lane closures, night work, shutdown windows, or marine access constraints</span></li>
+          <li><span>Required start date, expected duration, and manpower needs</span></li>
+        </ul>
+        <p style="margin-top:12px">
+          Upload drawings/specs here:
+          <a href="/contact/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">https://www.kingsmobilewelding.com/contact/</a>
+        </p>
+      </div>
+
+      <div class="panel pad" style="margin-top:16px">
+        <h2>South Carolina Markets We Can Support</h2>
+        <p>We are available for qualified bridge welding and deep foundation scopes across South Carolina, including:</p>
+        <ul class="scope">
+          <li><span>Charleston and Lowcountry bridge, port, and marine infrastructure projects</span></li>
+          <li><span>Columbia and central South Carolina infrastructure work</span></li>
+          <li><span>Greenville, Spartanburg, and Upstate South Carolina projects</span></li>
+          <li><span>Myrtle Beach and coastal South Carolina bridge and civil projects</span></li>
+          <li><span>Florence, Sumter, and Pee Dee region infrastructure work</span></li>
+          <li><span>Beaufort, Hilton Head, and coastal bridge or waterfront projects</span></li>
+          <li><span>Long-term pile splicing and bridge rehabilitation projects statewide</span></li>
+        </ul>
+      </div>
+
+      <div class="panel pad" style="margin-top:16px">
+        <h2>Related Service Pages</h2>
+        <p>These pages help explain our bridge and infrastructure welding capabilities:</p>
+        <ul class="scope">
+          <li><span><a href="/pile-splice-welding-contractor/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Pile Splice Welding Contractor</a></span></li>
+          <li><span><a href="/services/bridge-welding-remediation/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Bridge Welding &amp; Remediation</a></span></li>
+          <li><span><a href="/services/bridge-expansion-joint-welding/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Bridge Expansion Joint Welding</a></span></li>
+          <li><span><a href="/services/government-and-dot-welding/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Government &amp; DOT Welding</a></span></li>
+          <li><span><a href="/services/structural-steel-welding/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">Structural Steel Welding</a></span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- South Carolina infrastructure section -->
+  <section class="cert-band" aria-label="South Carolina bridge welding and infrastructure support">
+    <h2>AWS D1.5 Welders for South Carolina Bridge, Highway, Marine, and Deep Foundation Projects</h2>
+    <p>
+      Kings Mobile Welding provides <strong>AWS D1.5 bridge welding</strong> and inspection-ready field welding support for South Carolina contractors working on bridge, highway, marine, and deep foundation projects.
+      From pile splices and permanent shaft casing welds to expansion joint steel and structural bridge repairs, we help contractors complete welding scopes with the coordination and documentation expected on infrastructure work.
+    </p>
+
+    <p>
+      If your project requires <strong>AWS certified bridge welders</strong>, field welding for pile splices, bridge repairs, expansion joints, or deep foundation work, send your scope information early so we can review the project requirements and confirm availability.
+    </p>
+  </section>
+
+  <!-- South Carolina-specific contractor section -->
+  <section class="service-band" aria-label="South Carolina contractors we support">
+    <h2>South Carolina Welding Support for Bridge, Geotechnical, Deep Foundation, Marine, and Concrete Contractors</h2>
+    <p>
+      Kings Mobile Welding is built to support contractors who need reliable field welding on infrastructure work, not one-off residential welding.
+      Our ideal South Carolina projects include bridge repair packages, long-term pile splicing, permanent shaft casing splices, expansion joint replacement, structural steel repairs, marine infrastructure welding, and field welding scopes tied to highway, bridge, port, rail, utility, and heavy civil construction.
+    </p>
+
+    <div class="cards" role="list">
+      <div class="card" role="listitem">
+        <strong>Bridge Contractors</strong>
+        <span>AWS D1.5 welders for bridge repair, remediation, expansion joints, structural components, and field-installed attachments.</span>
+      </div>
+
+      <div class="card" role="listitem">
+        <strong>Deep Foundation Contractors</strong>
+        <span>H-pile splicing, pipe pile splicing, drilled shaft casing welding, foundation steel, and production welding support.</span>
+      </div>
+
+      <div class="card" role="listitem">
+        <strong>Geotechnical Contractors</strong>
+        <span>Field welding support for foundation systems, test pile programs, production pile work, and infrastructure-related welding scopes.</span>
+      </div>
+
+      <div class="card" role="listitem">
+        <strong>Marine &amp; Waterfront Contractors</strong>
+        <span>Field welding support for waterfront, port, bridge, bulkhead, pile, and coastal infrastructure projects.</span>
+      </div>
+
+      <div class="card" role="listitem">
+        <strong>Concrete Contractors Doing Bridge Work</strong>
+        <span>Embedded steel, bridge joint steel, repair plates, deck rehabilitation support, and welding tied to bridge concrete repair scopes.</span>
+      </div>
+
+      <div class="card" role="listitem">
+        <strong>Heavy Civil &amp; Infrastructure Contractors</strong>
+        <span>Inspection-ready field welding for highway, utility, rail, bridge, and transportation-related construction projects.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scheduling section -->
+  <section class="panel pad" style="margin-top:16px" aria-label="South Carolina scheduling and mobilization">
+    <h2>South Carolina Scheduling: Bridge Work, Long-Term Pile Splicing, Coastal Access, Night Work, and Rapid Mobilization</h2>
+    <p>
+      South Carolina bridge and deep foundation projects may require welders who can stay productive through long shifts, changing access conditions, coastal environments, traffic control, inspection requirements, and heavy civil sequencing.
+      Kings Mobile Welding is available for both short-term repair work and longer-term South Carolina mobilizations where contractors need qualified welders for pile splicing, bridge rehab, marine infrastructure, and field welding support.
+    </p>
+
+    <p>
+      If your project has a tight start date, a long production schedule, marine access requirements, or a strict traffic control window, send the drawings, splice details, project location, required dates, and inspection notes early.
+      Call <a href="tel:7572316809" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">757-231-6809</a>
+      or submit the scope at
+      <a href="/contact/" style="font-weight:950;color:var(--kmw-blue);text-decoration:none;border-bottom:1px dashed rgba(10,46,92,.45)">/contact/</a>.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="panel pad" style="margin-top:16px" aria-label="South Carolina bridge welding FAQ">
+    <h2>South Carolina Bridge Welding FAQ</h2>
+
+    <h3>Do you provide AWS D1.5 bridge welders in South Carolina?</h3>
+    <p>
+      Yes. Kings Mobile Welding provides AWS certified bridge welders and AWS D1.5 welders for bridge and infrastructure contractors working in South Carolina.
+      We support bridge repair, bridge rehabilitation, pile splicing, expansion joint welding, structural steel repairs, marine infrastructure, and inspection-driven field welding scopes.
+    </p>
+
+    <h3>Can you support long-term pile splicing projects in South Carolina?</h3>
+    <p>
+      Yes. We are available for long-term pile splicing and deep foundation welding projects in South Carolina.
+      Send the pile type, splice detail, project location, expected duration, inspection requirements, and manpower needs so we can review availability and pricing.
+    </p>
+
+    <h3>What types of pile welding do you support?</h3>
+    <p>
+      We support H-pile splice welding, pipe pile splice welding, permanent shaft casing welding, foundation steel welding, and related field welding for bridge, marine, rail, highway, utility, port, and heavy civil projects.
+    </p>
+
+    <h3>Do you support coastal, marine, and waterfront infrastructure projects?</h3>
+    <p>
+      Yes. We support waterfront and coastal infrastructure projects where field welding may be needed for piles, bridge components, bulkheads, access steel, structural repairs, and related heavy civil work.
+    </p>
+
+    <h3>Do you work with bridge contractors and concrete contractors?</h3>
+    <p>
+      Yes. We support bridge contractors, concrete contractors doing bridge work, geotechnical contractors, deep foundation contractors, marine contractors, and infrastructure contractors that need qualified field welders for inspection-ready work.
+    </p>
+
+    <h3>What should we send for a quote?</h3>
+    <p>
+      Send drawings, splice details, repair details, photos, location, access notes, inspection requirements, schedule, and whether the work is day shift, night shift, shutdown, marine access, or long-term production.
+    </p>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="cta" style="margin-top:16px">
+    <div>
+      <strong>Request South Carolina bridge welding or pile splicing support</strong>
+      <div class="sub">
+        AWS D1.5 welders for bridge welding, deep foundation welding, H-pile splices, pipe pile splices, permanent shaft casing welding, expansion joint welding, marine infrastructure, and structural bridge repair work.
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+      <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
+      <div class="footer-contact">
+        <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, VA • Serving South Carolina Bridge &amp; Deep Foundation Projects</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
+      </div>
+    </div>
+
+
+<nav class="footer-nav">
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/industries">Industries</a>
+  <a href="/past-performance">Past Performance</a>
+  <a href="/procurement">Procurement</a>
+  <a href="/blog">Blog</a>
+  <a href="/careers">Careers</a>
+  <a href="/areas">Areas We Service</a>
+  <a href="/contact/">Contact</a>
+</nav>
+
+<div class="social" aria-label="Social links">
+  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+    </svg>
+  </a>
+  <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+    </svg>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="/assets/js/menu-toggle.js" defer></script>
+
+<script src="/assets/js/site.js"></script>
+
+<script src="/assets/js/forms.js"></script>
+
+</body>
+</html>
