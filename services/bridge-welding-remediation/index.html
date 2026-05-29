@@ -15,7 +15,7 @@
 
   <title>AWS Certified Bridge Welders (AWS D1.5) | Hampton Roads VA | Kings Mobile Welding</title>
   <meta name="description" content="AWS certified bridge welders in Hampton Roads, VA. Kings Mobile Welding provides AWS D1.5 bridge welding for VDOT, DOT, and infrastructure projects including pile splices, bridge expansion joints, structural steel repairs, and inspection-driven field welding." />
-  <meta name="keywords" content="aws certified bridge welders, aws d1.5 certified welders, aws d1.5 bridge welding, bridge welding contractor, bridge welders hampton roads, bridge welding virginia, vdot bridge welding contractor, bridge expansion joint welding, pile splice welding, h pile splice welding, bridge steel repair, bridge remediation welding, bridge field welding, dot bridge welding virginia, bridge welding norfolk va, bridge welding newport news va, bridge welding hampton va, bridge welding virginia beach va, bridge welding chesapeake va, bridge welding suffolk va" />
+  <meta name="keywords" content="aws certified bridge welders, aws d1.5 certified welders, aws d1.5 bridge welding, bridge welding contractor, bridge welders hampton roads, bridge welding virginia, bridge welding maryland, bridge welding dc, bridge welding north carolina, bridge welding south carolina, vdot bridge welding contractor, ncdot certified bridge welders, bridge expansion joint welding, pile splice welding, h pile splice welding, bridge steel repair, bridge remediation welding, bridge field welding, dot bridge welding virginia, bridge welding norfolk va, bridge welding newport news va, bridge welding hampton va, bridge welding virginia beach va, bridge welding chesapeake va, bridge welding suffolk va" />
   <link rel="canonical" href="https://www.kingsmobilewelding.com/services/bridge-welding-remediation/">
 
   <meta property="og:title" content="AWS Certified Bridge Welders (AWS D1.5) | Kings Mobile Welding">
@@ -57,9 +57,15 @@
           "addressCountry":"US"
         },
         "areaServed":[
+          "Virginia",
+          "Maryland",
+          "Washington D.C.",
+          "North Carolina",
+          "South Carolina",
           "Hampton Roads, VA",
           "Eastern Virginia",
-          "Mid-Atlantic"
+          "Mid-Atlantic",
+          "Southeast"
         ],
         "description":"AWS certified bridge welders providing AWS D1.5 bridge welding, pile splice welding, bridge expansion joint welding, and structural steel bridge repairs for VDOT, DOT, and infrastructure contractors.",
         "sameAs":[
@@ -76,10 +82,28 @@
           "name":"Kings Mobile Welding",
           "url":"https://www.kingsmobilewelding.com"
         },
-        "areaServed":{
-          "@type":"Place",
-          "name":"Hampton Roads, Virginia"
-        },
+        "areaServed":[
+          {
+            "@type":"Place",
+            "name":"Virginia"
+          },
+          {
+            "@type":"Place",
+            "name":"Maryland"
+          },
+          {
+            "@type":"Place",
+            "name":"Washington D.C."
+          },
+          {
+            "@type":"Place",
+            "name":"North Carolina"
+          },
+          {
+            "@type":"Place",
+            "name":"South Carolina"
+          }
+        ],
         "description":"AWS certified bridge welding services for pile splices, bridge expansion joints, structural steel repairs, remediation, and inspection-driven field welding for infrastructure and DOT projects.",
         "url":"https://www.kingsmobilewelding.com/services/bridge-welding-remediation/"
       },
@@ -146,34 +170,163 @@
         radial-gradient(900px 360px at 95% 10%, rgba(10,46,92,.18), transparent 55%),
         linear-gradient(180deg,#fff,#F8FAFC);
     }
-    .steel-hero .kicker{font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#0A2E5C;font-size:.8rem}
-    .steel-hero h1{margin:.6rem 0 .6rem;color:#0A2E5C;max-width:980px}
-    .steel-hero .lead{max-width:980px;color:#0F172A;line-height:1.7}
 
-    .steel-top{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem;margin-top:1.2rem}
-    .steel-card{border:1px solid #E5E7EB;border-radius:18px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);padding:1.1rem}
-    .steel-card h2{margin:0 0 .45rem;color:#0A2E5C;font-size:1.15rem}
+    .steel-hero .kicker{
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#0A2E5C;
+      font-size:.8rem;
+    }
 
-    .steel-points{margin:0;padding:0;list-style:none;display:grid;gap:.6rem}
-    .steel-points li{display:flex;gap:.55rem;align-items:flex-start;color:#334155}
-    .steel-points li:before{content:"";margin-top:.55rem;flex:0 0 8px;height:8px;border-radius:999px;background:var(--kmw-yellow);box-shadow:0 0 0 3px rgba(255,214,10,.25)}
+    .steel-hero h1{
+      margin:.6rem 0 .6rem;
+      color:#0A2E5C;
+      max-width:980px;
+    }
 
-    .steel-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
-    .btn-solid{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.7rem 1rem;border-radius:12px;text-decoration:none;background:var(--kmw-blue);color:#fff;font-weight:900;border:1px solid rgba(0,0,0,0)}
+    .steel-hero .lead{
+      max-width:980px;
+      color:#0F172A;
+      line-height:1.7;
+    }
+
+    .steel-top{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:1.25rem;
+      margin-top:1.2rem;
+    }
+
+    .steel-card{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      padding:1.1rem;
+    }
+
+    .steel-card h2{
+      margin:0 0 .45rem;
+      color:#0A2E5C;
+      font-size:1.15rem;
+    }
+
+    .steel-points{
+      margin:0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:.6rem;
+    }
+
+    .steel-points li{
+      display:flex;
+      gap:.55rem;
+      align-items:flex-start;
+      color:#334155;
+    }
+
+    .steel-points li:before{
+      content:"";
+      margin-top:.55rem;
+      flex:0 0 8px;
+      height:8px;
+      border-radius:999px;
+      background:var(--kmw-yellow);
+      box-shadow:0 0 0 3px rgba(255,214,10,.25);
+    }
+
+    .steel-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.7rem;
+      margin-top:1rem;
+    }
+
+    .btn-solid{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      padding:.7rem 1rem;
+      border-radius:12px;
+      text-decoration:none;
+      background:var(--kmw-blue);
+      color:#fff;
+      font-weight:900;
+      border:1px solid rgba(0,0,0,0);
+    }
+
     .btn-solid:hover{filter:brightness(.95)}
-    .btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.7rem 1rem;border-radius:12px;text-decoration:none;background:#fff;color:var(--kmw-blue);font-weight:900;border:1px solid #E5E7EB}
+
+    .btn-ghost{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      padding:.7rem 1rem;
+      border-radius:12px;
+      text-decoration:none;
+      background:#fff;
+      color:var(--kmw-blue);
+      font-weight:900;
+      border:1px solid #E5E7EB;
+    }
+
     .btn-ghost:hover{background:#F8FAFC}
 
-    .steel-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:.85rem 0 0}
-    .steel-badge{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .7rem;border-radius:999px;border:1px solid #E5E7EB;background:#fff;color:#0A2E5C;font-weight:800;font-size:.9rem}
+    .steel-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.5rem;
+      margin:.85rem 0 0;
+    }
+
+    .steel-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.4rem .7rem;
+      border-radius:999px;
+      border:1px solid #E5E7EB;
+      background:#fff;
+      color:#0A2E5C;
+      font-weight:800;
+      font-size:.9rem;
+    }
 
     .steel-section{padding:2.2rem 0}
-    .steel-section h2{margin:0 0 .6rem;color:#0A2E5C}
-    .steel-section p{color:#334155;line-height:1.7}
 
-    .steel-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .steel-tile{border:1px solid #E5E7EB;border-radius:18px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);padding:1.05rem}
-    .steel-tile h3{margin:.05rem 0 .4rem;color:#0A2E5C;font-size:1.05rem}
+    .steel-section h2{
+      margin:0 0 .6rem;
+      color:#0A2E5C;
+    }
+
+    .steel-section p{
+      color:#334155;
+      line-height:1.7;
+    }
+
+    .steel-grid3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem;
+    }
+
+    .steel-tile{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      padding:1.05rem;
+    }
+
+    .steel-tile h3{
+      margin:.05rem 0 .4rem;
+      color:#0A2E5C;
+      font-size:1.05rem;
+    }
 
     .steel-photo{
       border:1px solid #E5E7EB;
@@ -185,19 +338,23 @@
       grid-template-columns:1.05fr .95fr;
       align-items:stretch;
     }
+
     .steel-photo .copy{padding:1.25rem;}
+
     .steel-photo .img-wrap{
       height:360px;
       background:#0A2E5C;
       position:relative;
       overflow:hidden;
     }
+
     .steel-photo img{
       width:100%;
       height:100%;
       object-fit:cover;
       display:block;
     }
+
     .steel-photo .img-label{
       position:absolute;
       left:14px;
@@ -209,16 +366,66 @@
       border-radius:999px;
       font-weight:800;
       font-size:.9rem;
-      backdrop-filter: blur(6px);
+      backdrop-filter:blur(6px);
     }
 
-    .link-grid{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem}
-    .pill{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .7rem;border-radius:999px;border:1px solid #E5E7EB;background:#fff;color:#0A2E5C;font-weight:800;text-decoration:none}
+    .link-grid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.45rem;
+      margin-top:.8rem;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.45rem .7rem;
+      border-radius:999px;
+      border:1px solid #E5E7EB;
+      background:#fff;
+      color:#0A2E5C;
+      font-weight:800;
+      text-decoration:none;
+    }
+
     .pill:hover{background:#F8FAFC}
 
-    .faq{display:grid;gap:1rem}
-    details.faq-item{border:1px solid #E5E7EB;border-radius:18px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);padding:1rem}
-    details.faq-item summary{cursor:pointer;list-style:none;font-weight:900;color:#0A2E5C;display:flex;justify-content:space-between;gap:.75rem;align-items:center}
+    .region-link{
+      color:#0A2E5C;
+      font-weight:900;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(10,46,92,.35);
+    }
+
+    .region-link:hover{
+      border-bottom-color:#0A2E5C;
+    }
+
+    .faq{
+      display:grid;
+      gap:1rem;
+    }
+
+    details.faq-item{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      padding:1rem;
+    }
+
+    details.faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight:900;
+      color:#0A2E5C;
+      display:flex;
+      justify-content:space-between;
+      gap:.75rem;
+      align-items:center;
+    }
+
     details.faq-item summary::-webkit-details-marker{display:none}
     details.faq-item summary:after{content:"+";font-weight:1000}
     details.faq-item[open] summary:after{content:"–"}
@@ -232,11 +439,25 @@
       display:grid;
       grid-template-columns:1.25fr .75fr;
       gap:1rem;
-      align-items:center
+      align-items:center;
     }
-    .cta-band h3{margin:0 0 .35rem;color:#0A2E5C}
-    .cta-band p{margin:0;color:#334155}
-    .cta-band .btns{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:flex-end}
+
+    .cta-band h3{
+      margin:0 0 .35rem;
+      color:#0A2E5C;
+    }
+
+    .cta-band p{
+      margin:0;
+      color:#334155;
+    }
+
+    .cta-band .btns{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.6rem;
+      justify-content:flex-end;
+    }
 
     @media(max-width:980px){
       .steel-top{grid-template-columns:1fr}
@@ -279,83 +500,77 @@
 
 <main>
   <!-- HERO -->
-<main>
-  <!-- HERO -->
   <section class="steel-hero">
     <div class="container">
       <div class="kicker">AWS D1.5 • BRIDGE WELDING • NCDOT CERTIFIED • VDOT • DOT • PILE SPLICING • FIELD WELDING</div>
 
-```
-  <h1>AWS Certified Bridge Welders &amp; AWS D1.5 Welders for DOT Bridge Projects</h1>
+      <h1>AWS Certified Bridge Welders &amp; AWS D1.5 Welders for DOT Bridge Projects</h1>
 
-  <p class="lead">
-    Kings Mobile Welding provides <strong>AWS certified bridge welders</strong> and <strong>AWS D1.5 welders</strong> for bridge contractors, geotechnical contractors, deep foundation contractors, and concrete contractors performing bridge and infrastructure work across <strong>Virginia, Washington D.C., North Carolina, South Carolina, and Maryland</strong>.
-    Our welders support inspection-driven bridge welding scopes including <strong>pile splice welding</strong>, <strong>bridge expansion joint welding</strong>, <strong>structural bridge repairs</strong>, <strong>reinforcement welding</strong>, and DOT field welding where code compliance, schedule, access, and inspection coordination matter.
-  </p>
+      <p class="lead">
+        Kings Mobile Welding provides <strong>AWS certified bridge welders</strong> and <strong>AWS D1.5 welders</strong> for bridge contractors, geotechnical contractors, deep foundation contractors, and concrete contractors performing bridge and infrastructure work across <strong><a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a>, <a class="region-link" href="/areas/dc-bridge-welding">Washington D.C.</a>, <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a>, <a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a>, and <a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a></strong>.
+        Our welders support inspection-driven bridge welding scopes including <strong>pile splice welding</strong>, <strong>bridge expansion joint welding</strong>, <strong>structural bridge repairs</strong>, <strong>reinforcement welding</strong>, and DOT field welding where code compliance, schedule, access, and inspection coordination matter.
+      </p>
 
-  <p class="lead">
-    We are experienced with <strong>AWS D1.5 bridge welding</strong>, VDOT-related infrastructure welding, and bridge project support requiring field-ready welders, documentation support, and coordination with superintendents, QC, QA, engineers, and inspectors.
-    Kings Mobile Welding also has <strong>NCDOT certified welders for bridge work in North Carolina</strong>, making us a strong subcontract welding partner for contractors expanding across the Mid-Atlantic and Southeast.
-  </p>
+      <p class="lead">
+        We are experienced with <strong>AWS D1.5 bridge welding</strong>, VDOT-related infrastructure welding, and bridge project support requiring field-ready welders, documentation support, and coordination with superintendents, QC, QA, engineers, and inspectors.
+        Kings Mobile Welding also has <strong>NCDOT certified welders for bridge work in <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a></strong>, making us a strong subcontract welding partner for contractors expanding across the Mid-Atlantic and Southeast.
+      </p>
 
-  <div class="steel-top">
-    <div class="steel-card">
-      <h2>AWS D1.5 Bridge Welding Capabilities</h2>
-      <ul class="steel-points">
-        <li><strong>Pile splice welding:</strong> H-pile splices, pipe pile splices, permanent shaft casing splices, foundation steel, and field fit-up support for bridge and deep foundation contractors</li>
-        <li><strong>Bridge expansion joints:</strong> welding support for steel edge rails, armor angles, embedded plates, elastomeric expansion dam systems, and joint repair or replacement scopes</li>
-        <li><strong>Structural bridge repairs:</strong> reinforcement plates, stiffeners, diaphragms, gussets, brackets, connection repairs, and engineered remediation details</li>
-        <li><strong>DOT field welding:</strong> inspection-driven welding support for VDOT, NCDOT, and other transportation infrastructure projects where AWS D1.5 requirements may apply</li>
-        <li><strong>Concrete bridge contractor support:</strong> welding for embedded steel, joint steel, repair details, access components, and field-installed bridge attachments</li>
-        <li><strong>Inspection-ready execution:</strong> coordination with QC, QA, inspectors, engineers, and field leadership to reduce rework and keep the project moving</li>
-      </ul>
+      <div class="steel-top">
+        <div class="steel-card">
+          <h2>AWS D1.5 Bridge Welding Capabilities</h2>
+          <ul class="steel-points">
+            <li><strong>Pile splice welding:</strong> H-pile splices, pipe pile splices, permanent shaft casing splices, foundation steel, and field fit-up support for bridge and deep foundation contractors</li>
+            <li><strong>Bridge expansion joints:</strong> welding support for steel edge rails, armor angles, embedded plates, elastomeric expansion dam systems, and joint repair or replacement scopes</li>
+            <li><strong>Structural bridge repairs:</strong> reinforcement plates, stiffeners, diaphragms, gussets, brackets, connection repairs, and engineered remediation details</li>
+            <li><strong>DOT field welding:</strong> inspection-driven welding support for VDOT, NCDOT, and other transportation infrastructure projects where AWS D1.5 requirements may apply</li>
+            <li><strong>Concrete bridge contractor support:</strong> welding for embedded steel, joint steel, repair details, access components, and field-installed bridge attachments</li>
+            <li><strong>Inspection-ready execution:</strong> coordination with QC, QA, inspectors, engineers, and field leadership to reduce rework and keep the project moving</li>
+          </ul>
 
-      <div class="steel-actions">
-        <a class="btn-solid" href="/contact/" onclick="event.stopPropagation();">Request Bridge Welding Support</a>
-        <a class="btn-ghost" href="/past-performance">Past Performance →</a>
-      </div>
+          <div class="steel-actions">
+            <a class="btn-solid" href="/contact/" onclick="event.stopPropagation();">Request Bridge Welding Support</a>
+            <a class="btn-ghost" href="/past-performance">Past Performance →</a>
+          </div>
 
-      <div class="steel-badges">
-        <span class="steel-badge">AWS D1.5 Welders</span>
-        <span class="steel-badge">AWS Certified Bridge Welders</span>
-        <span class="steel-badge">NCDOT Bridge Certified</span>
-        <span class="steel-badge">VDOT Prequalified</span>
-        <span class="steel-badge">DOT / Infrastructure</span>
-        <span class="steel-badge">Fully Insured</span>
+          <div class="steel-badges">
+            <span class="steel-badge">AWS D1.5 Welders</span>
+            <span class="steel-badge">AWS Certified Bridge Welders</span>
+            <span class="steel-badge">NCDOT Bridge Certified</span>
+            <span class="steel-badge">VDOT Prequalified</span>
+            <span class="steel-badge">DOT / Infrastructure</span>
+            <span class="steel-badge">Fully Insured</span>
+          </div>
+        </div>
+
+        <aside class="steel-card">
+          <h2>Bridge Welders for Contractors Who Cannot Afford Rework</h2>
+          <p style="color:#334155;">
+            Bridge welding is not the same as general mobile welding. Many bridge projects reference the
+            <strong>AASHTO/AWS D1.5 Bridge Welding Code</strong> and require controlled fit-up, qualified welders, inspection coordination, and clean closeout documentation.
+            That is why bridge contractors, deep foundation contractors, geotechnical contractors, and concrete contractors look for <strong>AWS certified bridge welders</strong> who understand the pace and scrutiny of DOT work.
+          </p>
+
+          <ul class="steel-points">
+            <li>Fast quoting from plans, splice details, repair drawings, and site photos</li>
+            <li>Support for short-term repairs, night work, shutdown windows, and long-term production welding</li>
+            <li>Coordination with superintendents, QC, QA, inspectors, and engineer requirements</li>
+            <li>Documentation support when required, including COI, welder certifications, scope notes, and progress photos</li>
+          </ul>
+
+          <p style="margin:.85rem 0 0;color:#334155;line-height:1.6;">
+            Helpful references your engineers and inspectors may use include the FHWA Bridge Welding Reference Manual and the AWS D1.5 code overview.
+            <span style="display:block;margin-top:.35rem;">
+              <a class="pill" href="https://www.fhwa.dot.gov/bridge/steel/pubs/hif19088.pdf" target="_blank" rel="noopener">FHWA Bridge Welding Reference Manual</a>
+              <a class="pill" href="https://www.aws.org/standards-and-publications/codes-and-standards/d15m/" target="_blank" rel="noopener">AWS D1.5 Overview</a>
+            </span>
+          </p>
+        </aside>
       </div>
     </div>
-
-    <aside class="steel-card">
-      <h2>Bridge Welders for Contractors Who Cannot Afford Rework</h2>
-      <p style="color:#334155;">
-        Bridge welding is not the same as general mobile welding. Many bridge projects reference the
-        <strong>AASHTO/AWS D1.5 Bridge Welding Code</strong> and require controlled fit-up, qualified welders, inspection coordination, and clean closeout documentation.
-        That is why bridge contractors, deep foundation contractors, geotechnical contractors, and concrete contractors look for <strong>AWS certified bridge welders</strong> who understand the pace and scrutiny of DOT work.
-      </p>
-
-      <ul class="steel-points">
-        <li>Fast quoting from plans, splice details, repair drawings, and site photos</li>
-        <li>Support for short-term repairs, night work, shutdown windows, and long-term production welding</li>
-        <li>Coordination with superintendents, QC, QA, inspectors, and engineer requirements</li>
-        <li>Documentation support when required, including COI, welder certifications, scope notes, and progress photos</li>
-      </ul>
-
-      <p style="margin:.85rem 0 0;color:#334155;line-height:1.6;">
-        Helpful references your engineers and inspectors may use include the FHWA Bridge Welding Reference Manual and the AWS D1.5 code overview.
-        <span style="display:block;margin-top:.35rem;">
-          <a class="pill" href="https://www.fhwa.dot.gov/bridge/steel/pubs/hif19088.pdf" target="_blank" rel="noopener">FHWA Bridge Welding Reference Manual</a>
-          <a class="pill" href="https://www.aws.org/standards-and-publications/codes-and-standards/d15m/" target="_blank" rel="noopener">AWS D1.5 Overview</a>
-        </span>
-      </p>
-    </aside>
-  </div>
-</div>
-
-
   </section>
 
   <!-- WHAT AWS D1.5 MEANS -->
-
   <section class="steel-section">
     <div class="container">
       <h2>What AWS D1.5 Means for Bridge Welding Projects</h2>
@@ -364,35 +579,31 @@
         When project specifications call for <strong>AWS D1.5 welders</strong> or <strong>AWS certified bridge welders</strong>, contractors need a welding subcontractor that can work inside a compliance-heavy environment without slowing the schedule down.
       </p>
 
+      <p>
+        Kings Mobile Welding supports bridge and infrastructure contractors with field welding built for active jobsites. We understand that bridge welding often involves lane closures, traffic control windows, lifts, platforms, over-water access, work-at-height conditions, inspection hold points, and coordination with multiple trades.
+        Our goal is simple: provide qualified bridge welders who can show up prepared, weld to the project requirements, and help your team close out the scope cleanly.
+      </p>
 
-  <p>
-    Kings Mobile Welding supports bridge and infrastructure contractors with field welding built for active jobsites. We understand that bridge welding often involves lane closures, traffic control windows, lifts, platforms, over-water access, work-at-height conditions, inspection hold points, and coordination with multiple trades.
-    Our goal is simple: provide qualified bridge welders who can show up prepared, weld to the project requirements, and help your team close out the scope cleanly.
-  </p>
+      <div class="steel-grid3" style="margin-top:1rem;">
+        <div class="steel-tile">
+          <h3>Code-Aware Execution</h3>
+          <p>Bridge welding projects often require stricter control than standard structural welding. We approach each scope with fit-up, sequencing, access, and field execution aligned to the project requirements.</p>
+        </div>
 
-  <div class="steel-grid3" style="margin-top:1rem;">
-    <div class="steel-tile">
-      <h3>Code-Aware Execution</h3>
-      <p>Bridge welding projects often require stricter control than standard structural welding. We approach each scope with fit-up, sequencing, access, and field execution aligned to the project requirements.</p>
+        <div class="steel-tile">
+          <h3>Inspection-Driven Workflow</h3>
+          <p>Bridge work is commonly tied to QC review, QA oversight, engineer requirements, and owner inspection. We coordinate with site leadership and inspection staff to help keep production moving.</p>
+        </div>
+
+        <div class="steel-tile">
+          <h3>Contractor-Focused Support</h3>
+          <p>Whether the scope is pile splicing, expansion joint welding, structural repair, or new bridge construction support, we mobilize to help contractors complete welding scopes safely and professionally.</p>
+        </div>
+      </div>
     </div>
-
-    <div class="steel-tile">
-      <h3>Inspection-Driven Workflow</h3>
-      <p>Bridge work is commonly tied to QC review, QA oversight, engineer requirements, and owner inspection. We coordinate with site leadership and inspection staff to help keep production moving.</p>
-    </div>
-
-    <div class="steel-tile">
-      <h3>Contractor-Focused Support</h3>
-      <p>Whether the scope is pile splicing, expansion joint welding, structural repair, or new bridge construction support, we mobilize to help contractors complete welding scopes safely and professionally.</p>
-    </div>
-  </div>
-</div>
-
-
   </section>
 
   <!-- CONTRACTORS WE SUPPORT -->
-
   <section class="steel-section" style="background:#F8FAFC;">
     <div class="container">
       <h2>Bridge Welding Support for Geotechnical, Deep Foundation, Bridge, and Concrete Contractors</h2>
@@ -401,30 +612,26 @@
         We understand that different contractors touch different parts of the bridge package, so our welding support is built to fit the scope, schedule, access conditions, and inspection requirements of the project.
       </p>
 
+      <div class="steel-grid3" style="margin-top:1rem;">
+        <div class="steel-tile">
+          <h3>Geotechnical &amp; Deep Foundation Contractors</h3>
+          <p>We support pile splice welding, pipe pile splices, H-pile splices, permanent shaft casing splices, foundation steel, and related field welding for bridge foundations and heavy civil projects.</p>
+        </div>
 
-  <div class="steel-grid3" style="margin-top:1rem;">
-    <div class="steel-tile">
-      <h3>Geotechnical &amp; Deep Foundation Contractors</h3>
-      <p>We support pile splice welding, pipe pile splices, H-pile splices, permanent shaft casing splices, foundation steel, and related field welding for bridge foundations and heavy civil projects.</p>
+        <div class="steel-tile">
+          <h3>Bridge Contractors</h3>
+          <p>We provide AWS D1.5 bridge welding support for repairs, remediation, expansion joints, structural steel components, attachments, reinforcement details, and inspection-driven DOT work.</p>
+        </div>
+
+        <div class="steel-tile">
+          <h3>Concrete Contractors Doing Bridge Work</h3>
+          <p>We assist with embedded steel, bridge joint steel, armor angles, edge rails, repair plates, field modifications, and welding scopes tied to bridge deck rehabilitation and concrete repair work.</p>
+        </div>
+      </div>
     </div>
-
-    <div class="steel-tile">
-      <h3>Bridge Contractors</h3>
-      <p>We provide AWS D1.5 bridge welding support for repairs, remediation, expansion joints, structural steel components, attachments, reinforcement details, and inspection-driven DOT work.</p>
-    </div>
-
-    <div class="steel-tile">
-      <h3>Concrete Contractors Doing Bridge Work</h3>
-      <p>We assist with embedded steel, bridge joint steel, armor angles, edge rails, repair plates, field modifications, and welding scopes tied to bridge deck rehabilitation and concrete repair work.</p>
-    </div>
-  </div>
-</div>
-
-
   </section>
 
   <!-- SERVICE TYPES -->
-
   <section class="steel-section">
     <div class="container">
       <h2>Bridge Welding for Repair, Remediation, Pile Splicing, and Construction Support</h2>
@@ -433,30 +640,26 @@
         Whether your project calls for <strong>pile splice welding</strong>, <strong>bridge expansion joint welding</strong>, <strong>structural steel bridge repair</strong>, or field-installed reinforcement, we provide <strong>AWS certified bridge welders</strong> who can integrate into the project schedule and deliver inspection-ready work.
       </p>
 
+      <div class="steel-grid3" style="margin-top:1rem;">
+        <div class="steel-tile">
+          <h3>Bridge Remediation &amp; Repairs</h3>
+          <p>Corrective welding, reinforcement plates, connection repairs, and structural remediation performed to engineered details, project specifications, and inspection requirements.</p>
+        </div>
 
-  <div class="steel-grid3" style="margin-top:1rem;">
-    <div class="steel-tile">
-      <h3>Bridge Remediation &amp; Repairs</h3>
-      <p>Corrective welding, reinforcement plates, connection repairs, and structural remediation performed to engineered details, project specifications, and inspection requirements.</p>
+        <div class="steel-tile">
+          <h3>Pile Splices &amp; Foundation Steel</h3>
+          <p>H-pile splice welding, pipe pile splice welding, permanent shaft casing welding, and related bridge foundation steel welding where AWS D1.5 bridge welding requirements apply.</p>
+        </div>
+
+        <div class="steel-tile">
+          <h3>New Construction Support</h3>
+          <p>Field welding support for bridge components, diaphragms, stiffeners, attachments, embedded steel, and structural elements to help contractors maintain schedule and quality control.</p>
+        </div>
+      </div>
     </div>
-
-    <div class="steel-tile">
-      <h3>Pile Splices &amp; Foundation Steel</h3>
-      <p>H-pile splice welding, pipe pile splice welding, permanent shaft casing welding, and related bridge foundation steel welding where AWS D1.5 bridge welding requirements apply.</p>
-    </div>
-
-    <div class="steel-tile">
-      <h3>New Construction Support</h3>
-      <p>Field welding support for bridge components, diaphragms, stiffeners, attachments, embedded steel, and structural elements to help contractors maintain schedule and quality control.</p>
-    </div>
-  </div>
-</div>
-
-
   </section>
 
   <!-- EXPANSION JOINT SECTION -->
-
   <section class="steel-section" style="background:#F8FAFC;">
     <div class="container">
       <h2>Bridge Expansion Joint Welding &amp; Elastomeric Expansion Dam Systems</h2>
@@ -466,74 +669,66 @@
         This is one of the most common recurring bridge maintenance scopes and a key area where contractors need reliable <strong>AWS certified bridge welders</strong> who can work within traffic windows, lane closures, and inspection requirements.
       </p>
 
+      <div class="steel-grid3" style="margin-top:1rem;">
+        <div class="steel-tile">
+          <h3>Expansion Joint Steel Welding</h3>
+          <p>Welding steel edge rails, armor angles, embedded plates, and joint components that support elastomeric systems and maintain structural integrity.</p>
+        </div>
 
-  <div class="steel-grid3" style="margin-top:1rem;">
-    <div class="steel-tile">
-      <h3>Expansion Joint Steel Welding</h3>
-      <p>Welding steel edge rails, armor angles, embedded plates, and joint components that support elastomeric systems and maintain structural integrity.</p>
+        <div class="steel-tile">
+          <h3>Bridge Joint Repair &amp; Replacement</h3>
+          <p>Repairing or replacing damaged joint steel, including fit-up corrections, weld repair, modification work, and preparation ahead of elastomer installation.</p>
+        </div>
+
+        <div class="steel-tile">
+          <h3>Bridge Maintenance Welding</h3>
+          <p>Field welding support tied to recurring bridge maintenance programs, shutdown windows, DOT rehabilitation scopes, and contractor production schedules.</p>
+        </div>
+      </div>
+
+      <div class="steel-card" style="margin-top:1.2rem;">
+        <h2>Why Bridge Expansion Joint Welding Matters</h2>
+        <ul class="steel-points">
+          <li><strong>High-wear location:</strong> bridge joints take continuous impact from traffic, movement, and weather</li>
+          <li><strong>Water intrusion protection:</strong> failed joint steel and damaged welds can contribute to deck deterioration and long-term structural issues</li>
+          <li><strong>Inspection-heavy scope:</strong> joint systems are closely monitored and commonly repaired or replaced under DOT maintenance and rehabilitation programs</li>
+          <li><strong>Recurring opportunity:</strong> bridge expansion joint work is a steady source of maintenance and rehabilitation welding demand</li>
+        </ul>
+
+        <p style="margin-top:.75rem; color:#334155;">
+          For contractors handling bridge maintenance or deck rehabilitation, this is a scope where having an <strong>AWS D1.5 bridge welding contractor</strong> matters.
+          Kings Mobile Welding supports bridge joint welding with a field-ready, inspection-driven approach designed for production, quality control, and clean closeout.
+        </p>
+      </div>
     </div>
-
-    <div class="steel-tile">
-      <h3>Bridge Joint Repair &amp; Replacement</h3>
-      <p>Repairing or replacing damaged joint steel, including fit-up corrections, weld repair, modification work, and preparation ahead of elastomer installation.</p>
-    </div>
-
-    <div class="steel-tile">
-      <h3>Bridge Maintenance Welding</h3>
-      <p>Field welding support tied to recurring bridge maintenance programs, shutdown windows, DOT rehabilitation scopes, and contractor production schedules.</p>
-    </div>
-  </div>
-
-  <div class="steel-card" style="margin-top:1.2rem;">
-    <h2>Why Bridge Expansion Joint Welding Matters</h2>
-    <ul class="steel-points">
-      <li><strong>High-wear location:</strong> bridge joints take continuous impact from traffic, movement, and weather</li>
-      <li><strong>Water intrusion protection:</strong> failed joint steel and damaged welds can contribute to deck deterioration and long-term structural issues</li>
-      <li><strong>Inspection-heavy scope:</strong> joint systems are closely monitored and commonly repaired or replaced under DOT maintenance and rehabilitation programs</li>
-      <li><strong>Recurring opportunity:</strong> bridge expansion joint work is a steady source of maintenance and rehabilitation welding demand</li>
-    </ul>
-
-    <p style="margin-top:.75rem; color:#334155;">
-      For contractors handling bridge maintenance or deck rehabilitation, this is a scope where having an <strong>AWS D1.5 bridge welding contractor</strong> matters.
-      Kings Mobile Welding supports bridge joint welding with a field-ready, inspection-driven approach designed for production, quality control, and clean closeout.
-    </p>
-  </div>
-</div>
-
-
   </section>
 
   <!-- NCDOT / REGIONAL SECTION -->
-
   <section class="steel-section">
     <div class="container">
       <div class="steel-card" style="border-left:5px solid #1D4ED8;">
-        <h2>NCDOT Certified Bridge Welders for North Carolina Bridge Projects</h2>
+        <h2>NCDOT Certified Bridge Welders for <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a> Bridge Projects</h2>
         <p>
-          Kings Mobile Welding has <strong>NCDOT certified welders for bridge work in North Carolina</strong>.
+          Kings Mobile Welding has <strong>NCDOT certified welders for bridge work in <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a></strong>.
           This gives bridge contractors, deep foundation contractors, and infrastructure contractors an additional qualified welding resource for DOT bridge projects in North Carolina and surrounding states.
         </p>
 
+        <p>
+          If your company is bidding or building bridge work in <strong><a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a>, <a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a>, <a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a>, <a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a>, or <a class="region-link" href="/areas/dc-bridge-welding">Washington D.C.</a></strong>, we can review your welding scope, splice details, access requirements, inspection requirements, and schedule to determine how our AWS D1.5 welders can support the project.
+        </p>
 
-    <p>
-      If your company is bidding or building bridge work in <strong>North Carolina, Virginia, South Carolina, Maryland, or Washington D.C.</strong>, we can review your welding scope, splice details, access requirements, inspection requirements, and schedule to determine how our AWS D1.5 welders can support the project.
-    </p>
-
-    <div class="steel-badges" style="margin-top:.75rem;">
-      <span class="steel-badge">NCDOT Certified Bridge Welders</span>
-      <span class="steel-badge">AWS D1.5 Bridge Welding</span>
-      <span class="steel-badge">Pile Splicing</span>
-      <span class="steel-badge">Bridge Contractors</span>
-      <span class="steel-badge">Deep Foundation Contractors</span>
+        <div class="steel-badges" style="margin-top:.75rem;">
+          <span class="steel-badge">NCDOT Certified Bridge Welders</span>
+          <span class="steel-badge">AWS D1.5 Bridge Welding</span>
+          <span class="steel-badge">Pile Splicing</span>
+          <span class="steel-badge">Bridge Contractors</span>
+          <span class="steel-badge">Deep Foundation Contractors</span>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-
   </section>
 
   <!-- PHOTO SECTION -->
-
   <section class="steel-section" style="background:#F8FAFC;">
     <div class="container">
       <div class="steel-photo">
@@ -544,79 +739,72 @@
             We come prepared to work within those constraints with controlled fit-up, clean execution, and coordination around hold points to reduce rework and keep progress steady.
           </p>
 
+          <ul class="steel-points">
+            <li>Field fit-up, alignment, and weld sequencing support</li>
+            <li>H-pile, pipe pile, and permanent shaft casing splice welding</li>
+            <li>Connection repairs and reinforcement plate installation</li>
+            <li>Bridge expansion joint and elastomeric expansion dam welding support</li>
+            <li>Coordination for lifts, platforms, over-water access, and work-at-height conditions</li>
+            <li>Photo documentation and scope notes when requested for closeout</li>
+          </ul>
+        </div>
 
-      <ul class="steel-points">
-        <li>Field fit-up, alignment, and weld sequencing support</li>
-        <li>H-pile, pipe pile, and permanent shaft casing splice welding</li>
-        <li>Connection repairs and reinforcement plate installation</li>
-        <li>Bridge expansion joint and elastomeric expansion dam welding support</li>
-        <li>Coordination for lifts, platforms, over-water access, and work-at-height conditions</li>
-        <li>Photo documentation and scope notes when requested for closeout</li>
-      </ul>
+        <div class="img-wrap">
+          <img src="/assets/img/industries/bridge-welding-remediation.png" alt="AWS certified bridge welders performing AWS D1.5 bridge welding and structural remediation work">
+          <span class="img-label">AWS D1.5 Bridge Welding • DOT &amp; Infrastructure Support</span>
+        </div>
+      </div>
     </div>
-
-    <div class="img-wrap">
-      <img src="/assets/img/industries/bridge-welding-remediation.png" alt="AWS certified bridge welders performing AWS D1.5 bridge welding and structural remediation work">
-      <span class="img-label">AWS D1.5 Bridge Welding • DOT &amp; Infrastructure Support</span>
-    </div>
-  </div>
-</div>
-
-
   </section>
 
   <!-- LOCAL SEO BLOCK -->
-
   <section class="steel-section" style="padding-top:1.2rem;">
     <div class="container">
       <div class="steel-card" style="border-style:dashed; background:#F8FAFC;">
-        <h2 style="font-size:1.05rem;">AWS Certified Bridge Welders Serving Virginia, D.C., North Carolina, South Carolina, and Maryland</h2>
+        <h2 style="font-size:1.05rem;">AWS Certified Bridge Welders Serving <a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a>, <a class="region-link" href="/areas/dc-bridge-welding">D.C.</a>, <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a>, <a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a>, and <a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a></h2>
         <p style="margin:.35rem 0 .6rem;color:#334155;">
           If you are looking for <strong>AWS certified bridge welders</strong> or <strong>AWS D1.5 welders</strong> for bridge work, Kings Mobile Welding supports contractors with
           <strong>AWS D1.5 bridge welding</strong>, <strong>pile splice welding</strong>, <strong>bridge expansion joint welding</strong>, <strong>structural bridge repair welding</strong>, and <strong>inspection-driven field welding</strong>.
         </p>
 
-
-    <p style="margin:0;color:#334155;line-height:1.65;">
-      We serve bridge and infrastructure contractors throughout <strong>Virginia</strong>, <strong>Washington D.C.</strong>, <strong>North Carolina</strong>, <strong>South Carolina</strong>, and <strong>Maryland</strong>, including Hampton Roads, Richmond, Northern Virginia, coastal Virginia, and surrounding Mid-Atlantic markets.
-      For long-term pile splicing, bridge rehabilitation, and DOT welding support, send your plans, details, schedule, and project location for review.
-    </p>
-  </div>
-</div>
-
-
+        <p style="margin:0;color:#334155;line-height:1.65;">
+          We serve bridge and infrastructure contractors throughout <strong><a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a></strong>, <strong><a class="region-link" href="/areas/dc-bridge-welding">Washington D.C.</a></strong>, <strong><a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a></strong>, <strong><a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a></strong>, and <strong><a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a></strong>, including Hampton Roads, Richmond, Northern Virginia, coastal Virginia, and surrounding Mid-Atlantic markets.
+          For long-term pile splicing, bridge rehabilitation, and DOT welding support, send your plans, details, schedule, and project location for review.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- AREAS WE SERVE -->
-
   <section class="steel-section">
     <div class="container">
       <h2>Areas We Serve for AWS D1.5 Bridge Welding</h2>
       <p>
         Kings Mobile Welding provides bridge welding support throughout the Mid-Atlantic and Southeast.
-        We regularly support projects in Virginia and are available for qualified bridge welding, pile splicing, and DOT infrastructure welding opportunities in Washington D.C., North Carolina, South Carolina, and Maryland.
+        We regularly support projects in <a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a> and are available for qualified bridge welding, pile splicing, and DOT infrastructure welding opportunities in <a class="region-link" href="/areas/dc-bridge-welding">Washington D.C.</a>, <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a>, <a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a>, and <a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a>.
         If your project is tied to shutdowns, lane closures, long-term production, or limited work windows, send drawings and schedule information early so we can plan mobilization, equipment, and manpower accordingly.
       </p>
 
-
-  <div class="link-grid">
-    <a class="pill" href="/areas">Areas We Service</a>
-    <a class="pill" href="/areas/newport-news-va">Newport News, VA</a>
-    <a class="pill" href="/areas/hampton-va">Hampton, VA</a>
-    <a class="pill" href="/areas/norfolk-va">Norfolk, VA</a>
-    <a class="pill" href="/areas/virginia-beach-va">Virginia Beach, VA</a>
-    <a class="pill" href="/areas/chesapeake-va">Chesapeake, VA</a>
-    <a class="pill" href="/areas/portsmouth-va">Portsmouth, VA</a>
-    <a class="pill" href="/areas/suffolk-va">Suffolk, VA</a>
-    <a class="pill" href="/areas/williamsburg-va">Williamsburg, VA</a>
-  </div>
-</div>
-
-
+      <div class="link-grid">
+        <a class="pill" href="/areas/">Areas We Service</a>
+        <a class="pill" href="/areas/virginia-bridge-welding">Virginia Bridge Welding</a>
+        <a class="pill" href="/areas/maryland-bridge-welding">Maryland Bridge Welding</a>
+        <a class="pill" href="/areas/dc-bridge-welding">D.C. Bridge Welding</a>
+        <a class="pill" href="/areas/north-carolina-bridge-welding">North Carolina Bridge Welding</a>
+        <a class="pill" href="/areas/south-carolina-bridge-welding">South Carolina Bridge Welding</a>
+        <a class="pill" href="/areas/newport-news-va">Newport News, VA</a>
+        <a class="pill" href="/areas/hampton-va">Hampton, VA</a>
+        <a class="pill" href="/areas/norfolk-va">Norfolk, VA</a>
+        <a class="pill" href="/areas/virginia-beach-va">Virginia Beach, VA</a>
+        <a class="pill" href="/areas/chesapeake-va">Chesapeake, VA</a>
+        <a class="pill" href="/areas/portsmouth-va">Portsmouth, VA</a>
+        <a class="pill" href="/areas/suffolk-va">Suffolk, VA</a>
+        <a class="pill" href="/areas/williamsburg-va">Williamsburg, VA</a>
+      </div>
+    </div>
   </section>
 
   <!-- RELATED LINKS -->
-
   <section class="steel-section" style="background:#F8FAFC;">
     <div class="container">
       <h2>Related Bridge, DOT, and Pile Splice Welding Services</h2>
@@ -625,23 +813,22 @@
         Review these related service pages if your project includes pile splicing, DOT welding, emergency repairs, or subcontract welding support.
       </p>
 
-
-  <div class="link-grid">
-    <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding Contractor</a>
-    <a class="pill" href="/services/bridge-expansion-joint-welding/">Bridge Expansion Joint Welding</a>
-    <a class="pill" href="/services/government-and-dot-welding/">Government &amp; DOT Welding</a>
-    <a class="pill" href="/services/structural-steel-welding/">Structural Steel Welding</a>
-    <a class="pill" href="/services/emergency-welding/">Emergency Welding</a>
-    <a class="pill" href="/services/welding-subcontractor/">Welding Subcontractor Services</a>
-    <a class="pill" href="/blog/posts/aws-d1-5-bridge-welding-infrastructure-repair-services-in-hampton-roads/">AWS D1.5 Bridge Welding Article</a>
-  </div>
-</div>
-
-
+      <div class="link-grid">
+        <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding Contractor</a>
+        <a class="pill" href="/services/bridge-expansion-joint-welding/">Bridge Expansion Joint Welding</a>
+        <a class="pill" href="/services/government-and-dot-welding/">Government &amp; DOT Welding</a>
+        <a class="pill" href="/services/structural-steel-welding/">Structural Steel Welding</a>
+        <a class="pill" href="/services/emergency-welding/">Emergency Welding</a>
+        <a class="pill" href="/services/welding-subcontractor/">Welding Subcontractor Services</a>
+        <a class="pill" href="/areas/virginia-bridge-welding">Virginia Bridge Welding</a>
+        <a class="pill" href="/areas/north-carolina-bridge-welding">North Carolina Bridge Welding</a>
+        <a class="pill" href="/areas/maryland-bridge-welding">Maryland Bridge Welding</a>
+        <a class="pill" href="/blog/posts/aws-d1-5-bridge-welding-infrastructure-repair-services-in-hampton-roads/">AWS D1.5 Bridge Welding Article</a>
+      </div>
+    </div>
   </section>
 
   <!-- VISUALLY HIDDEN SUPPORTING TEXT -->
-
   <section class="steel-section" aria-label="Regional bridge welding" style="padding:0;">
     <div class="container">
       <div class="sr-only">
@@ -659,143 +846,143 @@
   </section>
 
   <!-- FAQ -->
-
   <section class="steel-section">
     <div class="container">
       <h2>AWS Certified Bridge Welding FAQ</h2>
 
-  <div class="faq" style="margin-top:1rem;">
-    <details class="faq-item">
-      <summary>Do bridge projects typically require AWS D1.5 welders?</summary>
-      <p>
-        Many welded bridge scopes reference the <strong>AASHTO/AWS D1.5 Bridge Welding Code</strong> along with DOT-specific project requirements.
-        If your plans or specifications call for AWS D1.5, AWS certified bridge welders, or qualified bridge welders, Kings Mobile Welding can support the project with field welding aligned to those requirements and inspection expectations.
-      </p>
-    </details>
+      <div class="faq" style="margin-top:1rem;">
+        <details class="faq-item">
+          <summary>Do bridge projects typically require AWS D1.5 welders?</summary>
+          <p>
+            Many welded bridge scopes reference the <strong>AASHTO/AWS D1.5 Bridge Welding Code</strong> along with DOT-specific project requirements.
+            If your plans or specifications call for AWS D1.5, AWS certified bridge welders, or qualified bridge welders, Kings Mobile Welding can support the project with field welding aligned to those requirements and inspection expectations.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>Are your welders NCDOT certified for bridge work in North Carolina?</summary>
-      <p>
-        Yes. Kings Mobile Welding has <strong>NCDOT certified welders for bridge work in North Carolina</strong>.
-        This allows us to support bridge contractors, deep foundation contractors, and infrastructure contractors working on North Carolina bridge and DOT projects.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>Are your welders NCDOT certified for bridge work in North Carolina?</summary>
+          <p>
+            Yes. Kings Mobile Welding has <strong>NCDOT certified welders for bridge work in <a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a></strong>.
+            This allows us to support bridge contractors, deep foundation contractors, and infrastructure contractors working on North Carolina bridge and DOT projects.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>Can you support pile splice welding on bridge and deep foundation projects?</summary>
-      <p>
-        Yes. We provide field welding support for <strong>H-pile splice welding</strong>, <strong>pipe pile splice welding</strong>, <strong>permanent shaft casing splices</strong>, and related bridge foundation steel where welding is specified.
-        Send the splice detail, material information, location, access conditions, inspection requirements, and schedule through our <a href="/contact/">contact page</a> for pricing and availability.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>Can you support pile splice welding on bridge and deep foundation projects?</summary>
+          <p>
+            Yes. We provide field welding support for <strong>H-pile splice welding</strong>, <strong>pipe pile splice welding</strong>, <strong>permanent shaft casing splices</strong>, and related bridge foundation steel where welding is specified.
+            Send the splice detail, material information, location, access conditions, inspection requirements, and schedule through our <a href="/contact/">contact page</a> for pricing and availability.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>Do you perform bridge expansion joint welding?</summary>
-      <p>
-        Yes. We provide field welding support for <strong>bridge expansion joint systems</strong>, including steel edge rails, armor angles, embedded plates, elastomeric expansion dam systems, and related bridge joint repair and replacement work tied to maintenance and rehabilitation scopes.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>Do you perform bridge expansion joint welding?</summary>
+          <p>
+            Yes. We provide field welding support for <strong>bridge expansion joint systems</strong>, including steel edge rails, armor angles, embedded plates, elastomeric expansion dam systems, and related bridge joint repair and replacement work tied to maintenance and rehabilitation scopes.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>What types of contractors do you support?</summary>
-      <p>
-        We support <strong>bridge contractors</strong>, <strong>geotechnical contractors</strong>, <strong>deep foundation contractors</strong>, <strong>concrete contractors doing bridge work</strong>, DOT contractors, and infrastructure contractors that need qualified field welders for bridge welding, pile splicing, repairs, remediation, and construction support.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>What types of contractors do you support?</summary>
+          <p>
+            We support <strong>bridge contractors</strong>, <strong>geotechnical contractors</strong>, <strong>deep foundation contractors</strong>, <strong>concrete contractors doing bridge work</strong>, DOT contractors, and infrastructure contractors that need qualified field welders for bridge welding, pile splicing, repairs, remediation, and construction support.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>What areas do you serve for AWS D1.5 bridge welding?</summary>
-      <p>
-        Kings Mobile Welding serves bridge and infrastructure contractors throughout <strong>Virginia</strong>, <strong>Washington D.C.</strong>, <strong>North Carolina</strong>, <strong>South Carolina</strong>, and <strong>Maryland</strong>.
-        We are available for short-term bridge welding support, emergency repair work, and long-term production welding scopes such as pile splicing and bridge rehabilitation.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>What areas do you serve for AWS D1.5 bridge welding?</summary>
+          <p>
+            Kings Mobile Welding serves bridge and infrastructure contractors throughout <strong><a class="region-link" href="/areas/virginia-bridge-welding">Virginia</a></strong>, <strong><a class="region-link" href="/areas/dc-bridge-welding">Washington D.C.</a></strong>, <strong><a class="region-link" href="/areas/north-carolina-bridge-welding">North Carolina</a></strong>, <strong><a class="region-link" href="/areas/south-carolina-bridge-welding">South Carolina</a></strong>, and <strong><a class="region-link" href="/areas/maryland-bridge-welding">Maryland</a></strong>.
+            We are available for short-term bridge welding support, emergency repair work, and long-term production welding scopes such as pile splicing and bridge rehabilitation.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>What do you need to quote AWS D1.5 bridge welding work?</summary>
-      <p>
-        The fastest quote comes from: (1) drawings or splice details, (2) photos of existing conditions for repairs, (3) project location and access constraints,
-        (4) traffic control or shutdown windows, (5) inspection requirements, and (6) required start dates. Start on our <a href="/contact/">contact page</a>.
-      </p>
-    </details>
+        <details class="faq-item">
+          <summary>What do you need to quote AWS D1.5 bridge welding work?</summary>
+          <p>
+            The fastest quote comes from: (1) drawings or splice details, (2) photos of existing conditions for repairs, (3) project location and access constraints,
+            (4) traffic control or shutdown windows, (5) inspection requirements, and (6) required start dates. Start on our <a href="/contact/">contact page</a>.
+          </p>
+        </details>
 
-    <details class="faq-item">
-      <summary>Do you coordinate with inspectors and QC/QA?</summary>
-      <p>
-        Yes. Bridge work is commonly inspection-driven. We coordinate with superintendents, QC, QA, engineers, and inspection staff for hold points, access readiness, documentation, and closeout requirements to help reduce rework and maintain schedule.
-      </p>
-    </details>
-  </div>
+        <details class="faq-item">
+          <summary>Do you coordinate with inspectors and QC/QA?</summary>
+          <p>
+            Yes. Bridge work is commonly inspection-driven. We coordinate with superintendents, QC, QA, engineers, and inspection staff for hold points, access readiness, documentation, and closeout requirements to help reduce rework and maintain schedule.
+          </p>
+        </details>
+      </div>
 
-  <div class="cta-band" style="margin-top:1.2rem;">
-    <div>
-      <h3>Need AWS Certified Bridge Welders or AWS D1.5 Welders on a DOT Schedule?</h3>
-      <p>Send drawings, splice details, photos, project location, inspection requirements, and traffic window constraints. We’ll review the scope and confirm bridge welding support availability.</p>
+      <div class="cta-band" style="margin-top:1.2rem;">
+        <div>
+          <h3>Need AWS Certified Bridge Welders or AWS D1.5 Welders on a DOT Schedule?</h3>
+          <p>Send drawings, splice details, photos, project location, inspection requirements, and traffic window constraints. We’ll review the scope and confirm bridge welding support availability.</p>
+        </div>
+
+        <div class="btns">
+          <a class="btn-solid" href="/contact/" onclick="event.stopPropagation();">Request Quote</a>
+          <a class="btn-ghost" href="/services">View All Services →</a>
+        </div>
+      </div>
     </div>
-
-    <div class="btns">
-      <a class="btn-solid" href="/contact/" onclick="event.stopPropagation();">Request Quote</a>
-      <a class="btn-ghost" href="/services">View All Services →</a>
-    </div>
-  </div>
-</div>
-
   </section>
 </main>
 
-</main>
-
 <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/">
-          <img src="/assets/img/logo-500-webp.webp" width="44" height="44" alt="Logo">
-          <strong>Kings Mobile Welding</strong>
-        </a>
-        <div class="footer-contact">
-          <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, Eastern Virginia, and the Mid-Atlantic region</p>
-          <p>🆔 UEI: ZCY4G7GBGQA3</p>
-          <p>🏷️ CAGE: 11P75</p>
-        </div>
-      </div>
-
-      <nav class="footer-nav">
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/past-performance">Past Performance</a>
-        <a href="/procurement">Procurement</a>
-        <a href="/safety.html">Safety &amp; Compliance</a>
-        <a href="/areas">Areas We Service</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
-      </nav>
-
-      <div class="social" aria-label="Social links">
-        <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-          </svg>
-        </a>
-        <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-          </svg>
-        </a>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/assets/img/logo-500-webp.webp" width="44" height="44" alt="Logo">
+        <strong>Kings Mobile Welding</strong>
+      </a>
+      <div class="footer-contact">
+        <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, Eastern Virginia, and the Mid-Atlantic region</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
       </div>
     </div>
-  </footer>
+
+    <nav class="footer-nav">
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a href="/areas/">Areas We Service</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+        </svg>
+      </a>
+
+      <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+          <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
 <script src="/assets/js/menu-toggle.js" defer></script>
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
