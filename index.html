@@ -1,4 +1,5 @@
 ﻿<!doctype html>
+
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -13,10 +14,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Kings Mobile Welding — AWS D1.1 &amp; D1.5 Certified Mobile Welding</title>
-  <meta name="description" content="AWS D1.1 & D1.5 certified mobile welding & fabrication for government, DOT, and bridge/transportation projects—structural steel, field repairs, and inspection-ready results across Hampton Roads.">
+  <title>Kings Mobile Welding | AWS D1.1 &amp; D1.5 Certified Bridge, Structural &amp; Field Welding</title>
+  <meta name="description" content="AWS D1.1 and AWS D1.5 certified mobile welding contractor serving bridge contractors, deep foundation contractors, steel fabricators, DOT projects, and industrial clients across Virginia, Maryland, D.C., North Carolina, South Carolina, and Hampton Roads.">
+
+  <link rel="canonical" href="https://www.kingsmobilewelding.com/">
 
   <!-- Icons / Manifest -->
+
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -25,11 +29,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500-webp.webp">
+  <meta property="og:image" content="/assets/img/logo-500-webp.webp">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- LocalBusiness JSON-LD -->
+
   <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -39,7 +44,8 @@
     "foundingDate": "2017",
     "founder": "Dillon King",
     "telephone": "(757) 231-6809",
-    "email": "Dillonk2012@gmail.com",
+    "email": "DillonKing@kingsmobilewelding.com",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Newport News",
@@ -48,27 +54,48 @@
       "addressCountry": "US"
     },
     "areaServed": [
+      "Virginia",
+      "Maryland",
+      "Washington D.C.",
+      "North Carolina",
+      "South Carolina",
       "Hampton Roads, VA",
       "Newport News, VA",
-      "Virginia"
+      "Norfolk, VA",
+      "Virginia Beach, VA",
+      "Richmond, VA",
+      "Mid-Atlantic",
+      "Southeast"
     ],
     "sameAs": [
       "https://www.kingsmobilewelding.com",
-      "https://linktr.ee/kingsmobilewelding"
+      "https://linktr.ee/kingsmobilewelding",
+      "https://www.linkedin.com/company/kings-mobile-welding",
+      "https://www.instagram.com/kingsmobilewelding"
     ],
-    "description": "AWS D1.1 & D1.5-certified mobile welding & fabrication serving Hampton Roads, VA & beyond — structural steel, bridge/transportation support, repairs, handrails, stairs, aluminum & stainless.",
+    "description": "AWS D1.1 and AWS D1.5 certified mobile welding contractor serving bridge, structural steel, deep foundation, DOT, commercial, industrial, marine, and infrastructure projects.",
     "knowsAbout": [
+      "AWS D1.1 structural steel welding",
+      "AWS D1.5 bridge welding",
+      "AWS certified bridge welders",
+      "NCDOT certified bridge welders",
+      "VDOT bridge welding",
+      "Pile splice welding",
+      "H-pile splice welding",
+      "Pipe pile splice welding",
+      "Permanent shaft casing welding",
+      "Deep foundation welding",
+      "Bridge expansion joint welding",
+      "Structural steel field welding",
+      "AISC fabrication shop support",
+      "Industrial welding",
       "Mobile welding",
-      "Structural steel welding",
-      "Bridge welding (AWS D1.5)",
-      "DOT/transportation welding",
-      "Steel repair",
-      "Handrails",
-      "Metal stairs",
+      "Emergency welding repairs",
+      "Government and DOT welding",
+      "Marine construction welding",
       "Torch cutting",
-      "Aluminum welding",
-      "Stainless steel welding",
-      "Fabrication"
+      "Carbon arc gouging",
+      "Field fabrication"
     ],
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
@@ -79,228 +106,1085 @@
   }</script>
 
   <!-- ========================= -->
+
   <!-- INLINE STYLES (HOME ONLY) -->
+
   <!-- ========================= -->
+
   <style>
-    :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+    :root{
+      --kmw-blue:#0A2E5C;
+      --kmw-yellow:#FFD60A;
+      --slate:#0F172A;
+      --muted:#475569;
+      --line:#E5E7EB;
+      --soft:#F8FAFC;
+    }
+
+    body{background:#fff}
+
+    a{color:inherit}
+
+    .kmw-home-container{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 16px;
+    }
 
     /* --------------------------
-       AFTER SERVICES (modern)
+       HERO / LEAD CAPTURE
        -------------------------- */
-    .kmw-after-services{padding:48px 0;background:#fff}
-    .kmw-after-services .container{max-width:1100px;margin:0 auto;padding:0 16px}
-
-    .kmw-split{display:grid;grid-template-columns:1.08fr .92fr;gap:18px;align-items:start}
-    @media (max-width:950px){.kmw-split{grid-template-columns:1fr}}
-
-    .kmw-panel{
-      border:1px solid #E5E7EB;border-radius:18px;background:#fff;
-      box-shadow:0 1px 2px rgba(0,0,0,.04);
-      overflow:hidden;
-      /* defensive reset in case global CSS makes panels grid/flex */
-      display:block;
-    }
-    .kmw-panel *{min-width:0} /* prevents weird shrink/overflow in grid/flex contexts */
-
-    .kmw-panel-head{
-      padding:16px 16px 12px;border-bottom:1px solid #F1F5F9;
-      background:linear-gradient(180deg,#fff,#FBFDFF)
-    }
-    .kmw-panel h2{margin:0;color:var(--kmw-blue);font-weight:900;letter-spacing:-.01em}
-    .kmw-panel .sub{margin:8px 0 0;color:#475569;line-height:1.55;max-width:72ch}
-
-    /* --------------------------
-       TESTIMONIALS (hard reset for desktop)
-       This is the fix for your desktop "floating" layout.
-       -------------------------- */
-    .kmw-testimonials{padding:14px;display:block}
-    #testimonials{display:block}
-    #testimonials .testi-head{
-      display:flex !important;
-      align-items:center !important;
-      justify-content:space-between !important;
-      gap:12px !important;
-      margin:0 0 12px !important;
-      float:none !important;
-    }
-    #testimonials .testi-head h3{
-      margin:0 !important;
-      color:var(--kmw-blue);
-      font-weight:900;
-      flex:1 1 auto !important;
-      min-width:0 !important;
-      white-space:normal !important;
-    }
-    #testimonials .testi-ctrls{
-      display:flex !important;
-      gap:.5rem !important;
-      flex:0 0 auto !important;
-    }
-    #testimonials .testi-btn{
-      appearance:none;border:1px solid #E5E7EB;background:#fff;color:var(--kmw-blue);
-      padding:.5rem .7rem;border-radius:10px;font-weight:900;cursor:pointer;
-    }
-    #testimonials .testi-btn:hover{filter:brightness(.95)}
-    #testimonials .testi-track{
+    .kmw-hero-new{
       position:relative;
       overflow:hidden;
-      border:1px solid #E5E7EB;border-radius:16px;background:#fff;
-      box-shadow:0 1px 2px rgba(0,0,0,.04);
-      width:100% !important;
-      display:block !important;
-      float:none !important;
-      margin:0 !important;
+      padding:64px 0 38px;
+      background:
+        linear-gradient(90deg, rgba(10,46,92,.94), rgba(10,46,92,.78)),
+        url("/assets/img/hero/billboard-webp.webp") center/cover no-repeat;
+      color:#fff;
     }
-    #testimonials .testi-row{
-      display:flex !important;
-      width:100% !important;
-      transition:transform .5s ease;
-      will-change:transform;
+
+    .kmw-hero-new::after{
+      content:"";
+      position:absolute;
+      inset:auto -10% -120px -10%;
+      height:220px;
+      background:radial-gradient(closest-side, rgba(255,214,10,.22), transparent 70%);
+      pointer-events:none;
     }
-    #testimonials .testi-card{
-      flex:0 0 100% !important;
-      width:100% !important;
-      max-width:100% !important;
-      box-sizing:border-box !important;
-      padding:1.05rem !important;
-      display:grid !important;
-      grid-template-columns:72px 1fr !important;
-      gap:.9rem !important;
-      align-items:center !important;
+
+    .kmw-hero-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr);
+      gap:22px;
+      align-items:start;
     }
-    #testimonials .testi-avatar{
-      width:72px;height:72px;border-radius:999px;object-fit:cover;border:2px solid var(--kmw-yellow)
+
+    .kmw-kicker{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-bottom:12px;
     }
-    #testimonials .testi-body p{margin:.1rem 0 .4rem;color:#334155;line-height:1.5}
-    #testimonials .testi-name{font-weight:800;color:var(--kmw-blue)}
-    #testimonials .testi-meta{color:#64748B;font-size:.92rem}
-    #testimonials .testi-dots{
-      display:flex !important;
-      gap:.4rem !important;
-      justify-content:center !important;
-      padding:.7rem 0 0 !important;
+
+    .kmw-kicker span{
+      display:inline-flex;
+      align-items:center;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      border-radius:999px;
+      padding:7px 10px;
+      font-weight:900;
+      font-size:.78rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      backdrop-filter:blur(6px);
     }
-    #testimonials .testi-dot{width:8px;height:8px;border-radius:999px;background:#CBD5E1}
-    #testimonials .testi-dot.active{background:var(--kmw-blue)}
-    @media (max-width:640px){
-      #testimonials .testi-card{grid-template-columns:48px 1fr !important}
-      #testimonials .testi-avatar{width:48px;height:48px}
+
+    .kmw-hero-new h1{
+      margin:0;
+      max-width:15ch;
+      font-size:clamp(2.15rem,5vw,4.4rem);
+      line-height:.98;
+      font-weight:980;
+      letter-spacing:-.045em;
+    }
+
+    .kmw-hero-lead{
+      margin:16px 0 0;
+      max-width:78ch;
+      color:rgba(255,255,255,.92);
+      font-size:1.08rem;
+      line-height:1.68;
+    }
+
+    .kmw-hero-lead strong{color:#fff}
+    .kmw-hero-lead a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,214,10,.75);text-underline-offset:4px;font-weight:900}
+
+    .kmw-hero-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:18px;
+    }
+
+    .kmw-btn-main,
+    .kmw-btn-light,
+    .kmw-btn-outline{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      text-decoration:none;
+      border-radius:14px;
+      padding:12px 15px;
+      font-weight:950;
+      line-height:1;
+      transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
+    }
+
+    .kmw-btn-main{
+      background:var(--kmw-yellow);
+      color:#0F172A;
+      border:1px solid rgba(255,214,10,.7);
+      box-shadow:0 12px 24px rgba(0,0,0,.22);
+    }
+
+    .kmw-btn-light{
+      background:#fff;
+      color:var(--kmw-blue);
+      border:1px solid rgba(255,255,255,.8);
+    }
+
+    .kmw-btn-outline{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.28);
+      backdrop-filter:blur(6px);
+    }
+
+    .kmw-btn-main:hover,
+    .kmw-btn-light:hover,
+    .kmw-btn-outline:hover{
+      transform:translateY(-1px);
+      filter:brightness(.98);
+    }
+
+    .kmw-proofline{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:18px;
+    }
+
+    .kmw-proofline span{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:7px 9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.20);
+      color:#fff;
+      font-weight:850;
+      font-size:.92rem;
+    }
+
+    .kmw-quote-panel{
+      background:rgba(255,255,255,.96);
+      color:#0F172A;
+      border:1px solid rgba(255,255,255,.35);
+      border-radius:22px;
+      box-shadow:0 22px 55px rgba(0,0,0,.28);
+      overflow:hidden;
+    }
+
+    .kmw-quote-head{
+      padding:18px;
+      background:linear-gradient(180deg,#fff,#F8FAFC);
+      border-bottom:1px solid #E5E7EB;
+    }
+
+    .kmw-quote-head .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,214,10,.24);
+      border:1px solid rgba(255,214,10,.6);
+      border-radius:999px;
+      padding:7px 10px;
+      font-weight:950;
+      font-size:.82rem;
+      color:#0F172A;
+    }
+
+    .kmw-quote-head h2{
+      margin:10px 0 0;
+      color:var(--kmw-blue);
+      font-size:1.35rem;
+      font-weight:980;
+      line-height:1.12;
+    }
+
+    .kmw-quote-head p{
+      margin:8px 0 0;
+      color:#475569;
+      line-height:1.55;
+    }
+
+    .kmw-checklist{
+      margin:0;
+      padding:16px 18px 18px;
+      display:grid;
+      gap:10px;
+      list-style:none;
+    }
+
+    .kmw-checklist li{
+      display:grid;
+      grid-template-columns:18px 1fr;
+      gap:8px;
+      color:#334155;
+      line-height:1.5;
+    }
+
+    .kmw-checklist li::before{
+      content:"✓";
+      width:18px;
+      height:18px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(10,46,92,.10);
+      color:var(--kmw-blue);
+      font-weight:980;
+      font-size:.75rem;
+      margin-top:2px;
+    }
+
+    .kmw-quote-actions{
+      display:grid;
+      gap:10px;
+      padding:0 18px 18px;
+    }
+
+    .kmw-quote-actions .kmw-btn-main,
+    .kmw-quote-actions .kmw-btn-light{
+      width:100%;
+      box-shadow:none;
+      border:1px solid #E5E7EB;
+    }
+
+    .kmw-quote-actions .kmw-btn-main{
+      border-color:rgba(255,214,10,.8);
+    }
+
+    .kmw-phone-note{
+      color:#64748B;
+      text-align:center;
+      font-size:.92rem;
+      line-height:1.45;
+    }
+
+    @media (max-width:950px){
+      .kmw-hero-grid{grid-template-columns:1fr}
+      .kmw-hero-new h1{max-width:18ch}
     }
 
     /* --------------------------
-       TRUSTED BY (mini version inside panel)
-       IMPORTANT: no nested ".container" here (that caused layout weirdness)
+       CREDENTIAL BAR
        -------------------------- */
-    .kmw-trusted-mini{padding:14px;border-top:1px solid #F1F5F9}
-    .kmw-trusted-mini h3{margin:0 0 10px;color:var(--kmw-blue);font-weight:900}
+    .kmw-cred-strip{
+      padding:14px 0;
+      background:#fff;
+      border-bottom:1px solid #E5E7EB;
+    }
 
-    .logo-track{display:flex;overflow:hidden;position:relative;
+    .kmw-cred-row{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .kmw-cred-label{
+      color:var(--kmw-blue);
+      font-weight:980;
+      margin-right:4px;
+    }
+
+    .kmw-cred{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background:#F8FAFC;
+      border:1px solid #E5E7EB;
+      color:#0F172A;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    /* --------------------------
+       SECTION BASICS
+       -------------------------- */
+    .kmw-section{
+      padding:48px 0;
+      background:#fff;
+    }
+
+    .kmw-section.alt{
+      background:#F8FAFC;
+      border-top:1px solid #E5E7EB;
+      border-bottom:1px solid #E5E7EB;
+    }
+
+    .kmw-section-head{
+      display:flex;
+      gap:14px;
+      justify-content:space-between;
+      align-items:flex-end;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+
+    .kmw-section-head h2{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
+      letter-spacing:-.02em;
+      line-height:1.08;
+    }
+
+    .kmw-section-head .sub{
+      margin:8px 0 0;
+      color:#475569;
+      line-height:1.6;
+      max-width:78ch;
+    }
+
+    .kmw-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,214,10,.18);
+      color:#0F172A;
+      border:1px solid rgba(255,214,10,.45);
+      padding:8px 11px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    /* --------------------------
+       WHO WE HELP
+       -------------------------- */
+    .kmw-audience-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+    }
+
+    .kmw-audience-card{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      text-decoration:none;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .kmw-audience-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(2,6,23,.10);
+      border-color:#D7DEE8;
+    }
+
+    .kmw-icon{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(10,46,92,.08);
+      border:1px solid rgba(10,46,92,.12);
+      color:var(--kmw-blue);
+      font-weight:980;
+      margin-bottom:12px;
+    }
+
+    .kmw-audience-card h3{
+      margin:0;
+      color:#0F172A;
+      font-weight:980;
+      line-height:1.18;
+    }
+
+    .kmw-audience-card p{
+      margin:9px 0 0;
+      color:#475569;
+      line-height:1.55;
+    }
+
+    .kmw-audience-card span{
+      display:inline-flex;
+      margin-top:auto;
+      padding-top:12px;
+      color:var(--kmw-blue);
+      font-weight:950;
+    }
+
+    @media (max-width:980px){
+      .kmw-audience-grid{grid-template-columns:repeat(2,1fr)}
+    }
+
+    @media (max-width:560px){
+      .kmw-audience-grid{grid-template-columns:1fr}
+    }
+
+    /* --------------------------
+       SERVICES / INDUSTRIES HUB
+       -------------------------- */
+    .kmw-hub-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    @media (max-width:900px){
+      .kmw-hub-grid{grid-template-columns:1fr}
+    }
+
+    .kmw-hub-card{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+    }
+
+    .kmw-hub-card .card-top{
+      padding:16px;
+      border-bottom:1px solid #F1F5F9;
+      background:linear-gradient(180deg,#fff,#FBFDFF);
+    }
+
+    .kmw-hub-card h3{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
+    }
+
+    .kmw-hub-card p{
+      margin:8px 0 0;
+      color:#475569;
+      line-height:1.55;
+    }
+
+    .kmw-hub-list{
+      display:grid;
+      gap:10px;
+      padding:14px;
+    }
+
+    .kmw-hub-item{
+      border:1px solid #E5E7EB;
+      border-radius:14px;
+      background:#fff;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .kmw-hub-item:hover{
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(2,6,23,.08);
+      border-color:#D7DEE8;
+    }
+
+    .kmw-hub-item a{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:12px;
+    }
+
+    .kmw-hub-item .k{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+
+    .kmw-hub-item strong{color:#0F172A}
+    .kmw-hub-item .mini{
+      margin-top:6px;
+      color:#64748B;
+      font-size:.95rem;
+      line-height:1.45;
+    }
+
+    .kmw-hub-cta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:4px;
+    }
+
+    .kmw-hub-cta a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      font-weight:950;
+      color:var(--kmw-blue);
+      border:1px solid #E5E7EB;
+      background:#fff;
+      padding:10px 12px;
+      border-radius:12px;
+    }
+
+    /* --------------------------
+       PROOF + MAP
+       -------------------------- */
+    .kmw-split{
+      display:grid;
+      grid-template-columns:1.04fr .96fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    @media (max-width:950px){
+      .kmw-split{grid-template-columns:1fr}
+    }
+
+    .kmw-panel{
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      overflow:hidden;
+      display:block;
+    }
+
+    .kmw-panel *{min-width:0}
+
+    .kmw-panel-head{
+      padding:16px;
+      border-bottom:1px solid #F1F5F9;
+      background:linear-gradient(180deg,#fff,#FBFDFF);
+    }
+
+    .kmw-panel h2{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
+      letter-spacing:-.01em;
+    }
+
+    .kmw-panel .sub{
+      margin:8px 0 0;
+      color:#475569;
+      line-height:1.55;
+      max-width:72ch;
+    }
+
+    .kmw-cert-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      padding:14px;
+    }
+
+    .kmw-cert{
+      border:1px solid #E5E7EB;
+      border-radius:14px;
+      padding:12px;
+      background:#fff;
+    }
+
+    .kmw-cert strong{
+      display:block;
+      color:#0F172A;
+      font-weight:980;
+    }
+
+    .kmw-cert span{
+      display:block;
+      margin-top:6px;
+      color:#475569;
+      line-height:1.45;
+      font-size:.94rem;
+    }
+
+    @media (max-width:560px){
+      .kmw-cert-grid{grid-template-columns:1fr}
+    }
+
+    .kmw-assoc-mini{
+      padding:0 14px 14px;
+      display:grid;
+      gap:10px;
+    }
+
+    .kmw-assoc-item{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      border:1px solid #E5E7EB;
+      border-radius:14px;
+      padding:10px;
+      background:#F8FAFC;
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .kmw-assoc-item img{
+      width:54px;
+      height:54px;
+      object-fit:contain;
+      border-radius:10px;
+      background:#fff;
+      padding:4px;
+      border:1px solid #E5E7EB;
+    }
+
+    .kmw-assoc-item strong{
+      display:block;
+      color:#0F172A;
+      font-weight:950;
+    }
+
+    .kmw-assoc-item span{
+      display:block;
+      margin-top:4px;
+      color:#64748B;
+      line-height:1.4;
+      font-size:.92rem;
+    }
+
+    .kmw-trusted-mini{
+      padding:14px;
+      border-top:1px solid #F1F5F9;
+    }
+
+    .kmw-trusted-mini h3{
+      margin:0 0 10px;
+      color:var(--kmw-blue);
+      font-weight:980;
+    }
+
+    .logo-track{
+      display:flex;
+      overflow:hidden;
+      position:relative;
       -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-              mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-    .logo-slide{display:flex;align-items:center;gap:48px;flex:0 0 auto;min-width:100%;
-      animation:kmw-scroll 25s linear infinite}
-    .logo-slide img{height:44px;width:auto;display:block;opacity:1;background:transparent;transition:transform .2s ease}
+              mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+    }
+
+    .logo-slide{
+      display:flex;
+      align-items:center;
+      gap:48px;
+      flex:0 0 auto;
+      min-width:100%;
+      animation:kmw-scroll 25s linear infinite;
+    }
+
+    .logo-slide img{
+      height:44px;
+      width:auto;
+      display:block;
+      opacity:1;
+      background:transparent;
+      transition:transform .2s ease;
+    }
+
     .logo-slide img:hover{transform:translateY(-2px)}
     @keyframes kmw-scroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
     @media (max-width:640px){.logo-slide{gap:28px}.logo-slide img{height:38px}}
 
-    /* --------------------------
-       RIGHT PANEL (map + chips)
-       -------------------------- */
-    .kmw-map{padding:14px}
-    .kmw-map iframe{width:100%;height:380px;border:0;border-radius:16px}
-    .kmw-areas{display:flex;flex-wrap:wrap;gap:10px;padding:0 14px 14px}
+    .kmw-map{
+      padding:14px;
+    }
+
+    .kmw-map iframe{
+      width:100%;
+      height:380px;
+      border:0;
+      border-radius:16px;
+    }
+
+    .kmw-areas-block{
+      padding:0 14px 14px;
+    }
+
+    .kmw-areas-title{
+      margin:0 0 10px;
+      color:#0F172A;
+      font-weight:980;
+      font-size:1rem;
+    }
+
+    .kmw-areas{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
     .kmw-areas a{
-      display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;
-      border:1px solid #E5E7EB;background:#fff;color:#0F172A;text-decoration:none;font-weight:800;font-size:.95rem;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid #E5E7EB;
+      background:#fff;
+      color:#0F172A;
+      text-decoration:none;
+      font-weight:850;
+      font-size:.95rem;
       transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
-    .kmw-areas a:hover{box-shadow:0 8px 18px rgba(2,6,23,.08);transform:translateY(-1px);border-color:#D7DEE8}
+
+    .kmw-areas a:hover{
+      box-shadow:0 8px 18px rgba(2,6,23,.08);
+      transform:translateY(-1px);
+      border-color:#D7DEE8;
+    }
+
+    .kmw-areas a.featured{
+      background:rgba(10,46,92,.06);
+      border-color:rgba(10,46,92,.16);
+      color:var(--kmw-blue);
+      font-weight:950;
+    }
 
     /* --------------------------
-       SECTION HEAD + CARDS
+       FEATURED WORK
        -------------------------- */
-    .kmw-section-head{margin:26px 0 12px}
-    .kmw-section-head h2{margin:0;color:var(--kmw-blue);font-weight:900;letter-spacing:-.01em}
-    .kmw-section-head .sub{margin:8px 0 0;color:#475569;line-height:1.55;max-width:78ch}
+    .kmw-proof-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
 
-    .kmw-cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    @media (max-width:980px){.kmw-cards-4{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:560px){.kmw-cards-4{grid-template-columns:1fr}}
-    .kmw-card{border:1px solid #E5E7EB;border-radius:16px;background:#fff;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
-    .kmw-card h3{margin:0;color:#0F172A;font-weight:900}
-    .kmw-card p{margin:8px 0 0;color:#475569;line-height:1.55}
+    @media (max-width:980px){
+      .kmw-proof-grid{grid-template-columns:1fr}
+    }
 
-    .kmw-proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:980px){.kmw-proof-grid{grid-template-columns:1fr}}
     .kmw-proof-card{
-      display:grid;grid-template-columns:140px 1fr;gap:12px;
-      border:1px solid #E5E7EB;border-radius:16px;background:#fff;padding:12px;
-      text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(0,0,0,.04);
+      display:grid;
+      grid-template-columns:140px 1fr;
+      gap:12px;
+      border:1px solid #E5E7EB;
+      border-radius:16px;
+      background:#fff;
+      padding:12px;
+      text-decoration:none;
+      color:inherit;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
       transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
-    .kmw-proof-card img{width:140px;height:100%;object-fit:cover;border-radius:12px}
-    .kmw-proof-card strong{display:block;color:#0F172A}
-    .kmw-proof-card p{margin:6px 0 8px;color:#475569;line-height:1.45}
-    .kmw-proof-card span{color:var(--kmw-blue);font-weight:900}
-    .kmw-proof-card:hover{box-shadow:0 10px 24px rgba(2,6,23,.10);transform:translateY(-1px);border-color:#D7DEE8}
+
+    .kmw-proof-card img{
+      width:140px;
+      height:100%;
+      min-height:118px;
+      object-fit:cover;
+      border-radius:12px;
+      background:#E5E7EB;
+    }
+
+    .kmw-proof-card strong{
+      display:block;
+      color:#0F172A;
+      font-weight:980;
+    }
+
+    .kmw-proof-card p{
+      margin:6px 0 8px;
+      color:#475569;
+      line-height:1.45;
+    }
+
+    .kmw-proof-card span{
+      color:var(--kmw-blue);
+      font-weight:950;
+    }
+
+    .kmw-proof-card:hover{
+      box-shadow:0 10px 24px rgba(2,6,23,.10);
+      transform:translateY(-1px);
+      border-color:#D7DEE8;
+    }
+
     @media (max-width:560px){
       .kmw-proof-card{grid-template-columns:1fr}
       .kmw-proof-card img{width:100%;height:180px}
     }
 
+    /* --------------------------
+       SEO AUTHORITY BLOCK
+       -------------------------- */
     .kmw-seo-block{
-      margin-top:16px;border:1px solid #E5E7EB;border-radius:18px;
-      background:linear-gradient(180deg,#fff,#FBFDFF);padding:16px
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:linear-gradient(180deg,#fff,#FBFDFF);
+      padding:18px;
+      margin-top:18px;
     }
-    .kmw-seo-block h2{margin:0;color:var(--kmw-blue);font-weight:900}
-    .kmw-seo-block h3{margin:14px 0 6px;color:#0F172A;font-weight:900}
-    .kmw-seo-block p{margin:8px 0 0;color:#475569;line-height:1.65}
-    .kmw-seo-block ul{margin:8px 0 0;padding-left:18px;color:#475569;line-height:1.65}
-    .kmw-seo-block a{text-decoration:none;font-weight:900;color:var(--kmw-blue)}
-    .kmw-seo-block a:hover{text-decoration:underline}
 
-    .kmw-cta{margin:28px 0 8px}
-    .kmw-cta-inner{
-      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-      border-radius:20px;padding:18px;
-      background:linear-gradient(135deg, rgba(10,46,92,.08), rgba(255,214,10,.12));
-      border:1px solid rgba(2,6,23,.08)
+    .kmw-seo-block h2{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
     }
-    .kmw-cta-inner h2{margin:0;color:var(--kmw-blue);font-weight:900}
-    .kmw-cta-inner .sub{margin:8px 0 0;color:#475569;max-width:70ch}
-    .kmw-cta-actions{display:flex;gap:10px;flex-wrap:wrap}
 
-    /* Contact section spacing */
-    .contact-section{padding:52px 0;background:#fff}
-    .contact-section .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .kmw-seo-block h3{
+      margin:16px 0 6px;
+      color:#0F172A;
+      font-weight:950;
+    }
+
+    .kmw-seo-block p{
+      margin:8px 0 0;
+      color:#475569;
+      line-height:1.65;
+    }
+
+    .kmw-seo-block ul{
+      margin:8px 0 0;
+      padding-left:18px;
+      color:#475569;
+      line-height:1.65;
+    }
+
+    .kmw-seo-block a{
+      text-decoration:none;
+      font-weight:950;
+      color:var(--kmw-blue);
+      border-bottom:1px dashed rgba(10,46,92,.38);
+    }
+
+    .kmw-seo-block a:hover{
+      border-bottom-color:var(--kmw-blue);
+    }
 
     /* --------------------------
-       HOME HUB (your existing modern section)
-       kept as-is from your code
+       BLOG
        -------------------------- */
-    .home-hub{padding:56px 0;background:#fff}
-    .home-hub .container{max-width:1100px;margin:0 auto;padding:0 16px}
-    .home-hub .hub-head{display:flex;gap:16px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
-    .home-hub h2{margin:0;color:var(--kmw-blue);font-weight:800}
-    .home-hub .sub{margin:6px 0 0;color:#475569;max-width:70ch}
-    .home-hub .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
-    @media (max-width:900px){.home-hub .hub-grid{grid-template-columns:1fr}}
-    .home-hub .hub-card{border:1px solid #E5E7EB;border-radius:16px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);overflow:hidden}
-    .home-hub .hub-card .card-top{padding:16px 16px 12px;border-bottom:1px solid #F1F5F9;background:linear-gradient(180deg,#fff, #FBFDFF)}
-    .home-hub .hub-card h3{margin:0;color:var(--kmw-blue);font-weight:800}
-    .home-hub .hub-card p{margin:8px 0 0;color:#475569;line-height:1.55}
-    .home-hub .hub-list{display:grid;gap:10px;padding:14px 14px 16px}
-    .home-hub .hub-item{border:1px solid #E5E7EB;border-radius:14px;padding:12px 12px;transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;background:#fff}
-    .home-hub .hub-item:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(2,6,23,.08);border-color:#D7DEE8}
-    .home-hub .hub-item .k{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .home-hub .hub-item strong{color:#0F172A}
-    .home-hub .hub-item .mini{margin-top:6px;color:#64748B;font-size:.95rem;line-height:1.45}
-    .home-hub .hub-item a{display:block;text-decoration:none;color:inherit}
-    .home-hub .hub-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .home-hub .hub-cta a{display:inline-flex;align-items:center;gap:8px}
-    .home-hub .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,214,10,.18);color:#0F172A;border:1px solid rgba(255,214,10,.45);padding:7px 10px;border-radius:999px;font-weight:700;font-size:.92rem}
+    .post-list{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    @media (max-width:980px){
+      .post-list{grid-template-columns:1fr}
+    }
+
+    .post-card{
+      border:1px solid #E5E7EB;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      height:100%;
+    }
+
+    .post-card .thumb{
+      display:block;
+      background:#E5E7EB;
+      aspect-ratio:16 / 9;
+      overflow:hidden;
+    }
+
+    .post-card .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .post-card .info{
+      padding:14px;
+    }
+
+    .post-card .title{
+      margin:0;
+      font-size:1.05rem;
+      line-height:1.25;
+    }
+
+    .post-card .title a{
+      color:#0F172A;
+      text-decoration:none;
+      font-weight:980;
+    }
+
+    .post-card .meta{
+      color:#64748B;
+      margin:8px 0 0;
+      font-size:.92rem;
+    }
+
+    .post-card .excerpt{
+      color:#475569;
+      margin:8px 0 0;
+      line-height:1.5;
+    }
+
+    .post-card .cta a{
+      color:var(--kmw-blue);
+      font-weight:950;
+      text-decoration:none;
+    }
+
+    .more-btn-wrap{
+      margin-top:16px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .more-btn-wrap .btn{
+      display:inline-flex;
+      text-decoration:none;
+      font-weight:950;
+      color:var(--kmw-blue);
+      border:1px solid #E5E7EB;
+      background:#fff;
+      padding:10px 13px;
+      border-radius:12px;
+    }
+
+    /* --------------------------
+       CTA + CONTACT
+       -------------------------- */
+    .kmw-cta-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      border-radius:20px;
+      padding:20px;
+      background:linear-gradient(135deg, rgba(10,46,92,.08), rgba(255,214,10,.14));
+      border:1px solid rgba(2,6,23,.08);
+    }
+
+    .kmw-cta-inner h2{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
+    }
+
+    .kmw-cta-inner .sub{
+      margin:8px 0 0;
+      color:#475569;
+      max-width:72ch;
+      line-height:1.55;
+    }
+
+    .kmw-cta-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .contact-section{
+      padding:52px 0;
+      background:#fff;
+    }
+
+    .contact-section .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 16px;
+    }
+
+    .contact-section h2{
+      margin:0;
+      color:var(--kmw-blue);
+      font-weight:980;
+    }
+
+    .contact-section p{
+      color:#475569;
+      line-height:1.6;
+      max-width:78ch;
+    }
+
+    .kmw-form-hint{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:0 0 14px;
+    }
+
+    .kmw-form-hint span{
+      display:inline-flex;
+      border:1px solid #E5E7EB;
+      background:#F8FAFC;
+      color:#334155;
+      border-radius:999px;
+      padding:7px 10px;
+      font-weight:850;
+      font-size:.92rem;
+    }
+
+    /* --------------------------
+       MOBILE STICKY CTA
+       -------------------------- */
+    .kmw-mobile-sticky{
+      display:none;
+    }
+
+    @media (max-width:760px){
+      body{padding-bottom:74px}
+      .kmw-mobile-sticky{
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:9999;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+        padding:10px;
+        background:rgba(255,255,255,.96);
+        border-top:1px solid #E5E7EB;
+        box-shadow:0 -10px 30px rgba(2,6,23,.12);
+        backdrop-filter:blur(10px);
+      }
+
+      .kmw-mobile-sticky a{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-decoration:none;
+        border-radius:12px;
+        padding:12px 10px;
+        font-weight:980;
+      }
+
+      .kmw-mobile-sticky .call{
+        background:var(--kmw-blue);
+        color:#fff;
+      }
+
+      .kmw-mobile-sticky .quote{
+        background:var(--kmw-yellow);
+        color:#0F172A;
+      }
+    }
+
+    .contact-section h2,
+.contact-section p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section .kmw-form-hint {
+  justify-content: center;
+}
   </style>
+
 </head>
 
 <body>
@@ -311,783 +1195,670 @@
         <strong>Kings Mobile Welding</strong>
       </a>
 
-      <nav class="desktop" aria-label="Primary">
-        <a href="/about">About</a>
-           <a href="/industries">Industries</a>
-        <a href="/services">Services</a>
-     
-        <a href="/past-performance">Past Performance</a>
-        <a href="/procurement">Procurement</a>
-        <a href="/safety-compliance/">Safety &amp; Compliance</a>
-        <a class="btn-primary" href="/contact/">Contact</a>
-      </nav>
 
-      <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <nav class="desktop" aria-label="Primary">
+    <a href="/about">About</a>
+    <a href="/industries">Industries</a>
+    <a href="/services">Services</a>
+    <a href="/past-performance">Past Performance</a>
+    <a href="/procurement">Procurement</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
+    <a class="btn-primary" href="/contact/">Contact</a>
+  </nav>
 
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="/about">About</a>
-              <a href="/industries">Industries</a>
+  <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 
-        <a href="/services">Services</a>
-      <a href="/past-performance">Past Performance</a>
-      <a href="/procurement">Procurement</a>
-      <a href="/safety-compliance/">Safety &amp; Compliance</a>
-      <a class="btn-primary" href="/contact/">Contact</a>
-    </div>
+<div id="mobileMenu" class="mobile-menu" hidden>
+  <a href="/about">About</a>
+  <a href="/industries">Industries</a>
+  <a href="/services">Services</a>
+  <a href="/past-performance">Past Performance</a>
+  <a href="/procurement">Procurement</a>
+  <a href="/safety-compliance/">Safety &amp; Compliance</a>
+  <a class="btn-primary" href="/contact/">Contact</a>
+</div>
+
   </header>
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-slideshow" aria-hidden="true">
-        <img src="/assets/img/hero/billboard-webp.webp" alt="" class="hero-slide hero-slide--active" />
+
+<!-- HERO / LEAD CAPTURE -->
+<section class="kmw-hero-new">
+  <div class="kmw-home-container">
+    <div class="kmw-hero-grid">
+      <div class="kmw-hero-copy">
+        <div class="kmw-kicker">
+          <span>AWS D1.1 Structural</span>
+          <span>AWS D1.5 Bridge</span>
+          <span>VDOT / DOT Support</span>
+          <span>NCDOT Certified</span>
+        </div>
+
+        <h1>AWS Certified Field Welders for Bridge, Structural Steel &amp; Deep Foundation Projects</h1>
+
+        <p class="kmw-hero-lead">
+          Kings Mobile Welding provides <strong>AWS D1.1 and AWS D1.5 certified mobile welding</strong> for bridge contractors, steel erectors, deep foundation contractors, geotechnical contractors, concrete contractors, DOT primes, industrial facilities, and commercial construction teams.
+          We support <strong>bridge welding</strong>, <strong>pile splice welding</strong>, <strong>structural steel repairs</strong>, <strong>field fabrication</strong>, and inspection-driven welding projects across <a href="/areas/virginia-bridge-welding">Virginia</a>, <a href="/areas/maryland-bridge-welding">Maryland</a>, <a href="/areas/dc-bridge-welding">D.C.</a>, <a href="/areas/north-carolina-bridge-welding">North Carolina</a>, <a href="/areas/south-carolina-bridge-welding">South Carolina</a>, and Hampton Roads.
+        </p>
+
+        <div class="kmw-hero-actions">
+          <a class="kmw-btn-main" href="/contact/" onclick="event.stopPropagation();">Send Drawings / Request Quote</a>
+          <a class="kmw-btn-light" href="tel:7572316809">Call 757-231-6809</a>
+          <a class="kmw-btn-outline" href="/services/bridge-welding-remediation/">Bridge Welding Services</a>
+        </div>
+
+        <div class="kmw-proofline">
+          <span>Fully Insured</span>
+          <span>VDOT Prequalified SCO</span>
+          <span>SWaM Certified</span>
+          <span>PDCA Member</span>
+          <span>Inspection-Ready</span>
+        </div>
       </div>
 
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="kicker">AWS D1.1 &amp; D1.5 • FIELD WELDING • STRUCTURAL STEEL • MOBILE FABRICATION</span>
-
-          <h1>AWS D1.1 &amp; D1.5 Certified Mobile Welding &amp; Field Fabrication in Hampton Roads, VA</h1>
-
-          <p class="lead">
-            Kings Mobile Welding provides <strong>inspection-ready structural steel welding</strong>, <strong>on-site welding repairs</strong>, and
-            <strong>field fabrication</strong> for <strong>commercial</strong>, <strong>industrial</strong>, <strong>DOT/heavy civil</strong>,
-            <strong>bridge/transportation</strong>, and <strong>utility</strong> projects across
-            <a href="/areas/newport-news-va">Newport News</a>, <a href="/areas/hampton-va">Hampton</a>,
-            <a href="/areas/norfolk-va">Norfolk</a>, <a href="/areas/virginia-beach-va">Virginia Beach</a>,
-            and the greater <a href="/areas">Hampton Roads region</a>.
+      <aside class="kmw-quote-panel" aria-label="Fast quote panel">
+        <div class="kmw-quote-head">
+          <span class="tag">Fast Contractor Quote Intake</span>
+          <h2>Send the scope. We’ll review the welding requirements.</h2>
+          <p>
+            For the fastest response, send the project location, drawings or photos, required dates, and any AWS D1.1, AWS D1.5, VDOT, NCDOT, DOT, QC, or inspection requirements.
           </p>
-
-          <div class="hero-proofline">
-            <span class="proof">AWS D1.1 &amp; D1.5 Certified</span>
-            <span class="proof">Fully Insured</span>
-            <span class="proof">Rapid Mobilization</span>
-            <span class="proof">Inspection-Ready</span>
-          </div>
-
-          <div class="actions">
-            <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
-            <a class="btn-secondary" href="/services">View Services</a>
-            <a class="btn-secondary" href="/areas">Service Areas</a>
-          </div>
         </div>
 
-        <aside class="hero-panel-compact" aria-label="Tier-2 welding subcontractor panel">
-          <div class="hpc-head">
-            <span class="hpc-tag">Structural / Bridge Welding</span>
-            <h2>Field-Ready Contractor</h2>
-            <p class="hpc-sub">
-              AWS D1.1 &amp; D1.5-certified field welding built for schedule-critical, inspection-driven construction—commercial, DOT, and bridge/transportation scopes.
-            </p>
-          </div>
+        <ul class="kmw-checklist">
+          <li><span>Drawings, splice details, repair details, or photos</span></li>
+          <li><span>Project location, access conditions, and work windows</span></li>
+          <li><span>Pile type, steel thickness, weld detail, or repair scope</span></li>
+          <li><span>Inspection requirements, certifications, or documentation needs</span></li>
+          <li><span>Start date, duration, shift, and manpower needs</span></li>
+        </ul>
 
-          <div class="hpc-metrics">
-            <div><strong>AWS D1.1</strong><span>Certified</span></div>
-            <div><strong>AWS D1.5</strong><span>Certified</span></div>
-            <div><strong>Rapid</strong><span>Mobilization</span></div>
-            <div><strong>Inspection</strong><span>Ready</span></div>
-          </div>
-
-          <div class="hpc-actions">
-            <a class="btn-primary" href="/services/welding-subcontractor/">Subcontractor Services</a>
-            <a class="btn-secondary" href="/services">All Services</a>
-          </div>
-
-          <div class="hpc-links">
-            <a href="/services/structural-steel-welding/">Structural Steel</a>
-            <a href="/services/government-and-dot-welding/">DOT / Gov</a>
-            <a href="/services/emergency-welding/">Emergency</a>
-            <a href="tel:7572316809">Mobile Welder Near Me • (757) 231-6809</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- SERVICES HUB -->
-    <section class="home-hub" aria-labelledby="hub-heading">
-      <div class="container">
-        <div class="hub-head">
-          <div>
-            <h2 id="hub-heading">Structural Steel &amp; Bridge Contractor Support</h2>
-            <p class="sub">
-              Kings Mobile Welding provides <strong>AWS D1.1 &amp; D1.5 certified</strong> structural steel and bridge/transportation field welding support for commercial, industrial, and infrastructure projects.
-              We support general contractors, steel erectors, pile driving crews, and public-sector project teams across <strong>Hampton Roads, Eastern Virginia, and the Mid-Atlantic region</strong>.
-            </p>
-          </div>
-          <div class="pill">Inspection-Ready • Jobsite-Ready • Documentation-Ready</div>
-        </div>
-
-        <div class="hub-grid">
-          <!-- Industries -->
-          <div class="hub-card">
-            <div class="card-top">
-              <h3>Industries &amp; Project Environments</h3>
-              <p>Field welding capacity built for active jobsites, tight schedules, and compliance-driven projects.</p>
-            </div>
-
-            <div class="hub-list">
-              <div class="hub-item">
-                <a href="/industries/DOT-Infrastructure/">
-                  <div class="k"><strong>DOT &amp; Infrastructure Projects</strong><span>→</span></div>
-                  <div class="mini">Pile splicing, beam welding, structural modifications, and certified field welding support for civil and transportation scopes.</div>
-                </a>
-              </div>
-
-              <div class="hub-item">
-  <a href="/industries/steel-fabrication-shops/">
-    <div class="k"><strong>Steel Fabrication &amp; AISC Shops</strong><span>→</span></div>
-    <div class="mini">
-      AWS D1.1 certified fabrication shop welders providing dual shield flux core welding, CJP welds, and production manpower for structural steel shops handling backlog and tight deadlines.
-    </div>
-  </a>
-</div>
-
-              <div class="hub-item">
-                <a href="/industries/Solar-Utility/">
-                  <div class="k"><strong>Solar Energy &amp; Utility Projects</strong><span>→</span></div>
-                  <div class="mini">Pile welding, structural steel welding, and field modifications supporting utility-scale solar farms and commercial installations.</div>
-                </a>
-              </div>
-              
-              <!-- <div class="hub-item">
-  <a href="/industries/heavy-transport-railcar-securement/">
-    <div class="k"><strong>Heavy Lift &amp; Port Operations</strong><span>→</span></div>
-    <div class="mini">Field welding support for crane companies, heavy haul transport, transformer railcar securement, and port-based load-out operations requiring structural restraint systems and rapid mobilization.</div>
-  </a>
-</div> -->
-
-              <div class="hub-item">
-                <a href="/industries/Signage-Structural-Systems/">
-                  <div class="k"><strong>Signage &amp; Structural Systems</strong><span>→</span></div>
-                  <div class="mini">Structural welding for billboard structures, sign frames, and steel support systems for commercial and municipal signage.</div>
-                </a>
-              </div>
-
-             <div class="hub-item">
-  <a href="/industries/marine-construction/">
-    <div class="k"><strong>Marine Construction</strong><span>→</span></div>
-    <div class="mini">On-site welding for cofferdams, sheet pile systems, bulkheads, and waterfront structural steel across Hampton Roads.</div>
-  </a>
-</div>
-
-              <div class="hub-item">
-                <a href="/industries/Commercial-Industrial/">
-                  <div class="k"><strong>Commercial &amp; Industrial Construction</strong><span>→</span></div>
-                  <div class="mini">Structural steel welding and field modifications supporting commercial buildings, industrial facilities, and heavy civil projects.</div>
-                </a>
-              </div>
-
-              <div class="hub-item">
-                <a href="/industries/Retail-Build-Out-Companies">
-                  <div class="k"><strong>Retail Construction &amp; Tenant Improvements</strong><span>→</span></div>
-                  <div class="mini">Structural modifications, RTU curb welding, and steel framing support for retail build-outs and tenant improvement scopes.</div>
-                </a>
-              </div>
-
-              <div class="hub-cta">
-                <a class="btn-secondary" href="/industries">View all industries</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Services -->
-          <div class="hub-card">
-            <div class="card-top">
-              <h3>Structural Welding &amp; Field Services</h3>
-              <p>Capabilities designed to integrate into complex construction workflows and deliver inspection-ready results.</p>
-            </div>
-
-            <div class="hub-list">
-              <div class="hub-item">
-                <a href="/services/mobile-welding-services/">
-                  <div class="k"><strong>Mobile Welding Services</strong><span>→</span></div>
-                  <div class="mini">Certified mobile welding for structural steel, bridge/transportation scopes, equipment repair, and on-site fabrication in active jobsite environments.</div>
-                </a>
-              </div>
-
-              <div class="hub-item">
-                <a href="/services/structural-steel-welding/">
-                  <div class="k"><strong>AWS Certified Structural Steel Welding (AWS D1.1)</strong><span>→</span></div>
-                  <div class="mini">Beam splicing, joist reinforcement, structural modifications, and field welding performed to AWS D1.1, AWS D1.5 (when specified), and project requirements.</div>
-                </a>
-              </div>
-<div class="hub-item">
-  <a href="/services/bridge-welding-remediation/">
-    <div class="k"><strong>AWS Certified Bridge Welding (AWS D1.5)</strong><span>→</span></div>
-    <div class="mini">AWS D1.5-certified field welding for bridge repair, structural remediation, pile splicing, reinforcement, and inspection-driven infrastructure projects.</div>
-  </a>
-</div>
-<div class="hub-item">
-  <a href="/services/aisc-fabrication-shop-welding-support/">
-    <div class="k"><strong>AISC Fabrication Shop Welding & Fabrication Support (AWS D1.1 FCAW)</strong><span>→</span></div>
-    <div class="mini">
-      AWS D1.1 certified FCAW welders for structural steel fabrication shops—dual shield flux core (75/25 &amp; 100% CO₂), CJP welds with carbon arc gouging, and production-ready manpower for backlog, deadlines, and shop welding.
-    </div>
-  </a>
-</div>
-
-<!-- <div class="hub-item">
-  <a href="/services/bridge-expansion-joint-welding/">
-    <div class="k"><strong>Bridge Expansion Joint Welding</strong><span>→</span></div>
-    <div class="mini">On-site welding for elastomeric expansion dams, steel edge rails, and armor angles supporting bridge joint repair, replacement, and superstructure maintenance.</div>
-  </a>
-</div> -->
-
-
-<!-- <div class="hub-item">
-  <a href="/services/railcar-securement-welding/">
-    <div class="k"><strong>Railcar &amp; Heavy Equipment Securement Welding</strong><span>→</span></div>
-    <div class="mini">On-site securement welding for transformer transport, depressed center railcars, port load-outs, and heavy lift operations requiring AAR-compliant structural restraint systems.</div>
-  </a>
-</div> -->
-              <div class="hub-item">
-                <a href="/services/industrial-welding/">
-                  <div class="k"><strong>Industrial Welding</strong><span>→</span></div>
-                  <div class="mini">Heavy-duty welding and fabrication for industrial facilities, equipment, and infrastructure systems.</div>
-                </a>
-              </div>
-
-              <div class="hub-item">
-                <a href="/services/commercial-welding/">
-                  <div class="k"><strong>Commercial Welding</strong><span>→</span></div>
-                  <div class="mini">Structural welding support for commercial construction, retail build-outs, and facility upgrades.</div>
-                </a>
-              </div>
-
-<!-- <div class="hub-item">
-  <a href="/services/cofferdam-welding/">
-    <div class="k"><strong>Cofferdam Welding</strong><span>→</span></div>
-    <div class="mini">On-site welding for cofferdam bracing systems including walers, struts, structural steel tie-ins, and field modifications for marine and bridge construction.</div>
-  </a>
-</div>
-
-<div class="hub-item">
-  <a href="/services/sheet-pile-welding/">
-    <div class="k"><strong>Sheet Pile Welding &amp; Repair</strong><span>→</span></div>
-    <div class="mini">Field welding for sheet pile systems, bulkheads, and cofferdams including modifications, reinforcement, welded attachments, and waterfront structural repairs.</div>
-  </a>
-</div> -->
-
-              <!-- <div class="hub-item">
-                <a href="/services/emergency-welding/">
-                  <div class="k"><strong>Emergency Welding</strong><span>→</span></div>
-                  <div class="mini">Rapid-response field welding for critical structural repairs and urgent jobsite requirements.</div>
-                </a>
-              </div> -->
-
-              <!-- <div class="hub-item">
-                <a href="/services/welding-subcontractor/">
-                  <div class="k"><strong>Welding Subcontractor Services</strong><span>→</span></div>
-                  <div class="mini">Field welding support for general contractors, steel erectors, and bridge/transportation teams requiring certified welding capacity.</div>
-                </a>
-              </div> -->
-
-              <!-- <div class="hub-item">
-                <a href="/services/government-and-dot-welding/">
-                  <div class="k"><strong>Government &amp; DOT Welding</strong><span>→</span></div>
-                  <div class="mini">Certified welding services for government, municipal, DOT, and bridge-related infrastructure projects requiring compliance-driven execution.</div>
-                </a>
-              </div> -->
-
-              <div class="hub-cta">
-                <a class="btn-secondary" href="/services">View all services</a>
-              </div>
-            </div>
+        <div class="kmw-quote-actions">
+          <a class="kmw-btn-main" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+          <a class="kmw-btn-light" href="/procurement">Procurement Info</a>
+          <div class="kmw-phone-note">
+            Urgent jobsite repair or night work? Call <a href="tel:7572316809"><strong>757-231-6809</strong></a>.
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- AFTER SERVICES: PROOF + MAP -->
-    <section class="kmw-after-services" aria-label="Customer proof and service coverage">
-      <div class="container">
-
-        <div class="kmw-split">
-          <!-- LEFT: Reviews + Trusted By -->
-          <div class="kmw-panel">
-            <div class="kmw-panel-head">
-              <h2>Trusted Mobile Welding in Hampton Roads</h2>
-              <p class="sub">
-                Contractors choose Kings Mobile Welding for <strong>AWS D1.1 &amp; D1.5 certified field welding</strong>, fast mobilization,
-                and <strong>inspection-ready results</strong> across Newport News, Norfolk, Virginia Beach, Hampton, Chesapeake, and Suffolk.
-              </p>
-            </div>
-
-           <div class="kmw-associations" id="associations">
-  <div class="assoc-head">
-    <h3>Associations & Certifications</h3>
-    <p>Committed to industry standards, safety, and professional excellence.</p>
-  </div>
-
-  <div class="assoc-grid">
-
-    <!-- AWS Badge --><a href="https://www.aws.org/" target="_blank" rel="noopener noreferrer">
-
-    <article class="assoc-card">
-      <img class="assoc-logo" src="/assets/img/associations/aws-logo-webp.webp" alt="American Welding Society (AWS) logo">
-      <div class="assoc-body">
-        <h4>AWS Member</h4>
-        <p>Member of the American Welding Society, supporting certified welding practices and industry standards.</p>
-      </div>
-    </article>
-</a>
-<a href="https://directory.sbsd.virginia.gov/#/directory"
-
-    <article class="assoc-card">
-  <img class="assoc-logo" src="/assets/img/associations/swam-logo-webp.webp" alt="Virginia SWaM Certified logo">
-  <div class="assoc-body">
-    <h4>Virginia SWaM Certified (#838033)</h4>
-    <p>Certified SWaM subcontractor supporting prime contractors with participation requirements on VDOT and state-funded infrastructure projects.</p>
-  </div>
-</article>
-</a>
-
-<a href="https://www.piledrivers.org/"
-   target="_blank"
-   rel="noopener noreferrer">
-
-  <article class="assoc-card">
-    <img class="assoc-logo"
-         src="/assets/img/associations/pdca-website-png.png"
-         alt="Pile Driving Contractors Association (PDCA) logo">
-
-    <div class="assoc-body">
-      <h4>PDCA Member</h4>
-      <p>Member of the Pile Driving Contractors Association, supporting deep foundation, pile driving, bridge, marine, and infrastructure welding work.</p>
+      </aside>
     </div>
-  </article>
-
-</a>
-
-
-<a href="https://www.vdot.virginia.gov/doing-business/business-opportunities/highway-contractors/"
-<article class="assoc-card">
-  <img class="assoc-logo" src="/assets/img/associations/vdot-logo-webp.webp" alt="Virginia Department of Transportation (VDOT) logo">
-  <div class="assoc-body">
-    <h4>VDOT Prequalified Subcontractor Only (SCO) — Vendor #K2020</h4>
-    <p>Prequalified with the Virginia Department of Transportation at the Subcontractor Only (SCO) level.</p>
   </div>
-</article>
-</a>
- <article class="assoc-card">
+</section>
 
-  <a href="https://business.virginiapeninsulachamber.com/list/member/kings-mobile-welding-llc-30224"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="assoc-link">
+<!-- CREDENTIAL BAR -->
+<section class="kmw-cred-strip" aria-label="Credentials and certifications">
+  <div class="kmw-home-container">
+    <div class="kmw-cred-row">
+      <span class="kmw-cred-label">Credentials:</span>
+      <span class="kmw-cred">AWS D1.1</span>
+      <span class="kmw-cred">AWS D1.5</span>
+      <span class="kmw-cred">NCDOT Bridge Certified</span>
+      <span class="kmw-cred">VDOT Prequalified SCO</span>
+      <span class="kmw-cred">SWaM Certified #838033</span>
+      <span class="kmw-cred">PDCA Member</span>
+      <span class="kmw-cred">Fully Insured</span>
+    </div>
+  </div>
+</section>
 
-    <div class="assoc-logo">
-
-      <!-- Your uploaded logo (ALWAYS visible) -->
-      <img
-        src="/assets/img/associations/logo-horizontal-(CROPPED).png"
-        alt="Virginia Peninsula Chamber logo"
-        class="vpcc-static-logo"
-      >
-
-      <!-- Chamber widget (hidden if empty / no logo) -->
-      <div id="mni-membership-639102016590336171" class="vpcc-widget"></div>
-
+<!-- WHO WE HELP -->
+<section class="kmw-section alt" aria-labelledby="who-we-help">
+  <div class="kmw-home-container">
+    <div class="kmw-section-head">
+      <div>
+        <h2 id="who-we-help">Who We Help</h2>
+        <p class="sub">
+          We are not just a general mobile welding service. Kings Mobile Welding is built for contractors and project teams that need qualified field welders who understand schedule, access, inspection, and documentation.
+        </p>
+      </div>
+      <span class="kmw-pill">Bridge • Structural • Foundation • Industrial</span>
     </div>
 
-    <div class="assoc-body">
-      <h4>Virginia Peninsula Chamber</h4>
-      <p>Active member supporting local business growth and regional development.</p>
+    <div class="kmw-audience-grid">
+      <a class="kmw-audience-card" href="/services/bridge-welding-remediation/">
+        <div class="kmw-icon">B</div>
+        <h3>Bridge Contractors</h3>
+        <p>AWS D1.5 welders for bridge repairs, expansion joints, reinforcement plates, structural remediation, and DOT infrastructure scopes.</p>
+        <span>Bridge welding support →</span>
+      </a>
+
+      <a class="kmw-audience-card" href="/pile-splice-welding-contractor/">
+        <div class="kmw-icon">P</div>
+        <h3>Deep Foundation Contractors</h3>
+        <p>H-pile splices, pipe pile splices, permanent shaft casing welding, foundation steel, and field fit-up support.</p>
+        <span>Pile splice welding →</span>
+      </a>
+
+      <a class="kmw-audience-card" href="/industries/steel-fabrication-shops/">
+        <div class="kmw-icon">F</div>
+        <h3>Steel Fabricators &amp; AISC Shops</h3>
+        <p>AWS D1.1 FCAW support, dual-shield production welding, CJP prep, carbon arc gouging, and backlog manpower.</p>
+        <span>Shop welding support →</span>
+      </a>
+
+      <a class="kmw-audience-card" href="/services/structural-steel-welding/">
+        <div class="kmw-icon">S</div>
+        <h3>Commercial &amp; Industrial Contractors</h3>
+        <p>Structural steel welding, equipment repairs, field modifications, facility repairs, stairs, rails, brackets, and supports.</p>
+        <span>Structural welding →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES / INDUSTRIES HUB -->
+<section class="kmw-section" aria-labelledby="hub-heading">
+  <div class="kmw-home-container">
+    <div class="kmw-section-head">
+      <div>
+        <h2 id="hub-heading">Structural Steel, Bridge &amp; Infrastructure Welding Services</h2>
+        <p class="sub">
+          Field welding capacity for active jobsites, tight schedules, inspection-driven projects, and contractor workflows across Hampton Roads, Eastern Virginia, the Mid-Atlantic, and select out-of-state projects.
+        </p>
+      </div>
+      <span class="kmw-pill">Inspection-Ready • Jobsite-Ready • Documentation-Ready</span>
     </div>
 
-  </a>
-
-</article>
-
-<script src="https://vpcc.chambermaster.com/Content/Script/Member.js"></script>
-
-<script>
-window.addEventListener("load", function () {
-  if (window.MNI && MNI.Widgets && MNI.Widgets.Member) {
-    new MNI.Widgets.Member("mni-membership-639102016590336171", {
-      member: 30224
-    }).create();
-  }
-});
-</script>
-
-<style>
-.assoc-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-}
-
-.assoc-logo {
-  position: relative;
-  min-width: 120px;
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Your logo (main visible one) */
-.vpcc-static-logo {
-  max-height: 70px;
-  width: auto;
-  display: block;
-}
-
-/* Widget (hidden unless it actually outputs something useful) */
-.vpcc-widget {
-  display: none;
-}
-
-.assoc-link:hover {
-  opacity: 0.9;
-}
-</style>
-
-    <!-- FUTURE: VTCA -->
-    <!--
-    <article class="assoc-card">
-      <img class="assoc-logo" src="/assets/img/associations/vtca-logo.png" alt="Virginia Transportation Construction Alliance logo">
-      <div class="assoc-body">
-        <h4>VTCA Member</h4>
-        <p>Connected with Virginia’s transportation and heavy civil construction industry.</p>
-      </div>
-    </article>
-    -->
-
-  </div>
-</div>
-
-            <div class="kmw-trusted-mini" aria-label="Trusted by">
-              <h3>Trusted By</h3>
-              <div class="logo-track">
-                <div class="logo-slide">
-                  <img src="/assets/img/logos/AWRinc.png" alt="AWR Inc" loading="lazy">
-                  <img src="/assets/img/logos/Brencosolutions.png" alt="Brenco Solutions" loading="lazy">
-                  <img src="/assets/img/logos/KPILogo.png" alt="KPI Solutions" loading="lazy">
-                  <img src="/assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina" loading="lazy">
-                  <img src="/assets/img/logos/socom.jpg" alt="SOCOM" loading="lazy">
-                  <img src="/assets/img/logos/thd-logo.jpg" alt="The Home Depot" loading="lazy">
-                  <img src="/assets/img/logos/lowes-logo.png" alt="Lowe's" loading="lazy">
-                  <img src="/assets/img/logos/doc-services-logo.png" alt="DOC Services" loading="lazy">
-                  <img src="/assets/img/logos/vdot.gif" alt="VDOT" loading="lazy">
-                  <img src="/assets/img/logos/CNU.png" alt="CNU" loading="lazy">
-                </div>
-                <div class="logo-slide">
-                  <img src="/assets/img/logos/AWRinc.png" alt="AWR Inc" loading="lazy">
-                  <img src="/assets/img/logos/Brencosolutions.png" alt="Brenco Solutions" loading="lazy">
-                  <img src="/assets/img/logos/KPILogo.png" alt="KPI Solutions" loading="lazy">
-                  <img src="/assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina" loading="lazy">
-                  <img src="/assets/img/logos/socom.jpg" alt="SOCOM" loading="lazy">
-                  <img src="/assets/img/logos/thd-logo.jpg" alt="The Home Depot" loading="lazy">
-                  <img src="/assets/img/logos/lowes-logo.png" alt="Lowe's" loading="lazy">
-                  <img src="/assets/img/logos/doc-services-logo.png" alt="DOC Services" loading="lazy">
-                  <img src="/assets/img/logos/vdot.gif" alt="VDOT" loading="lazy">
-                  <img src="/assets/img/logos/CNU.png" alt="CNU" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: Map + service areas -->
-          <div class="kmw-panel">
-            <div class="kmw-panel-head">
-              <h2>Service Area</h2>
-              <p class="sub">
-                On-site mobile welding across Hampton Roads. Need a <strong>mobile welder near me</strong>?
-                Call <a href="tel:7572316809">(757) 231-6809</a> for availability.
-              </p>
-            </div>
-
-            <div class="kmw-map">
-              <iframe
-                title="Kings Mobile Welding service area map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d814899.1644467923!2d-76.69933505!3d37.076546500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a61b8101e5b20cd%3A0x38f0245d6f772bfe!2sKings%20Mobile%20Welding%2C%20LLC!5e0!3m2!1sen!2sus!4v1766667526031!5m2!1sen!2sus"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen>
-              </iframe>
-            </div>
-
-            <div class="kmw-areas">
-              <a href="/areas/newport-news-va">Newport News</a>
-              <a href="/areas/hampton-va">Hampton</a>
-              <a href="/areas/norfolk-va">Norfolk</a>
-              <a href="/areas/virginia-beach-va">Virginia Beach</a>
-              <a href="/areas/chesapeake-va">Chesapeake</a>
-              <a href="/areas/suffolk-va">Suffolk</a>
-              <a href="/areas">View all areas →</a>
-            </div>
-          </div>
+    <div class="kmw-hub-grid">
+      <!-- Services -->
+      <div class="kmw-hub-card">
+        <div class="card-top">
+          <h3>High-Value Welding Services</h3>
+          <p>Capabilities designed to integrate into complex construction workflows and deliver clean, inspection-ready results.</p>
         </div>
 
-        <!-- Why Choose Us -->
-        <section class="kmw-why" aria-label="Why contractors choose Kings Mobile Welding">
-          <div class="kmw-section-head">
-            <h2>Why Contractors Choose Kings Mobile Welding</h2>
-            <p class="sub">
-              Certified field welding support built for schedule-critical projects: structural steel, repairs, and on-site fabrication that’s ready for inspection.
-            </p>
-          </div>
-
-          <div class="kmw-cards-4">
-            <article class="kmw-card">
-              <h3>AWS D1.1 &amp; D1.5 Certified</h3>
-              <p>Structural and bridge welding performed to AWS D1.1 and AWS D1.5 (as specified) and project requirements—documentation-ready for procurement and QA/QC.</p>
-            </article>
-            <article class="kmw-card">
-              <h3>Rapid Mobilization</h3>
-              <p>Mobile rig equipped for field fit-up, structural repairs, and fabrication so your project keeps moving.</p>
-            </article>
-            <article class="kmw-card">
-              <h3>Inspection-Ready Results</h3>
-              <p>Clean prep, controlled procedures, and strong welds that pass inspection the first time.</p>
-            </article>
-            <article class="kmw-card">
-              <h3>Built for Jobsite Workflows</h3>
-              <p>Coordination with GCs, steel erectors, and site supers—safe, professional, and on schedule.</p>
-            </article>
-          </div>
-        </section>
-
-        <!-- Featured Work -->
-        <section class="kmw-proof" aria-label="Featured welding work">
-          <div class="kmw-section-head">
-            <h2>Featured Work</h2>
-            <p class="sub">A few recent projects—structural welding, repairs, and field fabrication across Hampton Roads and beyond.</p>
-          </div>
-
-          <div class="kmw-proof-grid">
-            <a class="kmw-proof-card" href="/past-performance">
-              <img src="/assets/img/past/slide1.jpg" alt="Structural welding project" loading="lazy">
-              <div>
-                <strong>Structural Welding &amp; Field Fit-Up</strong>
-                <p>Inspection-ready welds on active sites with contractor coordination.</p>
-                <span>View past performance →</span>
-              </div>
-            </a>
-
-            <a class="kmw-proof-card" href="/past-performance">
-              <img src="/assets/img/past/industrial-welding-chute.jpg" alt="Mobile welding repair" loading="lazy">
-              <div>
-                <strong>Industrial Repairs &amp; Reinforcement</strong>
-                <p>Fast response repairs to keep operations moving.</p>
-                <span>See more projects →</span>
-              </div>
-            </a>
-
-            <a class="kmw-proof-card" href="/past-performance">
-              <img src="/assets/img/past/field-fabrication.jpg" alt="Field fabrication" loading="lazy">
-              <div>
-                <strong>On-Site Fabrication</strong>
-                <p>Cut, fit, tack, and finish—mobile fabrication where you need it.</p>
-                <span>Browse results →</span>
-              </div>
+        <div class="kmw-hub-list">
+          <div class="kmw-hub-item">
+            <a href="/services/bridge-welding-remediation/">
+              <div class="k"><strong>AWS Certified Bridge Welding (AWS D1.5)</strong><span>→</span></div>
+              <div class="mini">Bridge repairs, expansion joints, structural remediation, reinforcement, pile splicing, and DOT infrastructure welding support.</div>
             </a>
           </div>
-        </section>
 
-        <!-- Blog -->
-        <section class="kmw-blog" aria-label="Recent welding articles">
-          <div class="kmw-section-head">
-            <h2>Recent Blog Posts</h2>
-            <p class="sub">
-              Helpful info for contractors and facility teams—mobile welding, structural steel, emergency repairs, and DOT/bridge project support across Hampton Roads, VA.
-            </p>
+          <div class="kmw-hub-item">
+            <a href="/pile-splice-welding-contractor/">
+              <div class="k"><strong>Pile Splice Welding Contractor</strong><span>→</span></div>
+              <div class="mini">H-pile splices, pipe pile splices, permanent shaft casing, foundation steel, and deep foundation welding support.</div>
+            </a>
           </div>
 
-          <ul id="recent-posts" class="post-list"></ul>
-
-          <div class="more-btn-wrap">
-            <a class="btn" href="/blog/">Read all posts</a>
+          <div class="kmw-hub-item">
+            <a href="/services/structural-steel-welding/">
+              <div class="k"><strong>AWS Certified Structural Steel Welding (AWS D1.1)</strong><span>→</span></div>
+              <div class="mini">Beam splicing, joist reinforcement, connection repairs, structural modifications, and field-installed steel.</div>
+            </a>
           </div>
 
-          <!-- SEO Authority Block -->
-          <div class="kmw-seo-block" aria-label="Mobile welding SEO content">
-            <h2>Mobile Welding Services in Hampton Roads, VA</h2>
-            <p>
-              Kings Mobile Welding provides <strong>mobile welding</strong> and <strong>field fabrication</strong> for commercial and industrial job sites throughout
-              Hampton Roads. If you’re searching for a <strong>mobile welder near me</strong>, our team supports <strong>structural steel welding</strong>,
-              <strong>bridge/transportation welding support (AWS D1.5)</strong>, <strong>industrial mobile welding</strong>, <strong>commercial welding</strong>,
-              and <strong>emergency welding repairs</strong> with inspection-ready results.
-            </p>
-
-            <h3>Industries We Serve</h3>
-            <ul>
-              <li>Commercial construction &amp; tenant improvements</li>
-              <li>Industrial facilities &amp; maintenance teams</li>
-              <li>Government contractors, municipalities &amp; DOT projects</li>
-              <li>Bridge/transportation contractors and infrastructure scopes</li>
-              <li>Utilities, solar installers &amp; infrastructure scopes</li>
-              <li>Waste management and heavy equipment repair</li>
-            </ul>
-
-            <h3>Areas We Serve</h3>
-            <p>
-              We serve <a href="/areas/newport-news-va">Newport News</a>, <a href="/areas/hampton-va">Hampton</a>, <a href="/areas/norfolk-va">Norfolk</a>,
-              <a href="/areas/virginia-beach-va">Virginia Beach</a>, <a href="/areas/chesapeake-va">Chesapeake</a>, <a href="/areas/suffolk-va">Suffolk</a>,
-              and the greater <a href="/areas">Hampton Roads region</a>.
-            </p>
+          <div class="kmw-hub-item">
+            <a href="/services/aisc-fabrication-shop-welding-support/">
+              <div class="k"><strong>AISC Fabrication Shop Welding Support</strong><span>→</span></div>
+              <div class="mini">AWS D1.1 certified FCAW welders for structural steel fabrication shops handling backlog, deadlines, and production manpower needs.</div>
+            </a>
           </div>
-        </section>
 
-        <!-- CTA -->
-        <section class="kmw-cta" aria-label="Request a quote CTA">
-          <div class="kmw-cta-inner">
+          <div class="kmw-hub-item">
+            <a href="/services/government-and-dot-welding/">
+              <div class="k"><strong>Government &amp; DOT Welding</strong><span>→</span></div>
+              <div class="mini">Certified welding services for government, municipal, DOT, bridge, and public infrastructure projects.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/services/mobile-welding-services/">
+              <div class="k"><strong>Mobile Welding Services</strong><span>→</span></div>
+              <div class="mini">Certified mobile welding for structural steel, repairs, equipment, commercial work, and on-site fabrication.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-cta">
+            <a href="/services">View all services →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries -->
+      <div class="kmw-hub-card">
+        <div class="card-top">
+          <h3>Industries &amp; Project Environments</h3>
+          <p>Welding support built for active construction sites, heavy civil schedules, and compliance-driven projects.</p>
+        </div>
+
+        <div class="kmw-hub-list">
+          <div class="kmw-hub-item">
+            <a href="/industries/DOT-Infrastructure/">
+              <div class="k"><strong>DOT &amp; Infrastructure Projects</strong><span>→</span></div>
+              <div class="mini">Bridge welding, pile splicing, structural modifications, and certified field welding support for civil and transportation scopes.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/industries/marine-construction/">
+              <div class="k"><strong>Marine Construction</strong><span>→</span></div>
+              <div class="mini">On-site welding for cofferdams, sheet pile systems, bulkheads, waterfront steel, bridge access, and marine infrastructure.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/industries/steel-fabrication-shops/">
+              <div class="k"><strong>Steel Fabrication &amp; AISC Shops</strong><span>→</span></div>
+              <div class="mini">Production welding manpower for structural shops, dual-shield FCAW, CJP welds, and carbon arc gouging support.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/industries/Commercial-Industrial/">
+              <div class="k"><strong>Commercial &amp; Industrial Construction</strong><span>→</span></div>
+              <div class="mini">Structural steel welding and field modifications supporting commercial buildings, industrial facilities, and heavy civil projects.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/industries/Solar-Utility/">
+              <div class="k"><strong>Solar Energy &amp; Utility Projects</strong><span>→</span></div>
+              <div class="mini">Pile welding, structural steel welding, and field modifications supporting utility-scale solar farms and commercial installations.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-item">
+            <a href="/industries/Signage-Structural-Systems/">
+              <div class="k"><strong>Signage &amp; Structural Systems</strong><span>→</span></div>
+              <div class="mini">Structural welding for billboard structures, sign frames, and steel support systems for commercial and municipal signage.</div>
+            </a>
+          </div>
+
+          <div class="kmw-hub-cta">
+            <a href="/industries">View all industries →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF + MAP / SERVICE AREAS -->
+<section class="kmw-section alt" aria-label="Proof, certifications, and service coverage">
+  <div class="kmw-home-container">
+    <div class="kmw-split">
+      <!-- LEFT: Proof -->
+      <div class="kmw-panel">
+        <div class="kmw-panel-head">
+          <h2>Credentialed for Contractor Work</h2>
+          <p class="sub">
+            Contractors hire Kings Mobile Welding because we bring more than a welding rig. We bring certified capability, documentation readiness, and jobsite experience for structural, bridge, DOT, deep foundation, industrial, and infrastructure work.
+          </p>
+        </div>
+
+        <div class="kmw-cert-grid">
+          <div class="kmw-cert">
+            <strong>AWS D1.1 Certified</strong>
+            <span>Structural steel welding for beams, joists, reinforcement, connections, and field-installed steel.</span>
+          </div>
+          <div class="kmw-cert">
+            <strong>AWS D1.5 Certified</strong>
+            <span>Bridge welding support for inspection-driven DOT and infrastructure projects.</span>
+          </div>
+          <div class="kmw-cert">
+            <strong>NCDOT Bridge Certified</strong>
+            <span>Certified welders available for North Carolina bridge and transportation projects.</span>
+          </div>
+          <div class="kmw-cert">
+            <strong>VDOT Prequalified SCO</strong>
+            <span>VDOT prequalified at the subcontractor-only level for Virginia infrastructure support.</span>
+          </div>
+        </div>
+
+        <div class="kmw-assoc-mini">
+          <a class="kmw-assoc-item" href="https://www.aws.org/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/associations/aws-logo-webp.webp" alt="American Welding Society logo">
             <div>
-              <h2>Need an AWS Certified Mobile Welder On-Site?</h2>
-              <p class="sub">
-                Send your scope and timeline—we’ll respond quickly. For urgent repairs, call now for availability.
-              </p>
+              <strong>AWS Member</strong>
+              <span>Committed to welding standards, certification, and professional field execution.</span>
             </div>
-            <div class="kmw-cta-actions">
-              <a class="btn-primary" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
-              <a class="btn-secondary" href="tel:7572316809">Call (757) 231-6809</a>
+          </a>
+
+          <a class="kmw-assoc-item" href="https://www.piledrivers.org/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/associations/pdca-website-png.png" alt="Pile Driving Contractors Association logo">
+            <div>
+              <strong>PDCA Member</strong>
+              <span>Supporting deep foundation, pile driving, bridge, marine, and infrastructure work.</span>
+            </div>
+          </a>
+
+          <a class="kmw-assoc-item" href="https://www.vdot.virginia.gov/doing-business/business-opportunities/highway-contractors/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/associations/vdot-logo-webp.webp" alt="VDOT logo">
+            <div>
+              <strong>VDOT Prequalified Subcontractor Only — Vendor #K2020</strong>
+              <span>Prequalified with the Virginia Department of Transportation at the SCO level.</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="kmw-trusted-mini" aria-label="Trusted by">
+          <h3>Trusted By</h3>
+          <div class="logo-track">
+            <div class="logo-slide">
+              <img src="/assets/img/logos/AWRinc.png" alt="AWR Inc" loading="lazy">
+              <img src="/assets/img/logos/Brencosolutions.png" alt="Brenco Solutions" loading="lazy">
+              <img src="/assets/img/logos/KPILogo.png" alt="KPI Solutions" loading="lazy">
+              <img src="/assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina" loading="lazy">
+              <img src="/assets/img/logos/socom.jpg" alt="SOCOM" loading="lazy">
+              <img src="/assets/img/logos/thd-logo.jpg" alt="The Home Depot" loading="lazy">
+              <img src="/assets/img/logos/lowes-logo.png" alt="Lowe's" loading="lazy">
+              <img src="/assets/img/logos/doc-services-logo.png" alt="DOC Services" loading="lazy">
+              <img src="/assets/img/logos/vdot.gif" alt="VDOT" loading="lazy">
+              <img src="/assets/img/logos/CNU.png" alt="CNU" loading="lazy">
+            </div>
+            <div class="logo-slide">
+              <img src="/assets/img/logos/AWRinc.png" alt="AWR Inc" loading="lazy">
+              <img src="/assets/img/logos/Brencosolutions.png" alt="Brenco Solutions" loading="lazy">
+              <img src="/assets/img/logos/KPILogo.png" alt="KPI Solutions" loading="lazy">
+              <img src="/assets/img/logos/Nestle_purina_logo.png" alt="Nestle Purina" loading="lazy">
+              <img src="/assets/img/logos/socom.jpg" alt="SOCOM" loading="lazy">
+              <img src="/assets/img/logos/thd-logo.jpg" alt="The Home Depot" loading="lazy">
+              <img src="/assets/img/logos/lowes-logo.png" alt="Lowe's" loading="lazy">
+              <img src="/assets/img/logos/doc-services-logo.png" alt="DOC Services" loading="lazy">
+              <img src="/assets/img/logos/vdot.gif" alt="VDOT" loading="lazy">
+              <img src="/assets/img/logos/CNU.png" alt="CNU" loading="lazy">
             </div>
           </div>
-        </section>
-
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have a scope, outage, or repair? Send details and we'll get back quickly. Procurement teams: include project/site, timeline, and any required documentation.</p>
-
-        <div class="kmw-contact-card">
-          <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
-            <div class="kmw-field">
-              <label for="home_name">Name</label>
-              <input id="home_name" name="name" required autocomplete="name" />
-            </div>
-            <div class="kmw-field">
-              <label for="home_email">Email</label>
-              <input id="home_email" name="email" type="email" required autocomplete="email" />
-            </div>
-            <div class="kmw-field">
-              <label for="home_phone">Phone</label>
-              <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
-            </div>
-            <div class="kmw-field">
-              <label for="home_company">Company / Agency</label>
-              <input id="home_company" name="company" autocomplete="organization" />
-            </div>
-            <div class="kmw-field" style="grid-column:1 / -1;">
-              <label for="home_subject">Subject</label>
-              <input id="home_subject" name="subject" />
-            </div>
-            <div class="kmw-field" style="grid-column:1 / -1;">
-              <label for="home_message">Message</label>
-              <textarea id="home_message" name="message" required></textarea>
-            </div>
-
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="hidden" name="_redirect" value="thanks.html">
-            <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
-
-            <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
-              <button type="submit" class="kmw-submit">Send Message</button>
-              <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
-            </div>
-          </form>
         </div>
       </div>
-    </section>
 
-    <!-- Recent Posts loader -->
-    <script>
-    (function () {
-      const target = document.getElementById('recent-posts');
-      if (!target) return;
+      <!-- RIGHT: Map + service areas -->
+      <div class="kmw-panel">
+        <div class="kmw-panel-head">
+          <h2>Service Area</h2>
+          <p class="sub">
+            On-site mobile welding across Hampton Roads, Virginia, and select regional bridge, deep foundation, DOT, and infrastructure projects throughout the Mid-Atlantic and Southeast.
+            Need a <strong>mobile welder near me</strong>? Call <a href="tel:7572316809"><strong>757-231-6809</strong></a>.
+          </p>
+        </div>
 
-      fetch('/blog/')
-        .then(r => r.text())
-        .then(html => {
-          const doc = new DOMParser().parseFromString(html, 'text/html');
-          const articles = Array.from(doc.querySelectorAll('.blog-grid article.post')).slice(0, 3);
+        <div class="kmw-map">
+          <iframe
+            title="Kings Mobile Welding service area map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d814899.1644467923!2d-76.69933505!3d37.076546500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a61b8101e5b20cd%3A0x38f0245d6f772bfe!2sKings%20Mobile%20Welding%2C%20LLC!5e0!3m2!1sen!2sus!4v1766667526031!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-          articles.forEach(a => {
-            const linkEl = a.querySelector('a[href]');
-            const href = linkEl ? linkEl.getAttribute('href') : '#';
+        <div class="kmw-areas-block">
+          <h3 class="kmw-areas-title">Regional Bridge Welding Coverage</h3>
+          <div class="kmw-areas">
+            <a class="featured" href="/areas/virginia-bridge-welding">Virginia Bridge Welding</a>
+            <a class="featured" href="/areas/maryland-bridge-welding">Maryland Bridge Welding</a>
+            <a class="featured" href="/areas/dc-bridge-welding">D.C. Bridge Welding</a>
+            <a class="featured" href="/areas/north-carolina-bridge-welding">North Carolina Bridge Welding</a>
+            <a class="featured" href="/areas/south-carolina-bridge-welding">South Carolina Bridge Welding</a>
+            <a href="/areas/newport-news-va">Newport News</a>
+            <a href="/areas/hampton-va">Hampton</a>
+            <a href="/areas/norfolk-va">Norfolk</a>
+            <a href="/areas/virginia-beach-va">Virginia Beach</a>
+            <a href="/areas/chesapeake-va">Chesapeake</a>
+            <a href="/areas/suffolk-va">Suffolk</a>
+            <a class="featured" href="/areas/">View All Areas We Service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            const imgEl = a.querySelector('img[itemprop="image"]');
-            const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
-            const imgAlt = imgEl ? (imgEl.getAttribute('alt') || '') : '';
+<!-- FEATURED WORK -->
+<section class="kmw-section" aria-label="Featured bridge and infrastructure welding work">
+  <div class="kmw-home-container">
+    <div class="kmw-section-head">
+      <div>
+        <h2>Featured Bridge, Structural &amp; Field Welding Work</h2>
+        <p class="sub">
+          Recent project examples include bridge joint welding, pile splice welding, structural repairs, industrial repairs, field fabrication, and inspection-driven contractor support.
+        </p>
+      </div>
+      <a class="kmw-pill" href="/past-performance" style="text-decoration:none;">View Past Performance →</a>
+    </div>
 
-            const titleEl = a.querySelector('h2 a, h2[itemprop="headline"] a');
-            const title = titleEl ? titleEl.textContent.trim() : 'Untitled';
+    <div class="kmw-proof-grid">
+      <a class="kmw-proof-card" href="/services/bridge-welding-remediation/">
+        <img src="/assets/img/past/bridge-welding (2).webp" alt="AWS D1.5 bridge welding project" loading="lazy">
+        <div>
+          <strong>AWS D1.5 Bridge Welding</strong>
+          <p>Inspection-ready bridge welding support for repair, remediation, expansion joint, and infrastructure scopes.</p>
+          <span>Bridge welding services →</span>
+        </div>
+      </a>
 
-            const dateEl = a.querySelector('[itemprop="datePublished"]');
-            const dateText = dateEl ? dateEl.textContent.trim() : '';
+      <a class="kmw-proof-card" href="/pile-splice-welding-contractor/">
+        <img src="/assets/img/past/pile_splice_welding.jpg" alt="Pile splice welding and field fabrication" loading="lazy">
+        <div>
+          <strong>Pile Splicing &amp; Deep Foundations</strong>
+          <p>H-pile, pipe pile, permanent shaft casing, and foundation steel welding for heavy civil contractors.</p>
+          <span>Pile splice welding →</span>
+        </div>
+      </a>
 
-            const descEl = a.querySelector('[itemprop="description"]');
-            const desc = descEl ? descEl.textContent.trim() : '';
+      <a class="kmw-proof-card" href="/services/industrial-welding/">
+        <img src="/assets/img/past/industrial-welding-chute.jpg" alt="Industrial welding repair" loading="lazy">
+        <div>
+          <strong>Industrial Repairs &amp; Reinforcement</strong>
+          <p>Fast field repairs, reinforcement, brackets, supports, and structural fixes to keep operations moving.</p>
+          <span>Industrial welding →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
-            const li = document.createElement('li');
-            li.className = 'post-item';
-            li.innerHTML = `
-              <article class="post-card">
-                <a class="thumb" href="${href}" aria-label="Read ${title}">
-                  ${imgSrc ? `<img src="${imgSrc}" alt="${imgAlt || title}" loading="lazy">` : ``}
-                </a>
-                <div class="info">
-                  <h3 class="title"><a href="${href}">${title}</a></h3>
-                  ${dateText ? `<p class="meta">${dateText}</p>` : ``}
-                  ${desc ? `<p class="excerpt">${desc}</p>` : ``}
-                  <p class="cta"><a class="btn" href="${href}">Read more →</a></p>
-                </div>
-              </article>
-            `;
-            target.appendChild(li);
-          });
-        })
-        .catch(console.error);
-    })();
-    </script>
+<!-- BLOG + SEO AUTHORITY -->
+<section class="kmw-section alt" aria-label="Recent welding articles and SEO authority content">
+  <div class="kmw-home-container">
+    <div class="kmw-section-head">
+      <div>
+        <h2>Recent Blog Posts</h2>
+        <p class="sub">
+          Helpful info for contractors and project teams covering mobile welding, structural steel, emergency repairs, DOT/bridge project support, deep foundations, and AWS certified welding.
+        </p>
+      </div>
+      <a class="kmw-pill" href="/blog/" style="text-decoration:none;">Read All Posts →</a>
+    </div>
 
-    <!-- Testimonials slider JS -->
-    <script>
-    (function(){
-      const root = document.querySelector('#testimonials');
-      if(!root) return;
-      const row = root.querySelector('.testi-row');
-      const slides = Array.from(root.querySelectorAll('.testi-card'));
-      const dotsWrap = root.querySelector('.testi-dots');
-      const prev = root.querySelector('[data-test-prev]');
-      const next = root.querySelector('[data-test-next]');
-      let i = 0, timer = null;
+    <ul id="recent-posts" class="post-list"></ul>
 
-      function go(n){
-        i = (n + slides.length) % slides.length;
-        row.style.transform = 'translateX(' + (-100 * i) + '%)';
-        dotsWrap.querySelectorAll('.testi-dot').forEach((d,idx)=>d.classList.toggle('active', idx===i));
-      }
-      function auto(){ clearInterval(timer); timer = setInterval(()=>go(i+1), 5000); }
+    <div class="more-btn-wrap">
+      <a class="btn" href="/blog/">Read all posts</a>
+    </div>
 
-      if (dotsWrap && !dotsWrap.childElementCount) {
-        slides.forEach((_,idx)=>{
-          const d = document.createElement('span');
-          d.className = 'testi-dot' + (idx===0 ? ' active':'');
-          d.addEventListener('click', ()=>{ go(idx); auto(); });
-          dotsWrap.appendChild(d);
-        });
-      }
+    <div class="kmw-seo-block" aria-label="Mobile welding SEO content">
+      <h2>AWS Certified Mobile Welding, Bridge Welding &amp; Pile Splicing Contractor</h2>
+      <p>
+        Kings Mobile Welding provides <strong>AWS D1.1 structural steel welding</strong>, <strong>AWS D1.5 bridge welding</strong>, <strong>pile splice welding</strong>, and <strong>inspection-ready field fabrication</strong> for contractors and project teams across Hampton Roads, Virginia, Maryland, Washington D.C., North Carolina, South Carolina, and the Mid-Atlantic.
+        If you are searching for an <strong>AWS certified bridge welder</strong>, <strong>AWS D1.5 welder</strong>, <strong>pile splice welding contractor</strong>, or <strong>mobile welder near me</strong>, we provide field-ready welding support for schedule-critical projects.
+      </p>
 
-      prev && prev.addEventListener('click', ()=>{ go(i-1); auto(); });
-      next && next.addEventListener('click', ()=>{ go(i+1); auto(); });
+      <h3>Core Services</h3>
+      <ul>
+        <li><a href="/services/bridge-welding-remediation/">AWS D1.5 bridge welding and structural remediation</a></li>
+        <li><a href="/pile-splice-welding-contractor/">H-pile, pipe pile, and permanent shaft casing splice welding</a></li>
+        <li><a href="/services/structural-steel-welding/">AWS D1.1 structural steel welding</a></li>
+        <li><a href="/services/government-and-dot-welding/">Government, DOT, and infrastructure welding</a></li>
+        <li><a href="/services/aisc-fabrication-shop-welding-support/">AISC fabrication shop welding support</a></li>
+        <li><a href="/services/mobile-welding-services/">Mobile welding and field fabrication</a></li>
+      </ul>
 
-      go(0); auto();
-    })();
-    </script>
+      <h3>Areas We Serve</h3>
+      <p>
+        We support projects in <a href="/areas/virginia-bridge-welding">Virginia</a>,
+        <a href="/areas/maryland-bridge-welding">Maryland</a>,
+        <a href="/areas/dc-bridge-welding">Washington D.C.</a>,
+        <a href="/areas/north-carolina-bridge-welding">North Carolina</a>,
+        <a href="/areas/south-carolina-bridge-welding">South Carolina</a>,
+        <a href="/areas/newport-news-va">Newport News</a>,
+        <a href="/areas/hampton-va">Hampton</a>,
+        <a href="/areas/norfolk-va">Norfolk</a>,
+        <a href="/areas/virginia-beach-va">Virginia Beach</a>,
+        <a href="/areas/chesapeake-va">Chesapeake</a>,
+        <a href="/areas/suffolk-va">Suffolk</a>,
+        and the greater <a href="/areas/">Areas We Service</a> region.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="kmw-section" aria-label="Request a quote CTA">
+  <div class="kmw-home-container">
+    <div class="kmw-cta-inner">
+      <div>
+        <h2>Need an AWS Certified Welder On-Site?</h2>
+        <p class="sub">
+          Send your drawings, splice details, repair photos, project location, inspection requirements, and timeline. For urgent repairs or night work, call now for availability.
+        </p>
+      </div>
+      <div class="kmw-cta-actions">
+        <a class="kmw-btn-main" href="/contact/" onclick="event.stopPropagation();">Request a Quote</a>
+        <a class="kmw-btn-light" href="tel:7572316809">Call 757-231-6809</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Kings Mobile Welding</h2>
+    <p>
+      Have a bridge welding scope, pile splice package, structural repair, outage, or field welding need?
+      Send the details and we’ll respond quickly. Procurement teams: include project/site, timeline, inspection requirements, and any required documentation.
+    </p>
+
+    <div class="kmw-form-hint">
+      <span>Drawings</span>
+      <span>Repair Photos</span>
+      <span>Project Location</span>
+      <span>Required Start Date</span>
+      <span>AWS / DOT Requirements</span>
+    </div>
+
+    <div class="kmw-contact-card">
+      <form action="https://formspree.io/f/mwprebdr" method="POST" accept-charset="UTF-8" class="kmw-contact-grid" novalidate>
+        <div class="kmw-field">
+          <label for="home_name">Name</label>
+          <input id="home_name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="kmw-field">
+          <label for="home_email">Email</label>
+          <input id="home_email" name="email" type="email" required autocomplete="email" />
+        </div>
+
+        <div class="kmw-field">
+          <label for="home_phone">Phone</label>
+          <input id="home_phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+
+        <div class="kmw-field">
+          <label for="home_company">Company / Agency</label>
+          <input id="home_company" name="company" autocomplete="organization" />
+        </div>
+
+        <div class="kmw-field">
+          <label for="home_location">Project Location</label>
+          <input id="home_location" name="project_location" placeholder="City / state / jobsite" />
+        </div>
+
+        <div class="kmw-field">
+          <label for="home_scope_type">Scope Type</label>
+          <select id="home_scope_type" name="scope_type">
+            <option value="">Select one</option>
+            <option>Bridge Welding / AWS D1.5</option>
+            <option>Pile Splicing / Deep Foundations</option>
+            <option>Structural Steel / AWS D1.1</option>
+            <option>AISC Fabrication Shop Support</option>
+            <option>Industrial Repair</option>
+            <option>Commercial Welding</option>
+            <option>Emergency Welding</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="home_subject">Subject</label>
+          <input id="home_subject" name="subject" placeholder="Example: AWS D1.5 pile splice welding quote" />
+        </div>
+
+        <div class="kmw-field" style="grid-column:1 / -1;">
+          <label for="home_message">Message</label>
+          <textarea id="home_message" name="message" required placeholder="Tell us about the project, steel size/thickness, drawings, inspection requirements, work window, and required start date."></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_redirect" value="thanks.html">
+        <input type="hidden" name="_subject" value="New inquiry from KingsMobileWelding.com (Home)">
+
+        <div style="grid-column:1 / -1; display:flex; gap:.75rem; align-items:center; flex-wrap:wrap;">
+          <button type="submit" class="kmw-submit">Send Message</button>
+          <a class="btn-primary" href="tel:7572316809" style="text-decoration:none;">Call Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Posts loader -->
+<script>
+(function () {
+  const target = document.getElementById('recent-posts');
+  if (!target) return;
+
+  fetch('/blog/')
+    .then(r => r.text())
+    .then(html => {
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const articles = Array.from(doc.querySelectorAll('.blog-grid article.post')).slice(0, 3);
+
+      articles.forEach(a => {
+        const linkEl = a.querySelector('a[href]');
+        const href = linkEl ? linkEl.getAttribute('href') : '#';
+
+        const imgEl = a.querySelector('img[itemprop="image"]');
+        const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+        const imgAlt = imgEl ? (imgEl.getAttribute('alt') || '') : '';
+
+        const titleEl = a.querySelector('h2 a, h2[itemprop="headline"] a');
+        const title = titleEl ? titleEl.textContent.trim() : 'Untitled';
+
+        const dateEl = a.querySelector('[itemprop="datePublished"]');
+        const dateText = dateEl ? dateEl.textContent.trim() : '';
+
+        const descEl = a.querySelector('[itemprop="description"]');
+        const desc = descEl ? descEl.textContent.trim() : '';
+
+        const li = document.createElement('li');
+        li.className = 'post-item';
+        li.innerHTML = `
+          <article class="post-card">
+            <a class="thumb" href="${href}" aria-label="Read ${title}">
+              ${imgSrc ? `<img src="${imgSrc}" alt="${imgAlt || title}" loading="lazy">` : ``}
+            </a>
+            <div class="info">
+              <h3 class="title"><a href="${href}">${title}</a></h3>
+              ${dateText ? `<p class="meta">${dateText}</p>` : ``}
+              ${desc ? `<p class="excerpt">${desc}</p>` : ``}
+              <p class="cta"><a class="btn" href="${href}">Read more →</a></p>
+            </div>
+          </article>
+        `;
+        target.appendChild(li);
+      });
+    })
+    .catch(console.error);
+})();
+</script>
 
   </main>
 
@@ -1101,52 +1872,71 @@ window.addEventListener("load", function () {
         <div class="footer-contact">
           <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
           <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, Eastern Virginia, and the Mid-Atlantic region</p>
+          <p>📍 Hampton Roads, VA • Serving VA, MD, D.C., NC, SC &amp; the Mid-Atlantic</p>
           <p>🆔 UEI: ZCY4G7GBGQA3</p>
           <p>🏷️ CAGE: 11P75</p>
         </div>
       </div>
 
-      <nav class="footer-nav">
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/past-performance">Past Performance</a>
-        <a href="/procurement">Procurement</a>
-        <a href="/safety">Safety &amp; Compliance</a>
-        <a href="/areas/">Areas We Service</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
-      </nav>
 
-      <div class="social" aria-label="Social links">
-        <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-          </svg>
-        </a>
-        <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
+  <nav class="footer-nav">
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/industries">Industries</a>
+    <a href="/past-performance">Past Performance</a>
+    <a href="/procurement">Procurement</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
+    <a href="/areas/">Areas We Service</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+
+  <div class="social" aria-label="Social links">
+    <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+        <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+        <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+        <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+      </svg>
+    </a>
+
+    <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+        <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
   </footer>
 
+  <!-- Mobile sticky CTA -->
+
+  <div class="kmw-mobile-sticky" aria-label="Mobile quick actions">
+    <a class="call" href="tel:7572316809">Call Now</a>
+    <a class="quote" href="/contact/">Request Quote</a>
+  </div>
+
   <script src="/assets/js/menu-toggle.js" defer></script>
+
   <script src="/assets/js/trusted-carousel.js" defer></script>
+
   <script src="/assets/js/site.js"></script>
+
   <script src="/assets/js/forms.js"></script>
+
   <script src="/assets/js/forms-home-helper.js"></script>
+
 </body>
 </html>
