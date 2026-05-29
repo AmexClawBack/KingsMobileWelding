@@ -2044,7 +2044,7 @@ body {
   }
 
   .kmw-hero-new {
-    padding-top: 10px !important;
+    padding-top: 2REM !important;
     padding-bottom: 28px;
   }
 
@@ -2058,7 +2058,7 @@ body {
   }
 
   .kmw-hero-new h1 {
-    margin-top: 1 !important;
+    margin-top: 2rem !important;
   }
 }
 /* === Fix Trusted By logo carousel spacing === */
