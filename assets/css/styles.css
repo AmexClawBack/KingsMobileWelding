@@ -1948,3 +1948,88 @@ main .service-grid .card .card-body .pill-list {
 .ind-card.reverse .ind-body {
   order: 1;
 }
+
+.kmw-mobile-sticky {
+  display: none;
+}
+
+@media (max-width:760px) {
+  body {
+    padding-bottom: 74px;
+  }
+
+  .kmw-mobile-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(255,255,255,.96);
+    border-top: 1px solid #E5E7EB;
+    box-shadow: 0 -10px 30px rgba(2,6,23,.12);
+    backdrop-filter: blur(10px);
+  }
+
+  .kmw-mobile-sticky a,
+  .kmw-mobile-sticky button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 12px 10px;
+    font-weight: 980;
+    text-decoration: none;
+    font: inherit;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .kmw-sticky-call {
+    background: #0A2E5C;
+    color: #fff;
+  }
+
+  .kmw-sticky-quote {
+    background: #FFD60A;
+    color: #0F172A;
+  }
+}
+
+.site-header {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.site-header .nav {
+  border-bottom: none !important;
+}
+
+.site-footer {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
+
+.contact-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-section + .site-footer {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
+
+body {
+  background: #0A2E5C;
+}
+.contact-section {
+  padding-bottom: 64px !important;
+}
+
+.contact-section .kmw-contact-card {
+  margin-bottom: 32px !important;
+}
