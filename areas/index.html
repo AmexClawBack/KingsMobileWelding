@@ -1,13 +1,15 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Areas We Service | Kings Mobile Welding</title>
-  <meta name="description" content="Explore cities we serve across Hampton Roads and beyond. Kings Mobile Welding provides AWS D1.1 certified mobile welding, field fabrication, emergency repair, and subcontractor support." />
+  <title>Areas We Service | Bridge Welding, AWS D1.5 Welders &amp; Pile Splicing | Kings Mobile Welding</title>
+  <meta name="description" content="Kings Mobile Welding provides AWS D1.5 bridge welding, pile splice welding, deep foundation welding, and mobile welding support across Virginia, Maryland, D.C., North Carolina, South Carolina, Hampton Roads, and the Mid-Atlantic." />
 
   <!-- Icons / Manifest -->
+
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#0A2E5C">
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -16,9 +18,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500.png">
+  <meta property="og:image" content="/assets/img/logo-500.png">
 
-  <!-- LocalBusiness JSON-LD (fixed priceRange) -->
+  <!-- LocalBusiness JSON-LD -->
+
   <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
@@ -29,7 +32,7 @@
     "priceRange":"$$",
     "image":"https://www.kingsmobilewelding.com/assets/img/og-image.jpg",
     "founder":"Dillon King",
-    "email":"Dillonk2012@gmail.com",
+    "email":"DillonKing@kingsmobilewelding.com",
     "address":{
       "@type":"PostalAddress",
       "addressLocality":"Newport News",
@@ -38,12 +41,26 @@
       "addressCountry":"US"
     },
     "areaServed":[
+      "Virginia",
+      "Maryland",
+      "Washington D.C.",
+      "North Carolina",
+      "South Carolina",
       "Hampton Roads, VA",
       "Eastern Virginia",
-      "Mid-Atlantic"
+      "Mid-Atlantic",
+      "Southeast"
     ],
     "knowsAbout":[
-      "Mobile welding",
+      "AWS D1.5 bridge welding",
+      "AWS certified bridge welders",
+      "Pile splice welding",
+      "H-pile splice welding",
+      "Pipe pile splice welding",
+      "Permanent shaft casing welding",
+      "Deep foundation welding",
+      "Geotechnical contractor welding support",
+      "Bridge expansion joint welding",
       "Structural steel welding",
       "Field welding",
       "Welding subcontractor services",
@@ -51,9 +68,9 @@
       "Industrial welding",
       "Commercial welding",
       "Government and DOT welding",
+      "VDOT bridge welding",
+      "NCDOT certified bridge welders",
       "Torch cutting",
-      "Aluminum welding",
-      "Stainless steel welding",
       "Fabrication"
     ],
     "openingHoursSpecification":[{
@@ -70,7 +87,8 @@
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Sleek Areas page styling (matches your modern services look) -->
+  <!-- Sleek Areas page styling -->
+
   <style>
     :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
 
@@ -85,7 +103,7 @@
       font-weight:900;color:var(--kmw-blue);letter-spacing:.08em;font-size:.78rem
     }
     .areas-hero2 h1{margin:.55rem 0 .55rem;color:#0F172A;font-weight:950;line-height:1.08}
-    .areas-hero2 .lead{margin:0;color:#475569;max-width:90ch;line-height:1.6}
+    .areas-hero2 .lead{margin:0;color:#475569;max-width:96ch;line-height:1.6}
     .areas-hero2 .meta-row{
       display:flex;gap:10px;flex-wrap:wrap;align-items:center;
       margin-top:14px
@@ -96,7 +114,6 @@
       padding:7px 10px;border-radius:999px;font-weight:900;color:#0F172A;font-size:.92rem
     }
 
-    /* Search */
     .areas-filter2{margin-top:16px}
     .areas-filter2 input{
       width:100%;
@@ -114,7 +131,6 @@
       box-shadow:0 0 0 4px rgba(99,102,241,.12);
     }
 
-    /* Grid */
     .areas-wrap2{padding:34px 0 60px;background:#fff}
     .areas-wrap2 .container{max-width:1100px;margin:0 auto;padding:0 16px}
     .areas-grid2{
@@ -177,14 +193,13 @@
     }
     .mini-link:hover{color:var(--kmw-blue);border-bottom-color:rgba(10,46,92,.55)}
     .muted{color:#64748B}
-
-    /* Search highlight (optional if your JS adds a class) */
     .hidden{display:none !important}
 
     @media (max-width:980px){
       .area-card2{grid-column:span 12}
     }
   </style>
+
 </head>
 
 <body>
@@ -192,17 +207,20 @@
   <div class="container nav">
     <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
 
-    <nav class="desktop" aria-label="Primary">
-      <a href="/about">About</a>
-      <a href="/industries">Industries</a>
-      <a href="/services">Services</a>
-      <a href="/past-performance">Past Performance</a>
-      <a href="/procurement">Procurement</a>
-      <a href="/safety-compliance/">Safety &amp; Compliance</a>
-      <a class="btn-primary" href="/contact/">Contact</a>
-    </nav>
+```
+<nav class="desktop" aria-label="Primary">
+  <a href="/about">About</a>
+  <a href="/industries">Industries</a>
+  <a href="/services">Services</a>
+  <a href="/past-performance">Past Performance</a>
+  <a href="/procurement">Procurement</a>
+  <a href="/safety-compliance/">Safety &amp; Compliance</a>
+  <a class="btn-primary" href="/contact/">Contact</a>
+</nav>
 
-    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+<button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+
   </div>
 
   <div id="mobileMenu" class="mobile-menu" hidden>
@@ -217,245 +235,380 @@
 </header>
 
 <main>
-  <!-- Modern hero -->
   <section class="areas-hero2">
     <div class="container">
-      <div class="kicker">Hampton Roads • Eastern Virginia • Mid-Atlantic</div>
+      <div class="kicker">Virginia • Maryland • D.C. • North Carolina • South Carolina • Hampton Roads</div>
       <h1>Areas We Service</h1>
       <p class="lead">
-        Kings Mobile Welding provides <strong>AWS D1.1</strong> certified mobile welding, field fabrication, and repair support across Hampton Roads and surrounding regions.
-        If you don’t see your town listed, we likely still cover it—just ask.
+        Kings Mobile Welding provides <strong>AWS D1.5 bridge welding</strong>, <strong>AWS certified bridge welders</strong>, <strong>pile splice welding</strong>, deep foundation welding, mobile welding, field fabrication, and repair support across Virginia, Maryland, Washington D.C., North Carolina, South Carolina, Hampton Roads, and the Mid-Atlantic.
+        We support bridge contractors, geotechnical contractors, deep foundation contractors, concrete contractors doing bridge work, DOT contractors, industrial clients, and infrastructure contractors with qualified field welding crews.
       </p>
 
-      <div class="meta-row">
-        <span class="pill">Inspection-Ready • Documentation-Ready</span>
-        <span class="muted">Typical coverage: Hampton Roads + travel as required</span>
-      </div>
 
-      <div class="areas-filter2">
-        <label for="areasSearch" class="sr-only">Search cities</label>
-        <input id="areasSearch" type="search" placeholder="Search city (e.g., Norfolk, Smithfield, Richmond)" />
-      </div>
-    </div>
+  <div class="meta-row">
+    <span class="pill">AWS D1.5 • Bridge Welding • Pile Splicing • Deep Foundations</span>
+    <span class="muted">Regional coverage: VA • MD • D.C. • NC • SC + travel for qualified projects</span>
+  </div>
+
+  <div class="areas-filter2">
+    <label for="areasSearch" class="sr-only">Search areas</label>
+    <input id="areasSearch" type="search" placeholder="Search area (e.g., Virginia, Maryland, D.C., North Carolina, Richmond)" />
+  </div>
+</div>
+
+
   </section>
 
   <section class="areas-wrap2">
     <div class="container">
       <div class="areas-grid2">
 
-        <!-- NOTE: Each card has a short unique angle + quick internal links -->
-        <article class="area-card2" id="newport-news" data-city="newport news va">
-          <div class="area-top">
-            <h2><a href="/areas/newport-news-va">Newport News, VA</a></h2>
-            <span class="area-tag">HQ / Peninsula</span>
-          </div>
-          <p>Local, fast mobilization for structural steel, field fixes, and contractor support—plus procurement-ready documentation for industrial and public-sector work.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/newport-news-va">View city page →</a>
-            <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
-            <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
-          </div>
-        </article>
 
-        <article class="area-card2" id="hampton" data-city="hampton va">
-          <div class="area-top">
-            <h2><a href="/areas/hampton-va">Hampton, VA</a></h2>
-            <span class="area-tag">Commercial</span>
-          </div>
-          <p>Jobsite welding for commercial construction, stairs/rails, repairs, and steel modifications—built for GC schedules and inspection-driven closeouts.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/hampton-va">View city page →</a>
-            <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
-            <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="norfolk" data-city="norfolk va">
-          <div class="area-top">
-            <h2><a href="/areas/norfolk-va">Norfolk, VA</a></h2>
-            <span class="area-tag">Industrial</span>
-          </div>
-          <p>Industrial field welding and repairs for facilities, ports, and infrastructure—supports, brackets, guards, retrofits, and maintenance with clean documentation.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/norfolk-va">View city page →</a>
-            <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
-            <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="virginia-beach" data-city="virginia beach va">
-          <div class="area-top">
-            <h2><a href="/areas/virginia-beach-va">Virginia Beach, VA</a></h2>
-            <span class="area-tag">Facilities</span>
-          </div>
-          <p>On-site welding for commercial properties, facility maintenance, and contractor scopes—rails, stairs, steel repairs, and fast-response field modifications.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/virginia-beach-va">View city page →</a>
-            <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
-            <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="chesapeake" data-city="chesapeake va">
-          <div class="area-top">
-            <h2><a href="/areas/chesapeake-va">Chesapeake, VA</a></h2>
-            <span class="area-tag">Contractors</span>
-          </div>
-          <p>Field welding support for contractors and industrial clients—structural modifications, equipment repairs, and site steel aligned to spec and schedule.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/chesapeake-va">View city page →</a>
-            <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
-            <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="portsmouth" data-city="portsmouth va">
-          <div class="area-top">
-            <h2><a href="/areas/portsmouth-va">Portsmouth, VA</a></h2>
-            <span class="area-tag">Heavy duty</span>
-          </div>
-          <p>Repair-focused mobile welding for industrial sites and fleets—crack repair, reinforcement, wear fixes, and field fabrication to keep operations moving.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/portsmouth-va">View city page →</a>
-            <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
-            <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="suffolk" data-city="suffolk va">
-          <div class="area-top">
-            <h2><a href="/areas/suffolk-va">Suffolk, VA</a></h2>
-            <span class="area-tag">Civil / DOT</span>
-          </div>
-          <p>Mobile welding for infrastructure and contractor scopes—field repairs, modifications, and reinforcement for schedule-critical projects and public-sector requirements.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/suffolk-va">View city page →</a>
-            <a class="mini-link" href="/services/government-and-dot-welding/">Gov/DOT</a>
-            <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="williamsburg" data-city="williamsburg va">
-          <div class="area-top">
-            <h2><a href="/areas/williamsburg-va">Williamsburg, VA</a></h2>
-            <span class="area-tag">Commercial</span>
-          </div>
-          <p>On-site welding for commercial builds, renovations, and property maintenance—rails, stairs, brackets, and clean steel fixes with professional finish.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/williamsburg-va">View city page →</a>
-            <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
-            <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="poquoson" data-city="poquoson va">
-          <div class="area-top">
-            <h2><a href="/areas/poquoson-va">Poquoson, VA</a></h2>
-            <span class="area-tag">Coastal</span>
-          </div>
-          <p>Corrosion-aware repairs and fabrication for coastal conditions—steel reinforcement, brackets, rails, and on-site fixes where durability matters.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/poquoson-va">View city page →</a>
-            <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
-            <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
-          </div>
-        </article>
-
-        <article class="area-card2" id="yorktown" data-city="yorktown va">
-          <div class="area-top">
-            <h2><a href="/areas/yorktown-va">Yorktown, VA</a></h2>
-            <span class="area-tag">Facilities</span>
-          </div>
-          <p>Jobsite-ready welding for contractors and facilities—structural steel support, repairs, and retrofits with clear communication and inspection-ready results.</p>
-          <div class="area-links">
-            <a class="learn2" href="/areas/yorktown-va">View city page →</a>
-            <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
-            <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
-          </div>
-        </article>
-
-        <!-- ✅ Continue the same pattern for the rest of your cities -->
-        <!-- I’m including the remaining cities below with unique blurbs but keeping it compact. -->
-
-        <article class="area-card2" id="seaford" data-city="seaford va">
-          <div class="area-top"><h2><a href="/areas/seaford-va">Seaford, VA</a></h2><span class="area-tag">Peninsula</span></div>
-          <p>Mobile welding for jobsite repairs, gates, brackets, and steel modifications—ideal for contractors and property maintenance needs.</p>
-          <div class="area-links"><a class="learn2" href="/areas/seaford-va">View city page →</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a><a class="mini-link" href="/services/commercial-welding/">Commercial</a></div>
-        </article>
-
-        <article class="area-card2" id="tabb" data-city="tabb va">
-          <div class="area-top"><h2><a href="/areas/tabb-va">Tabb, VA</a></h2><span class="area-tag">Residential / Commercial</span></div>
-          <p>On-site welding for stairs/rails, steel repairs, and contractor punch-list fixes—clean fit-up and professional closeout.</p>
-          <div class="area-links"><a class="learn2" href="/areas/tabb-va">View city page →</a><a class="mini-link" href="/services/commercial-welding/">Commercial</a><a class="mini-link" href="/services/emergency-welding/">Emergency</a></div>
-        </article>
-
-        <article class="area-card2" id="grafton" data-city="grafton va">
-          <div class="area-top"><h2><a href="/areas/grafton-va">Grafton, VA</a></h2><span class="area-tag">Contractors</span></div>
-          <p>Field welding support for steel repairs, trailer work, site modifications, and equipment fixes—fast mobilization from the Peninsula.</p>
-          <div class="area-links"><a class="learn2" href="/areas/grafton-va">View city page →</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a><a class="mini-link" href="/services/industrial-welding/">Industrial</a></div>
-        </article>
-              <article class="area-card2" id="salem" data-city="salem va">
-          <div class="area-top"><h2><a href="/areas/salem-va">Salem, VA</a></h2><span class="area-tag">Rural / Civil</span></div>
-          <p>Mobile repairs and fabrication for contractors and landowners—equipment, trailers, gates, and structural fixes when you need it done on-site.</p>
-          <div class="area-links"><a class="learn2" href="/areas/salem-va">View city page →</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a><a class="mini-link" href="/services/commercial-welding/">Commercial</a></div>
-        </article>
-
-        <article class="area-card2" id="toano" data-city="toano va">
-          <div class="area-top"><h2><a href="/areas/toano-va">Toano, VA</a></h2><span class="area-tag">Rural / Civil</span></div>
-          <p>Mobile repairs and fabrication for contractors and landowners—equipment, trailers, gates, and structural fixes when you need it done on-site.</p>
-          <div class="area-links"><a class="learn2" href="/areas/toano-va">View city page →</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a><a class="mini-link" href="/services/emergency-welding/">Emergency</a></div>
-        </article>
-
-        <article class="area-card2" id="norge" data-city="norge va">
-          <div class="area-top"><h2><a href="/areas/norge-va">Norge, VA</a></h2><span class="area-tag">Commercial</span></div>
-          <p>On-site welding for light commercial and contractor scopes—repairs, brackets, stairs/rails, and steel modifications with clean finishes.</p>
-          <div class="area-links"><a class="learn2" href="/areas/norge-va">View city page →</a><a class="mini-link" href="/services/commercial-welding/">Commercial</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a></div>
-        </article>
-
-        <article class="area-card2" id="lightfoot" data-city="lightfoot va">
-          <div class="area-top"><h2><a href="/areas/lightfoot-va">Lightfoot, VA</a></h2><span class="area-tag">Commercial</span></div>
-          <p>Field welding for storefronts, property upgrades, and contractor builds—rails, frames, repairs, and steel support to keep schedules on track.</p>
-          <div class="area-links"><a class="learn2" href="/areas/lightfoot-va">View city page →</a><a class="mini-link" href="/services/commercial-welding/">Commercial</a><a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a></div>
-        </article>
-
-        <article class="area-card2" id="smithfield" data-city="smithfield va">
-          <div class="area-top"><h2><a href="/areas/smithfield-va">Smithfield, VA</a></h2><span class="area-tag">Industrial / Ag</span></div>
-          <p>Mobile welding for industrial sites, farm equipment, trailers, and structural repairs—practical fixes and durable reinforcement.</p>
-          <div class="area-links"><a class="learn2" href="/areas/smithfield-va">View city page →</a><a class="mini-link" href="/services/industrial-welding/">Industrial</a><a class="mini-link" href="/services/emergency-welding/">Emergency</a></div>
-        </article>
-
-        <article class="area-card2" id="carrollton" data-city="carrollton va">
-          <div class="area-top"><h2><a href="/areas/carrollton-va">Carrollton, VA</a></h2><span class="area-tag">Contractors</span></div>
-          <p>Jobsite steel support for GCs and subs—field modifications, weld repairs, and fabrication help when plans meet reality.</p>
-          <div class="area-links"><a class="learn2" href="/areas/carrollton-va">View city page →</a><a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a><a class="mini-link" href="/services/structural-steel-welding/">Structural</a></div>
-        </article>
-
-        <article class="area-card2" id="windsor" data-city="windsor va">
-          <div class="area-top"><h2><a href="/areas/windsor-va">Windsor, VA</a></h2><span class="area-tag">Rural / Repairs</span></div>
-          <p>Mobile repair and fabrication for trailers, gates, equipment, and steel fixes—on-site support when hauling to a shop isn’t practical.</p>
-          <div class="area-links"><a class="learn2" href="/areas/windsor-va">View city page →</a><a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a><a class="mini-link" href="/services/emergency-welding/">Emergency</a></div>
-        </article>
-
-        <!-- ✅ Keep going with the remaining towns using the same structure -->
-        <!-- If you want, paste the rest of the list and I’ll return the complete file with ALL cities rewritten. -->
-
+    <!-- Regional Bridge Welding / Deep Foundation Area Pages -->
+    <article class="area-card2" id="virginia-bridge-welding" data-city="virginia bridge welding va vdot aws d1.5 pile splicing deep foundation">
+      <div class="area-top">
+        <h2><a href="/areas/virginia-bridge-welding">Virginia Bridge Welding</a></h2>
+        <span class="area-tag">VDOT / Bridge</span>
       </div>
-
-      <!-- CTA band like your services page -->
-      <div style="margin-top:22px;border:1px solid #E5E7EB;border-radius:18px;background:#F8FAFC;padding:16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
-        <div style="max-width:70ch;">
-          <strong style="color:#0F172A;">Don’t see your city?</strong>
-          <div style="color:#475569;margin-top:4px;line-height:1.5;">
-            Send the job address and scope—we travel for the right projects and can support contractors throughout Eastern Virginia and the Mid-Atlantic.
-          </div>
-        </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a class="btn-primary" href="/contact/">Request a Quote</a>
-          <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
-        </div>
+      <p>AWS D1.5 bridge welding, VDOT-ready field welding, pile splicing, bridge expansion joint welding, and deep foundation welding support across Virginia.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/virginia-bridge-welding">View area page →</a>
+        <a class="mini-link" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+        <a class="mini-link" href="/pile-splice-welding-contractor/">Pile Splicing</a>
       </div>
+    </article>
 
+    <article class="area-card2" id="maryland-bridge-welding" data-city="maryland bridge welding md aws d1.5 pile splicing deep foundation">
+      <div class="area-top">
+        <h2><a href="/areas/maryland-bridge-welding">Maryland Bridge Welding</a></h2>
+        <span class="area-tag">Mid-Atlantic</span>
+      </div>
+      <p>Bridge welding, AWS D1.5 welders, H-pile and pipe pile splicing, permanent shaft casing welding, and infrastructure welding support throughout Maryland.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/maryland-bridge-welding">View area page →</a>
+        <a class="mini-link" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+        <a class="mini-link" href="/services/government-and-dot-welding/">Gov/DOT</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="dc-bridge-welding" data-city="dc washington d.c. bridge welding aws d1.5 pile splicing deep foundation">
+      <div class="area-top">
+        <h2><a href="/areas/dc-bridge-welding">D.C. Bridge Welding</a></h2>
+        <span class="area-tag">D.C. Metro</span>
+      </div>
+      <p>AWS certified bridge welders and pile splice welding support for Washington, D.C. bridge, transit, utility, concrete repair, and infrastructure projects.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/dc-bridge-welding">View area page →</a>
+        <a class="mini-link" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+        <a class="mini-link" href="/pile-splice-welding-contractor/">Pile Splicing</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="north-carolina-bridge-welding" data-city="north carolina bridge welding nc ncdot aws d1.5 pile splicing deep foundation">
+      <div class="area-top">
+        <h2><a href="/areas/north-carolina-bridge-welding">North Carolina Bridge Welding</a></h2>
+        <span class="area-tag">NCDOT Certified</span>
+      </div>
+      <p>NCDOT certified bridge welders, AWS D1.5 welders, pile splicing, bridge repair welding, and deep foundation welding support across North Carolina.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/north-carolina-bridge-welding">View area page →</a>
+        <a class="mini-link" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+        <a class="mini-link" href="/services/government-and-dot-welding/">Gov/DOT</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="south-carolina-bridge-welding" data-city="south carolina bridge welding sc aws d1.5 pile splicing deep foundation marine infrastructure">
+      <div class="area-top">
+        <h2><a href="/areas/south-carolina-bridge-welding">South Carolina Bridge Welding</a></h2>
+        <span class="area-tag">Bridge / Marine</span>
+      </div>
+      <p>AWS D1.5 bridge welding, pile splice welding, deep foundation welding, marine infrastructure welding, and inspection-ready field welding across South Carolina.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/south-carolina-bridge-welding">View area page →</a>
+        <a class="mini-link" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+        <a class="mini-link" href="/pile-splice-welding-contractor/">Pile Splicing</a>
+      </div>
+    </article>
+
+    <!-- Existing City / Local Area Pages -->
+    <article class="area-card2" id="newport-news" data-city="newport news va">
+      <div class="area-top">
+        <h2><a href="/areas/newport-news-va">Newport News, VA</a></h2>
+        <span class="area-tag">HQ / Peninsula</span>
+      </div>
+      <p>Local, fast mobilization for structural steel, field fixes, and contractor support—plus procurement-ready documentation for industrial and public-sector work.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/newport-news-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="hampton" data-city="hampton va">
+      <div class="area-top">
+        <h2><a href="/areas/hampton-va">Hampton, VA</a></h2>
+        <span class="area-tag">Commercial</span>
+      </div>
+      <p>Jobsite welding for commercial construction, stairs/rails, repairs, and steel modifications—built for GC schedules and inspection-driven closeouts.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/hampton-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="norfolk" data-city="norfolk va">
+      <div class="area-top">
+        <h2><a href="/areas/norfolk-va">Norfolk, VA</a></h2>
+        <span class="area-tag">Industrial</span>
+      </div>
+      <p>Industrial field welding and repairs for facilities, ports, and infrastructure—supports, brackets, guards, retrofits, and maintenance with clean documentation.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/norfolk-va">View city page →</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+        <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="virginia-beach" data-city="virginia beach va">
+      <div class="area-top">
+        <h2><a href="/areas/virginia-beach-va">Virginia Beach, VA</a></h2>
+        <span class="area-tag">Facilities</span>
+      </div>
+      <p>On-site welding for commercial properties, facility maintenance, and contractor scopes—rails, stairs, steel repairs, and fast-response field modifications.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/virginia-beach-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="chesapeake" data-city="chesapeake va">
+      <div class="area-top">
+        <h2><a href="/areas/chesapeake-va">Chesapeake, VA</a></h2>
+        <span class="area-tag">Contractors</span>
+      </div>
+      <p>Field welding support for contractors and industrial clients—structural modifications, equipment repairs, and site steel aligned to spec and schedule.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/chesapeake-va">View city page →</a>
+        <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="portsmouth" data-city="portsmouth va">
+      <div class="area-top">
+        <h2><a href="/areas/portsmouth-va">Portsmouth, VA</a></h2>
+        <span class="area-tag">Heavy duty</span>
+      </div>
+      <p>Repair-focused mobile welding for industrial sites and fleets—crack repair, reinforcement, wear fixes, and field fabrication to keep operations moving.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/portsmouth-va">View city page →</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="suffolk" data-city="suffolk va">
+      <div class="area-top">
+        <h2><a href="/areas/suffolk-va">Suffolk, VA</a></h2>
+        <span class="area-tag">Civil / DOT</span>
+      </div>
+      <p>Mobile welding for infrastructure and contractor scopes—field repairs, modifications, and reinforcement for schedule-critical projects and public-sector requirements.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/suffolk-va">View city page →</a>
+        <a class="mini-link" href="/services/government-and-dot-welding/">Gov/DOT</a>
+        <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="williamsburg" data-city="williamsburg va">
+      <div class="area-top">
+        <h2><a href="/areas/williamsburg-va">Williamsburg, VA</a></h2>
+        <span class="area-tag">Commercial</span>
+      </div>
+      <p>On-site welding for commercial builds, renovations, and property maintenance—rails, stairs, brackets, and clean steel fixes with professional finish.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/williamsburg-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="poquoson" data-city="poquoson va">
+      <div class="area-top">
+        <h2><a href="/areas/poquoson-va">Poquoson, VA</a></h2>
+        <span class="area-tag">Coastal</span>
+      </div>
+      <p>Corrosion-aware repairs and fabrication for coastal conditions—steel reinforcement, brackets, rails, and on-site fixes where durability matters.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/poquoson-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="yorktown" data-city="yorktown va">
+      <div class="area-top">
+        <h2><a href="/areas/yorktown-va">Yorktown, VA</a></h2>
+        <span class="area-tag">Facilities</span>
+      </div>
+      <p>Jobsite-ready welding for contractors and facilities—structural steel support, repairs, and retrofits with clear communication and inspection-ready results.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/yorktown-va">View city page →</a>
+        <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="seaford" data-city="seaford va">
+      <div class="area-top">
+        <h2><a href="/areas/seaford-va">Seaford, VA</a></h2>
+        <span class="area-tag">Peninsula</span>
+      </div>
+      <p>Mobile welding for jobsite repairs, gates, brackets, and steel modifications—ideal for contractors and property maintenance needs.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/seaford-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="tabb" data-city="tabb va">
+      <div class="area-top">
+        <h2><a href="/areas/tabb-va">Tabb, VA</a></h2>
+        <span class="area-tag">Residential / Commercial</span>
+      </div>
+      <p>On-site welding for stairs/rails, steel repairs, and contractor punch-list fixes—clean fit-up and professional closeout.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/tabb-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="grafton" data-city="grafton va">
+      <div class="area-top">
+        <h2><a href="/areas/grafton-va">Grafton, VA</a></h2>
+        <span class="area-tag">Contractors</span>
+      </div>
+      <p>Field welding support for steel repairs, trailer work, site modifications, and equipment fixes—fast mobilization from the Peninsula.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/grafton-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="salem" data-city="salem va">
+      <div class="area-top">
+        <h2><a href="/areas/salem-va">Salem, VA</a></h2>
+        <span class="area-tag">Rural / Civil</span>
+      </div>
+      <p>Mobile repairs and fabrication for contractors and landowners—equipment, trailers, gates, and structural fixes when you need it done on-site.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/salem-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="toano" data-city="toano va">
+      <div class="area-top">
+        <h2><a href="/areas/toano-va">Toano, VA</a></h2>
+        <span class="area-tag">Rural / Civil</span>
+      </div>
+      <p>Mobile repairs and fabrication for contractors and landowners—equipment, trailers, gates, and structural fixes when you need it done on-site.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/toano-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="norge" data-city="norge va">
+      <div class="area-top">
+        <h2><a href="/areas/norge-va">Norge, VA</a></h2>
+        <span class="area-tag">Commercial</span>
+      </div>
+      <p>On-site welding for light commercial and contractor scopes—repairs, brackets, stairs/rails, and steel modifications with clean finishes.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/norge-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="lightfoot" data-city="lightfoot va">
+      <div class="area-top">
+        <h2><a href="/areas/lightfoot-va">Lightfoot, VA</a></h2>
+        <span class="area-tag">Commercial</span>
+      </div>
+      <p>Field welding for storefronts, property upgrades, and contractor builds—rails, frames, repairs, and steel support to keep schedules on track.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/lightfoot-va">View city page →</a>
+        <a class="mini-link" href="/services/commercial-welding/">Commercial</a>
+        <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="smithfield" data-city="smithfield va">
+      <div class="area-top">
+        <h2><a href="/areas/smithfield-va">Smithfield, VA</a></h2>
+        <span class="area-tag">Industrial / Ag</span>
+      </div>
+      <p>Mobile welding for industrial sites, farm equipment, trailers, and structural repairs—practical fixes and durable reinforcement.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/smithfield-va">View city page →</a>
+        <a class="mini-link" href="/services/industrial-welding/">Industrial</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="carrollton" data-city="carrollton va">
+      <div class="area-top">
+        <h2><a href="/areas/carrollton-va">Carrollton, VA</a></h2>
+        <span class="area-tag">Contractors</span>
+      </div>
+      <p>Jobsite steel support for GCs and subs—field modifications, weld repairs, and fabrication help when plans meet reality.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/carrollton-va">View city page →</a>
+        <a class="mini-link" href="/services/welding-subcontractor/">Subcontractor</a>
+        <a class="mini-link" href="/services/structural-steel-welding/">Structural</a>
+      </div>
+    </article>
+
+    <article class="area-card2" id="windsor" data-city="windsor va">
+      <div class="area-top">
+        <h2><a href="/areas/windsor-va">Windsor, VA</a></h2>
+        <span class="area-tag">Rural / Repairs</span>
+      </div>
+      <p>Mobile repair and fabrication for trailers, gates, equipment, and steel fixes—on-site support when hauling to a shop isn’t practical.</p>
+      <div class="area-links">
+        <a class="learn2" href="/areas/windsor-va">View city page →</a>
+        <a class="mini-link" href="/services/mobile-welding-services/">Mobile Welding</a>
+        <a class="mini-link" href="/services/emergency-welding/">Emergency</a>
+      </div>
+    </article>
+
+  </div>
+
+  <div style="margin-top:22px;border:1px solid #E5E7EB;border-radius:18px;background:#F8FAFC;padding:16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+    <div style="max-width:76ch;">
+      <strong style="color:#0F172A;">Don’t see your city or project location?</strong>
+      <div style="color:#475569;margin-top:4px;line-height:1.5;">
+        Send the job address and scope. We travel for qualified bridge welding, pile splicing, deep foundation, industrial, commercial, and infrastructure projects throughout Virginia, Maryland, D.C., North Carolina, South Carolina, and the Mid-Atlantic.
+      </div>
     </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn-primary" href="/contact/">Request a Quote</a>
+      <a class="btn-secondary" href="tel:7572316809">Call 757-231-6809</a>
+    </div>
+  </div>
+
+</div>
+
+
   </section>
 </main>
 
@@ -471,49 +624,53 @@
       <div class="footer-contact">
         <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
         <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-        <p>📍 Hampton Roads, VA and beyond</p>
+        <p>📍 Hampton Roads, VA • Serving VA, MD, D.C., NC, SC &amp; the Mid-Atlantic</p>
         <p>🆔 UEI: ZCY4G7GBGQA3</p>
         <p>🏷️ CAGE: 11P75</p>
       </div>
     </div>
 
-    <nav class="footer-nav">
-      <a href="/about">About</a>
-      <a href="/services">Services</a>
-      <a href="/industries">Industries</a>
-      <a href="/past-performance">Past Performance</a>
-      <a href="/procurement">Procurement</a>
-      <a href="/careers">Careers</a>
-      <a href="/areas">Areas We Service</a>
-      <a href="/contact/">Contact</a>
-    </nav>
+<nav class="footer-nav">
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/industries">Industries</a>
+  <a href="/past-performance">Past Performance</a>
+  <a href="/procurement">Procurement</a>
+  <a href="/careers">Careers</a>
+  <a href="/areas">Areas We Service</a>
+  <a href="/contact/">Contact</a>
+</nav>
 
-    <div class="social" aria-label="Social links">
-      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-          <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-          <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
-        </svg>
-      </a>
-      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-          <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01 3.49-.07 4.72c-.04.95-.2 1.46-.34 1.8-.17.45-.37.77-.71 1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
-        </svg>
-      </a>
-      <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
-          <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-        </svg>
-      </a>
-    </div>
+<div class="social" aria-label="Social links">
+  <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
+    </svg>
+  </a>
+  <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
+      <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+    </svg>
+  </a>
+</div>
+
+
   </div>
 </footer>
 
 <script src="/assets/js/site.js"></script>
+
 <script src="/assets/js/forms.js"></script>
+
 </body>
 </html>
