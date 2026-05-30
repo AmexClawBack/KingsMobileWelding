@@ -2044,7 +2044,7 @@ body {
   }
 
   .kmw-hero-new {
-    padding-top: .5rem !important;
+    padding-top: .5REM !important;
     padding-bottom: 28px;
   }
 
@@ -2221,3 +2221,46 @@ body {
 }
 
 
+/* HEADER LOGO FIX */
+.site-header .container.nav {
+  justify-content: space-between;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: auto;
+  padding: 0;
+  width: auto;
+  max-width: none;
+  overflow: visible;
+}
+
+.site-header .brand-logo {
+  display: block;
+  width: 155px;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* MOBILE LOGO FIX */
+@media (max-width: 760px) {
+  .site-header .container.nav {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 16px;
+  }
+
+  .site-header .brand {
+    margin-left: 0;
+    transform: scale(1.55);
+    transform-origin: left center;
+  }
+
+  .site-header .brand-logo {
+    width: 150px;
+  }
+}
