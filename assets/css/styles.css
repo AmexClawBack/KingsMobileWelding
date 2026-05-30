@@ -2264,3 +2264,26 @@ body {
     width: 150px;
   }
 }
+
+/* Make footer match current light header */
+.site-footer {
+  background: #F8FAFC !important;
+  color: #0A2E5C !important;
+  border-top: 1px solid #E6EEF6;
+}
+
+.site-footer a,
+.site-footer .footer-nav a,
+.site-footer .footer-contact a,
+.site-footer .brand,
+.site-footer .brand strong,
+.site-footer .social a {
+  color: #0A2E5C !important;
+}
+
+.site-footer a:hover,
+.site-footer .footer-nav a:hover,
+.site-footer .footer-contact a:hover,
+.site-footer .social a:hover {
+  color: #D8A900 !important;
+}
