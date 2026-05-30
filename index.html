@@ -1187,6 +1187,40 @@
 .contact-section .kmw-form-hint {
   justify-content: center;
 }
+/* MOBILE ONLY: move top hero bubbles below buttons and proof bubbles */
+@media (max-width: 760px) {
+  .kmw-hero-copy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kmw-hero-copy h1 {
+    order: 1;
+  }
+
+  .kmw-hero-lead {
+    order: 2;
+  }
+
+  .kmw-hero-actions {
+    order: 3;
+  }
+
+  .kmw-proofline {
+    order: 4;
+  }
+
+  .kmw-kicker {
+    order: 5;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 760px) {
+  .kmw-kicker {
+    padding-top: 8px;
+  }
+}
   </style>
 
 </head>
