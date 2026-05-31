@@ -209,7 +209,7 @@ img{max-width:100%;display:block} a{color:var(--brand);text-decoration:none}
 .hpc-head h2{
   margin:.45rem 0 .2rem;
   font-size:1.05rem;
-  color:#0A2E5C;
+  color:#f3f3f3;
 }
 .hpc-head p{
   margin:0;
@@ -2287,3 +2287,4 @@ body {
 .site-footer .social a:hover {
   color: #D8A900 !important;
 }
+
