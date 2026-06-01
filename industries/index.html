@@ -13,9 +13,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Industries | Kings Mobile Welding</title>
-  <meta name="description" content="Industries we support with AWS D1.1–certified mobile welding & field fabrication—DOT contractors, heavy transport & railcar securement, solar installers, sign companies, waste & recycling, general contractors, and retail build-outs across Hampton Roads, Eastern Virginia, and the Mid-Atlantic." />
-  <meta name="keywords" content="welding subcontractor, mobile welding, DOT contractor welding, railcar securement welding, heavy transport welding, solar farm welding, sign structure welding, waste container repair, retail build out welding, Hampton Roads welding" />
+  <title>Industries We Serve | DOT, Deep Foundations, Marine, Fabrication & Commercial Welding | Kings Mobile Welding</title>
+
+  <meta name="description" content="Kings Mobile Welding supports DOT and infrastructure contractors, deep foundation and pile driving companies, marine contractors, steel fabrication shops, solar and utility contractors, commercial and industrial facilities, retail build-out contractors, and sign structure installers with AWS-certified mobile welding and field fabrication across Hampton Roads, Virginia, the Mid-Atlantic, and the Southeast.">
+
+  <meta name="keywords" content="industries served welding contractor, mobile welding subcontractor, DOT welding contractor, infrastructure welding, deep foundations welding, pile splice welding, pipe pile welding, H pile welding, marine construction welding, cofferdam welding, steel fabrication shop welding support, solar utility welding, commercial industrial welding, retail build out welding, sign structure welding, billboard welding contractor, AWS D1.1 welding, AWS D1.5 bridge welding, Hampton Roads welding contractor, Virginia mobile welding">
+
+  <meta property="og:title" content="Industries We Serve | Kings Mobile Welding">
+  <meta property="og:description" content="AWS-certified mobile welding support for DOT, deep foundations, marine construction, fabrication shops, solar/utility, commercial/industrial, retail build-outs, and sign structure contractors.">
+  <meta property="og:image" content="/assets/img/logo-500.png">
 
   <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
@@ -26,91 +32,289 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
-  <meta property="og:image" content="assets/img/logo-500.png">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- ✅ DROPDOWNS: click-to-open (stays open) + hover still works -->
   <style>
   nav.desktop{display:flex;gap:14px;align-items:center}
   nav.desktop .nav-item{position:relative;display:inline-flex;align-items:center}
   nav.desktop .nav-item > a{display:inline-flex;align-items:center;gap:6px}
   nav.desktop .nav-item > a .chev{font-size:.9em;opacity:.8}
-  nav.desktop .nav-item{padding-bottom:14px;}
+  nav.desktop .nav-item{padding-bottom:14px}
   nav.desktop .dropdown{
-    position:absolute;left:0;top:100%;margin-top:8px;min-width:290px;
-    background:#fff;border:1px solid #E5E7EB;border-radius:14px;
+    position:absolute;
+    left:0;
+    top:100%;
+    margin-top:8px;
+    min-width:290px;
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:14px;
     box-shadow:0 10px 24px rgba(0,0,0,.10);
-    padding:10px;display:none;z-index:9999;
+    padding:10px;
+    display:none;
+    z-index:9999;
   }
   nav.desktop .dropdown a{
-    display:block;padding:10px 10px;border-radius:10px;text-decoration:none;
-    color:inherit;white-space:nowrap;
+    display:block;
+    padding:10px 10px;
+    border-radius:10px;
+    text-decoration:none;
+    color:inherit;
+    white-space:nowrap;
   }
   nav.desktop .dropdown a:hover{background:#F8FAFC}
   nav.desktop .nav-item:hover .dropdown,
   nav.desktop .nav-item:focus-within .dropdown{display:block}
   nav.desktop .nav-item.is-open .dropdown{display:block}
 
-  :root{--kmw-blue:#0A2E5C;--kmw-yellow:#FFD60A}
+  :root{
+    --kmw-blue:#0A2E5C;
+    --kmw-blue-dark:#062346;
+    --kmw-yellow:#FFD60A;
+    --kmw-slate:#334155;
+    --kmw-light:#F8FAFC;
+    --kmw-border:#E5E7EB;
+  }
 
-  /* FORCE PAGE BACKGROUND WHITE */
   html,
   body,
-  main,
-  .ind-wrap,
-  .ind-wrap .container,
-  .ind-grid{
+  main{
     background:#fff !important;
-    background-color:#fff !important;
+    color:#1E293B;
   }
 
+  body{
+    overflow-x:hidden;
+  }
+
+  /* HERO */
   .ind-hero{
-    padding:3.5rem 0 2rem;
-    background:linear-gradient(180deg,#fff,#F8FAFC) !important;
+    padding:4.25rem 0 2.7rem;
+    background:
+      linear-gradient(135deg, rgba(10,46,92,.97), rgba(6,35,70,.95)),
+      url("/assets/img/industries/highway.jpg") center/cover no-repeat;
+    color:#fff !important;
+    position:relative;
+    overflow:hidden;
   }
 
-  .ind-hero h1{margin:0 0 .5rem;color:var(--kmw-blue)}
-  .ind-hero .lead{max-width:860px}
+  .ind-hero::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:115px;
+    background:linear-gradient(
+      180deg,
+      rgba(10,46,92,0) 0%,
+      rgba(10,46,92,.72) 42%,
+      #0A2E5C 100%
+    );
+    z-index:1;
+    pointer-events:none;
+  }
 
+  .ind-hero .container{
+    position:relative;
+    z-index:2;
+  }
+
+  .kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.45rem .72rem;
+    border-radius:999px;
+    background:rgba(255,214,10,.14);
+    border:1px solid rgba(255,214,10,.45);
+    color:#fff !important;
+    font-weight:900;
+    font-size:.82rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    margin-bottom:.95rem;
+  }
+
+  .ind-hero h1{
+    max-width:1080px;
+    margin:0 0 .85rem;
+    color:#fff !important;
+    font-size:clamp(2rem, 5vw, 4.15rem);
+    line-height:1.05;
+    letter-spacing:-.045em;
+  }
+
+  .ind-hero .lead{
+    max-width:1040px;
+    color:rgba(255,255,255,.93) !important;
+    font-size:1.08rem;
+    line-height:1.72;
+    margin:0;
+  }
+
+  .ind-hero strong{
+    color:#fff !important;
+    font-weight:900;
+  }
+
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.7rem;
+    margin-top:1.35rem;
+    position:relative;
+    z-index:3;
+  }
+
+  /* BUTTONS */
+  .btn-solid,
+  .btn-ghost{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.5rem;
+    padding:.72rem 1rem;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:900;
+    line-height:1.1;
+    transition:.18s ease;
+  }
+
+  .btn-solid{
+    background:#0A2E5C;
+    color:#fff !important;
+    border:1px solid #0A2E5C;
+  }
+
+  .btn-ghost{
+    background:#fff;
+    color:#0A2E5C !important;
+    border:1px solid #E5E7EB;
+  }
+
+  .ind-hero .btn-solid,
+  .dark-cta .btn-solid{
+    background:#FFD60A;
+    color:#0A2E5C !important;
+    border-color:#FFD60A;
+  }
+
+  .ind-hero .btn-ghost,
+  .dark-cta .btn-ghost{
+    background:rgba(255,255,255,.08);
+    color:#fff !important;
+    border-color:rgba(255,255,255,.28);
+  }
+
+  .btn-solid:hover,
+  .btn-ghost:hover{
+    transform:translateY(-1px);
+  }
+
+  .btn-ghost:hover{
+    background:#F8FAFC;
+  }
+
+  .ind-hero .btn-ghost:hover,
+  .dark-cta .btn-ghost:hover{
+    background:rgba(255,255,255,.14);
+  }
+
+  /* MAIN WRAP */
   .ind-wrap{
-    padding:1.5rem 0 3rem;
+    padding:2.35rem 0 3rem;
     background:#fff !important;
-    background-color:#fff !important;
   }
 
-  .ind-grid{display:grid;gap:1.25rem}
+  /* INTRO PANEL */
+  .intro-panel{
+    margin-bottom:1.25rem;
+    padding:1.25rem;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    background:
+      linear-gradient(90deg, rgba(10,46,92,.05), rgba(255,214,10,.09)),
+      #fff;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+  }
+
+  .intro-panel h2{
+    margin:0 0 .45rem;
+    color:#0A2E5C !important;
+    font-size:1.45rem;
+    line-height:1.2;
+  }
+
+  .intro-panel p{
+    margin:.25rem 0 0;
+    color:#334155 !important;
+    line-height:1.65;
+    max-width:1050px;
+  }
+
+  .industry-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+    margin-top:1rem;
+  }
+
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.45rem;
+    padding:.45rem .72rem;
+    border-radius:999px;
+    border:1px solid #E5E7EB;
+    background:#fff;
+    color:#0A2E5C !important;
+    font-weight:900;
+    font-size:.92rem;
+    text-decoration:none;
+    line-height:1.12;
+  }
+
+  .pill:hover{
+    background:#F8FAFC;
+  }
+
+  /* INDUSTRY CARD GRID */
+  .ind-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:1.25rem;
+    background:#fff !important;
+  }
 
   .ind-card{
-    display:grid;
-    grid-template-columns:1.1fr 1.2fr;
-    gap:1.25rem;
-    align-items:stretch;
+    display:flex;
+    flex-direction:column;
     border:1px solid #E5E7EB;
-    border-radius:18px;
+    border-radius:20px;
     background:#fff !important;
-    background-color:#fff !important;
-    box-shadow:0 1px 2px rgba(0,0,0,.04);
+    box-shadow:0 10px 30px rgba(15,23,42,.07);
     overflow:hidden;
     min-width:0;
+    transition:.18s ease;
   }
 
-  .ind-card.reverse{grid-template-columns:1.2fr 1.1fr}
+  .ind-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 16px 40px rgba(15,23,42,.11);
+  }
 
-  .ind-media,
-  .ind-body{
-    min-width:0;
+  .ind-card.featured{
+    border:2px solid rgba(255,214,10,.65);
   }
 
   .ind-media{
-    background:#0b1f33;
     position:relative;
+    height:205px;
+    background:#0A2E5C;
     overflow:hidden;
-    height:260px;
-  }
-
-  @media (min-width:901px){
-    .ind-media{height:100%}
   }
 
   .ind-media img{
@@ -121,117 +325,284 @@
     display:block;
   }
 
+  .ind-media::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.35));
+    pointer-events:none;
+  }
+
   .ind-media .tag{
     position:absolute;
     left:14px;
     top:14px;
-    background:rgba(10,46,92,.92);
-    color:#fff;
-    padding:.35rem .6rem;
+    background:rgba(10,46,92,.94);
+    color:#fff !important;
+    padding:.38rem .68rem;
     border-radius:999px;
-    font-weight:700;
-    font-size:.85rem;
-    border:1px solid rgba(255,255,255,.15);
+    font-weight:900;
+    font-size:.82rem;
+    border:1px solid rgba(255,255,255,.22);
     backdrop-filter:blur(6px);
     z-index:2;
   }
 
   .ind-body{
-    padding:1.15rem 1.15rem 1.25rem;
+    padding:1.15rem;
     background:#fff !important;
-    background-color:#fff !important;
+    display:flex;
+    flex-direction:column;
+    flex:1;
   }
 
-  .ind-body h2{margin:.1rem 0 .35rem;color:var(--kmw-blue);font-size:1.35rem}
-  .ind-body p{margin:.35rem 0 .75rem;color:#334155;line-height:1.6}
+  .ind-body h2{
+    margin:0 0 .45rem;
+    color:#0A2E5C !important;
+    font-size:1.25rem;
+    line-height:1.18;
+    letter-spacing:-.02em;
+  }
 
-  .ind-list{margin:0;padding:0;list-style:none;display:grid;gap:.45rem}
+  .ind-body p{
+    margin:.25rem 0 .85rem;
+    color:#334155 !important;
+    line-height:1.58;
+    font-size:.96rem;
+  }
+
+  .ind-body strong{
+    color:#0A2E5C !important;
+    font-weight:900;
+  }
+
+  .ind-list{
+    margin:.2rem 0 0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:.48rem;
+  }
 
   .ind-list li{
-    display:flex;
-    gap:.5rem;
-    align-items:flex-start;
-    color:#334155;
+    display:block;
+    position:relative;
+    padding-left:1rem;
+    color:#334155 !important;
+    line-height:1.45;
+    font-size:.92rem;
   }
 
   .ind-list li:before{
     content:"";
-    margin-top:.55rem;
-    flex:0 0 8px;
+    position:absolute;
+    left:0;
+    top:.48rem;
+    width:8px;
     height:8px;
     border-radius:999px;
-    background:var(--kmw-yellow);
+    background:#FFD60A;
     box-shadow:0 0 0 3px rgba(255,214,10,.25);
   }
 
-  .ind-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
-
-  .btn-ghost{
-    display:inline-flex;
-    align-items:center;
-    gap:.5rem;
-    padding:.6rem .9rem;
-    border-radius:12px;
-    border:1px solid #E5E7EB;
-    background:#fff;
-    color:var(--kmw-blue);
-    text-decoration:none;
-    font-weight:700;
+  .ind-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.55rem;
+    margin-top:auto;
+    padding-top:1rem;
   }
 
-  .btn-ghost:hover{background:#F8FAFC}
-
-  .btn-solid{
-    display:inline-flex;
-    align-items:center;
-    gap:.5rem;
-    padding:.6rem .9rem;
-    border-radius:12px;
-    border:1px solid rgba(0,0,0,0);
-    background:var(--kmw-blue);
-    color:#fff;
-    text-decoration:none;
-    font-weight:800;
+  .ind-actions .btn-solid,
+  .ind-actions .btn-ghost{
+    padding:.62rem .82rem;
+    font-size:.9rem;
   }
 
-  .btn-solid:hover{filter:brightness(.95)}
-
-  .ind-mini{
+  /* QUICK LINKS */
+  .quick-links{
     margin-top:1.25rem;
     border:1px solid #E5E7EB;
-    border-radius:18px;
+    border-radius:20px;
     background:#fff !important;
-    background-color:#fff !important;
-    padding:1.25rem;
+    padding:1.35rem;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
   }
 
-  .ind-mini h3{margin:0 0 .35rem;color:var(--kmw-blue)}
-  .ind-mini .cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem}
+  .quick-links h3{
+    margin:0 0 .35rem;
+    color:#0A2E5C !important;
+    font-size:1.35rem;
+  }
 
-  .pill{
-    display:inline-flex;
-    align-items:center;
-    gap:.45rem;
-    padding:.45rem .7rem;
-    border-radius:999px;
+  .quick-links p{
+    color:#334155 !important;
+    line-height:1.6;
+  }
+
+  .quick-links .cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+    margin-top:.85rem;
+  }
+
+  .mini-title{
+    font-weight:900;
+    color:#0A2E5C !important;
+    margin-bottom:.4rem;
+  }
+
+  /* CTA */
+  .cta-band{
+    margin-top:1.25rem;
+    padding:1.4rem;
     border:1px solid #E5E7EB;
-    background:#fff;
-    color:#0A2E5C;
-    font-weight:700;
-    margin:.25rem .35rem .25rem 0;
-    text-decoration:none;
+    border-radius:20px;
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:1rem;
+    align-items:center;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+    background:
+      linear-gradient(90deg, rgba(10,46,92,.06), rgba(255,214,10,.10)),
+      #fff;
   }
 
-  .pill:hover{background:#F8FAFC}
+  .cta-band h3{
+    margin:0 0 .35rem;
+    color:#0A2E5C !important;
+    font-size:1.4rem;
+  }
 
-  @media (max-width:900px){
-    .ind-card,
-    .ind-card.reverse{
+  .cta-band p{
+    margin:0;
+    color:#334155 !important;
+    line-height:1.6;
+  }
+
+  .cta-band .btns{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.7rem;
+    justify-content:flex-end;
+    margin-top:0;
+  }
+
+  .dark-cta{
+    background:
+      linear-gradient(135deg, rgba(10,46,92,.98), rgba(6,35,70,.96));
+    color:#fff !important;
+    border-color:rgba(255,255,255,.18);
+  }
+
+  .dark-cta h3{
+    color:#fff !important;
+  }
+
+  .dark-cta p{
+    color:rgba(255,255,255,.9) !important;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width:1050px){
+    .ind-grid{
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media(max-width:980px){
+    .cta-band{
       grid-template-columns:1fr;
     }
 
-    .ind-media{height:220px}
-    .ind-mini .cols{grid-template-columns:1fr}
+    .cta-band .btns{
+      justify-content:flex-start;
+    }
+
+    .quick-links .cols{
+      grid-template-columns:1fr;
+    }
+  }
+
+  @media(max-width:640px){
+    .ind-grid{
+      grid-template-columns:1fr;
+    }
+
+    .ind-media{
+      height:190px;
+    }
+  }
+
+  @media(max-width:560px){
+    .ind-hero{
+      padding:2.2rem 0 1.5rem !important;
+    }
+
+    .kicker{
+      font-size:.66rem !important;
+      line-height:1.35 !important;
+      letter-spacing:.035em !important;
+      padding:.42rem .62rem !important;
+      max-width:100%;
+      flex-wrap:wrap;
+    }
+
+    .ind-hero h1{
+      font-size:1.78rem !important;
+      line-height:1.12 !important;
+      letter-spacing:-.035em !important;
+      margin-bottom:.7rem !important;
+    }
+
+    .ind-hero .lead{
+      font-size:.95rem !important;
+      line-height:1.62 !important;
+    }
+
+    .hero-actions{
+      gap:.55rem;
+    }
+
+    .btn-solid,
+    .btn-ghost{
+      width:100%;
+      text-align:center;
+    }
+
+    .ind-wrap{
+      padding:1.35rem 0 2.25rem;
+    }
+
+    .intro-panel,
+    .ind-body,
+    .quick-links,
+    .cta-band{
+      border-radius:16px !important;
+      padding:.95rem !important;
+    }
+
+    .ind-body h2,
+    .intro-panel h2,
+    .quick-links h3,
+    .cta-band h3{
+      font-size:1.16rem !important;
+    }
+
+    .ind-body p,
+    .ind-list li{
+      font-size:.92rem;
+    }
+
+    .ind-list{
+      gap:.48rem !important;
+    }
+
+    .pill{
+      font-size:.82rem !important;
+      padding:.4rem .6rem !important;
+    }
   }
 </style>
 </head>
@@ -239,11 +610,13 @@
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/"><img src="/assets/img/logo-500-webp.webp" </a>
+    <a class="brand" href="/" aria-label="Kings Mobile Welding Home">
+      <img src="/assets/img/logo-500-webp.webp" width="150" height="70" alt="Kings Mobile Welding Logo">
+    </a>
 
     <nav class="desktop" aria-label="Primary">
       <a href="/about">About</a>
-      <a href="/industries">Industries</a>
+      <a href="/industries/">Industries</a>
       <a href="/services">Services</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
@@ -251,13 +624,15 @@
       <a class="btn-primary" href="/contact/">Contact</a>
     </nav>
 
-    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 
   <div id="mobileMenu" class="mobile-menu" hidden>
     <a href="/about">About</a>
+    <a href="/industries/">Industries</a>
     <a href="/services">Services</a>
-    <a href="/industries">Industries</a>
     <a href="/past-performance">Past Performance</a>
     <a href="/procurement">Procurement</a>
     <a href="/safety-compliance/">Safety &amp; Compliance</a>
@@ -266,18 +641,20 @@
 </header>
 
 <main>
+  <!-- HERO -->
   <section class="ind-hero">
     <div class="container">
-      <h1>Industries We Support</h1>
+      <div class="kicker">AWS Certified • Mobile Welding • Field Fabrication • Contractor Support</div>
+
+      <h1>Industries We Support With Certified Mobile Welding &amp; Field Fabrication</h1>
+
       <p class="lead">
-        Kings Mobile Welding supports contractors and project teams that need a responsive, inspection-ready field welding partner.
-        From heavy civil schedules to terminal load-outs, we bring AWS D1.1-certified capability to your jobsite across
-        <strong>Hampton Roads</strong>, <strong>Eastern Virginia</strong>, and the <strong>Mid-Atlantic</strong>.
+        Kings Mobile Welding supports contractors, project teams, facilities, fabrication shops, and infrastructure crews that need a responsive welding subcontractor on site. From <strong>DOT and infrastructure</strong> to <strong>deep foundations</strong>, <strong>marine construction</strong>, <strong>steel fabrication shops</strong>, <strong>commercial projects</strong>, and <strong>retail build-outs</strong>, we provide AWS-certified welding support across Hampton Roads, Eastern Virginia, the Mid-Atlantic, and project-based work throughout the region.
       </p>
 
-      <div class="ind-actions">
-        <a class="btn-solid" href="/contact/">Request a Quote</a>
-        <a class="btn-ghost" href="/past-performance">See Past Performance →</a>
+      <div class="hero-actions">
+        <a class="btn-solid" href="/contact/">Request Pricing / Availability</a>
+        <a class="btn-ghost" href="/past-performance">Past Performance →</a>
         <a class="btn-ghost" href="/procurement">Procurement →</a>
       </div>
     </div>
@@ -285,235 +662,280 @@
 
   <section class="ind-wrap">
     <div class="container">
-      <div class="ind-grid">
 
-          <article class="ind-card" id="marine">
-  <div class="ind-media">
-    <span class="tag">Marine Construction</span>
-    <img src="/assets/img/industries/marine-construction.png" alt="Marine construction welding for cofferdams, sheet pile, and waterfront projects" loading="lazy">
-  </div>
-  <div class="ind-body">
-    <h2>Marine &amp; Coastal Construction</h2>
-    <p>
-      On-site welding support for marine contractors, pile driving crews, and heavy civil teams—performing field welding for cofferdams, sheet pile systems,
-      bulkheads, and waterfront structural steel in demanding jobsite conditions.
-    </p>
-    <ul class="ind-list">
-      <li>Cofferdam bracing, walers, struts, and structural tie-ins</li>
-      <li>Sheet pile modifications, bulkhead repairs, and welded attachments</li>
-      <li>Waterfront structural steel, field fabrication, and repair welding</li>
-    </ul>
-    <div class="ind-actions">
-      <a class="btn-solid" href="/industries/marine-construction/">Marine page →</a>
-      <a class="btn-ghost" href="/services/cofferdam-welding/">Cofferdam welding →</a>
-    </div>
-  </div>
-</article>
-   <article class="ind-card reverse" id="fabrication-shops">
-  <div class="ind-media">
-    <span class="tag">Steel Fabrication Shops</span>
-    <img src="/assets/img/industries/structural-steel-welding.png" alt="AWS D1.1 certified welders providing fabrication shop welding support with dual shield flux core and structural steel production" loading="lazy">
-  </div>
-  <div class="ind-body">
-    <h2>AISC &amp; Structural Steel Fabrication Shops</h2>
-    <p>
-      Production-ready welding manpower for AISC-certified and structural steel fabrication shops—providing AWS D1.1 certified FCAW welders for backlog, deadlines,
-      and high-volume shop welding with minimal onboarding.
-    </p>
-    <ul class="ind-list">
-      <li>Dual shield flux core welding (1/16” wire, 75/25 &amp; 100% CO₂)</li>
-      <li>CJP welds with carbon arc gouging for backgouging</li>
-      <li>Layout, fit-up, blueprint reading, and fabrication support</li>
-      <li>Working within 1/16”–1/8” tolerances in production environments</li>
-      <li>Overhead bridge crane and gantry crane experience</li>
-    </ul>
-    <div class="ind-actions">
-      <a class="btn-solid" href="/industries/steel-fabrication-shops/">Industry page →</a>
-      <a class="btn-ghost" href="/services/aisc-fabrication-shop-welding-support/">Welding support →</a>
-    </div>
-  </div>
-</article>
-   
-
-
-
-         <!-- ✅ RAILCAR (TEXT LEFT, IMAGE RIGHT) — placed directly under DOT -->
-        <!-- <article class="ind-card reverse" id="railcar">
-          <div class="ind-body">
-            <h2>Heavy Transport &amp; Railcar Securement</h2>
-            <p>
-              Field-driven <strong>railcar securement welding</strong> support for heavy transport and load-out projects—transformer moves,
-              equipment shipments, and time-critical rigging sequences at terminals, ports, and rail yards.
-              We coordinate with lift leadership to keep the move on schedule and inspection-ready.
-            </p>
-            <ul class="ind-list">
-              <li>Railcar securement welding, restraints, stops, and structural tabs</li>
-      <li>Terminal, port, and rail yard load-out support</li>
-      <li>On-site modifications and time-critical corrections</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/heavy-transport-railcar-securement/">Railcar industry page →</a>
-              <a class="btn-ghost" href="/services/railcar-securement-welding/">Railcar securement welding →</a>
-            </div>
-          </div>
-          <div class="ind-media">
-            <span class="tag">Railcar &amp; Heavy Transport</span>
-            < ✅ swap this image path to whatever you actually have -->
-            <!-- <img src="/assets/img/industries/railcar-securement..jpg" alt="Railcar securement welding support for heavy transport and load-out projects" loading="lazy">
-          </div>
-        </article> --> 
-
-        <!-- DOT (IMAGE LEFT, TEXT RIGHT) -->
-        <article class="ind-card" id="dot">
-          <div class="ind-media">
-            <span class="tag">DOT &amp; Infrastructure</span>
-            <img src="/assets/img/industries/highway.jpg" alt="Field welding support for DOT and heavy civil projects" loading="lazy">
-          </div>
-          <div class="ind-body">
-            <h2>DOT Contractors &amp; Heavy Civil</h2>
-            <p>
-              Schedule-driven field welding and repair support for transportation and infrastructure work—mobilizing fast, coordinating with site leadership,
-              and delivering welds that meet inspection requirements.
-            </p>
-            <ul class="ind-list">
-              <li>Bridge and structural steel field repairs, fit-up support</li>
-              <li>Handrails, stairs, platforms, embeds, and site steel</li>
-              <li>On-site torch cutting, modification, and retrofit work</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/DOT-Infrastructure/">DOT page →</a>
-              <a class="btn-ghost" href="/services/government-and-dot-welding/">DOT welding services →</a>
-            </div>
-          </div>
-        </article>
-
-       
-
-        <!-- Solar -->
-        <article class="ind-card reverse" id="solar">
-          <div class="ind-body">
-            <h2>Solar Installers &amp; Utility Contractors</h2>
-            <p>
-              Field welding and fabrication support for solar and utility work where speed, consistency, and jobsite safety matter.
-              We help teams keep installs moving with clean prep, reliable fit-up, and documented QA/QC.
-            </p>
-            <ul class="ind-list">
-              <li>Racking repairs, equipment brackets, site steel modifications</li>
-              <li>Gate/guard repairs, platforms, access ladders, and safety rail</li>
-              <li>Rapid fixes that reduce downtime and rework</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/Solar-Utility/">Solar page →</a>
-              <a class="btn-ghost" href="/services/mobile-welding-services/">Mobile welding services →</a>
-            </div>
-          </div>
-          <div class="ind-media">
-            <span class="tag">Solar &amp; Utility</span>
-            <img src="/assets/img/industries/solar-farm.jpg" alt="Mobile welding support for solar installers and utility contractors" loading="lazy">
-          </div>
-        </article>
-
-        
-      
-
-        <!-- Construction / GC -->
-        <article class="ind-card" id="gc">
-          <div class="ind-media">
-            <span class="tag">Construction</span>
-            <img src="/assets/img/industries/ConstructionWorkersTalkingBuildingFrame.jpg" alt="Welding subcontractor support for general contractors and construction companies" loading="lazy">
-          </div>
-          <div class="ind-body">
-            <h2>Construction Companies &amp; General Contractors</h2>
-            <p>
-              A Tier-2 field welding partner for fast mobilization, clean fit-up, and on-site coordination.
-              We support commercial and industrial sites with structural steel, stairs/rail, platforms, and repair work.
-            </p>
-            <ul class="ind-list">
-              <li>Field welding, misc metals, stairs/handrails, platforms</li>
-              <li>Coordination with superintendents and inspectors</li>
-              <li>Documentation ready for your closeout package</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/Commercial-Industrial/">Construction industry page →</a>
-              <a class="btn-ghost" href="/services/welding-subcontractor/">Subcontractor services →</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Retail Build Outs -->
-        <article class="ind-card reverse" id="retail">
-          <div class="ind-body">
-            <h2>Retail Build-Out Companies</h2>
-            <p>
-              Speed and precision matter in retail timelines. We support build-outs with dependable on-site welding for steel, frames, guards,
-              stairs/handrails, and quick repairs that prevent schedule slip.
-            </p>
-            <ul class="ind-list">
-              <li>Storefront/site steel, bollards, guards, and supports</li>
-              <li>Service/repair work for fixtures and back-of-house steel</li>
-              <li>Clean jobsite practices and fast closeout</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/Retail-Build-Out-Companies/">Retail industry page →</a>
-              <a class="btn-ghost" href="/services/commercial-welding/">Commercial welding →</a>
-            </div>
-          </div>
-          <div class="ind-media">
-            <span class="tag">Retail Build-Outs</span>
-            <img src="/assets/img/industries/retail-build-out.jpg" alt="Welding support for retail build-outs and rollouts" loading="lazy">
-          </div>
-        </article>
-
-        <!-- Signs -->
-        <article class="ind-card" id="signs">
-          <div class="ind-media">
-            <span class="tag">Sign &amp; Structural Systems</span>
-            <img src="/assets/img/industries/billboard-industry.jpg" alt="Welding for sign structures, supports, and steel modifications" loading="lazy">
-          </div>
-          <div class="ind-body">
-            <h2>Sign Companies &amp; Structural Support Work</h2>
-            <p>
-              Support for sign installation teams that need certified welding for structural connections, retrofits, and repairs.
-              We focus on fit-up, quality, and on-site coordination to keep installs safe and on schedule.
-            </p>
-            <ul class="ind-list">
-              <li>Structural connections, braces, base plate repairs</li>
-              <li>On-site modifications and reinforcement as required</li>
-              <li>Inspection-ready workmanship and clear documentation</li>
-            </ul>
-            <div class="ind-actions">
-              <a class="btn-solid" href="/industries/Signage-Structural-Systems/">Sign industry page →</a>
-              <a class="btn-ghost" href="/services/structural-steel-welding/">Structural steel welding →</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Quick Links -->
-      <section class="ind-mini" aria-labelledby="quicklinks">
-        <h3 id="quicklinks">Quick Links</h3>
-        <p style="margin:.25rem 0 .8rem;color:#334155;max-width:900px;">
-          Need a certified field welding partner fast? Use the links below to route your team to the right info.
+      <section class="intro-panel" aria-labelledby="industry-overview">
+        <h2 id="industry-overview">Built for Contractors Who Need Welding Done Right in the Field</h2>
+        <p>
+          These pages are organized by the way contractors actually search for welding help: bridge welding, pile splice welding, marine construction welding, fabrication shop support, utility project welding, commercial repair welding, retail punch-list welding, and sign structure welding. Each industry page includes the type of scopes we support, related services, what to send for pricing, and the contractor teams we commonly work with.
         </p>
+
+        <div class="industry-nav">
+          <a class="pill" href="#dot">DOT &amp; Infrastructure</a>
+          <a class="pill" href="#deep-foundations">Deep Foundations</a>
+          <a class="pill" href="#marine">Marine Construction</a>
+          <a class="pill" href="#fabrication-shops">Steel Fabrication Shops</a>
+          <a class="pill" href="#solar">Solar &amp; Utility</a>
+          <a class="pill" href="#commercial-industrial">Commercial &amp; Industrial</a>
+          <a class="pill" href="#retail">Retail Build-Outs</a>
+          <a class="pill" href="#signs">Signs &amp; Billboards</a>
+        </div>
+      </section>
+
+   <div class="ind-grid">
+
+  <!-- DOT & INFRASTRUCTURE -->
+  <article class="ind-card featured" id="dot">
+    <div class="ind-media">
+      <span class="tag">DOT &amp; Infrastructure</span>
+      <img src="/assets/img/industries/highway.jpg" alt="Field welding support for DOT bridge and infrastructure contractors" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>DOT, Bridge &amp; Infrastructure Contractors</h2>
+      <p>
+        Certified field welding support for bridge contractors, DOT primes, roadway contractors, public works teams, and transportation infrastructure projects.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Bridge welding:</strong> repair plates, stiffeners, gussets, brackets, and field corrections</li>
+        <li><strong>Infrastructure steel:</strong> handrails, platforms, embeds, and site steel modifications</li>
+        <li><strong>Inspection-ready support:</strong> built around contractor schedules and project requirements</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/DOT-Infrastructure/">DOT &amp; Infrastructure →</a>
+        <a class="btn-ghost" href="/services/bridge-welding-remediation/">Bridge Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- DEEP FOUNDATIONS -->
+  <article class="ind-card featured" id="deep-foundations">
+    <div class="ind-media">
+      <span class="tag">Deep Foundations</span>
+      <img src="/assets/img/industries/marine-construction.png" alt="Deep foundations welding support for pile driving contractors and pipe pile splices" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Deep Foundations &amp; Pile Driving Contractors</h2>
+      <p>
+        Field welding support for pile driving contractors, deep foundation crews, PDCA contractors, marine foundation teams, and bridge foundation projects.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Pipe pile splice welding:</strong> large-diameter pipe piles, driven pile extensions, and field splice details</li>
+        <li><strong>H-pile and casing welding:</strong> H-pile splices, permanent casing splices, drilled shaft casing, and fit-up support</li>
+        <li><strong>Foundation support steel:</strong> pile bracing, templates, lifting lugs, sheet pile, and cofferdam welding</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/deep-foundations/">Deep Foundations →</a>
+        <a class="btn-ghost" href="/pile-splice-welding-contractor/">Pile Splice Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- MARINE -->
+  <article class="ind-card" id="marine">
+    <div class="ind-media">
+      <span class="tag">Marine Construction</span>
+      <img src="/assets/img/industries/marine-construction.png" alt="Marine construction welding for cofferdams sheet pile and waterfront projects" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Marine &amp; Coastal Construction</h2>
+      <p>
+        On-site welding support for marine contractors, pile driving crews, waterfront general contractors, and bridge teams.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Cofferdam welding:</strong> walers, struts, braces, tie-ins, and temporary works steel</li>
+        <li><strong>Sheet pile and bulkhead welding:</strong> cap plates, welded attachments, repairs, and field modifications</li>
+        <li><strong>Waterfront steel:</strong> access steel, platforms, ladders, fender support, and repair welding</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/marine-construction/">Marine Construction →</a>
+        <a class="btn-ghost" href="/services/cofferdam-welding/">Cofferdam Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- STEEL FABRICATION SHOPS -->
+  <article class="ind-card" id="fabrication-shops">
+    <div class="ind-media">
+      <span class="tag">Fabrication Shops</span>
+      <img src="/assets/img/industries/structural-steel-welding.png" alt="AWS certified welding support for steel fabrication shops and structural steel fabricators" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>AISC &amp; Structural Steel Fabrication Shops</h2>
+      <p>
+        Welding manpower for AISC fabricators, structural steel shops, and manufacturers that need qualified production support.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>FCAW / flux core support:</strong> production welding for beams, columns, frames, plates, and assemblies</li>
+        <li><strong>CJP and backgouging:</strong> carbon arc gouging, prep-heavy welds, and weld sequencing</li>
+        <li><strong>Shop workflow:</strong> blueprint reading, weld symbols, fit-up, tolerances, and production pressure</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/steel-fabrication-shops/">Fabrication Shops →</a>
+        <a class="btn-ghost" href="/services/aisc-fabrication-shop-welding-support/">Shop Support →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- SOLAR / UTILITY -->
+  <article class="ind-card" id="solar">
+    <div class="ind-media">
+      <span class="tag">Solar, Utility &amp; Substation</span>
+      <img src="/assets/img/industries/solar-farm.jpg" alt="Mobile welding support for solar utility and substation contractors" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Solar, Utility &amp; Substation Contractors</h2>
+      <p>
+        Field welding support for solar EPCs, utility contractors, substation builders, BESS contractors, and power infrastructure teams.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Substation support:</strong> equipment stands, cable trench steel, guards, brackets, and access steel</li>
+        <li><strong>Solar EPC support:</strong> racking repairs, torque tube repairs, tracker support steel, and post fixes</li>
+        <li><strong>BESS and utility work:</strong> support steel, bollards, skids, equipment pads, and emergency repairs</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/Solar-Utility/">Solar &amp; Utility →</a>
+        <a class="btn-ghost" href="/services/industrial-welding/">Industrial Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- COMMERCIAL / INDUSTRIAL -->
+  <article class="ind-card" id="commercial-industrial">
+    <div class="ind-media">
+      <span class="tag">Commercial &amp; Industrial</span>
+      <img src="/assets/img/industries/ConstructionWorkersTalkingBuildingFrame.jpg" alt="Welding subcontractor support for commercial and industrial contractors" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Commercial &amp; Industrial Contractors</h2>
+      <p>
+        Certified welding support for general contractors, commercial construction teams, industrial facilities, warehouses, and manufacturing plants.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Commercial construction:</strong> structural steel, embeds, stairs, handrails, platforms, and misc. metals</li>
+        <li><strong>Industrial facility welding:</strong> plant repairs, warehouse repairs, equipment guards, and support steel</li>
+        <li><strong>Emergency repairs:</strong> cracked steel, failed welds, impact damage, and downtime-sensitive work</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/Commercial-Industrial/">Commercial &amp; Industrial →</a>
+        <a class="btn-ghost" href="/services/commercial-welding/">Commercial Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- RETAIL BUILD-OUTS -->
+  <article class="ind-card" id="retail">
+    <div class="ind-media">
+      <span class="tag">Retail Build-Outs</span>
+      <img src="/assets/img/industries/retail-build-out.jpg" alt="Welding support for retail build-outs tenant improvements and commercial renovations" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Retail Build-Out &amp; Tenant Improvement Contractors</h2>
+      <p>
+        Mobile welding support for retail build-outs, tenant improvements, remodels, national rollouts, commercial renovations, and punch-list closeout.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Retail build-out welding:</strong> misc. metals, frames, brackets, supports, embeds, and storefront steel</li>
+        <li><strong>Closeout support:</strong> failed weld repairs, rework, field fixes, and turnover items</li>
+        <li><strong>Facility repairs:</strong> handrails, bollards, dock steel, stockroom guards, ladders, and platforms</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/Retail-Build-Out-Companies/">Retail Build-Outs →</a>
+        <a class="btn-ghost" href="/services/commercial-welding/">Commercial Welding →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- SIGNS / BILLBOARDS -->
+  <article class="ind-card" id="signs">
+    <div class="ind-media">
+      <span class="tag">Signs &amp; Billboards</span>
+      <img src="/assets/img/industries/billboard-industry.jpg" alt="Welding support for sign installers billboard structures and steel sign frames" loading="lazy">
+    </div>
+
+    <div class="ind-body">
+      <h2>Sign Installers &amp; Billboard Structure Companies</h2>
+      <p>
+        Welding subcontractor support for billboard structure installers, sign companies, outdoor advertising contractors, and pylon sign installers.
+      </p>
+
+      <ul class="ind-list">
+        <li><strong>Billboard structure welding:</strong> frames, crossmembers, braces, gussets, stiffeners, and field connections</li>
+        <li><strong>Pylon and sign pole welding:</strong> poles, base plates, cabinets, frames, brackets, and support steel</li>
+        <li><strong>Repair and access steel:</strong> catwalks, ladders, platforms, cracked welds, and field reinforcement</li>
+      </ul>
+
+      <div class="ind-actions">
+        <a class="btn-solid" href="/industries/Signage-Structural-Systems/">Signs &amp; Billboards →</a>
+        <a class="btn-ghost" href="/services/structural-steel-welding/">Structural Steel →</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+      <!-- QUICK LINKS -->
+      <section class="quick-links" aria-labelledby="quicklinks">
+        <h3 id="quicklinks">Quick Links for Contractors, Estimators &amp; Procurement Teams</h3>
+        <p>
+          Use these links to route your team to the right service, documentation, or contact page.
+        </p>
+
         <div class="cols">
           <div>
-            <div style="font-weight:800;color:#0A2E5C;margin-bottom:.35rem;">Services</div>
+            <div class="mini-title">Core Services</div>
             <a class="pill" href="/services/mobile-welding-services/">Mobile Welding</a>
             <a class="pill" href="/services/structural-steel-welding/">Structural Steel</a>
-            <a class="pill" href="/services/railcar-securement-welding/">Railcar Securement</a>
-            <a class="pill" href="/services/emergency-welding/">Emergency</a>
-            <a class="pill" href="/services/welding-subcontractor/">Subcontractor</a>
-            <a class="pill" href="/services/government-and-dot-welding/">Gov/DOT</a>
+            <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding</a>
+            <a class="pill" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+            <a class="pill" href="/services/cofferdam-welding/">Cofferdam Welding</a>
+            <a class="pill" href="/services/sheet-pile-welding/">Sheet Pile Welding</a>
+            <a class="pill" href="/services/emergency-welding/">Emergency Welding</a>
+            <a class="pill" href="/services/welding-subcontractor/">Welding Subcontractor</a>
           </div>
+
           <div>
-            <div style="font-weight:800;color:#0A2E5C;margin-bottom:.35rem;">Procurement</div>
+            <div class="mini-title">Company Information</div>
             <a class="pill" href="/procurement">Procurement Pack</a>
             <a class="pill" href="/past-performance">Past Performance</a>
-            <a class="pill" href="/safety-compliance">Safety &amp; Compliance</a>
+            <a class="pill" href="/safety-compliance/">Safety &amp; Compliance</a>
             <a class="pill" href="/areas">Areas We Service</a>
             <a class="pill" href="/contact/">Contact</a>
           </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="cta-band dark-cta" aria-labelledby="industry-cta">
+        <div>
+          <h3 id="industry-cta">Need a Certified Welding Subcontractor for an Active Project?</h3>
+          <p>
+            Send the project location, drawings, photos, access notes, schedule constraints, inspection requirements, and target start date. We will review the scope and respond with availability, pricing direction, and what we need to mobilize.
+          </p>
+        </div>
+
+        <div class="btns">
+          <a class="btn-solid" href="/contact/">Request Pricing / Availability</a>
+          <a class="btn-ghost" href="/procurement">Procurement →</a>
         </div>
       </section>
 
@@ -525,12 +947,12 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <a class="brand" href="/">
-        <img src="/assets/img/logo-500-webp.webp" width="150" height="70" alt="Logo">
-        
+        <img src="/assets/img/logo-500-webp.webp" width="150" height="70" alt="Kings Mobile Welding Logo">
       </a>
+
       <div class="footer-contact">
-        <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-        <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
         <p>📍 Hampton Roads, Eastern Virginia &amp; the Mid-Atlantic</p>
         <p>🆔 UEI: ZCY4G7GBGQA3</p>
         <p>🏷️ CAGE: 11P75</p>
@@ -554,17 +976,20 @@
           <path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/>
         </svg>
       </a>
+
       <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
           <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/>
         </svg>
       </a>
+
       <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
           <path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.72-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.7-2.34a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/>
         </svg>
       </a>
-      <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
+
+      <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false">
           <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
         </svg>
@@ -577,7 +1002,6 @@
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/forms.js"></script>
 
-<!-- ✅ Click-to-open dropdown logic -->
 <script>
 (function(){
   const items = document.querySelectorAll('nav.desktop .nav-item.has-dropdown');

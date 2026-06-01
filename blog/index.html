@@ -1,36 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40G6PQSXY3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-40G6PQSXY3');
+  </script>
 
-  <title>
-    Blog • Kings Mobile Welding
-    
-  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
+  <title>Blog | Welding Insights, DOT, Bridge &amp; Field Welding | Kings Mobile Welding</title>
+
+  <meta name="description" content="Kings Mobile Welding blog with contractor-focused articles on AWS D1.1 structural welding, AWS D1.5 bridge welding, DOT and infrastructure welding, pile splice welding, commercial welding, industrial welding, emergency repairs, procurement, and field welding support.">
+  <meta name="keywords" content="Kings Mobile Welding blog, welding blog, AWS D1.1 welding, AWS D1.5 bridge welding, DOT welding, infrastructure welding, pile splice welding, structural steel welding, mobile welding, commercial welding, industrial welding, welding subcontractor, bridge welding contractor, Hampton Roads welding contractor">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kings Mobile Welding Blog">
+  <meta property="og:description" content="Contractor-focused articles on mobile welding, structural steel, bridge/DOT work, pile splicing, commercial welding, industrial welding, and procurement.">
+  <meta property="og:url" content="https://www.kingsmobilewelding.com/blog/">
+  <meta property="og:image" content="https://www.kingsmobilewelding.com/assets/img/logo-500.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kings Mobile Welding Blog">
+  <meta name="twitter:description" content="Mobile welding, DOT, bridge, infrastructure, commercial, industrial, and procurement insights from Kings Mobile Welding.">
+  <meta name="twitter:image" content="https://www.kingsmobilewelding.com/assets/img/logo-500.png">
+
   <link rel="canonical" href="https://www.kingsmobilewelding.com/blog/">
-
-  
-  <meta name="description" content="Kings Mobile Welding blog — updates, project highlights, welding know-how, and procurement insights.">
-  
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:description" content="Kings Mobile Welding blog — updates, project highlights, welding know-how, and procurement insights.">
-<meta property="og:url" content="https://www.kingsmobilewelding.com/blog/">
-<meta property="og:image" content="https://www.kingsmobilewelding.com/blog/assets/img/og-image.jpg">
-<meta property="og:image:alt" content="Blog">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog">
-<meta name="twitter:description" content="Kings Mobile Welding blog — updates, project highlights, welding know-how, and procurement insights.">
-<meta name="twitter:image" content="https://www.kingsmobilewelding.com/blog/assets/img/og-image.jpg">
 
   <!-- Icons / Manifest -->
   <link rel="manifest" href="/manifest.webmanifest">
@@ -41,67 +40,811 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
-  <!-- Your site CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Small polish for blog chips (uses your palette) -->
+  <!-- LocalBusiness + Blog JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"LocalBusiness",
+        "name":"Kings Mobile Welding",
+        "url":"https://www.kingsmobilewelding.com",
+        "telephone":"(757) 231-6809",
+        "email":"DillonKing@kingsmobilewelding.com",
+        "foundingDate":"2024",
+        "founder":"Dillon King",
+        "image":"https://www.kingsmobilewelding.com/assets/img/logo-500.png",
+        "address":{
+          "@type":"PostalAddress",
+          "addressLocality":"Newport News",
+          "addressRegion":"VA",
+          "postalCode":"23601",
+          "addressCountry":"US"
+        },
+        "areaServed":[
+          "Hampton Roads",
+          "Eastern Virginia",
+          "Virginia",
+          "Maryland",
+          "Washington DC",
+          "North Carolina",
+          "South Carolina",
+          "Mid-Atlantic"
+        ],
+        "description":"Kings Mobile Welding provides AWS D1.1 structural welding, AWS D1.5 bridge welding support, mobile field welding, DOT and infrastructure welding, pile splice welding, commercial welding, industrial welding, emergency welding, and welding subcontractor support."
+      },
+      {
+        "@type":"Blog",
+        "name":"Kings Mobile Welding Blog",
+        "url":"https://www.kingsmobilewelding.com/blog/",
+        "description":"Contractor-focused welding articles covering mobile welding, structural steel, DOT and infrastructure welding, bridge welding, pile splice welding, commercial welding, industrial welding, procurement, and field repair topics."
+      }
+    ]
+  }
+  </script>
+
   <style>
-    .post .tags,.kmw-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.25rem}
-    .post .tag,.kmw-tag{
-      font-size:.82rem;padding:.14rem .5rem;border-radius:999px;
-      background:#F1F5F9;border:1px solid #E2E8F0;color:#0A2E5C
+    nav.desktop{display:flex;gap:14px;align-items:center}
+    nav.desktop .nav-item{position:relative;display:inline-flex;align-items:center}
+    nav.desktop .nav-item > a{display:inline-flex;align-items:center;gap:6px}
+    nav.desktop .nav-item > a .chev{font-size:.9em;opacity:.8}
+    nav.desktop .nav-item{padding-bottom:14px}
+    nav.desktop .dropdown{
+      position:absolute;
+      left:0;
+      top:100%;
+      margin-top:8px;
+      min-width:290px;
+      background:#fff;
+      border:1px solid #E5E7EB;
+      border-radius:14px;
+      box-shadow:0 10px 24px rgba(0,0,0,.10);
+      padding:10px;
+      display:none;
+      z-index:9999;
     }
-    .kmw-breadcrumbs{font-size:.9rem;color:#64748B;margin:.25rem 0 0}
-    .kmw-breadcrumbs a{color:#0A2E5C;text-decoration:none}
-    .kmw-breadcrumbs a:hover{text-decoration:underline}
+    nav.desktop .dropdown a{
+      display:block;
+      padding:10px 10px;
+      border-radius:10px;
+      text-decoration:none;
+      color:inherit;
+      white-space:nowrap;
+    }
+    nav.desktop .dropdown a:hover{background:#F8FAFC}
+    nav.desktop .nav-item:hover .dropdown,
+    nav.desktop .nav-item:focus-within .dropdown{display:block}
+    nav.desktop .nav-item.is-open .dropdown{display:block}
+
+    :root{
+      --kmw-blue:#0A2E5C;
+      --kmw-blue-dark:#062346;
+      --kmw-yellow:#FFD60A;
+      --kmw-slate:#334155;
+      --kmw-light:#F8FAFC;
+      --kmw-border:#E5E7EB;
+    }
+
+    html,
+    body,
+    main{
+      background:#fff !important;
+      color:#1E293B;
+    }
+
+    body{
+      overflow-x:hidden;
+    }
+
+    .blog-hero{
+      padding:4.25rem 0 2.7rem;
+      background:
+        linear-gradient(135deg, rgba(10,46,92,.97), rgba(6,35,70,.95)),
+        url("/blog/assets/uploads/U.S.-Highway-and-Bridges.png") center/cover no-repeat;
+      color:#fff !important;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .blog-hero::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:115px;
+      background:linear-gradient(
+        180deg,
+        rgba(10,46,92,0) 0%,
+        rgba(10,46,92,.72) 42%,
+        #0A2E5C 100%
+      );
+      z-index:1;
+      pointer-events:none;
+    }
+
+    .blog-hero .container{
+      position:relative;
+      z-index:2;
+    }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.45rem .72rem;
+      border-radius:999px;
+      background:rgba(255,214,10,.14);
+      border:1px solid rgba(255,214,10,.45);
+      color:#fff !important;
+      font-weight:900;
+      font-size:.82rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      margin-bottom:.95rem;
+    }
+
+    .blog-hero h1{
+      max-width:1080px;
+      margin:0 0 .85rem;
+      color:#fff !important;
+      font-size:clamp(2rem, 5vw, 4.15rem);
+      line-height:1.05;
+      letter-spacing:-.045em;
+    }
+
+    .blog-hero .lead{
+      max-width:1040px;
+      color:rgba(255,255,255,.93) !important;
+      font-size:1.08rem;
+      line-height:1.72;
+      margin:0;
+    }
+
+    .blog-hero strong{
+      color:#fff !important;
+      font-weight:900;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.7rem;
+      margin-top:1.35rem;
+      position:relative;
+      z-index:3;
+    }
+
+    .btn-solid,
+    .btn-ghost{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      padding:.72rem 1rem;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:900;
+      line-height:1.1;
+      transition:.18s ease;
+    }
+
+    .btn-solid{
+      background:#0A2E5C;
+      color:#fff !important;
+      border:1px solid #0A2E5C;
+    }
+
+    .btn-ghost{
+      background:#fff;
+      color:#0A2E5C !important;
+      border:1px solid #E5E7EB;
+    }
+
+    .blog-hero .btn-solid,
+    .dark-cta .btn-solid{
+      background:#FFD60A;
+      color:#0A2E5C !important;
+      border-color:#FFD60A;
+    }
+
+    .blog-hero .btn-ghost,
+    .dark-cta .btn-ghost{
+      background:rgba(255,255,255,.08);
+      color:#fff !important;
+      border-color:rgba(255,255,255,.28);
+    }
+
+    .btn-solid:hover,
+    .btn-ghost:hover{
+      transform:translateY(-1px);
+    }
+
+    .btn-ghost:hover{
+      background:#F8FAFC;
+    }
+
+    .blog-hero .btn-ghost:hover,
+    .dark-cta .btn-ghost:hover{
+      background:rgba(255,255,255,.14);
+    }
+
+    .blog-section{
+      padding:2.5rem 0;
+      background:#fff;
+    }
+
+    .blog-section.light{
+      background:#F8FAFC;
+    }
+
+    .blog-section h2{
+      margin:0 0 .65rem;
+      color:#0A2E5C !important;
+      font-size:clamp(1.55rem, 3vw, 2.35rem);
+      line-height:1.15;
+      letter-spacing:-.025em;
+    }
+
+    .blog-section p{
+      color:#334155 !important;
+      line-height:1.65;
+    }
+
+    .intro-panel{
+      padding:1.25rem;
+      border:1px solid #E5E7EB;
+      border-radius:20px;
+      background:
+        linear-gradient(90deg, rgba(10,46,92,.05), rgba(255,214,10,.09)),
+        #fff;
+      box-shadow:0 10px 30px rgba(15,23,42,.05);
+    }
+
+    .intro-panel h2{
+      margin:0 0 .45rem;
+      color:#0A2E5C !important;
+      font-size:1.45rem;
+      line-height:1.2;
+    }
+
+    .intro-panel p{
+      margin:.25rem 0 0;
+      color:#334155 !important;
+      line-height:1.65;
+      max-width:1050px;
+    }
+
+    .link-grid,
+    .blog-filter-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.5rem;
+      margin-top:1rem;
+    }
+
+    .pill,
+    .filter-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.45rem .72rem;
+      border-radius:999px;
+      border:1px solid #E5E7EB;
+      background:#fff;
+      color:#0A2E5C !important;
+      font-weight:900;
+      font-size:.92rem;
+      text-decoration:none;
+      line-height:1.12;
+      cursor:pointer;
+    }
+
+    .filter-chip.is-active,
+    .pill:hover,
+    .filter-chip:hover{
+      background:#0A2E5C;
+      border-color:#0A2E5C;
+      color:#fff !important;
+    }
+
+    .blog-toolbar{
+      margin-top:1.25rem;
+      border:1px solid #E5E7EB;
+      border-radius:20px;
+      background:#fff;
+      padding:1rem;
+      box-shadow:0 10px 30px rgba(15,23,42,.06);
+    }
+
+    .blog-toolbar-inner{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:.8rem;
+      align-items:center;
+    }
+
+    .blog-toolbar input{
+      width:100%;
+      border:1px solid #CBD5E1;
+      border-radius:12px;
+      padding:.78rem .85rem;
+      font:inherit;
+      color:#0F172A;
+      background:#fff;
+      outline:none;
+      transition:.15s ease;
+    }
+
+    .blog-toolbar input:focus{
+      border-color:#0A2E5C;
+      box-shadow:0 0 0 3px rgba(10,46,92,.12);
+    }
+
+    .post-count{
+      white-space:nowrap;
+      color:#64748B;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    .blog-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:1.25rem;
+      margin-top:1.25rem;
+    }
+
+    .post{
+      border:1px solid #E5E7EB;
+      border-radius:20px;
+      background:#fff;
+      box-shadow:0 10px 30px rgba(15,23,42,.07);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+      transition:.18s ease;
+    }
+
+    .post:hover{
+      transform:translateY(-3px);
+      box-shadow:0 16px 40px rgba(15,23,42,.11);
+    }
+
+    .post > a{
+      display:block;
+      position:relative;
+      min-height:210px;
+      background:#0A2E5C;
+      overflow:hidden;
+    }
+
+    .post > a::after{
+      content:"Blog";
+      position:absolute;
+      left:12px;
+      top:12px;
+      background:rgba(10,46,92,.88);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:999px;
+      padding:.38rem .65rem;
+      font-size:.78rem;
+      font-weight:900;
+      backdrop-filter:blur(6px);
+    }
+
+    .post img{
+      display:block;
+      width:100%;
+      height:230px;
+      object-fit:cover;
+      transition:.22s ease;
+    }
+
+    .post:hover img{
+      transform:scale(1.025);
+    }
+
+    .post .body{
+      padding:1rem;
+      display:flex;
+      flex-direction:column;
+      gap:.55rem;
+      flex:1;
+    }
+
+    .post .meta{
+      color:#64748B;
+      font-size:.88rem;
+      font-weight:900;
+    }
+
+    .post h2{
+      margin:0;
+      font-size:1.12rem;
+      line-height:1.22;
+      letter-spacing:-.02em;
+    }
+
+    .post h2 a{
+      color:#0A2E5C !important;
+      text-decoration:none;
+    }
+
+    .post h2 a:hover{
+      text-decoration:underline;
+      text-decoration-color:#FFD60A;
+      text-decoration-thickness:3px;
+      text-underline-offset:3px;
+    }
+
+    .post p{
+      margin:0;
+      color:#334155 !important;
+      line-height:1.58;
+      font-size:.96rem;
+    }
+
+    .post .tags,
+    .kmw-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.35rem;
+      margin-top:.15rem;
+    }
+
+    .post .tag,
+    .kmw-tag{
+      display:inline-flex;
+      align-items:center;
+      font-size:.78rem;
+      line-height:1.1;
+      padding:.32rem .52rem;
+      border-radius:999px;
+      background:#F8FAFC;
+      border:1px solid #E2E8F0;
+      color:#0A2E5C !important;
+      font-weight:800;
+    }
+
+    .post .cta{
+      margin-top:auto;
+      padding-top:.35rem;
+    }
+
+    .post .cta a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.62rem .82rem;
+      border-radius:12px;
+      background:#0A2E5C;
+      color:#fff !important;
+      text-decoration:none;
+      font-weight:900;
+      font-size:.9rem;
+    }
+
+    .post .cta a:hover{
+      transform:translateY(-1px);
+    }
+
+    .blog-grid .post:first-child{
+      grid-column:span 2;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:stretch;
+    }
+
+    .blog-grid .post:first-child > a{
+      min-height:100%;
+    }
+
+    .blog-grid .post:first-child img{
+      height:100%;
+      min-height:360px;
+    }
+
+    .local-box{
+      border:1px dashed #CBD5E1;
+      border-radius:20px;
+      background:
+        linear-gradient(90deg, rgba(10,46,92,.04), rgba(255,214,10,.08)),
+        #fff;
+      padding:1.18rem;
+    }
+
+    .local-box h2{
+      font-size:1.25rem;
+      margin-bottom:.35rem;
+    }
+
+    .cta-band{
+      margin-top:1.25rem;
+      padding:1.4rem;
+      border:1px solid #E5E7EB;
+      border-radius:20px;
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:1rem;
+      align-items:center;
+      box-shadow:0 10px 30px rgba(15,23,42,.06);
+      background:
+        linear-gradient(90deg, rgba(10,46,92,.06), rgba(255,214,10,.10)),
+        #fff;
+    }
+
+    .cta-band h3{
+      margin:0 0 .35rem;
+      color:#0A2E5C !important;
+      font-size:1.4rem;
+    }
+
+    .cta-band p{
+      margin:0;
+      color:#334155 !important;
+      line-height:1.6;
+    }
+
+    .cta-band .btns{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.7rem;
+      justify-content:flex-end;
+      margin-top:0;
+    }
+
+    .dark-cta{
+      background:
+        linear-gradient(135deg, rgba(10,46,92,.98), rgba(6,35,70,.96));
+      color:#fff !important;
+      border-color:rgba(255,255,255,.18);
+    }
+
+    .dark-cta h3{
+      color:#fff !important;
+    }
+
+    .dark-cta p{
+      color:rgba(255,255,255,.9) !important;
+    }
+
+    .no-results{
+      display:none;
+      margin-top:1rem;
+      border:1px solid #E5E7EB;
+      border-radius:18px;
+      background:#fff;
+      padding:1rem;
+      color:#334155;
+      font-weight:800;
+    }
+
+    @media(max-width:1050px){
+      .blog-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+
+      .blog-grid .post:first-child{
+        grid-column:span 2;
+      }
+    }
+
+    @media(max-width:980px){
+      .cta-band{
+        grid-template-columns:1fr;
+      }
+
+      .cta-band .btns{
+        justify-content:flex-start;
+      }
+
+      .blog-grid .post:first-child{
+        display:flex;
+      }
+
+      .blog-grid .post:first-child img{
+        min-height:0;
+        height:260px;
+      }
+    }
+
+    @media(max-width:720px){
+      .blog-grid{
+        grid-template-columns:1fr;
+      }
+
+      .blog-grid .post:first-child{
+        grid-column:span 1;
+      }
+
+      .blog-toolbar-inner{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:560px){
+      .blog-hero{
+        padding:2.2rem 0 1.5rem !important;
+      }
+
+      .kicker{
+        font-size:.66rem !important;
+        line-height:1.35 !important;
+        letter-spacing:.035em !important;
+        padding:.42rem .62rem !important;
+        max-width:100%;
+        flex-wrap:wrap;
+      }
+
+      .blog-hero h1{
+        font-size:1.78rem !important;
+        line-height:1.12 !important;
+        letter-spacing:-.035em !important;
+        margin-bottom:.7rem !important;
+      }
+
+      .blog-hero .lead{
+        font-size:.95rem !important;
+        line-height:1.62 !important;
+      }
+
+      .hero-actions{
+        gap:.55rem;
+      }
+
+      .btn-solid,
+      .btn-ghost{
+        width:100%;
+        text-align:center;
+      }
+
+      .blog-section{
+        padding:1.55rem 0;
+      }
+
+      .intro-panel,
+      .local-box,
+      .cta-band,
+      .blog-toolbar{
+        border-radius:16px !important;
+        padding:.95rem !important;
+      }
+
+      .blog-section h2,
+      .intro-panel h2,
+      .cta-band h3{
+        font-size:1.16rem !important;
+      }
+
+      .pill,
+      .filter-chip{
+        font-size:.82rem !important;
+        padding:.4rem .6rem !important;
+      }
+
+      .post img,
+      .blog-grid .post:first-child img{
+        height:210px;
+      }
+
+      .post .body{
+        padding:.9rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <!-- Header (your exact header) -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/"><img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo"><strong>Kings Mobile Welding</strong></a>
-      <nav class="desktop">
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/past-performance">Past Performance</a>
-        <a href="/procurement">Procurement</a>
-        <a href="/contact">Contact</a>
-        <a href="/careers">Careers</a>
-        <a class="btn-primary" href="/contact">Contact</a>
-      </nav>
-      <button class="burger" id="openMobile" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu" hidden>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Kings Mobile Welding Home">
+      <img src="/assets/img/logo-500-webp.webp" width="150" height="70" alt="Kings Mobile Welding Logo">
+    </a>
+
+    <nav class="desktop" aria-label="Primary">
+      <a href="/about">About</a>
       <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
       <a href="/past-performance">Past Performance</a>
       <a href="/procurement">Procurement</a>
-      <a href="/contact">Contact</a>
-      <a href="/careers">Careers</a>
-      <a href="/about">About</a>
-      <a class="btn-primary" href="/contact">Contact</a>
-    </div>
-  </header>
+      <a href="/safety-compliance/">Safety &amp; Compliance</a>
+      <a class="btn-primary" href="/contact/">Contact</a>
+    </nav>
 
-  <main>
-    <section class="blog-hero">
-  <div class="container">
-    <h1>Company Blog</h1>
-    <p class="lead">Updates, project highlights, and welding know-how from the field.</p>
+    <button class="burger" id="openMobile" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</section>
 
-<section class="blog-wrap" itemscope itemtype="https://schema.org/Blog">
-  <meta itemprop="name" content="Kings Mobile Welding Blog">
-  <link itemprop="url" href="https://www.kingsmobilewelding.com/blog/">
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/industries">Industries</a>
+    <a href="/past-performance">Past Performance</a>
+    <a href="/procurement">Procurement</a>
+    <a href="/safety-compliance/">Safety &amp; Compliance</a>
+    <a class="btn-primary" href="/contact/">Contact</a>
+  </div>
+</header>
 
-  <div class="container">
-    <div class="blog-toolbar">
-      <input type="search" id="blogSearch" placeholder="Search posts…" aria-label="Search posts">
+<main>
+  <!-- HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="kicker">Welding Blog • DOT • Bridge • Infrastructure • Commercial • Industrial • Procurement</div>
+
+      <h1>Welding Articles, Field Notes &amp; Contractor Resources</h1>
+
+      <p class="lead">
+        Contractor-focused articles from Kings Mobile Welding covering <strong>AWS D1.1 structural welding</strong>, <strong>AWS D1.5 bridge welding</strong>, <strong>DOT and infrastructure welding</strong>, <strong>pile splice welding</strong>, <strong>commercial welding</strong>, <strong>industrial welding</strong>, <strong>emergency repairs</strong>, <strong>procurement</strong>, and real-world mobile welding support across Hampton Roads and the Mid-Atlantic.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-solid" href="/contact/">Request Welding Support</a>
+        <a class="btn-ghost" href="/services">View Services →</a>
+        <a class="btn-ghost" href="tel:7572316809">Call 757-231-6809</a>
+      </div>
     </div>
+  </section>
 
-    <div class="blog-grid" id="postsGrid">
+  <!-- INTRO / FILTERS -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="intro-panel">
+        <h2>Practical Welding Content for Contractors, Facilities &amp; Infrastructure Teams</h2>
+        <p>
+          Use this blog as a resource for bridge contractors, DOT teams, pile driving contractors, commercial GCs, industrial facilities, property managers, fabrication shops, and procurement teams that need to understand when certified field welding support is needed.
+        </p>
+
+        <div class="link-grid">
+          <a class="pill" href="/services/mobile-welding-services/">Mobile Welding</a>
+          <a class="pill" href="/services/structural-steel-welding/">Structural Steel</a>
+          <a class="pill" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+          <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding</a>
+          <a class="pill" href="/services/government-and-dot-welding/">Government &amp; DOT</a>
+          <a class="pill" href="/procurement">Procurement</a>
+        </div>
+      </div>
+
+      <div class="blog-toolbar" aria-label="Blog search and filters">
+        <div class="blog-toolbar-inner">
+          <input type="search" id="blogSearch" placeholder="Search posts by title or topic…" aria-label="Search posts">
+          <span class="post-count" id="postCount">Showing posts</span>
+        </div>
+
+        <div class="blog-filter-row" aria-label="Blog topic filters">
+          <button class="filter-chip is-active" type="button" data-filter="">All Posts</button>
+          <button class="filter-chip" type="button" data-filter="bridge">Bridge / DOT</button>
+          <button class="filter-chip" type="button" data-filter="pile">Pile Splice</button>
+          <button class="filter-chip" type="button" data-filter="structural">Structural Steel</button>
+          <button class="filter-chip" type="button" data-filter="commercial">Commercial</button>
+          <button class="filter-chip" type="button" data-filter="industrial">Industrial</button>
+          <button class="filter-chip" type="button" data-filter="procurement">Procurement</button>
+          <button class="filter-chip" type="button" data-filter="marine">Marine</button>
+          <button class="filter-chip" type="button" data-filter="solar">Solar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section class="blog-section light" itemscope itemtype="https://schema.org/Blog">
+    <meta itemprop="name" content="Kings Mobile Welding Blog">
+    <link itemprop="url" href="https://www.kingsmobilewelding.com/blog/">
+
+    <div class="container">
+      <h2>Latest Welding Articles</h2>
+      <p>
+        Browse updates, guides, project highlights, and contractor-focused welding resources.
+      </p>
+
+      <div class="blog-grid" id="postsGrid">
+        
       
         
         
@@ -1647,84 +2390,189 @@
           </div>
         </article>
       
+    
+      </div>
+
+      <div class="no-results" id="noResults">No blog posts match that search or filter.</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- JSON-LD for the Blog list -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Kings Mobile Welding Blog",
-  "url": "https://www.kingsmobilewelding.com/blog/"
-}
-</script>
+  <!-- CTA -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="local-box">
+        <h2>Need Welding Support for a Project You Read About?</h2>
+        <p>
+          Kings Mobile Welding is based in Newport News, Virginia and supports mobile welding, structural steel welding, bridge welding, pile splice welding, DOT welding, commercial welding, industrial welding, emergency welding, and welding subcontractor work throughout Hampton Roads, Virginia, Maryland, D.C., North Carolina, South Carolina, and the Mid-Atlantic for qualified contractor scopes.
+        </p>
 
-<script>
-  // Simple title search
-  (function(){
-    const input = document.getElementById('blogSearch');
-    const cards = Array.from(document.querySelectorAll('#postsGrid .post'));
-    if(!input) return;
-    input.addEventListener('input', e => {
-      const q = e.target.value.trim().toLowerCase();
-      cards.forEach(card => {
-        const t = card.getAttribute('data-title') || '';
-        card.style.display = (!q || t.includes(q)) ? '' : 'none';
-      });
-    });
-  })();
-</script>
-
-
-
-  </main>
-
-  <!-- Footer (your exact footer) -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="/">
-          <img src="/assets/img/logo-500.png" width="44" height="44" alt="Logo">
-          <strong>Kings Mobile Welding</strong>
-        </a>
-        <div class="footer-contact">
-          <p>📞 <a href="/tel:7572316809">757-231-6809</a></p>
-          <p>✉️ <a href="/mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
-          <p>📍 Hampton Roads, VA and beyond</p>
-          <p>🆔 UEI: ZCY4G7GBGQA3</p>
-          <p>🏷️ CAGE: 11P75</p>
+        <div class="link-grid">
+          <a class="pill" href="/services/mobile-welding-services/">Mobile Welding</a>
+          <a class="pill" href="/services/bridge-welding-remediation/">Bridge Welding</a>
+          <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding</a>
+          <a class="pill" href="/services/structural-steel-welding/">Structural Steel</a>
+          <a class="pill" href="/services/welding-subcontractor/">Welding Subcontractor</a>
+          <a class="pill" href="/contact/">Contact</a>
         </div>
       </div>
 
-      <nav class="footer-nav">
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/past-performance">Past Performance</a>
-        <a href="/procurement">Procurement</a>
-        <a href="/careers">Careers</a>
-        <a href="/areas">Areas We Service</a>
-        <a href="/contact">Contact</a>
-      </nav>
+      <section class="cta-band dark-cta" aria-labelledby="blog-cta">
+        <div>
+          <h3 id="blog-cta">Have a Welding Scope, Repair or Bid Package?</h3>
+          <p>
+            Send photos, drawings, project location, access notes, required certifications, and schedule. We will review the scope and confirm availability.
+          </p>
+        </div>
 
-      <div class="social" aria-label="Social links">
-        <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" role="img" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.562 9.877v-6.987H7.9v-2.89h2.538V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987A10.002 10.002 0 0 0 22 12Z"/></svg></a>
-        <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 6H2v11h3V9.5Zm5 0H7v11h3v-5.5c0-1.657 1.343-3 3-3s3 .99 3 3V20.5h3v-6.5c0-3.314-2.239-5-5-5-1.31 0-2.582.52-3.5 1.5V9.5Z"/></svg></a>
-        <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.84.07 1.17.05 1.95.24 2.55.5.62.24 1.14.56 1.64 1.06.5.5.82 1.02 1.06 1.64.26.6.45 1.38.5 2.55.06 1.26.07 1.64.07 4.84s-.01 3.58-.07 4.84c-.05 1.17-.24 1.95-.5 2.55a4.5 4.5 0 0 1-1.06 1.64 4.5 4.5 0 0 1-1.64 1.06c-.6.26-1.38.45-2.55.5-1.26.06-1.64.07-4.84.07s-3.58-.01-4.84-.07c-1.17-.05-1.95-.24-2.55-.5a4.5 4.5 0 0 1-1.64-1.06 4.5 4.5 0 0 1-1.06-1.64c-.26-.6-.45-1.38-.5-2.55C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.84c.05-1.17.24-1.95.5-2.55.24-.62.56-1.14 1.06-1.64.5-.5 1.02-.82 1.64-1.06.6-.26 1.38-.45 2.55-.5C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.12 0-3.49.01-4.72.07-.95.04-1.46.2-1.8.34-.45.17-.77.37-1.11.71-.34.34-.54.66-.71 1.11-.14.34-.3.85-.34 1.8-.06 1.23-.07 1.6-.07 4.72s.01 3.49.07 4.72c.04.95.2 1.46.34 1.8.17.45.37.77.71 1.11.34.34.66.54 1.11.71.34.14.85.3 1.8.34 1.23.06 1.6.07 4.72.07s3.49-.01 4.72-.07c.95-.04 1.46-.2 1.8-.34.45-.17.77-.37 1.11-.71.34-.34.54-.66.71-1.11.14-.34.3-.85.34-1.8.06-1.23.07-1.6.07-4.72s-.01-3.49-.07-4.72c-.04-.95-.2-1.46-.34-1.8-.17-.45-.37-.77-.71-1.11a2.9 2.9 0 0 0-1.11-.71c-.34-.14-.85-.3-1.8-.34-1.23-.06-1.6-.07-4.84-.07Z"/></svg></a>
-        <a href="/mailto:DillonKing@kingsmobilewelding.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg></a>
+        <div class="btns">
+          <a class="btn-solid" href="/contact/">Request Pricing / Availability</a>
+          <a class="btn-ghost" href="tel:7572316809">Call 757-231-6809</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <img src="/assets/img/logo-500-webp.webp" width="150" height="70" alt="Kings Mobile Welding Logo">
+      </a>
+
+      <div class="footer-contact">
+        <p>📞 <a href="tel:7572316809">757-231-6809</a></p>
+        <p>✉️ <a href="mailto:DillonKing@kingsmobilewelding.com">DillonKing@kingsmobilewelding.com</a></p>
+        <p>📍 Hampton Roads, Eastern Virginia &amp; the Mid-Atlantic</p>
+        <p>🆔 UEI: ZCY4G7GBGQA3</p>
+        <p>🏷️ CAGE: 11P75</p>
       </div>
     </div>
-  </footer>
 
-  <!-- Your site JS -->
-  <script src="/assets/js/video-rotator.js" defer></script>
-  <script src="/assets/js/menu-toggle.js" defer></script>
-  <script src="/assets/js/trusted-carousel.js" defer></script>
-  <script src="/assets/js/blog-carousel.js" defer></script>
-  <script src="/assets/js/contact-form.js" defer></script>
-  <script src="/assets/js/site.js"></script>
-  <script src="/assets/js/forms.js"></script>
-  <script src="/assets/js/forms-home-helper.js"></script>
+    <nav class="footer-nav">
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/industries">Industries</a>
+      <a href="/past-performance">Past Performance</a>
+      <a href="/procurement">Procurement</a>
+      <a href="/careers">Careers</a>
+      <a href="/areas">Areas We Service</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/p/Kings-Mobile-Welding-61572979167213" aria-label="Facebook">Facebook</a>
+      <a href="https://www.linkedin.com/company/kings-mobile-welding" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://www.instagram.com/kingsmobilewelding" aria-label="Instagram">Instagram</a>
+      <a href="mailto:DillonKing@kingsmobilewelding.com" aria-label="Email">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/menu-toggle.js" defer></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/forms.js"></script>
+
+<script>
+(function(){
+  const input = document.getElementById('blogSearch');
+  const cards = Array.from(document.querySelectorAll('#postsGrid .post'));
+  const chips = Array.from(document.querySelectorAll('.filter-chip'));
+  const count = document.getElementById('postCount');
+  const noResults = document.getElementById('noResults');
+  let filter = '';
+
+  function getCardText(card){
+    return (card.getAttribute('data-title') || card.textContent || '').toLowerCase();
+  }
+
+  function update(){
+    const q = input ? input.value.trim().toLowerCase() : '';
+    let visible = 0;
+
+    cards.forEach(card => {
+      const text = getCardText(card);
+      const matchesSearch = !q || text.includes(q);
+      const matchesFilter = !filter || text.includes(filter);
+      const show = matchesSearch && matchesFilter;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+
+    if(count) count.textContent = visible + ' of ' + cards.length + ' posts shown';
+    if(noResults) noResults.style.display = visible ? 'none' : 'block';
+  }
+
+  if(input) input.addEventListener('input', update);
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      filter = (chip.getAttribute('data-filter') || '').toLowerCase();
+      update();
+    });
+  });
+
+  update();
+})();
+</script>
+
+<script>
+(function(){
+  const items = document.querySelectorAll('nav.desktop .nav-item.has-dropdown');
+  if(!items.length) return;
+
+  function closeAll(except){
+    items.forEach(it=>{
+      if(except && it === except) return;
+      it.classList.remove('is-open');
+      const a = it.querySelector(':scope > a');
+      if(a) a.setAttribute('aria-expanded','false');
+    });
+  }
+
+  items.forEach(it=>{
+    const trigger = it.querySelector(':scope > a');
+    if(!trigger) return;
+
+    trigger.setAttribute('aria-haspopup','true');
+    trigger.setAttribute('aria-expanded','false');
+
+    trigger.addEventListener('click', (e)=>{
+      const isOpen = it.classList.contains('is-open');
+      if(!isOpen){
+        e.preventDefault();
+        closeAll(it);
+        it.classList.add('is-open');
+        trigger.setAttribute('aria-expanded','true');
+      } else {
+        closeAll();
+      }
+    });
+
+    const dropdown = it.querySelector(':scope > .dropdown');
+    if(dropdown){
+      dropdown.addEventListener('click', (e)=>{
+        const link = e.target.closest('a');
+        if(link) closeAll();
+      });
+    }
+
+    it.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        closeAll();
+        trigger.focus();
+      }
+    });
+  });
+
+  document.addEventListener('click', (e)=>{
+    if(!e.target.closest('nav.desktop .nav-item.has-dropdown')) closeAll();
+  });
+
+  window.addEventListener('scroll', ()=>closeAll(), {passive:true});
+})();
+</script>
 </body>
 </html>
