@@ -34,7 +34,6 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
 
   <!-- LocalBusiness + ContactPage + FAQ JSON-LD -->
   <script type="application/ld+json">
@@ -984,17 +983,17 @@
 
             <div class="info-row">
               <strong>Based In</strong>
-              <span>Newport News, Virginia</span>
+              <span style="color:#000;">Newport News, Virginia</span>
             </div>
 
             <div class="info-row">
               <strong>Service Area</strong>
-              <span>Hampton Roads, Eastern Virginia, Virginia, Maryland, D.C., North Carolina, South Carolina, and the Mid-Atlantic for qualified contractor scopes</span>
+              <span style="color:#000;">Hampton Roads, Eastern Virginia, Virginia, Maryland, D.C., North Carolina, South Carolina, and the Mid-Atlantic for qualified contractor scopes</span>
             </div>
 
             <div class="info-row">
               <strong>Procurement</strong>
-              <span>UEI: ZCY4G7GBGQA3<br>CAGE: 11P75<br>eVA ID: SUP315695<br>SWaM Certification: 838033</span>
+              <span style="color:#000;">UEI: ZCY4G7GBGQA3<br>CAGE: 11P75<br>eVA ID: SUP315695<br>SWaM Certification: 838033</span>
             </div>
 
             <div class="contact-badges">
@@ -1006,15 +1005,6 @@
             </div>
           </div>
 
-          <div class="contact-panel">
-            <h2>Service Radius</h2>
-            <p>
-              Based in Newport News, VA with local and regional mobile welding support available depending on scope, schedule, access, and project requirements.
-            </p>
-
-            <div class="map-wrap" aria-label="Map showing Kings Mobile Welding service radius">
-              <div id="radiusMap"></div>
-            </div>
           </div>
         </aside>
       </div>
@@ -1245,43 +1235,8 @@
 <script src="/assets/js/forms.js"></script>
 <script src="/assets/js/forms-helper.js"></script>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var el = document.getElementById('radiusMap');
-  if(!el || typeof L === 'undefined') return;
 
-  var center = [37.0871, -76.4730];
-  var miles75 = 75;
-  var meters = miles75 * 1609.344;
-
-  var map = L.map('radiusMap', {
-    scrollWheelZoom: false,
-    attributionControl: true
-  }).setView(center, 9);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  var circle = L.circle(center, {
-    radius: meters,
-    color: '#0A2E5C',
-    weight: 2,
-    fillColor: '#0A2E5C',
-    fillOpacity: 0.15
-  }).addTo(map);
-
-  map.fitBounds(circle.getBounds(), { padding: [20, 20] });
-
-  L.marker(center)
-    .addTo(map)
-    .bindPopup('Kings Mobile Welding<br>Newport News, VA<br>Local and regional mobile welding support')
-    .openPopup();
-});
-</script>
 
 <script>
 (function(){
