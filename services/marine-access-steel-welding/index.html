@@ -1103,6 +1103,80 @@
         font-size: .82rem;
       }
     }
+    /* Mobile fix for marine access steel photo CTA panel only */
+@media (max-width: 760px) {
+  .access-feature-panel,
+  .access-feature-panel * {
+    box-sizing: border-box;
+  }
+
+  .access-feature-panel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    overflow: hidden;
+    padding: .95rem;
+    align-content: start;
+  }
+
+  .access-feature-panel > div {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .access-feature-panel h3 {
+    font-size: 1.2rem;
+    line-height: 1.18;
+  }
+
+  .access-feature-panel p {
+    font-size: .95rem;
+    line-height: 1.55;
+  }
+
+  .access-feature-panel .access-mini-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .access-feature-panel .access-mini-badges span {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-size: .78rem;
+    padding: .38rem .52rem;
+  }
+
+  .access-feature-panel .access-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .6rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .access-feature-panel .access-actions a,
+  .access-feature-panel .access-actions .access-btn,
+  .access-feature-panel .access-actions .access-btn-ghost {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+}
   </style>
 </head>
 
