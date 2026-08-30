@@ -12,11 +12,11 @@ gtag('config', 'G-40G6PQSXY3');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blog | Welding Insights, DOT, Bridge &amp; Field Welding | Kings Mobile Welding</title>
-<meta name="description" content="Kings Mobile Welding blog with contractor-focused articles on mezzanine reinforcement, structural steel mezzanine reinforcement, AWS D1.1 structural welding, AWS D1.5 bridge welding, AWS D1.5 bridge welders, bridge welding remediation, DOT and infrastructure welding, pile splice welding, pile driving contractor welding support, crane and lead coordination, marine welding, sheet pile welding, cofferdam welding, bulkhead and seawall welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, emergency repairs, procurement, and field welding support.">
-<meta name="keywords" content="Kings Mobile Welding blog, welding blog, mezzanine reinforcement, structural steel mezzanine reinforcement, steel mezzanine reinforcement, mezzanine beam reinforcement, HSS column installation, W beam installation, AWS D1.1 welding, AWS D1.5 bridge welding, DOT welding, infrastructure welding, pile splice welding, pile driving contractor welding support, crane coordination pile welding, pile leads welding, marine welding, sheet pile welding, cofferdam welding, bulkhead welding, seawall welding, fixed ladder installation, roof access ladder, bollard installation, bollard fabrication, steel bollards, custom bollards, structural steel welding, mobile welding, commercial welding, industrial welding, welding subcontractor, bridge welding contractor, AWS D1.5 bridge welders, bridge welding remediation, Hampton Roads welding contractor">
+<meta name="description" content="Kings Mobile Welding blog with contractor-focused articles on mezzanine reinforcement, structural steel mezzanine reinforcement, AWS D1.1 structural welding, AWS D1.5 bridge welding, AWS D1.5 bridge welders, bridge welding remediation, DOT and infrastructure welding, pile splice welding, pile driving contractor welding support, crane and lead coordination, marine welding, marine sheet pile welding, Virginia Beach flood protection project, Virginia Beach resiliency project, pump stations, tide gates, flood barriers, bridge DOT sheet pile welding, heavy civil sheet pile welding, sheet pile welding, cofferdam welding, bulkhead and seawall welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, emergency repairs, procurement, and field welding support.">
+<meta name="keywords" content="Kings Mobile Welding blog, welding blog, mezzanine reinforcement, structural steel mezzanine reinforcement, steel mezzanine reinforcement, mezzanine beam reinforcement, HSS column installation, W beam installation, AWS D1.1 welding, AWS D1.5 bridge welding, DOT welding, infrastructure welding, pile splice welding, pile driving contractor welding support, crane coordination pile welding, pile leads welding, marine welding, marine sheet pile welding, Virginia Beach flood protection project, Virginia Beach resiliency project, tide gates, pump stations, flood barriers, bridge sheet pile welding, DOT sheet pile welding, heavy civil sheet pile welding, sheet pile welding, cofferdam welding, bulkhead welding, seawall welding, fixed ladder installation, roof access ladder, bollard installation, bollard fabrication, steel bollards, custom bollards, structural steel welding, mobile welding, commercial welding, industrial welding, welding subcontractor, bridge welding contractor, AWS D1.5 bridge welders, bridge welding remediation, Hampton Roads welding contractor">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kings Mobile Welding Blog">
-<meta property="og:description" content="Contractor-focused articles on mobile welding, structural steel, bridge/DOT work, pile splicing, marine welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, and procurement.">
+<meta property="og:description" content="Contractor-focused articles on mobile welding, structural steel, bridge/DOT work, pile splicing, Virginia Beach flood protection, resiliency infrastructure, pump stations, tide gates, marine sheet pile welding, bridge sheet pile welding, heavy civil sheet pile welding, marine welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, and procurement.">
 <meta property="og:url" content="https://www.kingsmobilewelding.com/blog/">
 <meta property="og:image" content="https://www.kingsmobilewelding.com/assets/img/logo-500.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +72,7 @@ gtag('config', 'G-40G6PQSXY3');
 "@type":"Blog",
 "name":"Kings Mobile Welding Blog",
 "url":"https://www.kingsmobilewelding.com/blog/",
-"description":"Contractor-focused welding articles covering mezzanine reinforcement, structural steel mezzanine reinforcement, mobile welding, structural steel, DOT and infrastructure welding, bridge welding, AWS D1.5 bridge welders, bridge welding remediation, pile splice welding, marine welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, procurement, and field repair topics."
+"description":"Contractor-focused welding articles covering Virginia Beach flood protection, resiliency infrastructure, tide gates, pump stations, mezzanine reinforcement, structural steel mezzanine reinforcement, mobile welding, structural steel, DOT and infrastructure welding, bridge welding, AWS D1.5 bridge welders, bridge welding remediation, pile splice welding, marine sheet pile welding, bridge DOT sheet pile welding, heavy civil sheet pile welding, marine welding, fixed ladder installation, bollard installation, bollard fabrication, commercial welding, industrial welding, procurement, and field repair topics."
 }
 ]
 }
@@ -543,15 +543,15 @@ min-height:360px;
 }
 
 .blog-grid .post.featured-photo-fix:first-child > a{
-min-height:0;
-height:360px;
-align-self:start;
+min-height:100%;
+height:100%;
+align-self:stretch;
 }
 
 .blog-grid .post.featured-photo-fix:first-child img{
 width:100%;
-height:360px;
-min-height:0;
+height:100%;
+min-height:360px;
 object-fit:cover;
 object-position:center center;
 display:block;
@@ -786,6 +786,25 @@ height: 210px !important;
 min-height: 0 !important;
 }
 }
+
+/* Desktop featured-card image: stretch to the full height of the first blog card */
+@media (min-width: 981px) {
+  .blog-grid .post.featured-photo-fix:first-child > a {
+    min-height: 100% !important;
+    height: 100% !important;
+    align-self: stretch !important;
+  }
+
+  .blog-grid .post.featured-photo-fix:first-child img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 360px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+}
+
 </style>
 </head>
 
@@ -861,8 +880,11 @@ Use this blog as a resource for bridge contractors, DOT teams, pile driving cont
 <a class="pill" href="/services/bridge-welding-remediation/">Bridge Welding</a>
 <a class="pill" href="/pile-splice-welding-contractor/">Pile Splice Welding</a>
 <a class="pill" href="/services/sheet-pile-welding/">Sheet Pile Welding</a>
+<a class="pill" href="/blog/posts/sheet-pile-welding-for-bridge-dot-heavy-civil-contractors/">Bridge/DOT Sheet Pile</a>
+<a class="pill" href="/blog/posts/when-marine-contractors-need-sheet-pile-welding-support/">Marine Sheet Pile</a>
 <a class="pill" href="/services/pile-driving-contractor-welding-support/">Pile Driving Support</a>
 <a class="pill" href="/services/government-and-dot-welding/">Government &amp; DOT</a>
+<a class="pill" href="/blog/posts/virginia-beach-518m-flood-protection-resiliency-project/">Virginia Beach Resiliency</a>
 <a class="pill" href="/services/fixed-ladder-installation/">Fixed Ladders</a>
 <a class="pill" href="/services/bollard-installation/">Bollard Installation</a>
 <a class="pill" href="/procurement">Procurement</a>
@@ -880,6 +902,8 @@ Use this blog as a resource for bridge contractors, DOT teams, pile driving cont
 <button class="filter-chip" type="button" data-filter="bridge">Bridge / DOT</button>
 <button class="filter-chip" type="button" data-filter="pile">Pile Splice</button>
 <button class="filter-chip" type="button" data-filter="sheet pile">Sheet Pile</button>
+<button class="filter-chip" type="button" data-filter="heavy civil">Heavy Civil</button>
+<button class="filter-chip" type="button" data-filter="resiliency">Resiliency</button>
 <button class="filter-chip" type="button" data-filter="structural">Structural Steel</button>
 <button class="filter-chip" type="button" data-filter="mezzanine">Mezzanine</button>
 <button class="filter-chip" type="button" data-filter="commercial">Commercial</button>
@@ -907,6 +931,191 @@ Browse updates, guides, project highlights, and contractor-focused welding resou
 </p>
 
 <div class="blog-grid" id="postsGrid">
+
+<!-- NEW VIRGINIA BEACH FLOOD PROTECTION PROJECT POST -->
+<article
+class="post featured-photo-fix"
+itemscope
+itemtype="https://schema.org/BlogPosting"
+itemprop="blogPost"
+data-title="virginia beach 518m flood protection resiliency project windsor woods princess anne plaza the lakes stormwater improvements tide gates pump stations flood barriers cofferdams sheet pile heavy civil infrastructure progressive design build flatirondragados arcadis city of virginia beach stormwater infrastructure critical infrastructure resiliency"
+>
+<a href="/blog/posts/virginia-beach-518m-flood-protection-resiliency-project/">
+<img
+src="/assets/img/flatirondragados-virginia-beach-resiliency-project.jpg"
+alt="Rendering-style image of a flood protection pump station, tide gate and water control facility for a coastal resiliency project"
+loading="eager"
+itemprop="image"
+>
+</a>
+
+<div class="body">
+<div
+class="meta"
+itemprop="datePublished"
+content="2026-08-30T13:24:00-04:00"
+>
+August 30, 2026
+</div>
+
+<h2 itemprop="headline">
+<a
+href="/blog/posts/virginia-beach-518m-flood-protection-resiliency-project/"
+itemprop="url"
+>
+Virginia Beach’s $518M Flood Protection Project: Tide Gates, Pump Stations &amp; Cofferdams
+</a>
+</h2>
+
+<p itemprop="description">
+An informative look at Virginia Beach’s $518M flood protection and resiliency project, including stormwater improvements, tide gates, pump stations, flood barriers, cofferdams, sheet pile, heavy civil construction and project coordination.
+</p>
+
+<div class="tags kmw-tags" aria-label="Tags">
+<span class="tag kmw-tag" itemprop="keywords">Virginia Beach Resiliency</span>
+<span class="tag kmw-tag" itemprop="keywords">Flood Protection</span>
+<span class="tag kmw-tag" itemprop="keywords">Pump Stations</span>
+<span class="tag kmw-tag" itemprop="keywords">Tide Gates</span>
+<span class="tag kmw-tag" itemprop="keywords">Cofferdams</span>
+<span class="tag kmw-tag" itemprop="keywords">Sheet Pile</span>
+<span class="tag kmw-tag" itemprop="keywords">Heavy Civil</span>
+<span class="tag kmw-tag" itemprop="keywords">Stormwater Infrastructure</span>
+</div>
+
+<div class="cta">
+<a
+href="/blog/posts/virginia-beach-518m-flood-protection-resiliency-project/"
+aria-label="Read more about the Virginia Beach $518M flood protection and resiliency project"
+>
+Read more →
+</a>
+</div>
+</div>
+</article>
+
+
+<!-- NEW BRIDGE / DOT / HEAVY CIVIL SHEET PILE POST -->
+<article
+class="post featured-photo-fix"
+itemscope
+itemtype="https://schema.org/BlogPosting"
+itemprop="blogPost"
+data-title="sheet pile welding for bridge dot heavy civil contractors bridge sheet pile welding dot sheet pile welding heavy civil sheet pile welding cofferdam welding bridge cofferdam welding temporary works welding excavation support walers struts bracing cap plates tie back connection support bridge foundation welding inspection driven field modifications aws d1.5 bridge welding support government and dot welding virginia maryland dc north carolina south carolina"
+>
+<a href="/blog/posts/sheet-pile-welding-for-bridge-dot-heavy-civil-contractors/">
+<img
+src="/assets/img/bridge-sheet-pile-welding.jpg"
+alt="Steel sheet pile cofferdam with walers and bracing for bridge DOT and heavy civil construction"
+loading="eager"
+itemprop="image"
+>
+</a>
+
+<div class="body">
+<div
+class="meta"
+itemprop="datePublished"
+content="2026-08-30T13:24:00-04:00"
+>
+August 30, 2026
+</div>
+
+<h2 itemprop="headline">
+<a
+href="/blog/posts/sheet-pile-welding-for-bridge-dot-heavy-civil-contractors/"
+itemprop="url"
+>
+Sheet Pile Welding for Bridge, DOT &amp; Heavy Civil Contractors
+</a>
+</h2>
+
+<p itemprop="description">
+A contractor-focused guide to sheet pile welding for bridge, DOT and heavy civil projects involving cofferdams, temporary works, walers, struts, bracing, cap plates, tie-back support, inspection requirements and field modifications.
+</p>
+
+<div class="tags kmw-tags" aria-label="Tags">
+<span class="tag kmw-tag" itemprop="keywords">Sheet Pile Welding</span>
+<span class="tag kmw-tag" itemprop="keywords">Bridge / DOT</span>
+<span class="tag kmw-tag" itemprop="keywords">Heavy Civil</span>
+<span class="tag kmw-tag" itemprop="keywords">Cofferdam Welding</span>
+<span class="tag kmw-tag" itemprop="keywords">Walers &amp; Bracing</span>
+<span class="tag kmw-tag" itemprop="keywords">Temporary Works</span>
+<span class="tag kmw-tag" itemprop="keywords">Bridge Foundations</span>
+<span class="tag kmw-tag" itemprop="keywords">Infrastructure Welding</span>
+</div>
+
+<div class="cta">
+<a
+href="/blog/posts/sheet-pile-welding-for-bridge-dot-heavy-civil-contractors/"
+aria-label="Read more about sheet pile welding for bridge DOT and heavy civil contractors"
+>
+Read more →
+</a>
+</div>
+</div>
+</article>
+
+<!-- NEW MARINE CONTRACTOR SHEET PILE POST -->
+<article
+class="post"
+itemscope
+itemtype="https://schema.org/BlogPosting"
+itemprop="blogPost"
+data-title="when marine contractors need sheet pile welding support marine sheet pile welding sheet pile welding support marine contractors sheet pile welding bulkhead sheet pile welding seawall welding cofferdam welding walers bracing cap plates tie back connection support sheet pile repair welding waterfront welding contractor marine construction welding heavy civil welding subcontractor virginia maryland dc north carolina south carolina"
+>
+<a href="/blog/posts/when-marine-contractors-need-sheet-pile-welding-support/">
+<img
+src="/assets/img/marine-sheet-pile.jpg"
+alt="Sheet pile shoring with walers and bracing for marine contractor welding support"
+loading="eager"
+itemprop="image"
+>
+</a>
+
+<div class="body">
+<div
+class="meta"
+itemprop="datePublished"
+content="2026-08-30T13:24:00-04:00"
+>
+August 30, 2026
+</div>
+
+<h2 itemprop="headline">
+<a
+href="/blog/posts/when-marine-contractors-need-sheet-pile-welding-support/"
+itemprop="url"
+>
+When Marine Contractors Need Sheet Pile Welding Support
+</a>
+</h2>
+
+<p itemprop="description">
+A practical guide for marine contractors needing sheet pile welding support around bulkheads, seawalls, cofferdams, walers, bracing, cap plates, tie-back connections, repairs and waterfront field modifications.
+</p>
+
+<div class="tags kmw-tags" aria-label="Tags">
+<span class="tag kmw-tag" itemprop="keywords">Marine Sheet Pile Welding</span>
+<span class="tag kmw-tag" itemprop="keywords">Sheet Pile Welding</span>
+<span class="tag kmw-tag" itemprop="keywords">Marine Contractors</span>
+<span class="tag kmw-tag" itemprop="keywords">Bulkheads &amp; Seawalls</span>
+<span class="tag kmw-tag" itemprop="keywords">Cofferdam Welding</span>
+<span class="tag kmw-tag" itemprop="keywords">Walers &amp; Bracing</span>
+<span class="tag kmw-tag" itemprop="keywords">Tie-Back Support</span>
+<span class="tag kmw-tag" itemprop="keywords">Heavy Civil Welding</span>
+</div>
+
+<div class="cta">
+<a
+href="/blog/posts/when-marine-contractors-need-sheet-pile-welding-support/"
+aria-label="Read more about when marine contractors need sheet pile welding support"
+>
+Read more →
+</a>
+</div>
+</div>
+</article>
+
 
 <!-- NEW MEZZANINE REINFORCEMENT POST -->
 <article
