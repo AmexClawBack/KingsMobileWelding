@@ -35,8 +35,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
-  <!-- Poster is the only hero media preloaded. Video is injected after initial render. -->
-  <link rel="preload" as="image" href="/assets/img/home/hero-poster.webp" fetchpriority="high">
+  <!-- Hero video loads directly; no poster image fallback. -->
 
   <script type="application/ld+json">
   {
@@ -170,7 +169,7 @@
     /* Hero */
     .hero{position:relative;min-height:clamp(650px,92svh,920px);overflow:hidden;background:var(--blue-black);color:#fff;isolation:isolate}
     .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,12,24,.78) 0%,rgba(2,16,31,.58) 38%,rgba(2,16,31,.22) 68%,rgba(2,16,31,.42) 100%),linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.48))}
-    .hero-media{position:absolute;inset:0;z-index:-2;background:url('/assets/img/home/hero-poster.webp') center/cover no-repeat}
+    .hero-media{position:absolute;inset:0;z-index:-2;background:var(--blue-black)}
     .hero-video{width:100%;height:100%;object-fit:cover;object-position:center center}
     .hero-content{min-height:clamp(650px,92svh,920px);display:flex;align-items:flex-end;padding:160px 0 90px}
     .hero-copy{max-width:900px}
@@ -447,7 +446,10 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <video id="heroVideo" class="hero-video" muted loop playsinline preload="none" poster="/assets/img/home/hero-poster.webp"></video>
+        <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="/assets/video/kings-hero-mobile.mp4" type="video/mp4" media="(max-width: 760px)">
+          <source src="/assets/video/kings-hero-desktop.mp4" type="video/mp4">
+        </video>
       </div>
 
       <div class="shell hero-content">
@@ -706,34 +708,8 @@
       });
     })();
 
-    // Performance-first hero video loader.
-    // Poster paints immediately. Video is selected by viewport and loaded after first render.
-    (function(){
-      const video=document.getElementById('heroVideo');
-      if(!video)return;
-      const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
-      if(reduced||(connection&&connection.saveData))return;
+    // Hero video sources are declared directly in the HTML for reliable mobile autoplay.
 
-      const src=window.matchMedia('(max-width: 760px)').matches
-        ? '/assets/video/kings-hero-mobile.mp4'
-        : '/assets/video/kings-hero-desktop.mp4';
-
-      const loadVideo=()=>{
-        if(video.dataset.loaded)return;
-        video.dataset.loaded='true';
-        video.src=src;
-        video.load();
-        const playPromise=video.play();
-        if(playPromise&&typeof playPromise.catch==='function')playPromise.catch(()=>{});
-      };
-
-      if('requestIdleCallback' in window){
-        requestIdleCallback(loadVideo,{timeout:1100});
-      }else{
-        window.addEventListener('load',()=>setTimeout(loadVideo,120),{once:true});
-      }
-    })();
   </script>
 </body>
 </html>
