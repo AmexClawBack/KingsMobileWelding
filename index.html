@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <!-- Google Analytics: preserved from the existing homepage -->
@@ -402,11 +402,16 @@
       .mobile-sticky .quote{background:var(--yellow);color:#07121e}
     }
 
-    @media (prefers-reduced-motion:reduce){
-      html{scroll-behavior:auto}
-      *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-      .hero-video{display:none}
-    }
+   @media (prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important;
+  }
+}
   </style>
 </head>
 <body>
